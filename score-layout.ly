@@ -5,6 +5,7 @@
 \include "vn-2.ly"
 \include "vla.ly"
 \include "bc.ly"
+\include "solo-voice.ly"
 
 
 \book {
@@ -28,6 +29,19 @@
         \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
         \bcOuverture
       >>
+    >>
+  }
+
+  \score {
+    \scoreTitleNI
+    <<
+      \new Staff = "voiceStaff" \with { instrumentName = \annaName }
+      \new Voice = "voice"
+      \soloVoiceNI
+      \new Lyrics \lyricsto "voice" { \lyricsNI }
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNI
+      \new FiguredBass { \figuresNI }
     >>
   }
 }

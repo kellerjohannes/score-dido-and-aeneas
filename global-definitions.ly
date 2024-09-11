@@ -1,14 +1,26 @@
-instrumentNameVnI = "Violins I"
-instrumentNameVnII = "Violins II"
-instrumentNameVla = "Viola"
-instrumentNameBc = "Basso"
-
 titleOpera = "Dido & Aeneas"
 operaComposer = "Henry Purcell"
 operaContext = "Theater Basel, 2024/2025"
 operaEditor = "Fassung: The Peeping Tom, Notensatz: Johannes Keller"
 
+annaClef = "alto"
+annaName = \markup { \caps Anna }
+
+instrumentNameVnI = "Violins I"
+vnIClef = "treble"
+
+instrumentNameVnII = "Violins II"
+vnIIClef = "treble"
+
+instrumentNameVla = "Viola"
+vlaClef = "alto"
+
+instrumentNameBc = "Basso"
+bcClef = "bass"
+
+
 titleOuverture = "Ouverture"
+titleNI = "I, Song & Chorus."
 
 
 
@@ -32,6 +44,19 @@ scoreTitleOuverture = \header {
 
 partbookTitleOuverture = \header {
   title = \titleOuverture
+  composer = ##f
+  subtitle = ##f
+}
+
+
+scoreTitleNI = \header {
+  title = \titleNI
+  composer = ##f
+  subtitle = ##f
+}
+
+partbookTitleNI = \header {
+  title = \titleNI
   composer = ##f
   subtitle = ##f
 }
