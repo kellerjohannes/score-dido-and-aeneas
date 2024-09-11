@@ -5,13 +5,13 @@ vnIOuverture = \relative g'' {
   g4. g8 f8.[ g16 f8. d16] |
   es4. es8 e4. e8 |
   f4. e16 f g4. g8 |
-  g4 a~ a8 a g~ |
+  g4 as~ as8 as8 g4~ |
   g8 f f4 ~ f8 g f16 es d es |
   d4. d8 a'4. a8 |
   bes4. bes8 bes[ as bes g] |
   as4. as8 a4. bes8 |
-  fis4 d f~ |
-  f8. f16 g8. d16 es~ |
-  es4 es~ es8. es16 d8. c16 |
+  fis4 d f2~ |
+  f8.[ f16 g8. d16] es2~ |
+  es4 es~ es8.[ es16 d8. c16] |
   b4 c8. d16 es4 d \bar "||"
 }
