@@ -20,6 +20,16 @@ titlePartbook = \header {
   tagline = \operaEditor
 }
 
+
+titleScore = \titlePartbook
+
+
+scoreTitleOuverture = \header {
+  title = \titleOuverture
+  composer = ##f
+  subtitle = ##f
+}
+
 partbookTitleOuverture = \header {
   title = \titleOuverture
   composer = ##f
@@ -28,11 +38,17 @@ partbookTitleOuverture = \header {
 
 
 
+scorePaperBlock = \paper {
+  print-all-headers = ##t
+  #(set-paper-size "b4")
+}
+
 
 partbookVnIPaperBlock = \paper {
   print-all-headers = ##t
   oddHeaderMarkup = \markup { \fill-line { \instrumentNameVnI } }
   evenHeaderMarkup = \oddHeaderMarkup
+  #(set-paper-size "a4")
 }
 
 partbookVnIIPaperBlock = \paper {
