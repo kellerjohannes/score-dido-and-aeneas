@@ -1,3 +1,5 @@
+scoreLayout = ##f
+
 titleOpera = "Dido & Aeneas"
 operaComposer = "Henry Purcell"
 operaContext = "Theater Basel, 2024/2025"
@@ -7,6 +9,7 @@ annaClef = "alto"
 annaName = \markup { \caps Anna }
 
 instrumentNameVnI = "Violins I"
+instrumentHintVnI = \markup { \if \scoreLayout \italic \instrumentNameVnI }
 vnIClef = "treble"
 
 instrumentNameVnII = "Violins II"

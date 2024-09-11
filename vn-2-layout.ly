@@ -14,7 +14,14 @@
   \score {
     \partbookTitleOuverture
     <<
-      \new Voice { \vnIIOuverture }
+      \new Staff { \vnIIOuverture }
     >>
   }
+
+  \score {
+    <<
+      \new Staff { \vnIINI }
+    >>
+  }
+
 }

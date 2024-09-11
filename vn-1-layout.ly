@@ -14,7 +14,14 @@
   \score {
     \partbookTitleOuverture
     <<
-      \new Voice { \vnIOuverture }
+      \new Staff { \vnIOuverture }
+    >>
+  }
+
+  \score {
+    \partbookTitleNI
+    <<
+      \new Staff { \compressMMRests { \vnINI } }
     >>
   }
 }

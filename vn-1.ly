@@ -1,3 +1,5 @@
+\include "global-definitions.ly"
+
 vnIOuverture = \relative g'' {
   \time 4/4
   \key c \minor
@@ -14,4 +16,12 @@ vnIOuverture = \relative g'' {
   f8.[ f16 g8. d16] es2~ |
   es4 es~ es8.[ es16 d8. c16] |
   b4 c8. d16 es4 d \bar "||"
+}
+
+vnINI = \relative c'' {
+  \time 4/4
+  \key c \minor
+  \clef \vnIClef
+  R1*17 |
+  r2 c4^\instrumentHintVnI d |
 }

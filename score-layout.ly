@@ -35,13 +35,24 @@
   \score {
     \scoreTitleNI
     <<
+      \new StaffGroup = "strings"
+      <<
+        \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
+        \vnINI
+      >>
       \new Staff = "voiceStaff" \with { instrumentName = \annaName }
-      \new Voice = "voice"
+      \new Voice= "voice"
       \soloVoiceNI
       \new Lyrics \lyricsto "voice" { \lyricsNI }
       \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
       \bcNI
       \new FiguredBass { \figuresNI }
     >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
   }
 }
