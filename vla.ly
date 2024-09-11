@@ -1,5 +1,7 @@
+\include "global-definitions.ly"
+
 vlaOuverture = \relative g' {
-  \clef "alto"
+  \clef \vlaClef
   \time 4/4
   \key c \minor
   g2 as4 b |
@@ -14,4 +16,15 @@ vlaOuverture = \relative g' {
   d4 d~ d8. d16 c4 |
   c2~ c8 c d4~ |
   d8. d16 g8. g16 g4. f8 \bar "||"
+}
+
+vlaNI = \relative c' {
+  \time 4/4
+  \key c \minor
+  \clef \vlaClef
+  R1*17 |
+  r2 c4^\instrumentHintVla b |
+  c4 c c b |
+  c2 c4 f |
+  f d c a |
 }

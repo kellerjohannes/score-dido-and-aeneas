@@ -6,6 +6,10 @@
 \include "vla.ly"
 \include "bc.ly"
 \include "solo-voice.ly"
+\include "chorus-soprano.ly"
+\include "chorus-alto.ly"
+\include "chorus-tenor.ly"
+\include "chorus-bass.ly"
 
 
 \book {
@@ -28,6 +32,7 @@
         \vlaOuverture
         \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
         \bcOuverture
+        \new FiguredBass { \figuresOuverture }
       >>
     >>
   }
@@ -39,6 +44,32 @@
       <<
         \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
         \vnINI
+        \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
+        \vnIINI
+        \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
+        \vlaNI
+      >>
+      \new ChoirStaff = "chorus"
+      <<
+        \new Staff = "chorusSoprano" \with { instrumentName = \instrumentNameChorusS }
+        \new Voice = "chorusS"
+        \chorusSNI
+        \new Lyrics \lyricsto "chorusS" { \lyricsSNI }
+
+        \new Staff = "chorusAlto" \with { instrumentName = \instrumentNameChorusA }
+        \new Voice = "chorusA"
+        \chorusANI
+        \new Lyrics \lyricsto "chorusA" { \lyricsANI }
+
+        \new Staff = "chorusT" \with { instrumentName = \instrumentNameChorusT }
+        \new Voice = "chorusT"
+        \chorusTNI
+        \new Lyrics \lyricsto "chorusT" { \lyricsTNI }
+
+        \new Staff = "chorusBass" \with { instrumentName = \instrumentNameChorusB }
+        \new Voice = "chorusB"
+        \chorusBNI
+        \new Lyrics \lyricsto "chorusB" { \lyricsBNI }
       >>
       \new Staff = "voiceStaff" \with { instrumentName = \annaName }
       \new Voice= "voice"

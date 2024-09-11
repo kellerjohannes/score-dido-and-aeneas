@@ -1,6 +1,9 @@
+\include "global-definitions.ly"
+
 vnIIOuverture = \relative es'' {
   \time 4/4
   \key c \minor
+  \clef \vnIIClef
   es4. es8 es4 d~ |
   d8 d c4 bes4. bes8 |
   as4. as8 g4 c |
@@ -13,4 +16,15 @@ vnIIOuverture = \relative es'' {
   g2~ g8.[ g16 as8. g16] |
   c4 bes a as |
   g4 c2 b4 \bar "||"
+}
+
+vnIINI = \relative g' {
+  \time 4/4
+  \key c \minor
+  \clef \vnIIClef
+  R1*17 |
+  r2 g4^\instrumentHintVnII g |
+  g g g g |
+  es2 f4 a |
+  bes4 bes g8[ f] f[ es] |
 }

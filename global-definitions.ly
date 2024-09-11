@@ -1,4 +1,4 @@
-scoreLayout = ##f
+#(define score-layout (lambda () #f))
 
 titleOpera = "Dido & Aeneas"
 operaComposer = "Henry Purcell"
@@ -9,17 +9,39 @@ annaClef = "alto"
 annaName = \markup { \caps Anna }
 
 instrumentNameVnI = "Violins I"
-instrumentHintVnI = \markup { \if \scoreLayout \italic \instrumentNameVnI }
+instrumentHintVnI = \markup { \italic \instrumentNameVnI }
 vnIClef = "treble"
 
 instrumentNameVnII = "Violins II"
+instrumentHintVnII = \markup { \italic \instrumentNameVnII }
 vnIIClef = "treble"
 
 instrumentNameVla = "Viola"
+instrumentHintVla = \markup { \italic \instrumentNameVla }
 vlaClef = "alto"
 
 instrumentNameBc = "Basso"
+instrumentHintBc = \markup { \italic \instrumentNameBc }
 bcClef = "bass"
+
+
+instrumentNameChorusS = "Soprano"
+instrumentHintChorusS = \markup { \italic \instrumentNameChorusS }
+chorusSClef = "treble"
+
+instrumentNameChorusA = "Alto"
+instrumentHintChorusA = \markup { \italic \instrumentNameChorusA }
+chorusAClef = "alto"
+
+instrumentNameChorusT = "Tenor"
+instrumentHintChorusT = \markup { \italic \instrumentNameChorusT }
+chorusTClef = "tenor"
+
+instrumentNameChorusB = "Bass"
+instrumentHintChorusB = \markup { \italic \instrumentNameChorusB }
+chorusBClef = "bass"
+
+
 
 
 titleOuverture = "Ouverture"

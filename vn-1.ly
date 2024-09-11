@@ -24,4 +24,7 @@ vnINI = \relative c'' {
   \clef \vnIClef
   R1*17 |
   r2 c4^\instrumentHintVnI d |
+  es4 es es g |
+  c,2 f4 c |
+  d8 es f4 es8[ d] d[ c] |
 }

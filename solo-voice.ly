@@ -1,9 +1,10 @@
+\include "global-definitions.ly"
+
 soloVoiceNI = \relative es' {
   \time 4/4
   \key c \minor
   \clef \annaClef
-  s1 |
-  s1 |
+  R1*2 |
   es8.[( d16 c8. d16]) b4 c8.( d16) |
   es4 c g4. c8 |
   b2 es4. d8 |
@@ -27,6 +28,6 @@ lyricsNI = \lyricmode {
   Em -- pire grow -- ing, Plea -- sures flow -- ing,
   For -- tune smiles and so should you.
 
-  Shake the cloud from off your brow,
-  shake the cloud from off your brow.
+  Shake __ the cloud from off your brow,
+  shake __ the cloud from off your brow.
 }

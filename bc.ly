@@ -1,5 +1,7 @@
+\include "global-definitions.ly"
+
 bcOuverture = \relative c' {
-  \clef "bass"
+  \clef \bcClef
   \time 4/4
   \key c \minor
   c1~ |
@@ -15,6 +17,11 @@ bcOuverture = \relative c' {
   as4 g fis f~ |
   f4 es g2 \bar "||"
 }
+
+figuresOuverture = \figuremode {
+
+}
+
 
 bcNI = \relative c {
   \clef \bcClef
@@ -38,6 +45,9 @@ bcNI = \relative c {
   d4 es f d |
   g as f g |
   c,2 c4 g' |
+  c4 c c g |
+  as2 a4 f |
+  bes d, es f |
 }
 
 figuresNI = \figuremode {
@@ -59,5 +69,8 @@ figuresNI = \figuremode {
   < 6! >4 < 6 > < 6 >2 |
   < 7 3! >4 < 5 > < 6 5 > < _! > |
   s2. < _! >4 |
+  s2. < _! >4 |
+  s2 < 6 >4 < _! > |
+  s4 < 6 > < 6 5 > < _! > |
 
 }
