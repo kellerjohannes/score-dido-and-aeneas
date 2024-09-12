@@ -16,6 +16,33 @@ vnIOuverture = \relative g'' {
   f8.[ f16 g8. d16] es2~ |
   es4 es~ es8.[ es16 d8. c16] |
   b4 c8. d16 es4 d \bar "||"
+
+  c8 g[ c g] c[ es c es] |
+  c[ g' es g] es[ g es g] |
+  f[ es f es] es[ d es c] |
+  d[ d bes d] bes[ d e fis] |
+  g[ d g d] g[ bes g bes] |
+  g[ f es d] es[ g es g] |
+
+  c,[ g' as g] f[ es d c] |
+  b[ d b d] b[ b c d] |
+  es[ d es f] g[ c, g' c,] |
+  as'[ as16 g] f8 es d[ f bes f] |
+  bes[ as g f] g[ bes, es bes] |
+  es[ d c bes] c[ c f c] |
+  f[ as f as] f[ as f as] |
+  d,[ g d g] c,[ f c f] |
+  bes,[ es bes es] as,[ d as d] |
+  g,[ g' c, g'] b,[ f' b, f'] |
+  es[ as es as] f[ bes f bes] |
+  g[ c, g c] a[ d a d] |
+  g,[ c g c] fis,[ bes fis bes] |
+  g[ c g c] a[ d a d] |
+  bes[ es bes es] c[ f c f] |
+  d[ g d g] es[ as es as] |
+  f[ bes f bes] g[ g c bes] |
+  as[ g f es] d[ d g f] |
+  es[ d c d] es4 d | c1 \bar "|."
 }
 
 vnINI = \relative c'' {

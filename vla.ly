@@ -16,6 +16,24 @@ vlaOuverture = \relative g' {
   d4 d~ d8. d16 c4 |
   c2~ c8 c d4~ |
   d8. d16 g8. g16 g4. f8 \bar "||"
+
+  es4 r r2 |
+  R1*2 |
+  r8 d8[ g d] g[ bes g bes] |
+  g[ g g g] g[ fis16 e] d8[ d] |
+  d[ b c d] g,[ g g g] |
+
+  g[ c c c] as[ c f f] |
+  f[ d es d] d4 r |
+  r8 g,[ c g] c[ es c es] |
+  c[ c d es] f[ f f f] |
+  f[ bes bes bes] bes[ g bes es,] |
+  g[ f es es] es[ es as es] |
+  as[ c as c] as[ c as as] |
+  f[ d d d] es[ c es c] |
+  d[ bes d bes] c[ as c as] |
+  bes[ g g g] d'[ d d b] |
+
 }
 
 vlaNI = \relative c' {
