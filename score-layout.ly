@@ -86,4 +86,32 @@
       }
     }
   }
+
+  \score {
+    \scoreTitleNII
+    <<
+      \new StaffGroup = "strings"
+      <<
+        \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
+        \vnINII
+        \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
+        \vnIINII
+        \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
+        \vlaNII
+      >>
+      \new Staff = "voiceStaff" \with { instrumentName = \didoName }
+      \new Voice= "voice"
+      \soloVoiceNII
+      \new Lyrics \lyricsto "voice" { \lyricsNII }
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNII
+      \new FiguredBass { \figuresNII }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 }

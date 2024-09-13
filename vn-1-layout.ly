@@ -24,4 +24,11 @@
       \new Staff { \compressMMRests { \vnINI } }
     >>
   }
+
+  \score {
+    \partbookTitleNII
+    <<
+      \new Staff { \compressMMRests { \vnINII } }
+    >>
+  }
 }

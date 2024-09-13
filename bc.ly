@@ -45,9 +45,7 @@ bcOuverture = \relative c' {
   c1 \bar "|."
 }
 
-figuresOuverture = \figuremode {
-
-}
+figuresOuverture = \figuremode { }
 
 
 bcNI = \relative c {
@@ -129,7 +127,7 @@ bcNII = \relative c' {
   \time 3/4
   \key c \minor
   \clef \bcClef
-  c b c |
+  c4 b c |
   g as es |
   f g g, |
   c2. |
@@ -157,7 +155,7 @@ bcNII = \relative c' {
   g as es |
   f g g, |
   c2. |
-  g' fis g |
+  g'4 fis g |
   d es bes |
   c d d, |
   g2. |
@@ -195,3 +193,6 @@ bcNII = \relative c' {
   g as es |
   f g g, |
   c2. \bar "|."
+}
+
+figuresNII = \figuremode { }

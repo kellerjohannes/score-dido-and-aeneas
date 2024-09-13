@@ -19,8 +19,16 @@
   }
 
   \score {
+    \partbookTitleNI
     <<
       \new Staff { \compressMMRests { \vnIINI } }
+    >>
+  }
+
+  \score {
+    \partbookTitleNII
+    <<
+      \new Staff { \compressMMRests { \vnIINII } }
     >>
   }
 

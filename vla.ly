@@ -65,3 +65,22 @@ vlaNI = \relative c' {
   c f d es~ |
   es d es2 \bar "|."
 }
+
+vlaNII = \relative es' {
+  \time 3/4
+  \key c \minor
+  \clef \vlaClef
+  R2.*56 |
+  es4 d es |
+  b2 c4 |
+  as' g g |
+  g4 as8[ g f es] |
+  f4. f8[ es f] |
+  g4 c,4. c8 |
+  d2 d4 |
+  es c c' |
+  d4. d8 c4 |
+  bes4 as g8 f16 es |
+  d4 g4. g8 |
+  g2. \bar "|."
+}

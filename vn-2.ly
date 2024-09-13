@@ -66,3 +66,23 @@ vnIINI = \relative g' {
   g as g g |
   g g g2 \bar "|."
 }
+
+vnIINII = \relative c'' {
+  \time 3/4
+  \key c \minor
+  \clef \vnIIClef
+  R2.*55 |
+  c4 b c |
+  g2 es'4~ |
+  es d c~ |
+  c c b |
+  c2 g4 |
+  as g4. a8 |
+  bes4 c g |
+  as g b |
+  c e f |
+  f4. f8 es4 |
+  d4. d8 c4 |
+  c8. d16 c4 b |
+  c2. \bar "|."
+}

@@ -1,5 +1,3 @@
-#(define score-layout (lambda () #f))
-
 titleOpera = "Dido & Aeneas"
 operaComposer = "Henry Purcell"
 operaContext = "Theater Basel, 2024/2025"
@@ -7,6 +5,9 @@ operaEditor = "Fassung: The Peeping Tom, Notensatz: Johannes Keller"
 
 annaClef = "alto"
 annaName = \markup { \caps Anna }
+
+didoClef = "treble"
+didoName = \markup { \caps Dido }
 
 instrumentNameVnI = "Violins I"
 instrumentHintVnI = \markup { \italic \instrumentNameVnI }
@@ -44,8 +45,9 @@ chorusBClef = "bass"
 
 
 
-titleOuverture = "Ouverture"
+titleOuverture = "Ouverture."
 titleNI = "I, Song & Chorus."
+titleNII = "II, Song."
 
 
 
@@ -86,6 +88,17 @@ partbookTitleNI = \header {
   subtitle = ##f
 }
 
+scoreTitleNII = \header {
+  title = \titleNII
+  composer = ##f
+  subtitle = ##f
+}
+
+partbookTitleNII = \header {
+  title = \titleNII
+  composer = ##f
+  subtitle = ##f
+}
 
 
 scorePaperBlock = \paper {

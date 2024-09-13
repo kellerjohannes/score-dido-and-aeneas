@@ -65,3 +65,21 @@ vnINI = \relative c'' {
   c d8([ c)] b4 c8.([ d16)] |
   c4 b c2 \bar "|."
 }
+
+vnINII = \relative g'' {
+  \time 3/4
+  \key c \minor
+  \clef \vnIClef
+  R2.*57 |
+  g4 f g |
+  d4. es8[ f d] |
+  es4 f8[ es d c] |
+  d4. d8 es4 |
+  e f es8 c |
+  \grace c b2 r8 g'8 |
+  as4 g as |
+  g g4. a8 |
+  bes4 es, g |
+  as8. f16 es4 d |
+  c2. \bar "|."
+}

@@ -20,7 +20,6 @@
     >>
   }
 
-
   \score {
     \partbookTitleNI
     <<
@@ -30,6 +29,18 @@
       \new Lyrics \lyricsto "voice" { \lyricsNI }
       \new Staff { \compressMMRests { \bcNI } }
       \new FiguredBass { \figuresNI }
+    >>
+  }
+
+  \score {
+    \partbookTitleNII
+    <<
+      \new Staff = "solo" \with { instrumentName = \didoName }
+      \new Voice = "voice"
+      \soloVoiceNII
+      \new Lyrics \lyricsto "voice" { \lyricsNII }
+      \new Staff { \compressMMRests { \bcNII } }
+      \new FiguredBass { \figuresNII }
     >>
   }
 }

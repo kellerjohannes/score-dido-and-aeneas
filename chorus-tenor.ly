@@ -28,3 +28,4 @@ lyricsTNI = \lyricmode {
   grief should ne'er ap -- proach,
   should ne'er ap -- proach the fair,
   grief should ne'er, should ne'er ap -- proach the fair.
+}
