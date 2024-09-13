@@ -16,6 +16,33 @@ bcOuverture = \relative c' {
   b2. c8. bes16 |
   as4 g fis f~ |
   f4 es g2 \bar "||"
+
+  c4 r r2 |
+  R1*2 |
+  r2 r8 d[ g d] |
+  g[ bes g bes] g[ d g d] |
+  g[ g, c g] c[ es c es] |
+
+  c[ c f c] f[ as f as] |
+  g[ g, g' g,] g'[ g, g' g,] |
+  c4 r r2 |
+  r8 f[ bes f] bes[ d bes d] |
+  bes[ bes, es bes] es[ g es g] |
+  es[ f g es] as[ as f as] |
+  f[ f, f' f,] f'[ f, f' f,] |
+  bes[ bes' bes, bes'] as,[ as' as, as'] |
+  g,[ g' g, g'] f,[ f' f, f'] |
+  es,[ es' es, es'] d,[ d' d, d'] |
+  c,[ c' c, c'] d,[ d' d, d'] |
+  es,[ es' es, es'] f,[ f' f, f'] |
+  es,[ es' es, es'] d,[ d' d, d'] |
+  e,[ e' e, e'] f,[ f' f, f'] |
+  g,[ g' g, g'] a,[ a' a, a'] |
+  bes,[ bes' bes, bes'] c,[ c' c, c'] |
+  d,[ d' d, d'] es,,[ es' es, es'] |
+  f,[ f' f, f'] g,[ g' g, g'] |
+  as,[ as' as, as'] g[ f g g,] |
+  c1 \bar "|."
 }
 
 figuresOuverture = \figuremode {

@@ -33,7 +33,16 @@ vlaOuverture = \relative g' {
   f[ d d d] es[ c es c] |
   d[ bes d bes] c[ as c as] |
   bes[ g g g] d'[ d d b] |
-
+  c[ es es es] es[ d d d] |
+  d[ c c c] c[ a d a] |
+  bes[ g c g] a[ fis bes bes] |
+  bes[ bes bes g] a[ a d d] |
+  d[ bes es es] es[ c f f] |
+  f[ d g g] g[ es as as] |
+  as[ f bes bes] bes[ bes as g] |
+  f[ g as g] g[ a b b,] |
+  c[ d es f] g4. g8 |
+  g1 \bar "|."
 }
 
 vlaNI = \relative c' {
