@@ -54,4 +54,14 @@ vlaNI = \relative c' {
   c4 c c b |
   c2 c4 f |
   f d c a |
+
+  bes2 bes4 c |
+  c b c c |
+  b c d2 |
+  c4 es d4. d8 |
+  d4 bes c8([ bes)] bes8.([ c16)] |
+  d4 d d2 |
+  r2 c4 d |
+  c f d es~ |
+  es d es2 \bar "|."
 }

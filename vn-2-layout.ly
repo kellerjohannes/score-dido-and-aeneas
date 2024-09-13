@@ -20,7 +20,7 @@
 
   \score {
     <<
-      \new Staff { \vnIINI }
+      \new Staff { \compressMMRests { \vnIINI } }
     >>
   }
 

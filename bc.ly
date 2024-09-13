@@ -75,6 +75,16 @@ bcNI = \relative c {
   c4 c c g |
   as2 a4 f |
   bes d, es f |
+
+  bes,1 |
+  f'4 g as as |
+  g a b g |
+  c c, d a |
+  bes g fis g |
+  d' d, g2~ |
+  g c'4 g |
+  as f g c, |
+  g' g, c2 \bar "|."
 }
 
 figuresNI = \figuremode {
@@ -100,4 +110,17 @@ figuresNI = \figuremode {
   s2 < 6 >4 < _! > |
   s4 < 6 > < 6 5 > < _! > |
 
+  s1 |
+  < _! >4 < 7 3! > < 7 > < 6 5 > |
+  < 5 _! >
+  \bassFigureExtendersOn
+  < 5 3 >
+  \bassFigureExtendersOff
+  < 6 >2 |
+  s2 < _+ >4 < 6/ 4 > |
+  < 6 >2 < 7 > |
+  < 6 4 >4 < 5 _+ >2. |
+  < _! >2. < _! >4 |
+  < 7 >4 < 6 > < _! >2 |
+  < 6 4 >4 < 5 3! > s2 |
 }

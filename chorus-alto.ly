@@ -9,9 +9,23 @@ chorusANI = \relative g' {
   g g g g |
   es2 f4 a |
   bes4 bes g8[( f]) f[( es]) |
+
+  d2 r |
+  as'4 g g f |
+  d2 g4 g |
+  g g fis4. fis8 |
+  g4 g a g |
+  g fis g2 |
+  r g4 g |
+  g as g g |
+  g4. g8 g2 \bar "|."
 }
 
 lyricsANI = \lyricmode {
   Ba -- nish sor -- row, ba -- nish care,
-  Grief should ne'er ap -- proach the
+  Grief should ne'er ap -- proach the fair:
+  ba -- nish, ba -- nish care,
+  grief should ne'er ap -- proach the fair,
+  should ne'er ap -- proach the fair,
+  grief should ne'er, should ne'er ap -- proach the fair.
 }

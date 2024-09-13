@@ -55,4 +55,14 @@ vnIINI = \relative g' {
   g g g g |
   es2 f4 a |
   bes4 bes g8[ f] f[ es] |
+
+  d2 r |
+  as'4 g g f |
+  d2 g4 g |
+  g g fis4. fis8 |
+  g4 g a g~ |
+  g fis g2 |
+  r g4 g |
+  g as g g |
+  g g g2 \bar "|."
 }
