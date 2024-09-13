@@ -124,3 +124,74 @@ figuresNI = \figuremode {
   < 7 >4 < 6 > < _! >2 |
   < 6 4 >4 < 5 3! > s2 |
 }
+
+bcNII = \relative c' {
+  \time 3/4
+  \key c \minor
+  \clef \bcClef
+  c b c |
+  g as es |
+  f g g, |
+  c2. |
+  c'4 b c |
+  g as es |
+  f g g, |
+  c2. |
+  c'4 b c |
+  g as es |
+  f g g, |
+  c2. |
+  c'4 b c |
+  g as es |
+  f g g, |
+  c2. |
+  c'4 b c |
+  g as es |
+  f g g, |
+  c2. |
+  c'4 b c |
+  g as es |
+  f g g, |
+  c2. |
+  c'4 b c |
+  g as es |
+  f g g, |
+  c2. |
+  g' fis g |
+  d es bes |
+  c d d, |
+  g2. |
+  g'4 fis g |
+  d es bes |
+  c d d, |
+  g2. |
+  c'4 b c |
+  g as es |
+  f g g, |
+  c2. |
+  c'4 b c |
+  g as es |
+  f g g, |
+  c2. |
+  c'4 b c |
+  g as es |
+  f g g, |
+  c2. |
+  c'4 b c |
+  g as es |
+  f g g, |
+
+  c2. |
+  c'4 b c | g as es | f g g, |
+  c2. | c'4 b c |
+  g as es |
+  f g g, |
+  c2. |
+  c'4 b c |
+  g as es |
+  f g g, |
+  c2. |
+  c'4 b c |
+  g as es |
+  f g g, |
+  c2. \bar "|."
