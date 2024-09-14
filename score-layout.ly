@@ -192,4 +192,29 @@
       }
     }
   }
+
+  \score {
+    \scoreTitleNVI
+    <<
+      \new Staff = "voiceIStaff" \with { instrumentName = \annaName }
+      \new Voice= "voiceI"
+      \soloVoiceINVI
+      \new Lyrics \lyricsto "voiceI" { \lyricsSoloNVI }
+
+      \new Staff = "voiceIIStaff" \with { instrumentName = \attendantName }
+      \new Voice= "voiceII"
+      \soloVoiceIINVI
+      \new Lyrics \lyricsto "voiceII" { \lyricsSoloNVI }
+
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNVI
+      \new FiguredBass { \figuresNVI }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 }

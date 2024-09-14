@@ -197,3 +197,22 @@ lyricsNV = \lyricmode {
   Mean wre -- tches grief can touch,
   So soft, so sen -- si -- ble my breast, but ah!, but ah! I fear I pi -- ty him too much!
 }
+
+
+soloVoiceINVI = \relative es' {
+  \time 3/4
+  \key c \major
+  \clef \annaClef
+  e4 g2 |
+}
+
+soloVoiceIINVI = \relative c' {
+  \time 3/4
+  \key c \major
+  \clef \attendantClef
+  c4 e2 |
+}
+
+lyricsSoloNVI = \lyricmode {
+  Fear no
+}

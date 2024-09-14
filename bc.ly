@@ -328,3 +328,14 @@ figuresNV = \figuremode {
   \bassFigureExtendersOn < 6 4 >2 < 6 4 >4 \bassFigureExtendersOff < 5 _! >4 |
   s1 |
 }
+
+bcNVI = \relative c' {
+  \time 3/4
+  \key c \major
+  \clef \bcClef
+  c2 g4 |
+}
+
+figuresNVI = \figuremode {
+  s2 < 6 4 >4 |
+}

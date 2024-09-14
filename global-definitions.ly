@@ -12,6 +12,10 @@ didoName = \markup { \caps Dido }
 annaDidoName = \markup { \column { \line { \right-align \caps Anna }
                                    \line { \right-align \caps Dido } } }
 
+attendantClef = "tenor"
+attendantName = \markup { \caps Attendant }
+
+
 instrumentNameVnI = \markup { \concat { \caps { Violino } \super no 1. \super mo } }
 instrumentHintVnI = \markup { \italic \instrumentNameVnI }
 vnIClef = "treble"
@@ -54,6 +58,7 @@ titleNII = "II, Song."
 titleNIII = "III, Recitative."
 titleNIV = "IV, Chorus."
 titleNV = "V, Recitative."
+titleNVI = "VI, Duet & Chorus."
 
 
 
@@ -138,6 +143,18 @@ scoreTitleNV = \header {
 
 partbookTitleNV = \header {
   title = \titleNV
+  composer = ##f
+  subtitle = ##f
+}
+
+scoreTitleNVI = \header {
+  title = \titleNVI
+  composer = ##f
+  subtitle = ##f
+}
+
+partbookTitleNVI = \header {
+  title = \titleNVI
   composer = ##f
   subtitle = ##f
 }
