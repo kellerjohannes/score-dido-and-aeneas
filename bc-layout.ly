@@ -18,6 +18,9 @@
       \new Staff { \bcOuverture }
       \new FiguredBass { \figuresOuverture }
     >>
+    \layout {
+      indent = #0
+    }
   }
 
   \score {
@@ -74,6 +77,9 @@
       \new Staff { \bcNIV }
       \new FiguredBass { \figuresNIV }
     >>
+    \layout {
+      indent = #0
+    }
   }
 
   \score {

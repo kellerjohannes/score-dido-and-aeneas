@@ -16,6 +16,9 @@
     <<
       \new Staff { \vnIOuverture }
     >>
+    \layout {
+      indent = #0
+    }
   }
 
   \score {
@@ -23,6 +26,9 @@
     <<
       \new Staff { \compressMMRests { \vnINI } }
     >>
+    \layout {
+      indent = #0
+    }
   }
 
   \score {
@@ -30,6 +36,9 @@
     <<
       \new Staff { \compressMMRests { \vnINII } }
     >>
+    \layout {
+      indent = #0
+    }
   }
 
   \score {
@@ -37,6 +46,9 @@
     <<
       \new Staff { \compressMMRests { \vnINIII } }
     >>
+    \layout {
+      indent = #0
+    }
   }
 
   \score {
@@ -44,6 +56,18 @@
     <<
       \new Staff { \compressMMRests { \vnINIV } }
     >>
+    \layout {
+      indent = #0
+    }
   }
 
+  \score {
+    \partbookTitleNV
+    <<
+      \new Staff { \compressMMRests { \vnINV } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
 }

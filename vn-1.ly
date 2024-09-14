@@ -111,3 +111,10 @@ vnINIV = \relative c'' {
   d c b |
   c2. \bar "|."
 }
+
+vnINV = \relative c {
+  \time 4/4
+  \key c \minor
+  \clef \vnIClef
+  R1*25 \bar "|."
+}

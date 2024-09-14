@@ -112,3 +112,10 @@ vlaNIV = \relative es' {
   b c d |
   es2. \bar "|."
 }
+
+vlaNV = \relative c {
+  \time 4/4
+  \key c \minor
+  \clef \vlaClef
+  R1*25 \bar "|."
+}

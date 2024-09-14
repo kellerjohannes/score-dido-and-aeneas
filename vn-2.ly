@@ -114,3 +114,10 @@ vnIINIV = \relative g' {
   g g g |
   g2. \bar "|."
 }
+
+vnIINV = \relative c {
+  \time 4/4
+  \key c \minor
+  \clef \vnIIClef
+  R1*25 \bar "|."
+}

@@ -279,7 +279,52 @@ bcNV = \relative c {
   c1~ |
   c~ |
   c2. a4 |
+  g2 c~ |
+  c e |
+  f4 f, b2 |
+  c g'4 f |
+  e8[ d] c[ b] a[ e] f[ g] |
+  c,2 c'~ |
+  c1 |
+  g4 g'8[ f] es4 c |
+  d d, g2 |
+  es1 |
+  as |
+  g~ |
+  g2 c4 c' |
+  a2 bes4 bes, |
+  g as bes2 |
+  es4. d8 c4. bes8 |
+  as4 g f f' |
+  es d g f |
+  es d c c'8 bes |
+  as2 g |
+  g8. f16 es8 c g2 |
+  c2 r \bar "|."
 }
 
 figuresNV = \figuremode {
+  s1*3 |
+  < _! >2 < _! > |
+  s2 < 6 5 > |
+  < _! >4 < _- > < 7 > < 6 > |
+  < 9 > < 8 > < _! > < 4 2 > |
+  < 6 >8 < 5 >16 \bassFigureExtendersOn < 6! > < 6!>8 < 6! >8 \bassFigureExtendersOff s8 < 6 > < 6 _! > < _! > |
+  < _! >2 < _- > |
+  s1 |
+  \bassFigureExtendersOn < _! >4 < _! > \bassFigureExtendersOff < 6 >4 < 6! 5 > |
+  < _+ >2 < _- > |
+  < 8 > < 7- > |
+  < 5 > < 6 > |
+  < _! >1 |
+  < 7 > |
+  < 6 >4 < 6 5 > s2 |
+  < 6 >4 < 6 5 > < 7 >2 |
+  s2 \bassFigureExtendersOn < _! >4. < _! >8 \bassFigureExtendersOff |
+  < 6 >4 < 6! >2. |
+  < 4! 2 >4 < 6 > < _! > < 4 2 > |
+  < 6 > < 6! > s4 s8 < 4! 2 > |
+  < 6 >2 < _! > |
+  \bassFigureExtendersOn < 6 4 >2 < 6 4 >4 \bassFigureExtendersOff < 5 _! >4 |
+  s1 |
 }
