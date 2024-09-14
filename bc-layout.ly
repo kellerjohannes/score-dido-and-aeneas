@@ -42,5 +42,29 @@
       \new Staff { \compressMMRests { \bcNII } }
       \new FiguredBass { \figuresNII }
     >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
+
+  \score {
+    \partbookTitleNIII
+    <<
+      \new Staff = "solo" \with { instrumentName = \annaName }
+      \new Voice = "voice"
+      \soloVoiceNIII
+      \new Lyrics \lyricsto "voice" { \lyricsNIII }
+      \new Staff { \compressMMRests { \bcNIII } }
+      \new FiguredBass { \figuresNIII }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
   }
 }

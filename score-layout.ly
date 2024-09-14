@@ -114,4 +114,17 @@
       }
     }
   }
+
+  \score {
+    \scoreTitleNIII
+    <<
+      \new Staff = "voiceStaff" \with { instrumentName = \annaName }
+      \new Voice= "voice"
+      \soloVoiceNIII
+      \new Lyrics \lyricsto "voice" { \lyricsNIII }
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNIII
+      \new FiguredBass { \figuresNIII }
+    >>
+  }
 }

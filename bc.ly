@@ -196,3 +196,9 @@ bcNII = \relative c' {
 }
 
 figuresNII = \figuremode { }
+
+bcNIII = \relative c {
+}
+
+figuresNIII = \figuremode {
+}

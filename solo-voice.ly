@@ -108,3 +108,9 @@ lyricsNII = \lyricmode {
   Peace and I are stran -- gers grown,
   Peace and I are stran -- gers, stran -- gers grown.
 }
+
+soloVoiceNIII = \relative g' {
+}
+
+lyricsNIII = \lyricmode {
+}

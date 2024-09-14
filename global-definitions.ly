@@ -48,6 +48,7 @@ chorusBClef = "bass"
 titleOuverture = "Ouverture."
 titleNI = "I, Song & Chorus."
 titleNII = "II, Song."
+titleNIII = "III, Recitative."
 
 
 
@@ -99,6 +100,19 @@ partbookTitleNII = \header {
   composer = ##f
   subtitle = ##f
 }
+
+scoreTitleNIII = \header {
+  title = \titleNIII
+  composer = ##f
+  subtitle = ##f
+}
+
+partbookTitleNIII = \header {
+  title = \titleNIII
+  composer = ##f
+  subtitle = ##f
+}
+
 
 
 scorePaperBlock = \paper {
