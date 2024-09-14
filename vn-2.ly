@@ -86,3 +86,31 @@ vnIINII = \relative c'' {
   c8. d16 c4 b |
   c2. \bar "|."
 }
+
+vnIINIII = \relative c {
+  \time 4/4
+  \key c \minor
+  \clef \vnIIClef
+  R1*14 \bar "|."
+}
+
+vnIINIV = \relative g' {
+  \time 3/4
+  \partial 4
+  \key c \minor
+  \clef \vnIIClef
+  g4 |
+  g g g |
+  g2 as4 |
+  as f g |
+  g2 g4 |
+  g g g |
+  bes bes g |
+  f4. f8 f4 |
+  g2 g4 |
+  f4 f bes |
+  bes es, as |
+  g f as |
+  g g g |
+  g2. \bar "|."
+}

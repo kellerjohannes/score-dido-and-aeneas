@@ -29,3 +29,24 @@ lyricsTNI = \lyricmode {
   should ne'er ap -- proach the fair,
   grief should ne'er, should ne'er ap -- proach the fair.
 }
+
+chorusTNIV = \relative es' {
+  \time 3/4
+  \partial 4
+  \key c \minor
+  \clef \chorusTClef
+  es4 |
+  es es b |
+  c2 c4 |
+  d d es |
+  b2 b4 |
+  c b c |
+  d es bes |
+  c4. c8 bes4 |
+  bes2 es4 |
+  d bes d |
+  es c f |
+  d c c |
+  b c d |
+  es2. \bar "|."
+}

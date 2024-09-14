@@ -67,4 +67,31 @@
       }
     }
   }
+
+  \score {
+    \partbookTitleNIV
+    <<
+      \new Staff { \bcNIV }
+      \new FiguredBass { \figuresNIV }
+    >>
+  }
+
+  \score {
+    \scoreTitleNV
+    <<
+      \new Staff = "voiceStaff" \with { instrumentName = \annaDidoName }
+      \new Voice= "voice"
+      \soloVoiceNV
+      \new Lyrics \lyricsto "voice" { \lyricsNV }
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNV
+      \new FiguredBass { \figuresNV }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 }

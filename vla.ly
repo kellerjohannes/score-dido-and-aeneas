@@ -84,3 +84,31 @@ vlaNII = \relative es' {
   d4 g4. g8 |
   g2. \bar "|."
 }
+
+vlaNIII = \relative c {
+  \time 4/4
+  \key c \minor
+  \clef \vlaClef
+  R1*14 \bar "|."
+}
+
+vlaNIV = \relative es' {
+  \time 3/4
+  \partial 4
+  \key c \minor
+  \clef \vlaClef
+  es4 |
+  es es b |
+  c2 c4 |
+  d d es |
+  b2 b4 |
+  c b c |
+  d es bes |
+  c4. c8 bes4 |
+  bes2 es4 |
+  d bes d |
+  es c f |
+  d c c |
+  b c d |
+  es2. \bar "|."
+}

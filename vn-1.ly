@@ -83,3 +83,31 @@ vnINII = \relative g'' {
   as8. f16 es4 d |
   c2. \bar "|."
 }
+
+vnINIII = \relative c {
+  \time 4/4
+  \key c \minor
+  \clef \vnIClef
+  R1*14 \bar "|."
+}
+
+vnINIV = \relative c'' {
+  \time 3/4
+  \partial 4
+  \key c \minor
+  \clef \vnIClef
+  c4 |
+  c c d |
+  es2 c4 |
+  f b, c |
+  d2 d4 |
+  es d es |
+  f g es |
+  es4. f8 d4 |
+  es2 es4 |
+  f4 d f |
+  g g, d' |
+  b f' d |
+  d c b |
+  c2. \bar "|."
+}

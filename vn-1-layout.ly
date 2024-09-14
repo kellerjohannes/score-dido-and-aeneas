@@ -31,4 +31,19 @@
       \new Staff { \compressMMRests { \vnINII } }
     >>
   }
+
+  \score {
+    \partbookTitleNIII
+    <<
+      \new Staff { \compressMMRests { \vnINIII } }
+    >>
+  }
+
+  \score {
+    \partbookTitleNIV
+    <<
+      \new Staff { \compressMMRests { \vnINIV } }
+    >>
+  }
+
 }

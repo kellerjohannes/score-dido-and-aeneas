@@ -28,3 +28,24 @@ lyricsBNI = \lyricmode {
   grief should ne'er, should ne'er ap -- proach the fair,
   grief should ne'er, should ne'er ap -- proach the fair.
 }
+
+chorusBNIV = \relative c {
+  \time 3/4
+  \partial 4
+  \key c \minor
+  \clef \chorusBClef
+  c4 |
+  c c g |
+  c2 f4 |
+  d d c |
+  g'2 g4 |
+  c g c |
+  bes es, g |
+  as4. f8 bes4 |
+  es,2 es4 |
+  bes' bes, bes' |
+  es es, f |
+  g as f |
+  g g g, |
+  c2. \bar "|."
+}

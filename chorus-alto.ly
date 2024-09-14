@@ -29,3 +29,24 @@ lyricsANI = \lyricmode {
   should ne'er ap -- proach the fair,
   grief should ne'er, should ne'er ap -- proach the fair.
 }
+
+chorusANIV = \relative g' {
+  \time 3/4
+  \partial 4
+  \key c \minor
+  \clef \chorusAClef
+  g4 |
+  g g g |
+  g2 as4 |
+  as f g |
+  g2 g4 |
+  g g g |
+  bes bes g |
+  f4. f8 f4 |
+  g2 g4 |
+  f4 f bes |
+  bes es, as |
+  g f as |
+  g g g |
+  g2. \bar "|."
+}

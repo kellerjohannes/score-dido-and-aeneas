@@ -233,3 +233,53 @@ figuresNIII = \figuremode {
   s4 < 6 > < 7 _! > < 6 > |
   < 6 5 > < _! > s2 |
 }
+
+bcNIV = \relative c {
+  \time 3/4
+  \partial 4
+  \key c \minor
+  \clef \bcClef
+  c4 |
+  c c g |
+  c2 f4 |
+  d d c |
+  g'2 g4 |
+  c g c |
+  bes es, g |
+  as4. f8 bes4 |
+  es,2 es4 |
+  bes' bes, bes' |
+  es es, f |
+  g as f |
+  g g g, |
+  c2. \bar "|."
+}
+
+figuresNIV = \figuremode {
+  s4 |
+  s2 < _! >4 |
+  s2. |
+  < 5 >4 < 6! >2 |
+  < _! >2. |
+  s4 < _! >2 |
+  s2 < 6 >4 |
+  < 6 5 >2. |
+  s2. |
+  s2. |
+  s4 < 6 >4 < 6 >4 |
+  < _! > < 6 > < 6 5 > |
+  < _! > < 6 4 > < 5 _! > |
+  s2. |
+}
+
+bcNV = \relative c {
+  \time 4/4
+  \key c \minor
+  \clef \bcClef
+  c1~ |
+  c~ |
+  c2. a4 |
+}
+
+figuresNV = \figuremode {
+}

@@ -30,3 +30,30 @@ lyricsSNI = \lyricmode {
   grief should ne'er ap -- proach,
   should ne'er ap -- proach the fair.
 }
+
+chorusSNIV = \relative c'' {
+  \time 3/4
+  \partial 4
+  \key c \minor
+  \clef \chorusSClef
+  c4 |
+  c c d |
+  es2 c4 |
+  f b, c |
+  d2 d4 |
+  es d es |
+  f g es |
+  es4. f8 d4 |
+  es2 es4 |
+  f4 d f |
+  g g, d' |
+  b f' d |
+  d c b |
+  c2. \bar "|."
+}
+
+lyricsNIV = \lyricmode {
+  When Mo -- narchs u -- nite, how hap -- py their state,
+  They tri -- umph, at once, o'er their foes and their fate;
+  they tri -- umph, they tri -- umph at once o'er their foes and their fate.
+}

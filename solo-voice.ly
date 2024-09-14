@@ -145,3 +145,55 @@ lyricsNIII = \lyricmode {
   The grea -- test bles -- sing Fate can give,
   Our Car -- thage, to se -- cure and Troy, re -- vive.
 }
+
+soloVoiceNV = \relative c'' {
+  \time 4/4
+  \key c \minor
+  \clef \didoClef
+  \autoBeamOff
+  r4^\didoName c8. c16 c8 g es8. f16 |
+  g4 r8 g c,16([ d es f] g[ a b g ] |
+  c4) r8 c es es es c |
+  g'4 r8 g e e e16([ f e d] |
+  c[ b c d] c8) g c8. bes16 bes8. a16 |
+  a4 r8 as as4( g8) d' |
+  d4( c8) c b8. b16 b8 b |
+  c16([ g a b] c[ d c d] e[ f]) g8 f16([ es)] d([ c)] |
+  c4 r
+  \clef \annaClef
+  r8^\annaName c, c8. d16 |
+  d4( es) r8 g, g a |
+  b4. b8 c8.([ bes16 a8)] bes16([ g)] |
+  fis8 d' bes a g4 r8 bes |
+  bes es, es'8. bes16 c4. des8 |
+  c4 r8 c16 c e8([ f)] r8 f |
+  b,8. b16 b4
+  \clef \didoClef
+  r4^\didoName d'8. d16 |
+  g8([ f16 es] d[ es f d] es4.) d16([ c)] |
+  f4( es16[ d)] es8 d4 r8 d |
+  es b c( f,4) f8 g as |
+  g4 r r8 c e, e |
+  f4. g8 as4 r8 as |
+  b8([ a)] r8 bes b8. b16 b8 b |
+  c4 r8 d d( es4) e8 |
+  e( f4) g8 b,4 r8 d |
+  es8 g, c2 d8([ es)] |
+  c2 r \bar "|."
+}
+
+lyricsNV = \lyricmode {
+  Whence could so much vir -- tue spring?
+  What storms, what batt -- les did he sing?
+  An -- chi -- ses' va -- lour mixt with Ve -- nus' charms,
+  How soft, how soft in peace, and yet how fierce, how fierce in arms!
+
+  A tale so strong and full of woe
+  Might melt the rocks as well as you;
+  What stub -- born heart un -- mov'd could see
+  Such dis -- tress, such pi -- e -- ty?
+
+  Mine, with storms of care op -- prest, Is taught to pi -- ty the dis -- trest;
+  Mean wre -- tches grief can touch,
+  So soft, so sen -- si -- ble my breast, but ah!, but ah! I fear I pi -- ty him too much!
+}

@@ -127,4 +127,69 @@
       \new FiguredBass { \figuresNIII }
     >>
   }
+
+  \score {
+    \scoreTitleNIV
+    <<
+      \new StaffGroup = "strings"
+      <<
+        \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
+        \vnINIV
+        \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
+        \vnIINIV
+        \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
+        \vlaNIV
+      >>
+      \new ChoirStaff = "chorus"
+      <<
+        \new Staff = "chorusSoprano" \with { instrumentName = \instrumentNameChorusS }
+        \new Voice = "chorusS"
+        \chorusSNIV
+        \new Lyrics \lyricsto "chorusS" { \lyricsNIV }
+
+        \new Staff = "chorusAlto" \with { instrumentName = \instrumentNameChorusA }
+        \new Voice = "chorusA"
+        \chorusANIV
+        \new Lyrics \lyricsto "chorusA" { \lyricsNIV }
+
+        \new Staff = "chorusT" \with { instrumentName = \instrumentNameChorusT }
+        \new Voice = "chorusT"
+        \chorusTNIV
+        \new Lyrics \lyricsto "chorusT" { \lyricsNIV }
+
+        \new Staff = "chorusBass" \with { instrumentName = \instrumentNameChorusB }
+        \new Voice = "chorusB"
+        \chorusBNIV
+        \new Lyrics \lyricsto "chorusB" { \lyricsNIV }
+      >>
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNIV
+      \new FiguredBass { \figuresNIV }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
+
+  \score {
+    \scoreTitleNV
+    <<
+      \new Staff = "voiceStaff" \with { instrumentName = \annaDidoName }
+      \new Voice= "voice"
+      \soloVoiceNV
+      \new Lyrics \lyricsto "voice" { \lyricsNV }
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNV
+      \new FiguredBass { \figuresNV }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 }
