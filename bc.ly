@@ -198,7 +198,38 @@ bcNII = \relative c' {
 figuresNII = \figuremode { }
 
 bcNIII = \relative c {
+  \time 4/4
+  \key c \minor
+  \clef \bcClef
+  c1~ |
+  c2 bes4 as |
+  g1~ |
+  g2 c |
+  d4 d, g r8 g' |
+  b4 g c c, |
+  es c f4. es8 |
+  d4 a bes d |
+  es c f f, |
+  bes bes' b g |
+  c c, es c |
+  f4. es8 d4 b |
+  c f g es |
+  f g c,2 \bar "|."
 }
 
 figuresNIII = \figuremode {
+  s1 |
+  s2 < 6 >4 < 6 > |
+  < _! >2 < _- > |
+  s2 < 6! > |
+  < 5 3+ >4 < 6 4 >8 < 5 _+ > s2 |
+  < 6 >4 < _! >2. |
+  < 6 >2 \bassFigureExtendersOn < _! >4. < _! >8 \bassFigureExtendersOff |
+  < 6 >4 < 6 >2 < 6 >4 |
+  s2 < 6 4 >4 < 5 3! > |
+  s2 < 6 > |
+  s2 < 6 > |
+  \bassFigureExtendersOn < _! >4. < _! >8 \bassFigureExtendersOff < 5- >4 < 6 > |
+  s4 < 6 > < 7 _! > < 6 > |
+  < 6 5 > < _! > s2 |
 }

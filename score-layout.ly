@@ -118,7 +118,7 @@
   \score {
     \scoreTitleNIII
     <<
-      \new Staff = "voiceStaff" \with { instrumentName = \annaName }
+      \new Staff = "voiceStaff" \with { instrumentName = \annaDidoName }
       \new Voice= "voice"
       \soloVoiceNIII
       \new Lyrics \lyricsto "voice" { \lyricsNIII }

@@ -9,6 +9,9 @@ annaName = \markup { \caps Anna }
 didoClef = "treble"
 didoName = \markup { \caps Dido }
 
+annaDidoName = \markup { \column { \line { \right-align \caps Anna }
+                                   \line { \right-align \caps Dido } } }
+
 instrumentNameVnI = "Violins I"
 instrumentHintVnI = \markup { \italic \instrumentNameVnI }
 vnIClef = "treble"

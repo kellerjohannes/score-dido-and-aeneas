@@ -109,8 +109,39 @@ lyricsNII = \lyricmode {
   Peace and I are stran -- gers, stran -- gers grown.
 }
 
-soloVoiceNIII = \relative g' {
+soloVoiceNIII = \relative g {
+  \time 4/4
+  \key c \minor
+  \clef \annaClef
+  \autoBeamOff
+  r4^\annaName g8. g16 c8 c d8. es16 |
+  c8 c
+  \clef \didoClef
+  es'8.^\didoName f16 g8 g, c es16[( d)] |
+  b8 b
+  \clef \annaClef
+  r8^\annaName d,8 d d g,4 |
+  r8 d'8 d d es8. a,16 bes8 c |
+  fis, g bes8. a16 g4 r8 d' |
+  g4 d es d8([ c)] |
+  g4 c a4. c8 |
+  f4 c d c8([ bes)] |
+  g4 es' d c |
+  d4 r8 d g4 d |
+  es d8([ c)] g4 c |
+  a4. c8 f4 d |
+  es d8([ c)] b4 g' |
+  f8([ es)] es([ d)] c2 \bar "|."
 }
 
 lyricsNIII = \lyricmode {
+  Grief in -- crea -- ses by con -- ceal -- ing.
+  Mine ad -- mits of no re -- vea -- ling.
+  Then let me speak
+  The Tro -- jan guest
+  In -- to your ten -- der thoughts has press'd
+  The great -- est bles -- sing Fate can give,
+  Our Car -- thage, to se -- cure and Troy, re -- vive.
+  The grea -- test bles -- sing Fate can give,
+  Our Car -- thage, to se -- cure and Troy, re -- vive.
 }

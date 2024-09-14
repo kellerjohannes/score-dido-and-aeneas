@@ -53,7 +53,7 @@
   \score {
     \partbookTitleNIII
     <<
-      \new Staff = "solo" \with { instrumentName = \annaName }
+      \new Staff = "solo" \with { instrumentName = \annaDidoName }
       \new Voice = "voice"
       \soloVoiceNIII
       \new Lyrics \lyricsto "voice" { \lyricsNIII }
