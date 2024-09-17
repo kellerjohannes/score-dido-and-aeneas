@@ -333,9 +333,94 @@ bcNVI = \relative c' {
   \time 3/4
   \key c \major
   \clef \bcClef
+  \repeat volta 2 {
+    c2 g4 |
+    c2 c,4 |
+    g' e2 |
+    d g4 |
+    c, f,2 |
+    g4 g' es |
+    f g g, |
+    c2.
+  }
+  g'4 e2 |
+  f c4 |
+  d e2 |
+  a, a'4 |
+  f d2 |
+  a' e4 |
+  f d2 |
+  g2. |
+
   c2 g4 |
+  c2 c,4 |
+  g' e2 |
+  d g4 |
+  c, f,2 |
+  g4 g' e |
+  f g g, |
+  c2. |
+
+  c'4 c,2 |
+  g' g,4 |
+  c a2 |
+  d2. |
+  b4 e2 |
+  a,2 d4 |
+  g, d' d, |
+  g g'8 f e d |
+
+  c2 g'4 |
+  c2 c,4 |
+  g' e2 |
+  d g4 |
+  c, f,2 |
+  g4 g' e |
+  f g g, |
+  c e g |
 }
 
 figuresNVI = \figuremode {
   s2 < 6 4 >4 |
+  s2 < 6 5 >4 |
+  s4 < 6/ >2 |
+  s2. |
+  s4 < 6 >2 |
+  s2 < 6 >4 |
+  < 6 > < 6 4 > < 5 3 > |
+  s2. |
+
+  s4 < 6 >2 |
+  s2 < 6 >4 |
+  < 6 > < _+ >2 |
+  s2. |
+  s4 < 6 >2 |
+  s2 < 6 >4 |
+  s2.*2 |
+
+  s2 < 6 4 >4 |
+  s2 < 6 5 >4 |
+  s < 6/ >2 |
+  s2. |
+  s4 < 6 >2 |
+  s2 < 6 >4 |
+  < 6 > < 6 4 > < 5 3 > |
+  s2. |
+
+  s4 < 6 >2 |
+  s2.*2 |
+  < _+ >2. |
+  < 6 > |
+  s2 < _+ >4 |
+  s < 6 4 > < 5 3+ > |
+  < _ >4 \bassFigureExtendersOn < _ > < _ > \bassFigureExtendersOff |
+
+  s2 < 6 4 >4 |
+  s2 < 6 5 >4 |
+  s4 < 6/ >2 |
+  s2. |
+  s4 < 6 >2 |
+  s2 < 6 >4 |
+  < 6 > < 6 4 > < 5 3 > |
+  < _ >4 \bassFigureExtendersOn < _ >4 < _ >4 \bassFigureExtendersOff |
 }

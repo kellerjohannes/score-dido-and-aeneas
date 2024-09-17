@@ -203,16 +203,112 @@ soloVoiceINVI = \relative es' {
   \time 3/4
   \key c \major
   \clef \annaClef
+  \repeat volta 2 {
+    e4 g2 |
+    e2 d8( c) |
+    d4 e2 |
+    f d4 |
+    e f2 |
+    d g4 |
+    f( e) d |
+    c2. |
+  }
+  d4 e2 |
+  c2 e4 |
+  d4 b2 |
+  c2 a4 |
+  c d2 |
+  e g4 |
+  c, f2 |
+  d d4 |
+
+  e g2 |
+  e c4 |
+  d e2 |
+  f d4 |
+  e f2 |
+  d g4 |
+  f( e) d |
+  c2. |
+
+  e4 c2 |
+  d b4 |
+  g c2 |
+  a2. |
+  d4 b2 |
+  c a4 |
+  b8( c b4) a4 |
+  g2. |
+
   e4 g2 |
+  e c4 |
+  d e2 |
+  f d4 |
+  e f2 |
+  d g'4 |
+  f( e) d |
+  c2. |
 }
 
 soloVoiceIINVI = \relative c' {
   \time 3/4
   \key c \major
   \clef \attendantClef
+  \repeat volta 2 {
+    c4 e2 |
+    c2 b8( a) |
+    b4 cis2 |
+    d b4 |
+    c4 d2 |
+    b e4 |
+    d( c) b |
+    c2. |
+  }
+  d4 e2 |
+  c e4 |
+  d b2 |
+  a f4 |
+  a b2 |
+  c e4 |
+  a, d2 |
+  b b4 |
+
+  c e2 |
+  c a4 |
+  b cis2 |
+  d b4 |
+  c d2 |
+  b e4 |
+  d( c) b |
+  c2. |
+
+  c4 a2 |
+  b g4 |
+  e a2 |
+  fis2. |
+  b4 g2 |
+  a fis4 |
+  g8( a g4) fis4 |
+  g2. |
+
   c4 e2 |
+  c a4 |
+  b cis2 |
+  d b4 |
+  c d2 |
+  b e4 |
+  d( c) b |
+  c2. |
 }
 
+
 lyricsSoloNVI = \lyricmode {
-  Fear no
+  Fear no dan -- ger to en -- sue,
+  The He -- ro loves as well as you;
+  E -- ver gen -- tle, e -- ver smi -- ling,
+  And the cares of life be -- guil -- ing,
+  Fear no dan -- ger to en -- sue, The He -- ro loves as well as you;
+  Cu -- pids strew your path with flow'rs
+  Ga -- ther'd from E -- ly -- sian bow'rs,
+  Fear no dan -- ger to en -- sue, The He -- ro loves as well as you.
 }
