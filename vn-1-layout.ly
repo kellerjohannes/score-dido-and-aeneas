@@ -70,4 +70,14 @@
       indent = #0
     }
   }
+
+  \score {
+    \partbookTitleNVI
+    <<
+      \new Staff { \compressMMRests { \vnINVI } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
 }

@@ -50,3 +50,48 @@ chorusTNIV = \relative es' {
   b c d |
   es2. \bar "|."
 }
+
+chorusTNVI = \relative e' {
+  \time 3/4
+  \key c \major
+  \clef \chorusTClef
+  R2.*40
+
+  \repeat volta 2 {
+    c4 e2 |
+    c a4 |
+    b cis2 |
+    d b4 |
+    c c2 |
+    b c4 |
+    c2 b4 |
+    c2. |
+  }
+  R2.*8
+  c,4 e2 |
+  c a4 |
+  b cis2 |
+  d b4 |
+
+  c c2 |
+  b c4 |
+  c2 b4 |
+  c2. |
+  R2.*8
+  c4 e2 |
+  c a4 |
+  b cis2 |
+  d b4 |
+  c c2 |
+  b c4 |
+  c2 b4 |
+  c2. \bar "|."
+}
+
+lyricsTBNVI = \lyricmode {
+  Fear no dan -- ger to en -- sue, The He -- ro loves as well as you;
+  Fear no dan -- ger to en -- sue,
+  The He -- ro loves as well as you;
+  Fear no dan -- ger to en -- sue,
+  The He -- ro loves as well as you.
+}

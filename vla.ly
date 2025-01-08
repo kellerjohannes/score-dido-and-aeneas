@@ -124,7 +124,7 @@ vlaNVI = \relative c' {
   \time 3/4
   \key c \major
   \clef \vlaClef
-  R2.*40 \bar "|."
+  R2.*40
 
   \repeat volta 2 {
     c4 e2 |

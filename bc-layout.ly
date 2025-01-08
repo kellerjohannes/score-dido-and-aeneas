@@ -125,4 +125,24 @@
       }
     }
   }
+
+  \score {
+    \scoreTitleNVII
+    <<
+      \new Staff = "voiceStaff" \with { instrumentName = \annaName }
+      \new Voice= "voice"
+      \soloVoiceNVII
+      \new Lyrics \lyricsto "voice" { \lyricsNVII }
+
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNVII
+      \new FiguredBass { \figuresNVII }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 }

@@ -49,3 +49,41 @@ chorusBNIV = \relative c {
   g g g, |
   c2. \bar "|."
 }
+
+chorusBNVI = \relative c' {
+  \time 3/4
+  \key c \major
+  \clef \chorusBClef
+  R2.*40
+
+  \repeat volta 2 {
+    c2 g4 |
+    c2 c,4 |
+    g' e2 |
+    d g4 |
+    c f,2 |
+    g e4 |
+    f g2 |
+    c,2. |
+  }
+  R2.*8
+  c'2 g4 |
+  c2 c,4 |
+  g' e2 |
+  d g4 |
+
+  c f,2 |
+  g e4 |
+  f g2 |
+  c,2. |
+  R2.*8
+
+  c'2 g4 |
+  c2 c,4 |
+  g' e2 |
+  d g4 |
+  c f,2 |
+  g e4 |
+  f g2 |
+  c,2. \bar "|."
+}

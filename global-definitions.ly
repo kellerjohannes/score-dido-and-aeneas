@@ -15,6 +15,11 @@ annaDidoName = \markup { \column { \line { \right-align \caps Anna }
 attendantClef = "tenor"
 attendantName = \markup { \caps Attendant }
 
+aeneasClef = "tenor"
+aeneasName = \markup { \caps Æneas }
+
+%% Add more characters here
+
 
 instrumentNameVnI = \markup { \concat { \caps { Violino } \super no 1. \super mo } }
 instrumentHintVnI = \markup { \italic \instrumentNameVnI }
@@ -31,6 +36,8 @@ vlaClef = "alto"
 instrumentNameBc = \markup { \caps Bassi }
 instrumentHintBc = \markup { \italic \instrumentNameBc }
 bcClef = "bass"
+
+%% Add more instruments here
 
 
 instrumentNameChorusS = \markup { \caps Treble }
@@ -50,6 +57,8 @@ instrumentHintChorusB = \markup { \italic \instrumentNameChorusB }
 chorusBClef = "bass"
 
 
+%% Add more chorus staves here
+
 
 
 titleOuverture = "Ouverture."
@@ -59,7 +68,9 @@ titleNIII = "III, Recitative."
 titleNIV = "IV, Chorus."
 titleNV = "V, Recitative."
 titleNVI = "VI, Duet & Chorus."
+titleNVII = "VII, Recitative."
 
+%% Add more section titles here
 
 
 
@@ -158,6 +169,20 @@ partbookTitleNVI = \header {
   composer = ##f
   subtitle = ##f
 }
+
+scoreTitleNVII = \header {
+  title = \titleNVII
+  composer = ##f
+  subtitle = ##f
+}
+
+partbookTitleNVII = \header {
+  title = \titleNVII
+  composer = ##f
+  subtitle = ##f
+}
+
+%% Add more score/partbook titles here
 
 
 

@@ -58,12 +58,11 @@ lyricsNIV = \lyricmode {
   they tri -- umph, they tri -- umph at once o'er their foes and their fate.
 }
 
-chorusSINVI = \relative e'' {
-  \voiceOne
+chorusSNVI = \relative e'' {
   \time 3/4
   \key c \major
   \clef \chorusSClef
-  R2.*40 \bar "|."
+  R2.*40
 
   \repeat volta 2 {
     e4 g2 |
@@ -75,15 +74,33 @@ chorusSINVI = \relative e'' {
     f( e) d |
     c2. |
   }
-  d4 e2 |
-  c e4 |
+  <<
+    {
+      \voiceOne
+      d4 e2 |
+      c e4 |
 
-  d b2 |
-  c a4 |
-  c d2 |
-  e g4 |
-  c, f2 |
-  d d4 |
+      d b2 |
+      c a4 |
+      c d2 |
+      e g4 |
+      c, f2 |
+      d d4 |
+    }
+    \new Voice {
+      \voiceTwo
+      b4 c2 |
+      a c4 |
+
+      b gis2 |
+      a a4 |
+      a b2 |
+      c e4 |
+      a, d2 |
+      b b4 |
+    }
+  >>
+  \oneVoice
   e g2 |
   e c4 |
   d e2 |
@@ -93,15 +110,33 @@ chorusSINVI = \relative e'' {
   d g4 |
   f( e) d |
   c2. |
-  e4 c2 |
-  d b4 |
-  g c2 |
-  a2. |
-  d4 b2 |
-  c a4 |
+  <<
+    {
+      \voiceOne
+      e4 c2 |
+      d b4 |
+      g c2 |
+      a2. |
+      d4 b2 |
+      c a4 |
 
-  b8( a b4) a |
-  g2. |
+      b8( c b4) a |
+      g2. |
+    }
+    \new Voice {
+      \voiceTwo
+      c4 a2 |
+      b g4 |
+      e a2 |
+      fis2. |
+      b4 g2 |
+      a fis4 |
+
+      g8( a g4) fis |
+      g2. |
+    }
+  >>
+  \oneVoice
   e'4 g2 |
   e c4 |
   d e2 |
@@ -112,7 +147,7 @@ chorusSINVI = \relative e'' {
   c2. \bar "|."
 }
 
-lyricsNVI = \lyricmode {
+lyricsSANVI = \lyricmode {
   Fear no dan -- ger to en -- sue, The He -- ro loves as well as you;
   E -- ver gen -- tle, e -- ver smi -- ling, and the cares of life be -- gui -- ling,
   Fear no dan -- ger to en -- sue,
@@ -121,58 +156,4 @@ lyricsNVI = \lyricmode {
   Ga -- ther'd from E -- ly -- sian bow'rs,
   Fear no dan -- ger to en -- sue,
   The He -- ro loves as well as you.
-}
-
-chorusSIINVI = \relative g' {
-  \voiceTwo
-  \time 3/4
-  \key c \major
-  \clef \chorusSClef
-  R2.*40 \bar "|."
-
-  \repeat volta 2 {
-    g4 g2 |
-    g g4 |
-    g g2 |
-    a g4 |
-    g a2 |
-    g g4 |
-    a( g) f |
-    e2. |
-  }
-  b'4 c2 |
-  a c4 |
-
-  b gis2 |
-  a a4 |
-  a b2 |
-  c e4 |
-  a, d2 |
-  b b4 |
-  g g2 |
-  g g4 |
-  g g2 |
-  a g4 |
-
-  g a2 |
-  g g4 |
-  a( g) f |
-  e2. |
-  c'4 a2 |
-  b g4 |
-  e a2 |
-  fis2. |
-  b4 g2 |
-  a fis4 |
-
-  g8( a g4) fis |
-  g2. |
-  g4 g2 |
-  g g4 |
-  g g2 |
-  a g4 |
-  g a2 |
-  g g4 |
-  a( g) f |
-  e2. \bar "|."
 }

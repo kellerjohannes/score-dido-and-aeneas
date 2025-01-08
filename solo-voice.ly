@@ -248,6 +248,7 @@ soloVoiceINVI = \relative es' {
   d g'4 |
   f( e) d |
   c2. |
+  R2.*48 |
 }
 
 soloVoiceIINVI = \relative c' {
@@ -299,6 +300,7 @@ soloVoiceIINVI = \relative c' {
   b e4 |
   d( c) b |
   c2. |
+  R2.*48 |
 }
 
 
@@ -311,4 +313,40 @@ lyricsSoloNVI = \lyricmode {
   Cu -- pids strew your path with flow'rs
   Ga -- ther'd from E -- ly -- sian bow'rs,
   Fear no dan -- ger to en -- sue, The He -- ro loves as well as you.
+}
+
+soloVoiceNVII = \relative g {
+  \time 4/4
+  \key c \major
+  \clef \annaClef
+  \autoBeamOff
+  g4 r c r8 d |
+  e c c g c4 r8 e |
+  g c, d e c4. b8 |
+
+  d4 r \clef \aeneasClef d,4^\aeneasName r |
+  g4 g8 fis g8. a16 a8. g16 |
+  a4. b8 c8.([ d16)] e([ d8.)] |
+  b4 a8([ g)] g8.([ a16)] b16([ a8.)] |
+
+  fis4 \clef \didoClef d''8.^\didoName d16 d8 a a8. b16 |
+  c4 \clef \aeneasClef r8^\aeneasName e,,8 a a b c |
+  dis,4. e8 fis4 r |
+
+  r8 fis b cis d8. d16 dis8 dis |
+  e4. b8 c([ fis, g)] fis16([ e)] |
+  e4. dis8 e8. e16 e4 \bar "|."
+}
+
+lyricsNVII = \lyricmode {
+  See, see, your roy -- al Guest ap -- pears; How God -- like is the form he bears!
+
+  When, when roy -- al fair shall I be blest, With cares of love and state dis -- trest?
+
+  Fate for -- bids what you pur -- sue.
+
+  Æ -- ne -- as has no fate but you!
+
+  Let Di -- do smile, and I'll de -- fy
+  The fee -- ble stroke of de -- sti -- ny.
 }

@@ -206,18 +206,24 @@
       \new ChoirStaff = "chorus"
       <<
         \new Staff = "chorusSoprano" \with { instrumentName = \instrumentNameChorusS }
-        <<
-          \new Voice = "chorusSI"
-          \chorusSINVI
-          \new Voice = "chorusSII"
-          \chorusSIINVI
-          \new Lyrics \lyricsto "chorusSI" { \lyricsNVI }
+        \new Voice = "chorusS"
+        \chorusSNVI
+        \new Lyrics \lyricsto "chorusS" { \lyricsSANVI }
 
-                                % \new Staff = "chorusAlto" \with { instrumentName = \instrumentNameChorusA }
-                                % \new Voice = "chorusA"
-                                % \chorusANVI
-                                % \new Lyrics \lyricsto "chorusA" { \lyricsNVI }
-        >>
+        \new Staff = "chorusAlto" \with { instrumentName = \instrumentNameChorusA }
+        \new Voice = "chorusA"
+        \chorusANVI
+        \new Lyrics \lyricsto "chorusA" { \lyricsSANVI }
+
+        \new Staff = "chorusTenor" \with { instrumentName = \instrumentNameChorusT }
+        \new Voice = "chorusT"
+        \chorusTNVI
+        \new Lyrics \lyricsto "chorusT" { \lyricsTBNVI }
+
+        \new Staff = "chorusBass" \with { instrumentName = \instrumentNameChorusB }
+        \new Voice = "chorusB"
+        \chorusBNVI
+        \new Lyrics \lyricsto "chorusB" { \lyricsTBNVI }
       >>
 
       \new Staff = "voiceIStaff" \with { instrumentName = \annaName }
@@ -233,6 +239,25 @@
       \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
       \bcNVI
       \new FiguredBass { \figuresNVI }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
+
+  \score {
+    \scoreTitleNVII
+    <<
+      \new Staff = "voiceStaff" \with { instrumentName = \annaName }
+      \new Voice= "voice"
+      \soloVoiceNVII
+      \new Lyrics \lyricsto "voice" { \lyricsNVII }
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNVII
+      \new FiguredBass { \figuresNVII }
     >>
     \layout {
       \context {

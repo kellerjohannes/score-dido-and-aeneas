@@ -50,3 +50,57 @@ chorusANIV = \relative g' {
   g g g |
   g2. \bar "|."
 }
+
+
+chorusANVI = \relative g' {
+  \time 3/4
+  \key c \major
+  \clef \chorusAClef
+  R2.*40
+
+  \repeat volta 2 {
+    g4 g2 |
+    g g4 |
+    g g2 |
+    a g4 |
+    g a2 |
+    g g4 |
+    a( g) f |
+    e2. |
+  }
+  g4 e2 |
+  f c4 |
+
+  d4 e2 |
+  a, a4 |
+  f' d2 |
+  a' e4 |
+  f d2 |
+  g g4 |
+  g g2 |
+  g g4 |
+  g g2 |
+  a g4 |
+
+  g a2 |
+  g g4 |
+  a( g) f |
+  e2. |
+  c4 c2 |
+  g' g,4 |
+  c a2 |
+  d2. |
+  b4 e2 |
+  a, d4 |
+
+  g, d'2 |
+  g,2. |
+  g'4 g2 |
+  g g4 |
+  g g2 |
+  a g4 |
+  g a2 |
+  g g4 |
+  a( g) f |
+  e2. \bar "|."
+}

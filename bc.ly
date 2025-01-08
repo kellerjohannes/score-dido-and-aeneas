@@ -389,7 +389,7 @@ bcNVI = \relative c' {
     f g g, |
     c2.
   }
-  \repeat unfold 8 { R }
+  R2.*8
   c'2 g4 |
   c2 c,4 |
   g'4 e2 |
@@ -399,7 +399,7 @@ bcNVI = \relative c' {
   g e4 |
   f g g, |
   c2. |
-  \repeat unfold 8 { R }
+  R2.*8
   c'2 g4 |
   c2 c,4 |
   g' e2 |
@@ -480,4 +480,26 @@ figuresNVI = \figuremode {
   s2. |
   s2 < 6 >4 |
   s4 < 6 4 > < 7 > |
+}
+
+bcNVII = \relative c {
+  \time 4/4
+  \key c \major
+  \clef \bcClef
+  c1~ | c~ | c2  a |
+  g1~ | g~ | g2 fis | g e |
+  d1 | a' | b4 c b2~ |
+  b2 b4 a | g2 a | b e, \bar "|."
+}
+
+figuresNVII = \figuremode {
+  \set figuredBassPlusDirection = #RIGHT
+  s1 s1 s2 < 6/ >2 |
+  s1 s1 < 4 2 >2 < 6 5 >2 |
+  s2 < 7 >4 < 6/ > |
+  < _+ >4 < _! >2. |
+  s1 < _+ >4 < 6 > < _+ >2 |
+  < _- >2. < 4\+ 2 >4 |
+  < 6 >1 |
+  < 6 4 >4 < 5 _+ > s2 |
 }

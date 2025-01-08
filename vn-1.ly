@@ -113,13 +113,17 @@ vnINIV = \relative c'' {
 }
 
 vnINV = \relative c {
+  \time 4/4
+  \key c \minor
+  \clef \vnIClef
+  R1*25
 }
 
 vnINVI = \relative e'' {
   \time 3/4
   \key c \major
   \clef \vnIClef
-  R2.*40 \bar "|."
+  R2.*40
 
   \repeat volta 2 {
     e4 g2 |
@@ -156,7 +160,7 @@ vnINVI = \relative e'' {
   d4 b2 |
   c a4 |
 
-  b8( a b4) a |
+  b8( c b4) a |
   g2. |
   e'4 g2 |
   e c4 |

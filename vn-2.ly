@@ -119,14 +119,14 @@ vnIINV = \relative c {
   \time 4/4
   \key c \minor
   \clef \vnIIClef
-  R1*25 \bar "|."
+  R1*25
 }
 
 vnIINVI = \relative g' {
   \time 3/4
   \key c \major
   \clef \vnIIClef
-  R2.*40 \bar "|."
+  R2.*40
 
   \repeat volta 2 {
     g4 g2 |
