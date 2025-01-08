@@ -378,6 +378,36 @@ bcNVI = \relative c' {
   g4 g' e |
   f g g, |
   c e g |
+
+  \repeat volta 2 {
+    c2 g4 |
+    c2 c,4 |
+    g' e2 |
+    d2 g4 |
+    c f,2 |
+    g e4 |
+    f g g, |
+    c2.
+  }
+  \repeat unfold 8 { R }
+  c'2 g4 |
+  c2 c,4 |
+  g'4 e2 |
+  d g4 |
+
+  c f,2 |
+  g e4 |
+  f g g, |
+  c2. |
+  \repeat unfold 8 { R }
+  c'2 g4 |
+  c2 c,4 |
+  g' e2 |
+  d g4 |
+  c, f,2 |
+  g4 g' e |
+  f g g, |
+  c2. \bar "|."
 }
 
 figuresNVI = \figuremode {
@@ -423,4 +453,31 @@ figuresNVI = \figuremode {
   s2 < 6 >4 |
   < 6 > < 6 4 > < 5 3 > |
   < _ >4 \bassFigureExtendersOn < _ >4 < _ >4 \bassFigureExtendersOff |
+
+  s2 < 6 4 >4 |
+  s2 < 6 5 >4 |
+  s4 < 6/ >2 |
+  s2. |
+  s2. |
+  s2 < 6 >4 |
+  s4 < 6 4 > < 7 > |
+  s2. |
+  \repeat unfold 8 { s2. }
+  s2 < 6 4 >4 |
+  s2 < 6 5>4 |
+  s4 < 6/ >2 |
+  s2. |
+
+  s2. |
+  s2 < 6 >4 |
+  s4 < 6 4 > < 7 > |
+  s2.
+  \repeat unfold 8 { s2. }
+  s2 < 6 4 >4 |
+  s2 < 6 5 >4 |
+  s4 < 6/ >2 |
+  s2. |
+  s2. |
+  s2 < 6 >4 |
+  s4 < 6 4 > < 7 > |
 }

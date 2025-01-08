@@ -121,3 +121,56 @@ vnIINV = \relative c {
   \clef \vnIIClef
   R1*25 \bar "|."
 }
+
+vnIINVI = \relative g' {
+  \time 3/4
+  \key c \major
+  \clef \vnIIClef
+  R2.*40 \bar "|."
+
+  \repeat volta 2 {
+    g4 g2 |
+    g g4 |
+    g g2 |
+    a g4 |
+    g a2 |
+    g g4 |
+    a( g) f |
+    e2. |
+  }
+  b'4 c2 |
+  a c4 |
+
+  b gis2 |
+  a a4 |
+  a b2 |
+  c e4 |
+  a, d2 |
+  b b4 |
+  g g2 |
+  g g4 |
+  g g2 |
+  a g4 |
+
+  g a2 |
+  g g4 |
+  a( g) f |
+  e2. |
+  c'4 a2 |
+  b g4 |
+  e a2 |
+  fis2. |
+  b4 g2 |
+  a fis4 |
+
+  g8( a g4) fis |
+  g2. |
+  g4 g2 |
+  g g4 |
+  g g2 |
+  a g4 |
+  g a2 |
+  g g4 |
+  a( g) f |
+  e2. \bar "|."
+}

@@ -119,3 +119,56 @@ vlaNV = \relative c {
   \clef \vlaClef
   R1*25 \bar "|."
 }
+
+vlaNVI = \relative c' {
+  \time 3/4
+  \key c \major
+  \clef \vlaClef
+  R2.*40 \bar "|."
+
+  \repeat volta 2 {
+    c4 e2 |
+    c a4 |
+    b cis2 |
+    d b4 |
+    c c2 |
+    b c4 |
+    c2 b4 |
+    c2. |
+  }
+  g'4 e2 |
+  f c4 |
+
+  d4 e2 |
+  a, a4 |
+  f' d2 |
+  a' e4 |
+  f d2 |
+  g g4 |
+  c, e2 |
+  c a4 |
+  b cis2 |
+  d b4 |
+
+  c c2 |
+  b c4 |
+  c2 b4 |
+  c2. |
+  c4 c2 |
+  g' g,4 |
+  c a2 |
+  d2. |
+  b4 e2 |
+  a, d4 |
+
+  g, d' d, |
+  g2. |
+  c4 e2 |
+  c a4 |
+  b cis2 |
+  d b4 |
+  c c2 |
+  b c4 |
+  c2 b4 |
+  c2. \bar "|."
+}

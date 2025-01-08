@@ -196,6 +196,30 @@
   \score {
     \scoreTitleNVI
     <<
+      \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
+      \vnINVI
+      \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
+      \vnIINVI
+      \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
+      \vlaNVI
+
+      \new ChoirStaff = "chorus"
+      <<
+        \new Staff = "chorusSoprano" \with { instrumentName = \instrumentNameChorusS }
+        <<
+          \new Voice = "chorusSI"
+          \chorusSINVI
+          \new Voice = "chorusSII"
+          \chorusSIINVI
+          \new Lyrics \lyricsto "chorusSI" { \lyricsNVI }
+
+                                % \new Staff = "chorusAlto" \with { instrumentName = \instrumentNameChorusA }
+                                % \new Voice = "chorusA"
+                                % \chorusANVI
+                                % \new Lyrics \lyricsto "chorusA" { \lyricsNVI }
+        >>
+      >>
+
       \new Staff = "voiceIStaff" \with { instrumentName = \annaName }
       \new Voice= "voiceI"
       \soloVoiceINVI
