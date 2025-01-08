@@ -1,5 +1,7 @@
 \version "2.24.4"
 
+#(set-global-staff-size 32)
+
 \include "global-definitions.ly"
 \include "solo-voice.ly"
 \include "bc.ly"

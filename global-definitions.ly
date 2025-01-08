@@ -69,6 +69,7 @@ titleNIV = "IV, Chorus."
 titleNV = "V, Recitative."
 titleNVI = "VI, Duet & Chorus."
 titleNVII = "VII, Recitative."
+titleNVIII = "VIII, Chorus."
 
 %% Add more section titles here
 
@@ -182,6 +183,18 @@ partbookTitleNVII = \header {
   subtitle = ##f
 }
 
+scoreTitleNVIII = \header {
+  title = \titleNVIII
+  composer = ##f
+  subtitle = ##f
+}
+
+partbookTitleNVIII = \header {
+  title = \titleNVIII
+  composer = ##f
+  subtitle = ##f
+}
+
 %% Add more score/partbook titles here
 
 
@@ -189,7 +202,7 @@ partbookTitleNVII = \header {
 
 scorePaperBlock = \paper {
   print-all-headers = ##t
-  #(set-paper-size "b4")
+  #(set-paper-size '(cons (* 364 mm) (* 277 mm)))
 }
 
 
@@ -197,23 +210,26 @@ partbookVnIPaperBlock = \paper {
   print-all-headers = ##t
   oddHeaderMarkup = \markup { \fill-line { \instrumentNameVnI } }
   evenHeaderMarkup = \oddHeaderMarkup
-  #(set-paper-size "a4")
+  #(set-paper-size '(cons (* 364 mm) (* 277 mm)))
 }
 
 partbookVnIIPaperBlock = \paper {
   print-all-headers = ##t
   oddHeaderMarkup = \markup { \fill-line { \instrumentNameVnII } }
   evenHeaderMarkup = \oddHeaderMarkup
+  #(set-paper-size '(cons (* 364 mm) (* 277 mm)))
 }
 
 partbookVlaPaperBlock = \paper {
   print-all-headers = ##t
   oddHeaderMarkup = \markup { \fill-line { \instrumentNameVla } }
   evenHeaderMarkup = \oddHeaderMarkup
+  #(set-paper-size '(cons (* 364 mm) (* 277 mm)))
 }
 
 partbookBcPaperBlock = \paper {
   print-all-headers = ##t
   oddHeaderMarkup = \markup { \fill-line { \instrumentNameBc } }
   evenHeaderMarkup = \oddHeaderMarkup
+  #(set-paper-size '(cons (* 364 mm) (* 277 mm)))
 }
