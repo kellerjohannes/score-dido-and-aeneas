@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-#(set-global-staff-size 32)
+#(set-global-staff-size 25)
 
 \include "global-definitions.ly"
 \include "vn-1.ly"
@@ -80,6 +80,35 @@
     >>
     \layout {
       indent = #0
+    }
+  }
+
+  \score {
+    \partbookTitleNVII
+    <<
+      \new Staff { \compressMMRests { \vnINVII } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
+
+  \score {
+    \partbookTitleNVIII
+    <<
+      \new Staff
+      \new Voice = "vn"
+      \compressMMRests { \vnINVIII }
+      \new Lyrics \lyricsto "vn" { \lyricsvnINVIII }
+    >>
+    \layout {
+      indent = #0
+      %% Prototype for lyrics in instrumental parts.
+      \context {
+        \Score
+        \override LyricText.font-size = #'-1.0
+        \override LyricText.font-shape = #'italic
+      }
     }
   }
 }

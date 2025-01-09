@@ -172,6 +172,14 @@ vnINVI = \relative e'' {
   c2. \bar "|."
 }
 
+vnINVII = \relative c {
+  \time 4/4
+  \key c \major
+  \clef \vnIClef
+  R1*13
+}
+
+
 vnINVIII = \relative b' {
   \time 4/4
   \key e \minor
@@ -195,4 +203,13 @@ vnINVIII = \relative b' {
   g fis fis e dis4. fis8 |
   g8 fis e dis e4. fis8 |
   g4 fis e2 \bar "|."
+}
+
+%% Prototype for lyrics in instrumental parts.
+lyricsvnINVIII = \lyricmode {
+  Cu -- pid on -- ly throws the__ _ dart that's dread -- ful, dread__ -- ful, dread -- ful,
+  Cu -- pid on -- ly throws__ _ _ the dart that's dread -- ful to a war -- rior's heart,
+  that's dread -- ful to a war -- rior's heart,
+  And she that wounds, and she that wounds can on -- ly, on -- ly cure the smart,
+  can on -- ly, on -- ly cure the smart.
 }

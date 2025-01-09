@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-#(set-global-staff-size 32)
+#(set-global-staff-size 25)
 
 \include "global-definitions.ly"
 \include "vn-2.ly"
@@ -77,6 +77,26 @@
     \partbookTitleNVI
     <<
       \new Staff { \compressMMRests { \vnIINVI } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
+
+  \score {
+    \partbookTitleNVII
+    <<
+      \new Staff { \compressMMRests { \vnIINVII } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
+
+  \score {
+    \partbookTitleNVIII
+    <<
+      \new Staff { \compressMMRests { \vnIINVIII } }
     >>
     \layout {
       indent = #0

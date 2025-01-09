@@ -175,6 +175,13 @@ vnIINVI = \relative g' {
   e2. \bar "|."
 }
 
+vnIINVII = \relative c {
+  \time 4/4
+  \key c \major
+  \clef \vnIIClef
+  R1*13
+}
+
 vnIINVIII = \relative b' {
   \time 4/4
   \key e \minor
