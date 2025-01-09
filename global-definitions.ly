@@ -70,6 +70,8 @@ titleNV = "V, Recitative."
 titleNVI = "VI, Duet & Chorus."
 titleNVII = "VII, Recitative."
 titleNVIII = "VIII, Chorus."
+titleNIX = "IX, Recitative."
+titleNX = "X, Air."
 
 %% Add more section titles here
 
@@ -191,6 +193,30 @@ scoreTitleNVIII = \header {
 
 partbookTitleNVIII = \header {
   title = \titleNVIII
+  composer = ##f
+  subtitle = ##f
+}
+
+scoreTitleNIX = \header {
+  title = \titleNIX
+  composer = ##f
+  subtitle = ##f
+}
+
+partbookTitleNIX = \header {
+  title = \titleNIX
+  composer = ##f
+  subtitle = ##f
+}
+
+scoreTitleNX = \header {
+  title = \titleNX
+  composer = ##f
+  subtitle = ##f
+}
+
+partbookTitleNX = \header {
+  title = \titleNX
   composer = ##f
   subtitle = ##f
 }

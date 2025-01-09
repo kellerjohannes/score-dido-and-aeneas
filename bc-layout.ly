@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-#(set-global-staff-size 32)
+#(set-global-staff-size 25)
 
 \include "global-definitions.ly"
 \include "solo-voice.ly"
@@ -139,6 +139,56 @@
       \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
       \bcNVII
       \new FiguredBass { \figuresNVII }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
+
+  \score {
+    \scoreTitleNVIII
+    <<
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNVIII
+      \new FiguredBass { \figuresNVIII }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
+
+  \score {
+    \scoreTitleNIX
+    <<
+      \new Staff = "voiceStaff" \with { instrumentName = \aeneasName }
+      \new Voice= "voice"
+      \soloVoiceNIX
+      \new Lyrics \lyricsto "voice" { \lyricsNIX }
+
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNIX
+      \new FiguredBass { \figuresNIX }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
+
+  \score {
+    \scoreTitleNX
+    <<
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNX
+      \new FiguredBass { \figuresNX }
     >>
     \layout {
       \context {

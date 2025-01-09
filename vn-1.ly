@@ -116,7 +116,7 @@ vnINV = \relative c {
   \time 4/4
   \key c \minor
   \clef \vnIClef
-  R1*25
+  R1*25 \bar "|."
 }
 
 vnINVI = \relative e'' {
@@ -176,7 +176,7 @@ vnINVII = \relative c {
   \time 4/4
   \key c \major
   \clef \vnIClef
-  R1*13
+  R1*13 \bar "|."
 }
 
 
@@ -212,4 +212,50 @@ lyricsvnINVIII = \lyricmode {
   that's dread -- ful to a war -- rior's heart,
   And she that wounds, and she that wounds can on -- ly, on -- ly cure the smart,
   can on -- ly, on -- ly cure the smart.
+}
+
+vnINIX = \relative {
+  \time 4/4
+  \key c \major
+  \clef \vnIClef
+  R1*6 \bar "|."
+}
+
+vnINX = \relative c'' {
+  \time 4/4 \partial 8
+  \key c \major
+  \clef \vnIClef
+  c8 | c g c8. c16 e4 r8 c |
+  c g c8. c16 e4 r8 c |
+  b g b16 c b c d4 r8 d |
+  e d e d r4 r8 d |
+
+  e d16 e f e d e c4 r8 c |
+  c g c8. c16 e4 r8 c |
+  c g c8. c16 e4 r8 c |
+  b g b16 c b c d4 r8 d |
+
+  e8 d e d r4 r8 d |
+  e d16 e f e d e c4 r8 d |
+  e d e d r4 r8 d |
+
+  e d16 e f e d e c4 r8 g |
+  e e e fis g4 r8 c |
+  a a a b c g a16 g f e |
+
+  d4 r8 d' b b b c |
+  d4 r8 e c c c d |
+  e f16 e d c b a gis8 a16 b c b c b |
+
+  a4 r8 c c g c8. c16 |
+  e4 r8 c c g c8. c16 |
+  e4 r8 c b g b16 c b c |
+
+  d4 r8 d e d e d |
+  r4 r8 d e d16 e f e d e |
+  c4 r8 d e d e d |
+
+  r4 r8 d e d16 e f e d e |
+  c4 r8 d e d16 e f e d e |
+  c2 r2 \bar "|."
 }

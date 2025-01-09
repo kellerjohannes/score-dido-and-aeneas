@@ -173,7 +173,14 @@ vlaNVI = \relative c' {
   c2. \bar "|."
 }
 
-vlaNVIII = \relative b' {
+vlaNVII = \relative c {
+  \time 4/4
+  \key c \major
+  \clef \vlaClef
+  R1*13 \bar "|."
+}
+
+vlaNVIII = \relative b {
   \time 4/4
   \key e \minor
   \clef \vlaClef
@@ -192,4 +199,45 @@ vlaNVIII = \relative b' {
   c4. c8 b4. b8 |
   g4 a b c |
   b4 b b2 \bar "|."
+}
+
+vlaNIX = \relative {
+  \time 4/4
+  \key c \major
+  \clef \vlaClef
+  R1*6 \bar "|."
+}
+
+vlaNX = \relative g' {
+  \time 4/4 \partial 8
+  \key c \major
+  \clef \vlaClef
+  r8 | r4 r8 g e c e8. e16 |
+  g4 r8 g e c e8. e16 |
+  d4. d8 d b' g g |
+  g4 r8 g e4 r8 g |
+
+  c, a' d, g e4 r4 |
+  r4 r8 g8 e c e8. e16 |
+  g4 r8 g e c e8. e16 |
+  d4. d8 d b' g g |
+
+  g4 r8 g8 e4 r8 g |
+  c, a' d, g e4 r8 g, |
+  c g c g' e4 r8 g |
+
+  c, a' d, g e4 r |
+  R1*5 |
+
+  r2 r4 r8 g |
+  e c e8. e16 g4 r8 g |
+  e c e e d4. d8 |
+
+  d b' g g g4 r8 g |
+  e4 r8 g c, a' d, g |
+  e4 r8 g, c  g c g' |
+
+  e4 r8 g c, a' d, g |
+  e4 r8 a, c a' d, g |
+  c,2 r2 \bar "|."
 }

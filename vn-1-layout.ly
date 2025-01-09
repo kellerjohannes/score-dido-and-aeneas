@@ -111,4 +111,24 @@
       }
     }
   }
+
+  \score {
+    \partbookTitleNIX
+    <<
+      \new Staff { \compressMMRests { \vnINIX } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
+
+  \score {
+    \partbookTitleNX
+    <<
+      \new Staff { \compressMMRests { \vnINX } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
 }

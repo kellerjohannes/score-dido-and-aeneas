@@ -102,4 +102,24 @@
       indent = #0
     }
   }
+
+  \score {
+    \partbookTitleNIX
+    <<
+      \new Staff { \compressMMRests { \vnIINIX } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
+
+  \score {
+    \partbookTitleNX
+    <<
+      \new Staff { \compressMMRests { \vnIINX } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
 }

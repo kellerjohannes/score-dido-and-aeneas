@@ -350,3 +350,79 @@ lyricsNVII = \lyricmode {
   Let Di -- do smile, and I'll de -- fy
   The fee -- ble stroke of de -- sti -- ny.
 }
+
+soloVoiceNIX = \relative {
+  \time 4/4
+  \key c \major
+  \clef \aeneasClef
+
+  \autoBeamOff
+  r8 e e fis g8. g16 c8 e, |
+  g4 r8 g gis gis gis b |
+  a4. gis8 a4 c |
+
+  r4 cis4 d8 a b a |
+  c8.([ b16] a16[ g)] fis([ g)] fis8. a16 d8 c16([ b)] |
+  e16([ d c b] a[ g]) fis16([ e)] d8 b' g fis |
+  g2*2 \bar "|."
+}
+
+lyricsNIX = \lyricmode {
+  If not for mine, for Em -- pire's sake
+  Some pi -- ty on your Lo -- ver take;
+  Ah!, Ah! make not, in a hope -- less fire,
+  A He -- ro fall and Troy once more ex -- pire.
+}
+
+soloVoiceNX = \relative c' {
+  \time 4/4 \partial 8
+  \key c \major
+  \clef \annaClef
+  r8 | R1*4 |
+
+  \autoBeamOff
+  r2 r4 r8 c |
+  c g c8. c16 e4 r8 c |
+  c g c8. c16 e4 r8 c |
+  b g b16[( c b c] d4) r8 d |
+
+  e d e d r4 r8 d |
+  e d16[ e] f[ e] d[ e] c4 r8 d |
+  e d e d r4 r8 d |
+
+  e d16[ e] f[ e] d[ e] c4 r8 g |
+  e e e fis g4 r8 c |
+  a a a b c g a16[( g)] f([ e)] |
+
+  d4 r8 d'8 b b b c |
+  d4 r8 e c c c d |
+  e([ f16 e] d[ c b a] gis8) a16([ b]) c([ b]) c([ b)] |
+
+  a4 r8 c c g c8. c16 |
+  e4 r8 c c g c8. c16 |
+  e4 r8 c b g b16([ c b c] |
+
+  d4) r8 d e d e d |
+  r4 r8 d e d16([ e)] f([ e)] d([ e)] |
+  c4 r8 d e d e d |
+
+  r4 r8 d e d16([ e)] f([ e)] d([ e)] |
+  c4 r8 d e d16([ e)] f([ e)] d([ e)] |
+  c2 r2 \bar "|."
+}
+
+lyricsNX = \lyricmode {
+  Pur -- sue thy con -- quest, Love, pur -- sue thy con -- quest, Love,
+  pur -- sue, pur -- sue, pur -- sue thy con -- quest,
+  pur -- sue thy con -- quest, Love, pur -- sue thy con -- quest,
+  pur -- sue thy con -- quest, Love, her eyes
+  Con -- fess the flame, her eyes con -- fess the flame,
+  her tongue de -- nies, her eyes con -- fess the flame,
+  her eyes con -- fess the flame,
+  her tongue de -- nies.
+
+  Pur -- sue thy con -- quest, Love, pur -- sue thy con -- quest, Love,
+  pur -- sue, pur -- sue, pur -- sue thy con -- quest,
+  pur -- sue thy con -- quest, Love, pur -- sue thy con -- quest,
+  pur -- sue thy con -- quest, Love, pur -- sue thy con -- quest, Love.
+}

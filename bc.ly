@@ -541,3 +541,98 @@ figuresNVIII = \figuremode {
   \bassFigureExtendersOn < 8 3 >4 < 8 3\! > \bassFigureExtendersOff < 6 > < 6 5 > |
   < 6 4 > < 5 3+ > s2 |
 }
+
+bcNIX = \relative e {
+  \time 4/4
+  \key c \major
+  \clef \bcClef
+
+  e2 c~ | c b~ | b a |
+  a'4. g8 fis4 g |
+  e c d b8 g |
+  c2 d |
+  g,2*2 \bar "|."
+}
+
+figuresNIX = \figuremode {
+  s1 | s2 < 6/ >2 | s1 |
+  < _+ >4. \bassFigureExtendersOn < _+ >8 \bassFigureExtendersOff < 6 >2 |
+  < 6 >4 < 6 5 > < _+ > < 6 > |
+  s2 < 6 4 >4. < _+ >8 |
+  s1
+}
+
+bcNX = \relative c {
+  \time 4/4 \partial 8
+  \key c \major
+  \clef \bcClef
+  r8 | r4 r8 c c g c8. c16 |
+  e4 r8 c c g c e |
+  g4. g8 g d g b |
+  c4 r8 g a g a g16 f |
+
+  e8 f g g, c4 r |
+  r r8 c c g c8. c16 |
+  e4 r8 c c g c e |
+  g4. g8 g d g b |
+
+  c4 r8 g a8 g a g16 f |
+  e8 f g g, c g c,4 |
+  r4 r8 g'' a g a g16 f |
+
+  e8 f g g, c2~ |
+  c4 r8 c b b b c |
+  d4 r8 g, e e e f |
+
+  g b d d, g4 r8 g' |
+  fis fis fis gis a4 a,8 b |
+  c c c d e f d e |
+
+  a, a' g f e4 r8 c |
+  c g c8. c16 e4 r8 c |
+  c g c e g4 r8 g |
+
+  g d g b c4 r8 g |
+  a g a g16 f e8 f g g, |
+  c g c,4 r r8 g'' |
+
+  a g a g16 f e8 f g g, |
+  a a' g f e f g g, |
+  c2 r2 \bar "|."
+}
+
+figuresNX = \figuremode {
+  s8 | s2 s8 < 6 4 >8 s4 |
+  < 6 >2 s8 < 6 4 >4 < 6 >8 |
+  s2 s8 < 6 4 >4 < 6 >8 |
+  s2 s8 < 6 > s4 |
+  < 6 >8 < 6 > < 7 >2. |
+
+  s2 s8 < 6 4 >8 s4 |
+  < 6 >2 s8 < 6 4 >4 < 6 >8 |
+  s1 |
+
+  s2 s8 < 6 >8 s4 |
+  < 6 >8 < 6 > < 7 >2. |
+  s2 s8 < 6 >8 s4 |
+
+  < 6 >8 < 6 > < 7 >2. |
+  s4. < 4/ 2 >8 < 6 >2 |
+  < _! >2 < 6 > |
+
+  s8 < 6 > < _+ >4 s4. < 6 4 >8 |
+  < 6 >4. < 6 >8 s4. < 6/ >8 |
+  < 6 >2 < _+ >4 < 6 5 >8 < _+ > |
+
+  s2 < 6 > |
+  s2 < 6 > |
+  s1 |
+
+  s1 |
+  s8 < 6 >8 s4 < 6 >8 < 6 > < 7 >4 |
+  s1 |
+
+  s8 < 6 >8 s4 < 6 >8 < 6 > < 7 >4 |
+  s4. < 6 >8 < 6 > < 6 > < 7 >4 |
+  s1 |
+}

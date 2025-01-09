@@ -105,6 +105,7 @@
       \new Voice= "voice"
       \soloVoiceNII
       \new Lyrics \lyricsto "voice" { \lyricsNII }
+
       \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
       \bcNII
       \new FiguredBass { \figuresNII }
@@ -124,6 +125,7 @@
       \new Voice= "voice"
       \soloVoiceNIII
       \new Lyrics \lyricsto "voice" { \lyricsNIII }
+
       \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
       \bcNIII
       \new FiguredBass { \figuresNIII }
@@ -183,6 +185,7 @@
       \new Voice= "voice"
       \soloVoiceNV
       \new Lyrics \lyricsto "voice" { \lyricsNV }
+
       \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
       \bcNV
       \new FiguredBass { \figuresNV }
@@ -257,6 +260,7 @@
       \new Voice= "voice"
       \soloVoiceNVII
       \new Lyrics \lyricsto "voice" { \lyricsNVII }
+
       \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
       \bcNVII
       \new FiguredBass { \figuresNVII }
@@ -306,6 +310,54 @@
       \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
       \bcNVIII
       \new FiguredBass { \figuresNVIII }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
+
+  \score {
+    \scoreTitleNIX
+    <<
+      \new Staff = "voiceStaff" \with { instrumentName = \aeneasName }
+      \new Voice= "voice"
+      \soloVoiceNIX
+      \new Lyrics \lyricsto "voice" { \lyricsNIX }
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNIX
+      \new FiguredBass { \figuresNIX }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
+
+  \score {
+    \scoreTitleNX
+    <<
+      \new StaffGroup = "strings"
+      <<
+        \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
+        \vnINX
+        \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
+        \vnIINX
+        \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
+        \vlaNX
+      >>
+      \new Staff = "anna" \with { instrumentName = \annaName }
+      \new Voice = "voice"
+      \soloVoiceNX
+      \new Lyrics \lyricsto "voice" { \lyricsNX }
+
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNX
+      \new FiguredBass { \figuresNX }
     >>
     \layout {
       \context {

@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-#(set-global-staff-size 32)
+#(set-global-staff-size 25)
 
 \include "global-definitions.ly"
 \include "vla.ly"
@@ -77,6 +77,46 @@
     \partbookTitleNVI
     <<
       \new Staff { \compressMMRests { \vlaNVI } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
+
+  \score {
+    \partbookTitleNVII
+    <<
+      \new Staff { \compressMMRests { \vlaNVII } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
+
+  \score {
+    \partbookTitleNVIII
+    <<
+      \new Staff { \compressMMRests { \vlaNVIII } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
+
+  \score {
+    \partbookTitleNIX
+    <<
+      \new Staff { \compressMMRests { \vlaNIX } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
+
+  \score {
+    \partbookTitleNX
+    <<
+      \new Staff { \compressMMRests { \vlaNX } }
     >>
     \layout {
       indent = #0

@@ -119,7 +119,7 @@ vnIINV = \relative c {
   \time 4/4
   \key c \minor
   \clef \vnIIClef
-  R1*25
+  R1*25 \bar "|."
 }
 
 vnIINVI = \relative g' {
@@ -179,7 +179,7 @@ vnIINVII = \relative c {
   \time 4/4
   \key c \major
   \clef \vnIIClef
-  R1*13
+  R1*13 \bar "|."
 }
 
 vnIINVIII = \relative b' {
@@ -204,4 +204,50 @@ vnIINVIII = \relative b' {
   a4. a8 fis4. dis8 |
   e4 e2 e4 |
   e dis e2 \bar "|."
+}
+
+vnIINIX = \relative {
+  \time 4/4
+  \key c \major
+  \clef \vnIIClef
+  R1*6 \bar "|."
+}
+
+vnIINX = \relative e' {
+  \time 4/4 \partial 8
+  \key c \major
+  \clef \vnIIClef
+  e8 | e c e8. e16 g4 r8 e |
+  e c e8. e16 g4 r8 g |
+  g d g16 a g a b4 r8 g |
+  c g c b' c b c b16 a |
+
+  g8 f16 e d c b8 c4 r8 e, |
+  e c e8. e16 g4 r8 e |
+  e c e8. e16 g4 r8 g |
+  g d g16 a g a b4 r8 g |
+
+  c8 g c b' c b c b16 a |
+  g8 f16 e d c b8 c4 r8 b |
+  c b c b' c b c b16 a |
+
+  g8 f16 e d c b8 c4 r |
+  r4 r8 a, d d d e |
+  f4 r8 d g e c d16 c |
+
+  b8 g' fis8. g16 g4 r8 e |
+  a a a b e,4 a8 gis |
+  a a16 g f e d c b8 a a gis |
+
+  a4 r8 a' g e e8. e16 |
+  g4 r8 e e c e8. e16 |
+  g4 r8 g g d g16 a g a |
+
+  b4 r8 g c g c b' |
+  c b c b16 a g8 f16 e d c b8 |
+  c4 r8 b c b c b' |
+
+  c b c b16 a g8 f16 e d c b8 |
+  c4 r8 f g f16 e d c b8 |
+  c2 r2 \bar "|."
 }
