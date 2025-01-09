@@ -202,7 +202,7 @@ partbookTitleNVIII = \header {
 
 scorePaperBlock = \paper {
   print-all-headers = ##t
-  #(set-paper-size '(cons (* 364 mm) (* 277 mm)))
+  #(set-paper-size '(cons (* 277 mm) (* 364 mm)))
 }
 
 
@@ -210,26 +210,26 @@ partbookVnIPaperBlock = \paper {
   print-all-headers = ##t
   oddHeaderMarkup = \markup { \fill-line { \instrumentNameVnI } }
   evenHeaderMarkup = \oddHeaderMarkup
-  #(set-paper-size '(cons (* 364 mm) (* 277 mm)))
+  #(set-paper-size '(cons (* 277 mm) (* 364 mm)))
 }
 
 partbookVnIIPaperBlock = \paper {
   print-all-headers = ##t
   oddHeaderMarkup = \markup { \fill-line { \instrumentNameVnII } }
   evenHeaderMarkup = \oddHeaderMarkup
-  #(set-paper-size '(cons (* 364 mm) (* 277 mm)))
+  #(set-paper-size '(cons (* 277 mm) (* 364 mm)))
 }
 
 partbookVlaPaperBlock = \paper {
   print-all-headers = ##t
   oddHeaderMarkup = \markup { \fill-line { \instrumentNameVla } }
   evenHeaderMarkup = \oddHeaderMarkup
-  #(set-paper-size '(cons (* 364 mm) (* 277 mm)))
+  #(set-paper-size '(cons (* 277 mm) (* 364 mm)))
 }
 
 partbookBcPaperBlock = \paper {
   print-all-headers = ##t
   oddHeaderMarkup = \markup { \fill-line { \instrumentNameBc } }
   evenHeaderMarkup = \oddHeaderMarkup
-  #(set-paper-size '(cons (* 364 mm) (* 277 mm)))
+  #(set-paper-size '(cons (* 277 mm) (* 364 mm)))
 }

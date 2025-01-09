@@ -157,3 +157,37 @@ lyricsSANVI = \lyricmode {
   Fear no dan -- ger to en -- sue,
   The He -- ro loves as well as you.
 }
+
+
+chorusSNVIII = \relative b' {
+  \time 4/4
+  \key e \minor
+  \clef \chorusSClef
+  b4 e e b |
+  c b8( a) b2~ |
+  b4 b a b |
+  b8( e,) fis4 dis b |
+  b' e e b |
+
+  b16( c d8) c( b) c4. c8 |
+  c4 b cis d |
+  d cis d4. d8 |
+  b4 g c c |
+  b a b4. d8 |
+
+  b4 b e4. e8 |
+  d4 d g4. g8 |
+  g8([ fis)] e([ dis)] e4. fis8 |
+  g([ fis)] fis([ e)] dis4. fis8 |
+  g8([ fis)] e([ dis)] e4. fis8 |
+  g4 fis e2 \bar "|."
+}
+
+
+lyricsSNVIII = \lyricmode {
+  Cu -- pid on -- ly throws the dart that's dread -- ful, dread -- ful, dread -- ful,
+  Cu -- pid on -- ly throws the dart that's dread -- ful to a war -- rior's heart,
+  that's dread -- ful to a war -- rior's heart,
+  And she that wounds, and she that wounds can on -- ly, on -- ly cure the smart,
+  can on -- ly, on -- ly cure the smart.
+}

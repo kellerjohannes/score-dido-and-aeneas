@@ -174,3 +174,27 @@ vnIINVI = \relative g' {
   a( g) f |
   e2. \bar "|."
 }
+
+vnIINVIII = \relative b' {
+  \time 4/4
+  \key e \minor
+  \clef \vnIIClef
+
+  R1 | e4 a a e |
+  g fis8 e fis4 g |
+  gis a g8 fis e dis |
+  e4 e fis b |
+
+  b gis a8. b16 a8. g16 |
+  fis4 d e fis |
+  g4. a16 g fis4. fis8 |
+  g8 a b2 a4 |
+  g fis g4. g8 |
+
+  g4 g g4. g8 |
+  fis4 fis fis e |
+  e8 fis g2 fis8. e16 |
+  a4. a8 fis4. dis8 |
+  e4 e2 e4 |
+  e dis e2 \bar "|."
+}

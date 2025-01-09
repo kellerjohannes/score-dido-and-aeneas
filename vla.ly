@@ -172,3 +172,24 @@ vlaNVI = \relative c' {
   c2 b4 |
   c2. \bar "|."
 }
+
+vlaNVIII = \relative b' {
+  \time 4/4
+  \key e \minor
+  \clef \vlaClef
+  R1 | R | b4 e e b |
+  c b8 a b2~ |
+  b r |
+
+  b4 e e a, |
+  a b a2~ | a a4. b8 |
+  b4 e e e |
+  d4. d8 d4. d8 |
+
+  d4 b b4. b8 |
+  b4 b b4. b8 |
+  c4 b a4. d8 |
+  c4. c8 b4. b8 |
+  g4 a b c |
+  b4 b b2 \bar "|."
+}

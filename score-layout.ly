@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-#(set-global-staff-size 25)
+#(set-global-staff-size 19)
 
 \include "global-definitions.ly"
 \include "vn-1.ly"
@@ -260,6 +260,52 @@
       \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
       \bcNVII
       \new FiguredBass { \figuresNVII }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
+
+  \score {
+    \scoreTitleNVIII
+    <<
+      \new StaffGroup = "strings"
+      <<
+        \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
+        \vnINVIII
+        \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
+        \vnIINVIII
+        \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
+        \vlaNVIII
+      >>
+      \new ChoirStaff = "chorus"
+      <<
+        \new Staff = "chorusSoprano" \with { instrumentName = \instrumentNameChorusS }
+        \new Voice = "chorusS"
+        \chorusSNVIII
+        \new Lyrics \lyricsto "chorusS" { \lyricsSNVIII }
+
+        \new Staff = "chorusAlto" \with { instrumentName = \instrumentNameChorusA }
+        \new Voice = "chorusA"
+        \chorusANVIII
+        \new Lyrics \lyricsto "chorusA" { \lyricsANVIII }
+
+        \new Staff = "chorusT" \with { instrumentName = \instrumentNameChorusT }
+        \new Voice = "chorusT"
+        \chorusTNVIII
+        \new Lyrics \lyricsto "chorusT" { \lyricsTNVIII }
+
+        \new Staff = "chorusBass" \with { instrumentName = \instrumentNameChorusB }
+        \new Voice = "chorusB"
+        \chorusBNVIII
+        \new Lyrics \lyricsto "chorusB" { \lyricsBNVIII }
+      >>
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNVIII
+      \new FiguredBass { \figuresNVIII }
     >>
     \layout {
       \context {

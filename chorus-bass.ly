@@ -87,3 +87,32 @@ chorusBNVI = \relative c' {
   f g2 |
   c,2. \bar "|."
 }
+
+
+chorusBNVIII = \relative e {
+  \time 4/4
+  \key e \minor
+  \clef \chorusBClef
+  R1 | R1 | R1 | e4 a a g8( fis) |
+  g4 e b'4. a8 |
+
+  gis4 e a a, |
+  d g g fis |
+  \grace { fis16( g) } a4 a, d4. b8 |
+  e4 e a, a |
+  d4. d8 g,4. g8 |
+
+  g'4 g e4. e8 |
+  b'4 b g4. g8 |
+  a4 b c4. b8 |
+  a4. a8 b4. b,8 |
+  e4 fis g a |
+  b b, e2 \bar "|."
+}
+
+lyricsBNVIII = \lyricmode {
+  Cu -- pid on -- ly throws the dart that's dread -- ful, dread -- ful,
+  Cu -- pid on -- ly throws the dart That's dread -- ful to a war -- rior's heart,
+  And she that wounds, and she that wounds can on -- ly, on -- ly cure,
+  the smart can on -- ly, on -- ly cure the smart.
+}

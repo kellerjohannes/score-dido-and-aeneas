@@ -104,3 +104,34 @@ chorusANVI = \relative g' {
   a( g) f |
   e2. \bar "|."
 }
+
+chorusANVIII = \relative e' {
+  \time 4/4
+  \key e \minor
+  \clef \chorusAClef
+  R1 | e4 a a e |
+  g fis8( e) fis4 g |
+  gis a g8([ fis)] e([ dis)] |
+  e4 e fis b |
+
+  b gis a8.([ b16 a8.)] g16 |
+  fis4 d( e) fis |
+  g4. a16( g) fis4. fis8 |
+  g8( a) b4 b a |
+  g fis g4. g8 |
+
+  g4 g g4. g8 |
+  fis4 fis fis e |
+  e8( fis g2) fis8.( e16) |
+  a4. a8 fis4. dis8 |
+  e4 e e e |
+  e dis e2 \bar "|."
+}
+
+lyricsANVIII = \lyricmode {
+  Cu -- pid on -- ly throws the dart that's dread -- ful, dread -- ful, dread -- ful,
+  Cu -- pid on -- ly throws the dart, on -- ly throws the dart,
+  That's dread -- ful to a war -- rior's heart,
+  And she that wounds, and she that wounds can on -- ly cure the smart,
+  can on -- ly, on -- ly cure the smart.
+}

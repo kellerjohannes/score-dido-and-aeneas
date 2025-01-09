@@ -503,3 +503,41 @@ figuresNVII = \figuremode {
   < 6 >1 |
   < 6 4 >4 < 5 _+ > s2 |
 }
+
+bcNVIII = \relative e {
+  \time 4/4
+  \key e \minor
+  \clef \bcClef
+  R1 | R1 | R1 | e4 a a g8 fis |
+  g4 e b'4. a8 |
+
+  gis4 e a a, |
+  d g g fis |
+  a4 a, d4. b8 |
+  e4 e a, a |
+  d4 d, g4. g8 |
+
+  g'4 g e4. e8 |
+  b'4 b g4. g8 |
+  a4 b c4. b8 |
+  a4. a8 b4. b,8 |
+  e4 fis g a |
+  b b, e2 \bar "|."
+}
+
+figuresNVIII = \figuremode {
+  s1 | s1 | s1 | < 6 5 _+ >4 < 6 > < 4/ 2 > < 6 >8 < 6/ 4 > |
+  < 6 >2 < 4 >4 \bassFigureExtendersOn < _+ >8 < _+ > \bassFigureExtendersOff |
+
+  < 6 >8 < 5 > < 6 _+ > < 5 > s2 |
+  < 7 >2 < 4\+ 2 >4 < 6 > |
+  \bassFigureExtendersOn < 7 4 >4 < 7 _+ > \bassFigureExtendersOff s2 |
+  s2 < 9 > |
+  < 6 4 >4 < 5 3 > s2 |
+
+  s1 | s2 < 7 >4 < 6 > |
+  < 7 >8 < 6 > < 6 4 >4  < 6 5 3 >4 \bassFigureExtendersOn < 6 4 3 > \bassFigureExtendersOff |
+  < 7 >4 < 6 > < _+ >2 |
+  \bassFigureExtendersOn < 8 3 >4 < 8 3\! > \bassFigureExtendersOff < 6 > < 6 5 > |
+  < 6 4 > < 5 3+ > s2 |
+}
