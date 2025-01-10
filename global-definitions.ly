@@ -21,11 +21,11 @@ aeneasName = \markup { \caps Æneas }
 %% Add more characters here
 
 
-instrumentNameVnI = \markup { \concat { \caps { Violino } \super no 1. \super mo } }
+instrumentNameVnI = \markup { \concat { \caps { Violino } \super no 1. \hspace #-0.5 \super mo } }
 instrumentHintVnI = \markup { \italic \instrumentNameVnI }
 vnIClef = "treble"
 
-instrumentNameVnII = \markup { \concat { \caps { Violino } \super no 2. \super do } }
+instrumentNameVnII = \markup { \concat { \caps { Violino } \super no 2. \hspace #-0.5 \super do } }
 instrumentHintVnII = \markup { \italic \instrumentNameVnII }
 vnIIClef = "treble"
 

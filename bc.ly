@@ -636,3 +636,15 @@ figuresNX = \figuremode {
   s4. < 6 >8 < 6 > < 6 > < 7 >4 |
   s1 |
 }
+
+bcNXI = \relative c {
+  \time 3/4 \partial 4
+  \key c \major
+  \clef \bcClef
+  c8 d | e4 e c |
+}
+
+figuresNXI = \figuremode {
+  \bassFigureExtendersOn
+  < 8 5 3 >8 < 8 5 3\! > | < 8 5 3\! >2. \bassFigureExtendersOff |
+}

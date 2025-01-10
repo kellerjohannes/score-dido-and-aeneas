@@ -366,4 +366,50 @@
       }
     }
   }
+
+  \score {
+    \scoreTitleNXI
+    <<
+      \new StaffGroup = "strings"
+      <<
+        \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
+        \vnINXI
+        \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
+        \vnIINXI
+        \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
+        \vlaNXI
+      >>
+      \new ChoirStaff = "chorus"
+      <<
+        \new Staff = "chorusSoprano" \with { instrumentName = \instrumentNameChorusS }
+        \new Voice = "chorusS"
+        \chorusSNXI
+        \new Lyrics \lyricsto "chorusS" { \lyricsSNXI }
+
+        \new Staff = "chorusAlto" \with { instrumentName = \instrumentNameChorusA }
+        \new Voice = "chorusA"
+        \chorusANXI
+        \new Lyrics \lyricsto "chorusA" { \lyricsANXI }
+
+        \new Staff = "chorusT" \with { instrumentName = \instrumentNameChorusT }
+        \new Voice = "chorusT"
+        \chorusTNXI
+        \new Lyrics \lyricsto "chorusT" { \lyricsTNXI }
+
+        \new Staff = "chorusBass" \with { instrumentName = \instrumentNameChorusB }
+        \new Voice = "chorusB"
+        \chorusBNXI
+        \new Lyrics \lyricsto "chorusB" { \lyricsBNXI }
+      >>
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXI
+      \new FiguredBass { \figuresNXI }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 }

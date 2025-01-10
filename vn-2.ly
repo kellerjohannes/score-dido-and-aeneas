@@ -251,3 +251,10 @@ vnIINX = \relative e' {
   c4 r8 f g f16 e d c b8 |
   c2 r2 \bar "|."
 }
+
+vnIINXI = \relative e' {
+  \time 3/4 \partial 4
+  \key c \major
+  \clef \vnIIClef
+  e8 f | g4 g g |
+}

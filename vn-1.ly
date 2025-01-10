@@ -259,3 +259,10 @@ vnINX = \relative c'' {
   c4 r8 d e d16 e f e d e |
   c2 r2 \bar "|."
 }
+
+vnINXI = \relative g' {
+  \time 3/4 \partial 4
+  \key c \major
+  \clef \vnIClef
+  g8 g | c4 c c |
+}

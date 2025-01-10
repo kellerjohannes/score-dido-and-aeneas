@@ -135,3 +135,14 @@ lyricsANVIII = \lyricmode {
   And she that wounds, and she that wounds can on -- ly cure the smart,
   can on -- ly, on -- ly cure the smart.
 }
+
+chorusANXI = \relative e' {
+  \time 3/4 \partial 4
+  \key c \major
+  \clef \chorusAClef
+  e8 f | g4 g g |
+}
+
+lyricsANXI = \lyricmode {
+  To the hills and the
+}

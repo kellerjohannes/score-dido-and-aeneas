@@ -197,4 +197,379 @@
       }
     }
   }
+
+  \score {
+    \scoreTitleNXI
+    <<
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXI
+      \new FiguredBass { \figuresNXI }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
+
+  % \score {
+  %   \scoreTitleNXII
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXII
+  %     \new FiguredBass { \figuresNXII }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXIII
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXIII
+  %     \new FiguredBass { \figuresNXIII }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXIV
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXIV
+  %     \new FiguredBass { \figuresNXIV }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXV
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXV
+  %     \new FiguredBass { \figuresNXV }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXVI
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXVI
+  %     \new FiguredBass { \figuresNXVI }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXVII
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXVII
+  %     \new FiguredBass { \figuresNXVII }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXVIII
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXVIII
+  %     \new FiguredBass { \figuresNXVIII }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXIX
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXIX
+  %     \new FiguredBass { \figuresNXIX }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXX
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXX
+  %     \new FiguredBass { \figuresNXX }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXXI
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXXI
+  %     \new FiguredBass { \figuresNXXI }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXXII
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXXII
+  %     \new FiguredBass { \figuresNXXII }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXXIII
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXXIII
+  %     \new FiguredBass { \figuresNXXIII }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXXIV
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXXIV
+  %     \new FiguredBass { \figuresNXXIV }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXXV
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXXV
+  %     \new FiguredBass { \figuresNXXV }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXXVI
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXXVI
+  %     \new FiguredBass { \figuresNXXVI }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXXVII
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXXVII
+  %     \new FiguredBass { \figuresNXXVII }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXXVIII
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXXVIII
+  %     \new FiguredBass { \figuresNXXVIII }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXXIX
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXXIX
+  %     \new FiguredBass { \figuresNXXIX }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXXX
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXXX
+  %     \new FiguredBass { \figuresNXXX }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXXXI
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXXXI
+  %     \new FiguredBass { \figuresNXXXI }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXXXII
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXXXII
+  %     \new FiguredBass { \figuresNXXXII }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXXXIII
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXXXIII
+  %     \new FiguredBass { \figuresNXXXIII }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXXXIV
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXXXIV
+  %     \new FiguredBass { \figuresNXXXIV }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXXXV
+  %   <<
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXXXV
+  %     \new FiguredBass { \figuresNXXXV }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
 }

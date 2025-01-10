@@ -241,3 +241,10 @@ vlaNX = \relative g' {
   e4 r8 a, c a' d, g |
   c,2 r2 \bar "|."
 }
+
+vlaNXI = \relative c' {
+  \time 3/4 \partial 4
+  \key c \major
+  \clef \vlaClef
+  c8 c | c4 g e' |
+}

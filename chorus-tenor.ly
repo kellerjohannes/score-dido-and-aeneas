@@ -125,3 +125,15 @@ lyricsTNVIII = \lyricmode {
   And she that wounds, and she that wounds can on -- ly, on -- ly cure,
   the smart can on -- ly, on -- ly cure the smart.
 }
+
+chorusTNXI = \relative c' {
+  \time 3/4 \partial 4
+  \key c \major
+  \clef \chorusTClef
+  c8 c | c4 g e' |
+
+}
+
+lyricsTNXI = \lyricmode {
+  To the hills and the
+}
