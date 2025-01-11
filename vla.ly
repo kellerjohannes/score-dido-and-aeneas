@@ -251,4 +251,5 @@ vlaNXI = \relative c' {
 
   c4 c c | c g c | c2 c4 | c2 b4 | c2 g'4 | e c c' |
   c g c | c a4. a8 | g2 g8. a16 | b8.
+  %% reading sign
 }
