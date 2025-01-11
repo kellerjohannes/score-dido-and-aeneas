@@ -130,10 +130,39 @@ chorusTNXI = \relative c' {
   \time 3/4 \partial 4
   \key c \major
   \clef \chorusTClef
-  c8 c | c4 g e' |
+  \autoBeamOff
+  c8 c | c4 g e' | d2 d8 d | c4 c c | d4 b d8 d | c4 e c |
+  a2 a8 d | d4 d4. d8 | b4 b g8 a | b8.([ a16 b8. c16 b8. c16] | b4) g b8 b |
+
+  c4 c c | c c g | c4. c8 c4 | c4. c8 b4 | c2 r4 | R2. |
+  R2.*2 | r4 r g8. a16 | b8.([ a16 b8. c16 b8. c16] | b4) g b8. b16 | c4 c e |
+
+  e4 e e | e4. e8 e4 | f4. f8 e4 | e2 c8 d | e4 c e | d2 d8 d |
+  c4 c c | d b d8 d | c4 e c | a2 a8 d | d4 d4. d8 | b4 b g8. a16 |
+
+  b8.([ a16 b8. c16 b8. c16] | b4) g b8. b16 | c4 c c | c g c | c4. bes8 a4 | g4. f8 e4 |
+  f2 c'4 | f c c | c a a | b g d' | g d d | e b b |
+
+  c d d | c c e | d4. d8 e([ d)] | c2 c4 | f c c | c a a | b g d' |
+  g d d | e b b | c d d | c c e | d4. d8 e([ d)] | c2. \bar "|."
 
 }
 
 lyricsTNXI = \lyricmode {
-  To the hills and the
+  To the hills and the vales, to the rocks and the moun -- tains,
+  To the mu -- si -- cal groves and the cool sha -- dy foun -- tains,
+  Let the tri -- umphs, let the tri -- umphs,
+  the tri -- umphs of love and of beau -- ty be shewn.
+
+  Let the tri -- umphs, let the tri -- umphs,
+  the tri -- umphs of love and of beau -- ty be shewn.
+  To the hills and the vales, to the rocks and the moun -- tains,
+  To the mu -- si -- cal groves and the cool sha -- dy foun -- tains,
+  Let the tri -- umphs, let the tri -- umphs,
+  the tri -- umphs of love and of beau -- ty be shewn.
+  Go re -- vel ye Cu -- pids, go re -- vel, go re -- vel ye Cu -- pids,
+  go re -- vel ye Cu -- pids, the day is your own,
+  go re -- vel ye Cu -- pids, go re -- vel,
+  go re -- vel ye Cu -- pids, go re -- vel ye Cu -- pids,
+  the day is your own.
 }

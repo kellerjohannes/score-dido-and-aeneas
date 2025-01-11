@@ -246,5 +246,9 @@ vlaNXI = \relative c' {
   \time 3/4 \partial 4
   \key c \major
   \clef \vlaClef
-  c8 c | c4 g e' |
+  c8 c | c4 g e' | d2 d4 | c c c | d b d | c e c |
+  a2 a8 d | d4 d4. d8 | b4 b g8 a | b8. a16 b8. c16 b8. c16 | b4 g b |
+
+  c4 c c | c g c | c2 c4 | c2 b4 | c2 g'4 | e c c' |
+  c g c | c a4. a8 | g2 g8. a16 | b8.
 }

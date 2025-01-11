@@ -122,9 +122,39 @@ chorusBNXI = \relative c {
   \time 3/4 \partial 4
   \key c \major
   \clef \chorusBClef
-  c8 d | e4 e c |
+  \autoBeamOff
+  c8 d | e4 e c | g'2 a8 b | c4 c a | b b b8 b | c4 c c, |
+  d2 d8 d | g4 d4. d8 | g,4 g g'8 g | g4 g, g'8 g | g4 g, g' |
+
+  c8.([ b16 b8. d16 c8. d16] | c4) c, c' | a4. a8 e4 | f4. d8 g4 | c,2 r4 | R2. |
+  R2.*2 | r4 r g'8. g16 | g4 g, g'8. g16 | g4 g, g' | c8.([ b16 c8. d16 c8. b16] |
+
+  a4) a, e' | a4. a8 c,4 | d4. d8 e4 | a,2 a'8 a | e4 e c | g'2 a8 b |
+  c4 c a | b b b8 b | c4 c c, | d2 d8 d | g4 d4. d8 | g,4 g g'8. g16 |
+
+  g4 g, g' | g g, g' | c8.([ b16 c8. d16 c8. d16] | c4) c, c' | a4. g8 f4 | e4. d8 c4 |
+  f2 f4 | a f f | a f d | g g g, | g g g' | g g g |
+
+  c4 g g | a e e | f4. d8 g4 | c,2 f4 | a f f | a f d | g g g, |
+  g g g' | g g g | c g g | a e e | f4. d8 g4 | c,2. \bar "|."
 }
 
 lyricsBNXI = \lyricmode {
-  To the hills and the
+  %% TODO To be double checked, copied from chorusS
+  To the hills and the vales, to the rocks and the moun -- tains,
+  To the mu -- si -- cal groves and the cool sha -- dy foun -- tains,
+  Let the tri -- umphs, let the tri -- umphs,
+  the tri -- umphs of love and of beau -- ty be shewn.
+
+  Let the tri -- umphs, let the tri -- umphs,
+  the tri -- umphs of love and of beau -- ty be shewn.
+  To the hills and the vales, to the rocks and the moun -- tains,
+  To the mu -- si -- cal groves and the cool sha -- dy foun -- tains,
+  Let the tri -- umphs, the tri -- umphs,
+  the tri -- umphs of love and of beau -- ty be shewn.
+  Go re -- vel ye Cu -- pids, go re -- vel, go re -- vel ye Cu -- pids,
+  go re -- vel ye Cu -- pids, the day is your own,
+  go re -- vel ye Cu -- pids, go re -- vel,
+  go re -- vel ye Cu -- pids, go re -- vel ye Cu -- pids,
+  the day is your own.
 }

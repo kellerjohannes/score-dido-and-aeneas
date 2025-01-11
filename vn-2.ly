@@ -256,5 +256,18 @@ vnIINXI = \relative e' {
   \time 3/4 \partial 4
   \key c \major
   \clef \vnIIClef
-  e8 f | g4 g g |
+  e8 f | g4 g g | g2 g4 | g4 g a | g g g | g4 g e |
+  d2 fis4 | g4 g4. fis8 | g4 g d | g4 g g | g8. f16 g8. a16 g8. a16 |
+
+  g4 e g | g e g | f4. f8 g4 | a4. a8 g4 | g2 c8. d16 | e8. d16 d8. f16 e8. f16 |
+  e4 c d8. e16 | f8. g16 f8. e16 d8. c16 | b2 d,4 | g4 g g | g8. f16 g8. a16 g8. a16 | g4 e gis |
+
+  a4 e gis | a2 a4 | a4. b8 a gis | a2 a4 | g2 g4 | g2 g4 |
+  g4 g a | g g g | g g e | d2 fis4 | g4 g4. fis8 | g4 g d |
+
+  g4 g g g8. f16 g8. a16 g8. a16 | g4 e g | g e g | f4. e8 f4 | c c c |
+  c2 r4 | R2. | r4 r f | f d d | d b b | b g g' |
+
+  g4 g g | e e g | a bes8 a g f | e2 r4 R2. | r4 r f | f d d |
+  d b b | b g g' | g g g | e e g | a bes8 a g f | e2. \bar "|."
 }

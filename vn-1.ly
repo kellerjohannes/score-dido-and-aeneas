@@ -264,5 +264,15 @@ vnINXI = \relative g' {
   \time 3/4 \partial 4
   \key c \major
   \clef \vnIClef
-  g8 g | c4 c c |
+  g8 g | c4 c c | b2 c8 d | e4 e f | g g g8 d | e8 d c b a g |
+  fis2 d'8 a | bes4 bes4. a8 | g4 g b8 c | d8. c16 d8. e16 d8. e16 | d4 b d4 |
+
+  e8. d16 e8. f16 e8. f16 | e4 c e | f4. f8 e4 | d4. e8 f4 | e2 c8. d16 | e8. d16 e8. f16 e8. f16 |
+  g4 e f8. g16 | a8. bes16 a8. g16 f8. e16 | d2 b8. c16 | d8. c16 d8. e16 d8. e16 | d4 b d | e8. d16 e8. f16 e8. d16 |
+  c4 a b | c4. d8 e4 | c4. b8 c b | a2 a8 b | c4 g c | b2 c8 d |
+  e4 e f | g g g8 d | e d c b a g | fis2 d'8 a | bes4 bes4. a8 | g4 g b8. c16 |
+  d8. c16 d8. e16 d8. e16 | d4 b d8. d16 | e8. d16 e8. f16 e8. f16 | e4 c e | f c c | bes4. a8 bes4 |
+  a2 r4 | r r c | f c d | d b b | b g d' | g d d |
+  e b b | c g c | c4. d8 c b | c2 r4 | r r c | f c d | d b b |
+  b g d' | g d d | e b b | c g c | c4. d8 c b | c2. \bar "|."
 }

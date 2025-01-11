@@ -140,9 +140,38 @@ chorusANXI = \relative e' {
   \time 3/4 \partial 4
   \key c \major
   \clef \chorusAClef
-  e8 f | g4 g g |
+  \autoBeamOff
+  e8 f | g4 g g | g2 g8 g | g4 g a | g g g8 g | g4 g e |
+  d2 fis8 fis | g4 g4. fis8 | g4 g d8 d | g4 g4. g8 | g8.([ f16 g8. a16 g8. a16] |
+
+  g4) e g | g e g | f4. f8 g4 | a4. a8 g4 | g2 r4 | R2. |
+  R2.*2 | r4 r d8. d16 | g4 g4. g8 | g8.([ f16 g8. a16 g8. a16] | g4) e gis |
+
+  a4 e gis | a4. a8 a4 | a4. b8 a([ gis)] | a2 a8 a | g4 g g | g2 g8 g |
+  g4 g a | g g g8 g | g4 g e | d2 fis8 fis | g4 g4. fis8 | g4 g d8. d16 |
+
+  g4 g4. g8 | g8.([ f16 g8. a16 g8. a16] | g4) e g | g e g | f4. e8 f4 | c4. c8 c4 |
+  c2 r4 | R2. | r4 r f | f d d | d b b | b g g' |
+
+  g g g | e e g | a bes8([ a)] g([ f)] | e2 r4 R2. | r4 r f | f d d |
+  d b b | b g g' | g g g | e e g | a bes8([ a)] g([ f)] | e2. \bar "|."
 }
 
 lyricsANXI = \lyricmode {
-  To the hills and the
+  To the hills and the vales, to the rocks and the moun -- tains,
+  To the mu -- si -- cal groves and the cool sha -- dy foun -- tains,
+  Let the tri -- umphs, the tri -- umphs,
+  the tri -- umphs of love and of beau -- ty be shewn.
+  Let the tri -- umphs, the tri -- umphs,
+  the tri -- umphs of love and of beau -- ty be shewn.
+
+  To the hills and the vales, to the rocks and the moun -- tains,
+  To the mu -- si -- cal groves and the cool sha -- dy foun -- tains,
+  Let the tri -- umphs, the tri -- umphs,
+  the tri -- umphs of love and of beau -- ty be shewn.
+
+  Go re -- vel ye Cu -- pids, go re -- vel, go re -- vel ye Cu -- pids,
+  the day is your own,
+  go re -- vel, ye Cu -- pids, go re -- vel, go re -- vel ye Cu -- pids,
+  the day is your own.
 }
