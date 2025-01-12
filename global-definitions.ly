@@ -1,3 +1,12 @@
+%% Utilities
+
+ext = \once\bassFigureExtendersOn
+extOn = \bassFigureExtendersOn
+extOff = \bassFigureExtendersOff
+
+
+%% Titles and character names & clefs
+
 titleOpera = "Dido & Aeneas"
 operaComposer = "Henry Purcell"
 operaContext = "Theater Basel, 2024/2025"
@@ -102,6 +111,7 @@ titleNXXXV = \markup { \concat { N \super o } \hspace #-2 . 35, Chorus. }
 
 
 
+%% Score and partbook layouts
 
 titlePartbook = \header {
   title = \titleOpera
@@ -517,6 +527,7 @@ partbookTitleNXXXV = \header {
 
 
 
+%% Paper setup.
 
 scorePaperBlock = \paper {
   print-all-headers = ##t
