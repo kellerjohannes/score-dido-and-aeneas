@@ -261,3 +261,32 @@ vlaNXI = \relative c' {
   c4 d d | c c e | d4. d8 e d | c2 c4 | f c c | c a a | b g d' |
   g d d | e b b | c d d | c c e | d4. d8 e d | c2. \bar "|."
 }
+
+vlaNXII = \relative c' {
+  \time 4/4
+  \key f \minor
+  \clef \vlaClef
+  r2 c4. c8 | c2 f,4. f8 | g2 c'4. c8 | c2 c | c4 bes8 as g4. g8 | f2 a4. a8 | g2 g4. g8 |
+  g8 c,4. c c8 | d4 g g4. g8 | as2 g4 g | g2 f4. f8 | f4. f8 g4. g8 | g4 f c4. c8 | des2 es |
+  f4 f, c'4. c8 | c2. bes4 | as1 | c~ | c~ | c~ |
+
+  c~ | c | bes | des | g, |
+  c~ | c~ | c~ | c | bes2 f | c' bes |
+  a1~ | a~ | a | bes~ | bes \bar "|."
+}
+
+vlaNXIII = \relative f' {
+  \time 3/4
+  \key bes \major
+  \clef \vlaClef
+  d2 c4 | d2 bes4 | bes2 c4 | c2 d4 | e2. | e2 d4 | c2 d4 |
+  e4 c d | e2 e4 | e2 d8 e | f2 f4 | f2 d4 | e c c | c2 c4 | c2. \bar "|."
+}
+
+vlaNXIV = \relative f {
+  \time 4/4
+  \key f \minor
+  \clef \vlaClef
+  f1 | as | as4 bes f2~ | f1 | f |
+  g | f | c2 g'~ | g e'~ | e d \bar "||"
+}

@@ -4,6 +4,7 @@
 
 \include "global-definitions.ly"
 \include "vn-1.ly"
+\include "solo-voice.ly"
 
 
 \book {
@@ -142,35 +143,55 @@
     }
   }
 
-  % \score {
-  %   \partbookTitleNXII
-  %   <<
-  %     \new Staff { \compressMMRests { \vnINXII } }
-  %   >>
-  %   \layout {
-  %     indent = #0
-  %   }
-  % }
+  \score {
+    \partbookTitleNXII
+    <<
+      \new Staff { \compressMMRests { \vnINXII } }
+      \new Staff \with { \magnifyStaff #0.7 }
+      \new Voice = "voice"
+      \soloVoiceNXII
+      \new Lyrics \lyricsto "voice" { \lyricsNXII }
+    >>
+    \layout {
+      indent = #0
+      \context {
+        \Score
+        \override LyricText.font-size = #'-1.0
+      }
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 
-  % \score {
-  %   \partbookTitleNXIII
-  %   <<
-  %     \new Staff { \compressMMRests { \vnINXIII } }
-  %   >>
-  %   \layout {
-  %     indent = #0
-  %   }
-  % }
+  \score {
+    \partbookTitleNXIII
+    <<
+      \new Staff { \compressMMRests { \vnINXIII } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
 
-  % \score {
-  %   \partbookTitleNXIV
-  %   <<
-  %     \new Staff { \compressMMRests { \vnINXIV } }
-  %   >>
-  %   \layout {
-  %     indent = #0
-  %   }
-  % }
+  \score {
+    \partbookTitleNXIV
+    <<
+      \new Staff { \compressMMRests { \vnINXIV } }
+      \new Staff \with { \magnifyStaff #0.7 }
+      \new Voice = "voice"
+      \soloVoiceNXIV
+      \new Lyrics \lyricsto "voice" { \lyricsNXIV }
+    >>
+    \layout {
+      indent = #0
+      \context {
+        \Score
+        \override LyricText.font-size = #'-1.0
+      }
+    }
+  }
 
   % \score {
   %   \partbookTitleNXV

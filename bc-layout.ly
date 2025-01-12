@@ -213,50 +213,60 @@
     }
   }
 
-  % \score {
-  %   \scoreTitleNXII
-  %   <<
-  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-  %     \bcNXII
-  %     \new FiguredBass { \figuresNXII }
-  %   >>
-  %   \layout {
-  %     \context {
-  %       \Staff
-  %       \RemoveAllEmptyStaves
-  %     }
-  %   }
-  % }
+  \score {
+    \scoreTitleNXII
+    <<
+      \new Staff \with { instrumentName = \sorceressName }
+      \new Voice = "voice"
+      \soloVoiceNXII
+      \new Lyrics \lyricsto "voice" { \lyricsNXII }
 
-  % \score {
-  %   \scoreTitleNXIII
-  %   <<
-  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-  %     \bcNXIII
-  %     \new FiguredBass { \figuresNXIII }
-  %   >>
-  %   \layout {
-  %     \context {
-  %       \Staff
-  %       \RemoveAllEmptyStaves
-  %     }
-  %   }
-  % }
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXII
+      \new FiguredBass { \figuresNXII }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 
-  % \score {
-  %   \scoreTitleNXIV
-  %   <<
-  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-  %     \bcNXIV
-  %     \new FiguredBass { \figuresNXIV }
-  %   >>
-  %   \layout {
-  %     \context {
-  %       \Staff
-  %       \RemoveAllEmptyStaves
-  %     }
-  %   }
-  % }
+  \score {
+    \scoreTitleNXIII
+    <<
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXIII
+      \new FiguredBass { \figuresNXIII }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
+
+  \score {
+    \scoreTitleNXIV
+    <<
+      \new Staff \with { instrumentName = \sorceressName }
+      \new Voice = "voice"
+      \soloVoiceNXIV
+      \new Lyrics \lyricsto "voice" { \lyricsNXIV }
+
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXIV
+      \new FiguredBass { \figuresNXIV }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 
   % \score {
   %   \scoreTitleNXV

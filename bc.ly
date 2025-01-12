@@ -673,3 +673,53 @@ figuresNXI = \figuremode {
   s2. | s4 < 6 >2 | < 6 5 3 >4 \ext < 6 5 4- >8 < 5 > < 6 4 > < 7 _! > | s2. | < 6 > | < 6 > | < 7 >4 < 5 >2 |
   s2. | < 6 >4 < 5 >2 | s2. | s4 < 6 >2 | < 6 5 3 >4 \ext < 6 5 4- >8 < 5 > < 7 _! >4 | s2. |
 }
+
+bcNXII = \relative f, {
+  \time 4/4
+  \key f \minor
+  \clef \bcClef
+  f2 f'4. es8 | d1 | c2. c'4 | bes2 as | e e | f fis | g f |
+  es a, | b c | f, g | c a | bes e, | f4. f'8 es2 | des c |
+  bes as | c1 | f,~ | f~ | f | f~ |
+
+  f~ | f | bes | bes | c~ |
+  c~ | c~ | c | f, | bes2 a | c1 |
+  f,~ | f | f | bes~ | bes \bar "|."
+}
+
+figuresNXII = \figuremode {
+  s2 < _ >4. \ext 8 | < 7 >2 < 6 4 3 > | < _! >1 | < 4! 2 >2 < 6 > | < 6 5 >1 | s2 < 6! 5 > | < _! > < 7 5 2 >4 < 6 4! 2 > |
+  < 6 >2 < 6 5 > | < 6 5 > < 9 >4 < 8 > | < 7 5 >4 < 6! > < 6 4 > < 5 3! > | s2 < 6 5 > | < 9 _! >4 < 8 > < 7- >2 | < 9 4 >4 < 8 3 > < 4! 2 >2 | < 6 > < 6! > |
+  s2 < 6 > | < 6 4 > < 5 _! > | s1*3 | < 7! 5 4 2 >1 |
+
+  < 8 3 > | < 7 _! > | < _! > | < 6 4! 3- >2 < 7 5 > | < _! >1 |
+  s1 | s1 | < 7 > | s1 | < 6 >2 < 6 >2 | < 6- 4 > < 7 _! > |
+  < _! >1 | s1 | s1 | < _! > | s1 |
+}
+
+bcNXIII = \relative bes {
+  \time 3/4
+  \key bes \major
+  \clef \bcClef
+  bes2 f4 | bes2 bes4 | g2 es4 | f2 d4 | c2. | c'2 g4 | c,2.~ |
+  c~ | c2 c'4 | c a bes | a e f | d2 d4 | c2 a4 | c2 c,4 | f2. \bar "|."
+}
+
+figuresNXIII = \figuremode {
+  s2. | s2. | < 5 >4 < 6 > < 6 > | < 4 > < 3 > < 6! > | < _! >2. | s2 < _! >4 | < _! >2 < 5 4 2 >4 |
+  < 5 _! >4 < 5 4 2 >2 | < 5 _! >2 < 6 3 2 >4 | < 5 _! >4 \extOn 4 4 \extOff | < 6 > \extOn 4 4 \extOff | < 7 >2 < 6 >4 | < 6 4 _! >4 < 5 > < 6 > | < 6 4 >2 < 5 _! >4 | s2. |
+}
+
+bcNXIV = \relative f, {
+  \time 4/4
+  \key f \minor
+  \clef \bcClef
+  f1~ | f~ | f~ | f | bes~ |
+  bes~ | bes | c~ | c | g \bar "||"
+}
+
+figuresNXIV = \figuremode {
+  s1 | s1 | < 6 3 >4 \ext < 6 4 > < 5 3 >2 | < 6 5 >4 \ext < 6 4 > < 7 5 4 > \ext < 7 5 3! > | s1 |
+  < 6 > | < 7 > | < _! > | s1 | < 6! 4 >2 < 5 3! > |
+
+}

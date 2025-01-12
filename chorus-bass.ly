@@ -158,3 +158,17 @@ lyricsBNXI = \lyricmode {
   go re -- vel ye Cu -- pids, go re -- vel ye Cu -- pids,
   the day is your own.
 }
+
+chorusBNXIII = \relative bes {
+  \time 3/4
+  \key bes \major
+  \clef \chorusBClef
+  bes4. bes8 f4 | bes2 bes4 | g2 es4 | f2 d4 | c2. | c'4. c8 g4 | c2.~ |
+  c~ | c2 c4 | c( a) bes | a( e) f | d2 d4 | c2 a4 | c2 c4 | f2. \bar "|."
+}
+
+lyricsBNXIII = \lyricmode {
+  Harm's our de -- light and mis -- chief all our skill,
+  Harm's our de -- light and mis -- chief all our skill,
+  and mis -- chief all our skill.
+}

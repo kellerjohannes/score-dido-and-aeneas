@@ -222,3 +222,17 @@ lyricsSNXI = \lyricmode {
   go re -- vel ye Cu -- pids, go re -- vel, go re -- vel ye Cu -- pids,
   go re -- vel the day is your own.
 }
+
+chorusSNXIII = \relative d'' {
+  \time 3/4
+  \key bes \major
+  \clef \chorusSClef
+  d4. es8 f4 | d2 d4 | d( es) d8( c) | bes4( a) g8( f) | c'2. | e4. f8 g4 | e2 f4 |
+  g4( e) f | e( c) d | c2.~ | c2 c4 | c( a) bes | a( e) f | f'2 e4 | f2. \bar "|."
+}
+
+lyricsSNXIII = \lyricmode {
+  Harm's our de -- light and mis -- chief all our skill,
+  Harm's our de -- light and mis -- chief all our skill,
+  and mis -- chief, mis -- chief all our skill.
+}

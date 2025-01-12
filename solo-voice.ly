@@ -426,3 +426,42 @@ lyricsNX = \lyricmode {
   pur -- sue thy con -- quest, Love, pur -- sue thy con -- quest,
   pur -- sue thy con -- quest, Love, pur -- sue thy con -- quest, Love.
 }
+
+soloVoiceNXII = \relative f {
+  \time 4/4
+  \key f \minor
+  \clef \sorceressClef
+  \autoBeamOff
+  R1*16 | r2 r4 f8^\sorceressName e | f8 f4. r4 as8 f | c'2. c4 | e,4. e8 e e e e |
+
+  f4 r r8 f f4 | f8( es4) es8 es4. d8 | d4 d2 d8 d | g4. as8 g4( f8) e16([ f)] | e4 e2 g4 |
+  c4 r8 c c4 c8 e | c2 r4 c | c8([ bes)] bes bes bes4 as8 g | as4 as2 f4 | des'2 f,4.( g8) | as2 g |
+  f4 r8 f c'4 r8 c | c4 r8 c, f4 r8 f | f2 r | \clef \firstWitchClef bes'2^\firstWitchName r4 bes8 f | bes4 f'8 d16 c bes4 r \bar "|."
+}
+
+lyricsNXII = \lyricmode {
+  We -- ird Sis -- ters, you that fright The lone -- ly tra -- vel -- ler by night,
+  Who, like dis -- mal ra -- vens cry -- ing,
+  Beat the win -- dows of the dy -- ing, Ap -- pear!,
+  Ap -- pear at my call, and share in the fame
+  Of a mis -- chief shall make all Car -- thage flame.
+  Ap -- pear!, ap -- pear!, ap -- pear!, ap -- pear!
+
+  Say Bel -- dame, say what is thy will.
+}
+
+soloVoiceNXIV = \relative f {
+  \time 4/4
+  \key f \minor
+  \clef \sorceressClef
+  \autoBeamOff
+  r4 r8 f^\sorceressName f4. g8 | as4 as r as8 c | f,4 r r8 f as f | d'4 c16( bes8.) bes4 a | bes4 r r f |
+  bes4 bes r8 bes g4 | as2( e4.) f8 | e4 r8 g g4. g8 | c2. c,4 | c8([ d e f] g4) g, \bar "||"
+}
+
+lyricsNXIV = \lyricmode {
+  The Queen of Car -- thage whom we hate,
+  As we do all in prosp' rous state,
+  Ere sun -- set, shall most wretch -- ed prove,
+  De -- priv'd of fame, of life and % 'love.' is located in the next number.
+}

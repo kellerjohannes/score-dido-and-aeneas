@@ -1,9 +1,10 @@
 %% Utilities
 
-ext = \once\bassFigureExtendersOn
-extOn = \bassFigureExtendersOn
-extOff = \bassFigureExtendersOff
+ext = \once\bassFigureExtendersOn  % To draw figured bass lines into the next harmony.
+extOn = \bassFigureExtendersOn     % To switch on figured bass lines until further notice.
+extOff = \bassFigureExtendersOff   % To end figured bass lines.
 
+dashPlus = \trill   % Defines the meaning of the -+ suffix on note names.
 
 %% Titles and character names & clefs
 
@@ -26,6 +27,12 @@ attendantName = \markup { \caps Attendant }
 
 aeneasClef = "tenor"
 aeneasName = \markup { \caps Æneas }
+
+sorceressClef = "bass"
+sorceressName = \markup { \caps Sorceress }
+
+firstWitchClef = "treble"
+firstWitchName = \markup { 1. \hspace #-1.2 \super st \caps Witch }
 
 %% Add more characters here
 

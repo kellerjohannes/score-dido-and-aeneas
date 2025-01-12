@@ -166,3 +166,17 @@ lyricsTNXI = \lyricmode {
   go re -- vel ye Cu -- pids, go re -- vel ye Cu -- pids,
   the day is your own.
 }
+
+chorusTNXIII = \relative d' {
+  \time 3/4
+  \key bes \major
+  \clef \chorusTClef
+  d4. d8 c4 | d2 bes4 | bes2 c4 | c2 d4 | e2. | e4. e8 d4 | c2 d4 |
+  e( c) d | e2 e4 | e2 d8( e) | f2 f4 | f2 d4 | e( c) c | c2 c4 | c2. \bar "|."
+}
+
+lyricsTNXIII = \lyricmode {
+  Harm's our de -- light and mis -- chief all our skill,
+  Harm's our de -- light and mis -- chief all our skill,
+  and mis -- chief, mis -- chief, mis -- chief all our skill.
+}

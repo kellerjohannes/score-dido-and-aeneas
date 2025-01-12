@@ -276,3 +276,32 @@ vnINXI = \relative g' {
   e b b | c g c | c4. d8 c b | c2 r4 | r r c | f c d | d b b |
   b g d' | g d d | e b b | c g c | c4. d8 c b | c2. \bar "|."
 }
+
+vnINXII = \relative c'' {
+  \time 4/4
+  \key f \minor
+  \clef \vnIClef
+  r2 c4. c8 | f2 g4.-+ as8 | e2 g4. g8 | g2 as | bes4. bes8 bes as bes g | as2 d,4. d8 | d4. d8 es4. f8 |
+  g2 f4. f8 | f2 es4. es8 | es4. d8 es4 des | c2 es4. es8 | d2 des4. des8 | c2 a4. a8 | bes4. c8 c4. bes16 c |
+  d2 f4. g,8 | as2 g | f1 | as~ | as | bes |
+
+  as | a | bes~ | bes2 as | g1~ |
+  g~ | g~ | g | f2 as | g f~ | f e |
+  f1~ | f~ | f~ | f~ | f \bar "|."
+}
+
+vnINXIII = \relative d'' {
+  \time 3/4
+  \key bes \major
+  \clef \vnIClef
+  d4. es8 f4 | d2 d4 | d es d8 c | bes4 a g8 f | c'2. | e4. f8 g4 | e2 f4 |
+  g4 e f | e c d | c2.~ | c2 c4 | c a bes | a e f | f'2 e4 | f2. \bar "|."
+}
+
+vnINXIV = \relative as' {
+  \time 4/4
+  \key f \minor
+  \clef \vnIClef
+  as1 | f~ | f~ | f2 es | d1~ |
+  d~ | d | c2 e | g c~ | c b \bar "||"
+}

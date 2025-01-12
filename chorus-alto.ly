@@ -175,3 +175,17 @@ lyricsANXI = \lyricmode {
   go re -- vel, ye Cu -- pids, go re -- vel, go re -- vel ye Cu -- pids,
   the day is your own.
 }
+
+chorusANXIII = \relative f' {
+  \time 3/4
+  \key bes \major
+  \clef \chorusAClef
+  f4. f8 f4 | f2 f4 | g2 g4 | f2 f4 | g2. | g4. g8 g4 | g2.~ |
+  g2 g4 | g2 a4 | g2 g4 | a2 a4 | a2 f4 | f( g) a | a2 g4 | a2. \bar "|."
+}
+
+lyricsANXIII = \lyricmode {
+  Harm's our de -- light and mis -- chief all our skill,
+  Harm's our de -- light and mis -- chief all our skill,
+  and mis -- chief, mis -- chief all our skill.
+}
