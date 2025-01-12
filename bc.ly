@@ -641,7 +641,20 @@ bcNXI = \relative c {
   \time 3/4 \partial 4
   \key c \major
   \clef \bcClef
-  c8 d | e4 e c |
+  c8 d | e4 e c | g'2 a8 b | c4 c a | b b b | c c c, |
+  d2 d4 | g, d' d, | g2 g'4 | g g, g' | g g, g' |
+
+  c8. b16 c8. d16 c8. d16 | c4 c, c' | a4. a8 e4 | f4. d8 g4 | c,2 c4 | c' c, c |
+  c'8. d16 c8. bes16 a8. g16 | f4 f, f' | g2 g4 | g g, g' | g g, g' | c8. b16 c8. d16 c8. b16 |
+
+  a4 a, e' | a a c, | d2 e4 | a,2 a'4 | e e c | g'2 a8 b |
+  c4 c a | b b b | c c c, | d2 d4 | g, d' d, | g2 g'4 |
+
+  g4 g, g' | g g, g' | c8. b16 c8. d16 c8. d16 | c4 c, c' | a4. g8 f4 | e4. d8 c4 |
+  f2 f4 | a f f | a f d | g g g, | g g g' | g g g |
+
+  c g g | a e e | f4. d8 g4 | c,2 f4 | a f f | a f d | g g g, |
+  g g g' | g g g | c g g | a e e | f4. d8 g4 | c,2. \bar "|."
 }
 
 figuresNXI = \figuremode {

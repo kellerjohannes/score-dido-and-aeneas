@@ -250,6 +250,14 @@ vlaNXI = \relative c' {
   a2 a8 d | d4 d4. d8 | b4 b g8 a | b8. a16 b8. c16 b8. c16 | b4 g b |
 
   c4 c c | c g c | c2 c4 | c2 b4 | c2 g'4 | e c c' |
-  c g c | c a4. a8 | g2 g8. a16 | b8.
-  %% reading sign
+  c g c | c a4. a8 | g2 g,8. a16 | b8. a16 b8. c16 b8. c16 | b4 g b | c c e |
+
+  e e e | e2 e4 | f2 e4 | e2 c8 d | e4 c e | d2 d4 |
+  c4 c c | d b d | c e c | a2 a8 d | d4 d4. d8 | b4 b g8. a16 |
+
+  b8. a16 b8. c16 b8. c16 | b4 g b | c c c | c g c | c4. bes8 a4 | g4. f8 e4 |
+  f2 c'4 | f c c | c a a | b g d' | g d d | e b b |
+
+  c4 d d | c c e | d4. d8 e d | c2 c4 | f c c | c a a | b g d' |
+  g d d | e b b | c d d | c c e | d4. d8 e d | c2. \bar "|."
 }
