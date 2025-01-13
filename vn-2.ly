@@ -300,3 +300,12 @@ vnIINXIV = \relative c' {
   c1~ | c | d2 c~ | c8 bes d4 c2 | bes1~ |
   bes~ | bes2. c4 | g2 c | e g~ | g1 \bar "||"
 }
+
+vnIINXV = \relative g' {
+  \time 3/8
+  \key c \major
+  \clef \vnIIClef
+  g8 r r | r c, b | c e d | c g' f | e c r | r4. | r8 f e | f a g |
+
+  a a g | a4 r8 | r bes a | bes r bes | a a g | a g f | e e e | e4. \bar "|."
+}

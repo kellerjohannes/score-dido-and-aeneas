@@ -268,20 +268,20 @@
     }
   }
 
-  % \score {
-  %   \scoreTitleNXV
-  %   <<
-  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-  %     \bcNXV
-  %     \new FiguredBass { \figuresNXV }
-  %   >>
-  %   \layout {
-  %     \context {
-  %       \Staff
-  %       \RemoveAllEmptyStaves
-  %     }
-  %   }
-  % }
+  \score {
+    \scoreTitleNXV
+    <<
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXV
+      \new FiguredBass { \figuresNXV }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 
   % \score {
   %   \scoreTitleNXVI

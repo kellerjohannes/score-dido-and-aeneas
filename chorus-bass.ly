@@ -172,3 +172,17 @@ lyricsBNXIII = \lyricmode {
   Harm's our de -- light and mis -- chief all our skill,
   and mis -- chief all our skill.
 }
+
+chorusBNXV = \relative c {
+  \time 3/8
+  \key c \major
+  \clef \chorusBClef
+  \autoBeamOff
+  R4.*3 | r8 c b | c e d | c f e | f a g | f f c |
+
+  f4 r8 | r bes a | bes d c | bes a g | f f e | f e d | c c c | c4. \bar "|."
+}
+
+lyricsBNXV = \lyricmode {
+  Ho, \repeat unfold 31 { ho, } ho!
+}

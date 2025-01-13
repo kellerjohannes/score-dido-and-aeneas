@@ -305,3 +305,12 @@ vnINXIV = \relative as' {
   as1 | f~ | f~ | f2 es | d1~ |
   d~ | d | c2 e | g c~ | c b \bar "||"
 }
+
+vnINXV = \relative c'' {
+  \time 3/8
+  \key c \major
+  \clef \vnIClef
+  c8 r r | r4. | r8 c b | c e d | c g' f | e d c | d c bes | a c c |
+
+  c f e | f4 r8 | f f f | f f e | f c c | c c b | c c c | c4. \bar "|."
+}

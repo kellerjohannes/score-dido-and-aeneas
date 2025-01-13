@@ -180,3 +180,17 @@ lyricsTNXIII = \lyricmode {
   Harm's our de -- light and mis -- chief all our skill,
   and mis -- chief, mis -- chief, mis -- chief all our skill.
 }
+
+chorusTNXV = \relative e' {
+  \time 3/8
+  \key c \major
+  \clef \chorusTClef
+  \autoBeamOff
+  r8 c b | c e d | c g' f | e c r | r c b | c a g | a4 r8 | r f' e |
+
+  f f c | f d c | d f es | d f bes, | c a c | a c f, | g g g | g4. \bar "|."
+}
+
+lyricsTNXV = \lyricmode {
+  Ho, \repeat unfold 38 { ho, } ho!
+}

@@ -516,4 +516,50 @@
       }
     }
   }
+
+  \score {
+    \scoreTitleNXV
+    <<
+      \new StaffGroup = "strings"
+      <<
+        \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
+        \vnINXV
+        \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
+        \vnIINXV
+        \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
+        \vlaNXV
+      >>
+      \new ChoirStaff = "chorus"
+      <<
+        \new Staff = "chorusSoprano" \with { instrumentName = \instrumentNameChorusS }
+        \new Voice = "chorusS"
+        \chorusSNXV
+        \new Lyrics \lyricsto "chorusS" { \lyricsSNXV }
+
+        \new Staff = "chorusAlto" \with { instrumentName = \instrumentNameChorusA }
+        \new Voice = "chorusA"
+        \chorusANXV
+        \new Lyrics \lyricsto "chorusA" { \lyricsANXV }
+
+        \new Staff = "chorusT" \with { instrumentName = \instrumentNameChorusT }
+        \new Voice = "chorusT"
+        \chorusTNXV
+        \new Lyrics \lyricsto "chorusT" { \lyricsTNXV }
+
+        \new Staff = "chorusBass" \with { instrumentName = \instrumentNameChorusB }
+        \new Voice = "chorusB"
+        \chorusBNXV
+        \new Lyrics \lyricsto "chorusB" { \lyricsBNXV }
+      >>
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXV
+      \new FiguredBass { \figuresNXV }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 }

@@ -290,3 +290,12 @@ vlaNXIV = \relative f {
   f1 | as | as4 bes f2~ | f1 | f |
   g | f | c2 g'~ | g e'~ | e d \bar "||"
 }
+
+vlaNXV = \relative e' {
+  \time 3/8
+  \key c \major
+  \clef \vlaClef
+  e8 c[ b] | c e d | c g' f | e c r | r c b | c a g | a4 r8 | r f' e |
+
+  f f c | f d c | d f es | d f bes, | c a c | a c f, | g g g | g4. \bar "|."
+}

@@ -236,3 +236,17 @@ lyricsSNXIII = \lyricmode {
   Harm's our de -- light and mis -- chief all our skill,
   and mis -- chief, mis -- chief all our skill.
 }
+
+chorusSNXV = \relative c'' {
+  \time 3/8
+  \key c \major
+  \clef \chorusSClef
+  \autoBeamOff
+  R4.*2 | r8 c b | c e d | c g' f | e d c | d c bes | a c c |
+
+  c f e | f4 r8 | f f f | f f e | f c c | c c b | c c c | c4. \bar "|."
+}
+
+lyricsSNXV = \lyricmode {
+  Ho, \repeat unfold 35 { ho, } ho!
+}

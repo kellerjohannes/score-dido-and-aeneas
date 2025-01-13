@@ -189,3 +189,17 @@ lyricsANXIII = \lyricmode {
   Harm's our de -- light and mis -- chief all our skill,
   and mis -- chief, mis -- chief all our skill.
 }
+
+chorusANXV = \relative g' {
+  \time 3/8
+  \key c \major
+  \clef \chorusAClef
+  \autoBeamOff
+  R4. | r8 c, b | c e d | c g' f | e c r | r4. | r8 f e | f a g |
+
+  a a g | a4 r8 | r bes a | bes r bes | a a g | a g f | e e e | e4. \bar "|."
+}
+
+lyricsANXV = \lyricmode {
+  Ho, \repeat unfold 31 { ho, } ho!
+}

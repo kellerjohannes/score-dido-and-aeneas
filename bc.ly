@@ -723,3 +723,18 @@ figuresNXIV = \figuremode {
   < 6 > | < 7 > | < _! > | s1 | < 6! 4 >2 < 5 3! > |
 
 }
+
+bcNXV = \relative c {
+  \time 3/8
+  \key c \major
+  \clef \bcClef
+  c4 g8 | c4 g8 | c4 g8 | c c b | c e d | c f e | f a g | f f c |
+
+  f4 c'8 | f, bes a | bes d c | bes a g | f f e | f e d | c c c | c4. \bar "|."
+}
+
+figuresNXV = \figuremode {
+  s4.*2 | s4 < 7 >8 | s4 < 6 5 >8 | s < 6 > < 6 > | s < 6 > < 6 > | < 6 > < 6 > < 6 _- > | s4. |
+
+  s4. | s4 < 6 >8 | s < 6- > < 6 4 _- > | s < 6 > < 6! > | s4 < 6 >8 | s < 6 > < 6! > | s4.*2 |
+}
