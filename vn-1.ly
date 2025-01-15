@@ -314,3 +314,15 @@ vnINXV = \relative c'' {
 
   c f e | f4 r8 | f f f | f f e | f c c | c c b | c c c | c4. \bar "|."
 }
+
+vnINXVI = \relative e' {
+  \time 4/4
+  \key c \major
+  \clef \vnIClef
+  R1*3 | r2 e~ | e g | a g |
+
+  fis a | g fis | \tuplet 3/2 4 { d8 d d fis fis fis a a a fis fis fis } | d4 r \tuplet 3/2 4 { d8 d d fis fis fis } |
+  \tuplet 3/2 4 { a8 a a fis fis fis } d4 r | R1 | r2 \tuplet 3/2 4 { d8 d d fis fis fis | a a a fis fis fis d d d a a a } | d4 r f2~ |
+  f1~ | f | a |
+  a2 bes | g4 f e a | f2. e4 \bar "||"
+}
