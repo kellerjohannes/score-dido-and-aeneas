@@ -465,3 +465,48 @@ lyricsNXIV = \lyricmode {
   Ere sun -- set, shall most wretch -- ed prove,
   De -- priv'd of fame, of life and % 'love.' is located in the next number.
 }
+
+soloVoiceINXVI = \relative a' {
+  \time 4/4
+  \key c \major
+  \clef \firstWitchClef
+  \autoBeamOff
+  r4 a8^\firstWitchName a a a bes c | d4 d16 bes8. r4 f'16 d8. | r4 d4~ d8 c bes a |
+  g4 r r2
+}
+
+lyricsINXVI = \lyricmode {
+  Ru -- in'd ere the set of sun? Tell us, tell us, how shall this be done?
+}
+
+soloVoiceIINXVI = \relative a' {
+  \time 4/4
+  \key c \major
+  \clef \firstWitchClef
+  \autoBeamOff
+  R1 | r2 bes16^\secondWitchName f8. r4 | d'16 bes8. bes4~ bes8 a g f |
+  e4 r4 \clef \sorceressClef r8^\sorceressName g,8 g g | g g g a bes4 r8 bes | c c c d bes4. bes8 |
+
+  a4 r8 a d8. d16 d4~ | d8 d d cis d4 r | R1 | r4 \clef \firstWitchClef a'4^\firstWitchName r2 |
+  r2 r4 d | r8 d d16([ e] fis4) e8 d a | d,4 r r2 | R1 | r2 \clef \sorceressClef r8^\sorceressName f,8 f f |
+  bes4 r8 bes bes a bes4~ | bes8 bes bes bes a a a bes | c4 r8 c c c c8. d16 |
+  es4( d8.) es16 d4 r8 c | bes[( a g)] f g8. c,16 c'4~ | c8 a d g, a4 g \bar "||"
+}
+
+lyricsIINXVI = \lyricmode {
+  %% 2nd Witch:
+  Tell us, tell us, how shall this be done?
+
+  %% Sorceress:
+  The Tro -- jan Prince, you know, is bound by Fate
+  To seek the La -- tian ground;
+  the Queen and he are now in chase.
+
+  %% 1st Witch:
+  Hark!, Hark!, the cry comes on a -- pace.
+
+  %% Sorceress:
+  But, when they-ve done, my trus -- ty Elf,
+  In form of Mer -- cu -- ry him -- self
+  As sent from Jove, shall chide his stay, And charge him sail to night with all his fleet a_-
+}

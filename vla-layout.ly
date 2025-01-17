@@ -194,25 +194,37 @@
     }
   }
 
-  % \score {
-  %   \partbookTitleNXVI
-  %   <<
-  %     \new Staff { \compressMMRests { \vlaNXVI } }
-  %   >>
-  %   \layout {
-  %     indent = #0
-  %   }
-  % }
+  \score {
+    \partbookTitleNXVI
+    <<
+      \new Staff { \compressMMRests { \vlaNXVI } }
+      \new Staff \with { \magnifyStaff #0.7 }
+      \new Voice = "voiceOne"
+      \soloVoiceINXVI
+      \new Lyrics \lyricsto "voiceOne" { \lyricsINXVI }
+      \new Staff \with { \magnifyStaff #0.7 }
+      \new Voice = "voiceTwo"
+      \soloVoiceIINXVI
+      \new Lyrics \lyricsto "voiceTwo" { \lyricsIINXVI }
+    >>
+    \layout {
+      indent = #0
+      \context {
+        \Score
+        \override LyricText.font-size = #'-1.0
+      }
+    }
+  }
 
-  % \score {
-  %   \partbookTitleNXVII
-  %   <<
-  %     \new Staff { \compressMMRests { \vlaNXVII } }
-  %   >>
-  %   \layout {
-  %     indent = #0
-  %   }
-  % }
+  \score {
+    \partbookTitleNXVII
+    <<
+      \new Staff { \compressMMRests { \vlaNXVII } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
 
   % \score {
   %   \partbookTitleNXVIII

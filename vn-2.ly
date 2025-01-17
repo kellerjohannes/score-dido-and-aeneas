@@ -309,3 +309,22 @@ vnIINXV = \relative g' {
 
   a a g | a4 r8 | r bes a | bes r bes | a a g | a g f | e e e | e4. \bar "|."
 }
+
+vnIINXVI = \relative c' {
+  \time 4/4
+  \key c \major
+  \clef \vnIIClef
+  R1*3 | r2 c~ | c d | es d |
+
+  d fis | e d | \tuplet 3/2 4 { a'8 a a d d d fis fis fis d d d } | a4 r \tuplet 3/2 4 { a8 a a d d d | fis fis fis d d d } a4 r | R1 | r2 \tuplet 3/2 4 { a8 a a d d d | fis fis fis d d d a a a fis fis fis } | a4 r d,2~ |
+  d1~ | d | c2 f |
+  f1 | d2 c | d c \bar "||"
+}
+
+vnIINXVII = \relative c' {
+  \time 3/8
+  \key f \major
+  \clef \vnIIClef
+  c8 f[ e] | f a g | g f g | a g f | e c r | r c b | c a' g | a bes a |
+  bes f es | d f g | a a g | a g f | e4 f8 | f f e | f f f | f4. \bar "|."
+}

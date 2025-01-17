@@ -186,3 +186,17 @@ chorusBNXV = \relative c {
 lyricsBNXV = \lyricmode {
   Ho, \repeat unfold 31 { ho, } ho!
 }
+
+chorusBNXVII = \relative f {
+  \time 3/8
+  \key f \major
+  \clef \chorusBClef
+  \autoBeamOff
+  f8 r r | r f e | f a g | f e g | c, c b | c e d | c c' bes | a d c |
+  bes4 a8 | bes a g | f f e | f e d | c bes a | bes c c | f f f | f4. \bar "|."
+}
+
+lyricsBNXVII = \lyricmode {
+  -_way.
+  Ho, \repeat unfold 39 { ho, } ho!
+}

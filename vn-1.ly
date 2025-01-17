@@ -326,3 +326,11 @@ vnINXVI = \relative e' {
   f1~ | f | a |
   a2 bes | g4 f e a | f2. e4 \bar "||"
 }
+
+vnINXVII = \relative f' {
+  \time 3/8
+  \key f \major
+  \clef \vnIClef
+  f8 r r | R4. | r8 c' bes | c e d | c g' f | e c f | f f e | f4 r8 |
+  f8 f f | f f e | f c c | c c b | c c c | d c bes | a a a | a4. \bar "|."
+}

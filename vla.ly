@@ -299,3 +299,23 @@ vlaNXV = \relative e' {
 
   f f c | f d c | d f es | d f bes, | c a c | a c f, | g g g | g4. \bar "|."
 }
+
+vlaNXVI = \relative g {
+  \time 4/4
+  \key c \major
+  \clef \vlaClef
+  R1*3 | r2 g2~ | g1 | fis2 g |
+
+  c1~ | c | \tuplet 3/2 4 { fis8 fis fis a a a d d d a a a } | fis4 r \tuplet 3/2 4 { fis8 fis fis a a a |
+                                                                                      d d d a a a } fis4 r | R1 | r2 \tuplet 3/2 4 { fis8 fis fis a a a | d d d a a a fis fis fis d d d } | fis4 r bes,2~ |
+  bes1~ | bes | a2 c |
+  c d | g,8 a bes a g4 r8 c | a4 bes a g \bar "||"
+}
+
+vlaNXVII = \relative a {
+  \time 3/8
+  \key f \major
+  \clef \vlaClef
+  a8 r r | R4.*2 | r8 c b | c e d | c4 r8 | R4. | r8 f es |
+  d d c | bes c bes | c a c | a c f, | g g a | g a c | c c c | c4. \bar "|."
+}

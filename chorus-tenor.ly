@@ -194,3 +194,16 @@ chorusTNXV = \relative e' {
 lyricsTNXV = \lyricmode {
   Ho, \repeat unfold 38 { ho, } ho!
 }
+
+chorusTNXVII = \relative c' {
+  \time 3/8
+  \key f \major
+  \clef \chorusTClef
+  \autoBeamOff
+  R4.*3 | r8 c b | c e d | c4 r8 | R4. | r8 f es |
+  d d c | bes c bes | c a c | a c f, | g g a | g a c | c c c | c4. \bar "|."
+}
+
+lyricsTNXVII = \lyricmode {
+  Ho, \repeat unfold 28 { ho, } ho!
+}

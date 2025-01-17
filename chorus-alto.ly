@@ -203,3 +203,17 @@ chorusANXV = \relative g' {
 lyricsANXV = \lyricmode {
   Ho, \repeat unfold 31 { ho, } ho!
 }
+
+chorusANXVII = \relative f' {
+  \time 3/8
+  \key f \major
+  \clef \chorusAClef
+  \autoBeamOff
+  r8 f e | f a g | f f g | a g f | e c r | r c b | c a' g | a bes a |
+  bes f es | d f g | a a g | a g f | e4 f8 | f f e | f f f | f4. \bar "|."
+
+}
+
+lyricsANXVII = \lyricmode {
+  Ho, \repeat unfold 40 { ho, } ho!
+}

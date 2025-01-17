@@ -738,3 +738,38 @@ figuresNXV = \figuremode {
 
   s4. | s4 < 6 >8 | s < 6- > < 6 4 _- > | s < 6 > < 6! > | s4 < 6 >8 | s < 6 > < 6! > | s4.*2 |
 }
+
+bcNXVI = \relative f {
+  \time 4/4
+  \key c \major
+  \clef \bcClef
+  f1 | bes,~ | bes2 e,4 f |
+  c'1~ | c2 g | g1 |
+
+  d'~ | d | d,~ | d~ |
+  d~ | d~ | d~ | d~ | d4 r bes'2~ |
+  bes1~ | bes | f~ |
+  f2 bes~ | bes2. a4 | d bes c2 |
+}
+
+figuresNXVI = \figuremode {
+  s1 | s1 | s2 < 7 5- >2 |
+  s1 | s2 < _- > | < 7/ 6- 4 2 >2 < 8 _- > |
+
+  < _+ >1 | < 8 4 2 >2 < 7+ >4 < 8 _+ > | < _+ >1 | s1 |
+  s1*8 |
+  < 7- >1 | < 6 >4 < 5 > < 4! 2 > < 6 > | < 7 > < 6 5 > < 6 4 > < 5 3 > |
+}
+
+bcNXVII = \relative f, {
+  \time 3/8
+  \key f \major
+  \clef \bcClef
+  f4 c'8 | f f e | f a g | f e g | c, c b | c e d | c c' bes | a d c |
+  bes4 a8 | bes a g | f f e | f e d | c bes a | bes c c | f f f | f4. \bar "|."
+}
+
+figuresNXVII = \figuremode {
+  s4. | s4 < 6 >8 | s8 < 6 > < _! > | s < 6 > < 7 _! > | s4 < 6 5 >8 | s < 6 > < 6! > | < 6 4 >4 < 4 2 >8 | < 6 > < 6 > < 6 _- > |
+  s4 < 6 5- >8 | s8 < 6 > < 6! > | s4 < 6 >8 | s8 < 6 > < 6! > | s8 < 4 2 > < 6 > | < 6 5 > < 6 4 > < 7 3 > | s4. | s4. |
+}

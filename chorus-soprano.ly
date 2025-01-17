@@ -250,3 +250,16 @@ chorusSNXV = \relative c'' {
 lyricsSNXV = \lyricmode {
   Ho, \repeat unfold 35 { ho, } ho!
 }
+
+chorusSNXVII = \relative c'' {
+  \time 3/8
+  \key f \major
+  \clef \chorusSClef
+  \autoBeamOff
+  R4.*2 | r8 c bes | c e d | c g' f | e c f | f f e | f4 r8 |
+  f8 f f | f f e | f c c | c c b | c c c | d c bes | a a a | a4. \bar "|."
+}
+
+lyricsSNXVII = \lyricmode {
+  Ho, \repeat unfold 35 { ho, } ho!
+}

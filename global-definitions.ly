@@ -34,6 +34,9 @@ sorceressName = \markup { \caps Sorceress }
 firstWitchClef = "treble"
 firstWitchName = \markup { 1. \hspace #-1.2 \super st \caps Witch }
 
+secondWitchClef = "treble"
+secondWitchName = \markup { 2. \hspace #-1.2 \super nd \caps Witch }
+
 %% Add more characters here
 
 

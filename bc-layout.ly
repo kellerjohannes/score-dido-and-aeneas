@@ -283,35 +283,43 @@
     }
   }
 
-  % \score {
-  %   \scoreTitleNXVI
-  %   <<
-  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-  %     \bcNXVI
-  %     \new FiguredBass { \figuresNXVI }
-  %   >>
-  %   \layout {
-  %     \context {
-  %       \Staff
-  %       \RemoveAllEmptyStaves
-  %     }
-  %   }
-  % }
+  \score {
+    \partbookTitleNXVI
+    <<
+      \new Staff \with { \magnifyStaff #0.7 }
+      \new Voice = "voiceOne"
+      \soloVoiceINXVI
+      \new Lyrics \lyricsto "voiceOne" { \lyricsINXVI }
+      \new Staff \with { \magnifyStaff #0.7 }
+      \new Voice = "voiceTwo"
+      \soloVoiceIINXVI
+      \new Lyrics \lyricsto "voiceTwo" { \lyricsIINXVI }
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXVI
+      \new FiguredBass { \figuresNXVI }
+    >>
+    \layout {
+      \context {
+        \Score
+        \override LyricText.font-size = #'-1.0
+      }
+    }
+  }
 
-  % \score {
-  %   \scoreTitleNXVII
-  %   <<
-  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-  %     \bcNXVII
-  %     \new FiguredBass { \figuresNXVII }
-  %   >>
-  %   \layout {
-  %     \context {
-  %       \Staff
-  %       \RemoveAllEmptyStaves
-  %     }
-  %   }
-  % }
+  \score {
+    \scoreTitleNXVII
+    <<
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXVII
+      \new FiguredBass { \figuresNXVII }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 
   % \score {
   %   \scoreTitleNXVIII
