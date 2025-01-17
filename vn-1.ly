@@ -334,3 +334,25 @@ vnINXVII = \relative f' {
   f8 r r | R4. | r8 c' bes | c e d | c g' f | e c f | f f e | f4 r8 |
   f8 f f | f f e | f c c | c c b | c c c | d c bes | a a a | a4. \bar "|."
 }
+
+vnINXVIII = \relative d {
+  \time 4/4 \partial 4
+  \key f \major
+  \clef \vnIClef
+  r4 |
+  \repeat volta 2 {
+    R1*13
+    \alternative {
+      { R1 }
+      { R1 }
+    }
+  }
+  \repeat volta 2 {
+    R1*15
+    \alternative {
+      { R1 }
+      { R1 }
+    }
+  }
+  \bar "|."
+}

@@ -773,3 +773,32 @@ figuresNXVII = \figuremode {
   s4. | s4 < 6 >8 | s8 < 6 > < _! > | s < 6 > < 7 _! > | s4 < 6 5 >8 | s < 6 > < 6! > | < 6 4 >4 < 4 2 >8 | < 6 > < 6 > < 6 _- > |
   s4 < 6 5- >8 | s8 < 6 > < 6! > | s4 < 6 >8 | s8 < 6 > < 6! > | s8 < 4 2 > < 6 > | < 6 5 > < 6 4 > < 7 3 > | s4. | s4. |
 }
+
+bcNXVIII = \relative d {
+  \time 4/4 \partial 4
+  \key f \major
+  \clef \bcClef
+  r4 |
+  \repeat volta 2 {
+    d1~ | d~ | d~ | d~ |
+    d~ | d2 bes | a1~ | a2 f | e1~ |
+    e | a4 a'8 g f4 e | d2 e | c4 a e' e, |
+    \alternative {
+      { a4 a'8 bes a g f e }
+      { a,2 r }
+    }
+  }
+  \repeat volta 2 {
+    f1~ | f | c'2 g | c f | d b |
+    c a | bes g | e f | bes c | f d | g c, |
+    f bes, | e a, | d2. g,4 | a1 |
+    \alternative {
+      { d4. e8 f2 }
+      { d,1 }
+    }
+  }
+  \bar "|."
+}
+
+figuresNXVIII = \figuremode {
+}

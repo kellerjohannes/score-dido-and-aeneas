@@ -328,3 +328,25 @@ vnIINXVII = \relative c' {
   c8 f[ e] | f a g | g f g | a g f | e c r | r c b | c a' g | a bes a |
   bes f es | d f g | a a g | a g f | e4 f8 | f f e | f f f | f4. \bar "|."
 }
+
+vnIINXVIII = \relative d {
+  \time 4/4 \partial 4
+  \key f \major
+  \clef \vnIIClef
+  r4 |
+  \repeat volta 2 {
+    R1*13
+    \alternative {
+      { R1 }
+      { R1 }
+    }
+  }
+  \repeat volta 2 {
+    R1*15
+    \alternative {
+      { R1 }
+      { R1 }
+    }
+  }
+  \bar "|."
+}

@@ -286,11 +286,11 @@
   \score {
     \partbookTitleNXVI
     <<
-      \new Staff \with { \magnifyStaff #0.7 }
+      \new Staff
       \new Voice = "voiceOne"
       \soloVoiceINXVI
       \new Lyrics \lyricsto "voiceOne" { \lyricsINXVI }
-      \new Staff \with { \magnifyStaff #0.7 }
+      \new Staff
       \new Voice = "voiceTwo"
       \soloVoiceIINXVI
       \new Lyrics \lyricsto "voiceTwo" { \lyricsIINXVI }
@@ -321,20 +321,28 @@
     }
   }
 
-  % \score {
-  %   \scoreTitleNXVIII
-  %   <<
-  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-  %     \bcNXVIII
-  %     \new FiguredBass { \figuresNXVIII }
-  %   >>
-  %   \layout {
-  %     \context {
-  %       \Staff
-  %       \RemoveAllEmptyStaves
-  %     }
-  %   }
-  % }
+  \score {
+    \partbookTitleNXVIII
+    <<
+      \new Staff \with { instrumentName = \firstWitchName }
+      \new Voice = "voiceOne"
+      \soloVoiceINXVIII
+      \new Lyrics \lyricsto "voiceOne" { \lyricsINXVIII }
+      \new Staff \with { instrumentName = \secondWitchName }
+      \new Voice = "voiceTwo"
+      \soloVoiceIINXVIII
+      \new Lyrics \lyricsto "voiceTwo" { \lyricsIINXVIII }
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXVIII
+      \new FiguredBass { \figuresNXVIII }
+    >>
+    \layout {
+      \context {
+        \Score
+        \override LyricText.font-size = #'-1.0
+      }
+    }
+  }
 
   % \score {
   %   \scoreTitleNXIX

@@ -319,3 +319,25 @@ vlaNXVII = \relative a {
   a8 r r | R4.*2 | r8 c b | c e d | c4 r8 | R4. | r8 f es |
   d d c | bes c bes | c a c | a c f, | g g a | g a c | c c c | c4. \bar "|."
 }
+
+vlaNXVIII = \relative d {
+  \time 4/4 \partial 4
+  \key f \major
+  \clef \vlaClef
+  r4 |
+  \repeat volta 2 {
+    R1*13
+    \alternative {
+      { R1 }
+      { R1 }
+    }
+  }
+  \repeat volta 2 {
+    R1*15
+    \alternative {
+      { R1 }
+      { R1 }
+    }
+  }
+  \bar "|."
+}

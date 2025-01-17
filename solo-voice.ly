@@ -510,3 +510,105 @@ lyricsIINXVI = \lyricmode {
   In form of Mer -- cu -- ry him -- self
   As sent from Jove, shall chide his stay, And charge him sail to night with all his fleet a_-
 }
+
+soloVoiceINXVIII = \relative a' {
+  \time 4/4 \partial 4
+  \key f \major
+  \clef \firstWitchClef
+  \autoBeamOff
+  r4 | \repeat volta 2 {
+    r2 r4 a | f d f8([ g)] a4 | d2 r4 e | f e8([ d)] d4 a |
+    d( c8[ bes] a[ g f e] | d2) r4 d' | c a c4. d8 | e2 r4 b | gis e gis4. a8 |
+    b2 r4 e | c a d e | f8([ e d c)] b([ c)] d([ b] | c[ d)] e([ d)] c4 b |
+    \alternative {
+      { a2 r }
+      { a2 r4 a }
+    }
+  }
+  \repeat volta 2 {
+    c4 a f8([ g)] a4 | f2 r4 c' | e c c8([ d)] e4 | c2. c4 | f2.( e8[ d] |
+    e2. d8[ cis] | d2. e8[ d] | c2. d8[ c] | d[ c]) bes4 a g | f c' f2~( | f4 e8[ d] e2~ |
+    e4 f8[ e] d2~ | d4 e8[ d] cis[ d e cis] | d[ e d e] f4) e8([ d)] | cis([ d)] e4 d c |
+    \alternative {
+      { d2 r4 a }
+      { d1 }
+    }
+  }
+  \bar "|."
+}
+
+lyricsINXVIII = \lyricmode {
+  \repeat volta 2 {
+    But, ere we this per -- form,
+    We'll con -- jure for a storm,
+    but ere we this per -- form,
+    but ere we this per -- form,
+    we'll con -- jure for a storm,
+    we'll con -- jure for a
+    \alternative {
+      { storm, }
+      { storm, to }
+    }
+  }
+  \repeat volta 2 {
+    mar their hunt -- ting sport,
+    to mar their hun -- ting sport,
+    And drive 'em back to court,
+    and drive 'em, drive 'em back to
+    \alternative {
+      { court, to }
+      { court. }
+    }
+  }
+  \bar "|."
+}
+
+soloVoiceIINXVIII = \relative a' {
+  \time 4/4 \partial 4
+  \key f \major
+  \clef \secondWitchClef
+  a4 |
+  \repeat volta 2 {
+    f d f8([ g)] a4 | d2 r4 e | f e8([ d)] d4 a | d( c8[ bes] a[g f e] |
+    d2) r4 a' | f d f4. g8 | a2 r4 b | c c c d | e( f8[ e] d[ c b a] |
+    gis[ fis e fis] g[ a b g] | a2) r4 cis4 | d8[( c b a] gis[ a b g] | a[ b]) c([ b)] a4 gis |
+    \alternative {
+      { a2 r4 a }
+      { a2 r }
+    }
+  }
+  \repeat volta 2 {
+    r2 r4 a4 c a f8([ g)] a4 | g e e8([ f)] g4 | e e a2(~ | a4 g8[ f] g2~ |
+    g4 f8[ e] f2~ | f4 g8[ a] bes2~ | bes4 a8[ g] a4 bes8[ a] | bes[ a]) g4 f e | f2 r4 a | bes2.( c8[ bes] |
+    a2. bes8[ a] | g2~ g8[ bes a g] | f[ g f g] a4) g8[( f)] | e([ f)] g4 f e |
+    \alternative {
+      { d2 r }
+      { d1 }
+    }
+  }
+  \bar "|."
+}
+
+lyricsIINXVIII = \lyricmode {
+  \repeat volta 2 {
+    But, ere we this per -- form,
+    We'll con -- jure for a storm,
+    but ere we this per -- form,
+    we'll con -- jure for a storm,
+    we'll con -- jure for a
+    \alternative {
+      { storm, But }
+      { storm }
+    }
+  }
+  \repeat volta 2 {
+    To mar their hun -- ting sport, their hun -- ting sport,
+    And drive 'em back to court,
+    and drive 'em, drive 'em back to
+    \alternative {
+      { court. }
+      { court. }
+    }
+  }
+  \bar "|."
+}
