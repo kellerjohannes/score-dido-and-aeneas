@@ -821,3 +821,26 @@ figuresNXIX = \figuremode {
   < 7 5- >4 < 6- 4 > < 5 _! > | < _! > < 6 > < 5 > | s4 < 6 >2 | s2. | s2 < 6 >4 | s4 < 6 >2 | s2. | s2 < 6 4 >4 |
   < 5 3 >4 < 6 > < 4 2 > | < 6 >2. | s4 < 6 > < 4 2 > | < 6 >2. | s4 < 6 4 > < 5 3 > | s2. | s4 < 6 4 > < 7 > | s2. |
 }
+
+bcNXX = \relative d {
+  \time 3/4
+  \key d \minor
+  \clef \bcClef
+  d2 d'4 | a d d, | a' d,2 | a' a,4 | b cis2 | d c4 | bes2. | a4 a'8 g f e |
+  d4. a'8 d4 | a d d, | a' d,2 | a' f4 | e a2 | d, c4 | bes4. a8 bes4 | a2. |
+  a' | d,4 e f | g2. | c,4 d e | f2 d4 | e4. d8 c b | a4 e' e, | a a' gis |
+  a2 a,4 | d e f | g2. | e4 f g | a2 bes4 | a4. g8 f4 | d a' a, | d4 f g |
+
+  a2 a,4 | d e f | g2 g,4 | c d e | f4. e8 f d | e4. d8 c4 | a e' e, | a4. e'8 fis gis |
+  a2 a,4 | d e f | g2 f4 | e f g | a4. a8 bes g | a4. g8 f4 | d a' a, | d2. \bar "|."
+}
+
+figuresNXX = \figuremode {
+  s2. | < _+ > | < _+ > | < _+ >2 < 6 >4 | < 6 >2 < 6 >4 | < 5 3 > < 5 2 > \ext < 5 2 > | < 7 >4 < 6 >2 | < _+ >4 \extOn 8 8 8 8 \extOff |
+  s4. < _+ > | < _+ >2. | < _+ > | < _+ >2 < 6 >4 | s4 < _+ >2 | < 5 3 >4 < 5 2 > \ext 4 | < 7 >4. \ext 8 < 5 >4 | < 6 4 > < 5 _+ >2 |
+  < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2. | < _ >4 \extOn 4 4 \extOff | < 7 >4 < 6 > < 6 > | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5! _+ > | s2 < 6 >4 |
+  < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2. | < 6 >4 \ext 4 < 7 > | < 7 _+ > < 6 >2 | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5 _+ > | < _ >4 \extOn 4 4 \extOff |
+
+  < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2 \ext 4 | < _ >4 \extOn 4 4 \extOff | < 7 >4. < 6 >8 \ext 8 < 6! > | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5! _+ > | < _ >4. \extOn 8 8 8 \extOff |
+  < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2 \ext 4 | < 6 >2 < 7 >4 | < 7 _+ >4 < 6 > < 4 2 >8 < 5 3 > | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5 _+ > | s2. |
+}

@@ -212,3 +212,16 @@ chorusBNXIX = \relative d {
   R2. | r4 r c8 c | d4 d a | bes2 r4 | r r a | g g f | c'2 r4 | r r f |
   c' c bes | a f r | R2. | r4 r bes | bes, c4. c8 | f2 r4 | R2. | r4 r s4 \bar "|."
 }
+
+chorusBNXX = \relative d {
+  \time 3/4
+  \key d \minor
+  \clef \chorusBClef
+  \autoBeamOff
+  R2.*8 |
+  d4. a'8 d4 | a( d) d, | a' d,2 | a' f4 | e a2 | d, c4 | bes4.( a8) bes4 | a2.
+  R2.*16 |
+
+  R2. d4 e f | g2. | c,4 d e | f4. e8 f d | e4. d8 c4 | a e'4. e8 | a,2. |
+  R2. d4 e f | g2. | e4 f g | a4. a8 bes g | a4. g8 f4 | d a' a, | d2. \bar "|."
+}

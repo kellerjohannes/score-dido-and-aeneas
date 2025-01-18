@@ -612,3 +612,21 @@ lyricsIINXVIII = \lyricmode {
   }
   \bar "|."
 }
+
+soloVoiceNXX = \relative d' {
+  \time 3/4
+  \key d \minor
+  \clef \annaClef
+  \autoBeamOff
+  d4. cis8 d4 | e( f) e8([ d)] | e4 f2 | e f4 | g e2 | f4( e) a, | a( d) f8([ e)] | \grace { d4( } cis2.) |
+  R2.*8 |
+  cis4^\annaName d e | f2. | b,4 c d | e2 r8 e | e4( a,) c8([ b)] | gis4. b8 c4 | d8([ e)] d([ c)] c([ b)] | a2 r4 |
+  cis4 d e | f2. | d4 e f | g2 r8 f | e4( f) e8([ d)] | cis4. d8 e([ d)] | d([ e)] f4 e | d2. |
+  R2.*16 |
+}
+
+lyricsSoloNXX = \lyricmode {
+  Thanks to these lone -- some, lone -- some vales, These de -- sart, de -- sart hills and dales;
+  So fair the game, so rich the sport, Di -- a -- na's self might to these woods re -- sort.
+  So fair the game, so rich the sport, Di -- a -- na's self might to these woods re -- sort.
+}

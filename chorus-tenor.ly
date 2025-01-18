@@ -219,3 +219,16 @@ chorusTNXIX = \relative bes {
   R2. | r4 r a8 g | f4 d' c | bes2 r4 | r r f | bes g c | c2 r4 | r r c8([ d)] |
   e4 c c | c a r | R2. | r4 r d | d c4. bes8 | a2 r4 | R2. | r4 r s4 \bar "|."
 }
+
+chorusTNXX = \relative f' {
+  \time 3/4
+  \key d \minor
+  \clef \chorusTClef
+  \autoBeamOff
+  R2.*8 |
+  f4. e8 f4 | cis4( d) cis8([ b)] | cis4 d2 | cis2 d4 | e cis2 | d4( a) a8[( e)] | f2 g4 | a2. |
+
+  R2.*16 |
+  a4 b cis | d2. | g,4 a b | c2 r8 c | c4 d2 | b4. b8 e([ d)] | c([ d)] e4 e | e2. |
+  a,4 b cis | d2. | b4 c d | e2 r8 d | cis4( d) c8([ bes)] | a4. a8 b([ cis)] | d4 d cis | d2. \bar "|."
+}

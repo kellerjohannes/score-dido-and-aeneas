@@ -288,3 +288,24 @@ lyricsNXIX = \lyricmode {
   too dread -- ful a prac -- tice
   for this op -- en air.
 }
+
+chorusSNXX = \relative d'' {
+  \time 3/4
+  \key d \minor
+  \clef \chorusSClef
+  \autoBeamOff
+  R2.*8 |
+  d4. cis8 d4 | e( f) e8([ d)] | e4 f2 | e f4 | g e2 | f4( e) a, | a( d) f8([ e)] | \grace { d4( } cis2.) |
+  R2.*16 |
+
+  cis4 d e | f2. | b,4 c d | e2 r8 e | e4( a,) c8([ b)] | gis4. b8 c([ d)] | e([ d)] c4 b | a2. |
+  cis4 d e | f2. | d4 e f | g2 r8 f | e4( f) e8([ d)] | cis4. d8 e([ d)] | d([ e)] f4 e | d2. \bar "|."
+}
+
+lyricsNXX = \lyricmode {
+  Thanks to these lone -- some, lone -- some vales these de -- sart,
+  de -- sart hills and dales.
+
+  So fair the game, so rich the sort, Di -- a -- na's self might to these woods re -- sort,
+  so fair the game, so rich the sort, Di -- a -- na's self might to these woods re -- sort.
+}

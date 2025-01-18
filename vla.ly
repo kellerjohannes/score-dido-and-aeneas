@@ -352,3 +352,15 @@ vlaNXIX = \relative bes {
   d4 es d | c2 a8 g | f4 d' c | bes2 c4 | bes2 f4 | bes g c | c2 c4 | c2 c8 d |
   e4 c c | c a c8 d | e4 c c | c a d | d c c | c2 d4 | d c4. bes8 | a2*3/2 \bar "|."
 }
+
+vlaNXX = \relative f' {
+  \time 3/4
+  \key d \minor
+  \clef \vlaClef
+  R2.*8 |
+  f4. e8 f4 | cis4 d cis8 b | cis4 d2 | cis d4 | e cis2 | d4 a a8 e | f2 g4 | a2. |
+  R2.*16 |
+
+  a4 b cis | d2. | g,4 a b | c2 r8 c | c4 d2 | b e8 d | c d e4 e | e2. |
+  a,4 b cis | d2. | b4 c d | e2 r8 d | cis4 d c8 bes | a2 b8 cis | d4 d cis | d2. \bar "|."
+}

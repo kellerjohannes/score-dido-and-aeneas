@@ -361,3 +361,15 @@ vnIINXIX = \relative f' {
   f4 g4. f8 | e2 e4 | f f e | d2 e4 | d2 a'4 | bes bes a | g2 a4 | g2 a4 |
   g a g | f f a | g a g | f f f | f f e | f2 f4 | f f e | f2*3/2 \bar "|."
 }
+
+vnIINXX = \relative a' {
+  \time 3/4
+  \key d \minor
+  \clef \vnIIClef
+  R2.*8 |
+  a2 a4 | a2 a4 | a2 a4 | a2 a4 | bes a2 | a4 g8 f e4 | d2 g4 | \grace { f4( } e2.) |
+  R2.*16 |
+
+  R2. | f4 g a | g2. | e4 f g | a4. g8 f4 | e4. gis8 a4 | a a gis | s2. |
+  R2. | f4 g a | g2.~ | g~ | g4 f g | e2 f4 | f8 g a4 a | a2. \bar "|."
+}

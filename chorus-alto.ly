@@ -229,3 +229,16 @@ chorusANXIX = \relative f' {
   R2. | r4 r e8 e | f4 f e | d2 r4 | r r a' | bes bes a | g2 r4 | r r a |
   g a g | f f r | R2. | r4 r f | f f e | f2 r4 | R2. | r4 r s4 \bar "|."
 }
+
+chorusANXX = \relative a' {
+  \time 3/4
+  \key d \minor
+  \clef \chorusAClef
+  \autoBeamOff
+  R2.*8 |
+  a4. a8 a4 | a2 a4 | a a2 | a a4 | bes a2 | a4( g8[ f]) e4 | d2 g4 | \grace { f4( } e2.) |
+  R2.*16 |
+
+  R2. | f4 g a | g2. | e4 f g | a4. g8 f f | e4. gis8 a4 | a a gis | a2. |
+  R2. | f4 g a | g2.~ | g~ | g8 g f4 g | e4. e8 f4 | f8([ g)] a4 a | g2. \bar "|."
+}
