@@ -630,3 +630,12 @@ lyricsSoloNXX = \lyricmode {
   So fair the game, so rich the sport, Di -- a -- na's self might to these woods re -- sort.
   So fair the game, so rich the sport, Di -- a -- na's self might to these woods re -- sort.
 }
+
+%% There are significant differences to King's music, which is modulating.
+soloVoiceNXXI = \relative a' {
+  \time 4/4
+  \key d \minor
+  \clef \attendantClef
+  \autoBeamOff
+  R1*4 | a4 a d d | e8([ f)] e([ d)] d4 d, |
+  a' e' f d |

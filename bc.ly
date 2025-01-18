@@ -844,3 +844,13 @@ figuresNXX = \figuremode {
   < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2 \ext 4 | < _ >4 \extOn 4 4 \extOff | < 7 >4. < 6 >8 \ext 8 < 6! > | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5! _+ > | < _ >4. \extOn 8 8 8 \extOff |
   < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2 \ext 4 | < 6 >2 < 7 >4 | < 7 _+ >4 < 6 > < 4 2 >8 < 5 3 > | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5 _+ > | s2. |
 }
+
+bcNXXI = \relative d {
+  \time 4/4
+  \key d \minor
+  \clef \bcClef
+  \repeat unfold 8 {
+    d8 cis d e f e f d | g f g a bes a bes g | a b cis a d c bes a | g e f g a g a a, |
+  }
+  d cis d e f e f d | g f g a bes a bes g | a b cis a d c bes a | bes g a bes c bes c c, | f g f e d e f d | g f g a bes a bes g | a b cis a d c bes a \ g e f g a g a a, | d1 \bar "|."
+}
