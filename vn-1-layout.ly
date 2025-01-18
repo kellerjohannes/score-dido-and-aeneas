@@ -255,15 +255,15 @@
     }
   }
 
-  % \score {
-  %   \partbookTitleNXX
-  %   <<
-  %     \new Staff { \compressMMRests { \vnINXX } }
-  %   >>
-  %   \layout {
-  %     indent = #0
-  %   }
-  % }
+  \score {
+    \partbookTitleNXX
+    <<
+      \new Staff { \compressMMRests { \vnINXX } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
 
   % \score {
   %   \partbookTitleNXXI

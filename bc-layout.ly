@@ -359,20 +359,26 @@
     }
   }
 
-  % \score {
-  %   \scoreTitleNXX
-  %   <<
-  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-  %     \bcNXX
-  %     \new FiguredBass { \figuresNXX }
-  %   >>
-  %   \layout {
-  %     \context {
-  %       \Staff
-  %       \RemoveAllEmptyStaves
-  %     }
-  %   }
-  % }
+  \score {
+    \scoreTitleNXX
+    <<
+      \new Staff \with { instrumentName = \annaName }
+      \new Voice = "voice"
+      \soloVoiceNXX
+      \new Lyrics \lyricsto "voice" { \lyricsSoloNXX }
+
+
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXX
+      \new FiguredBass { \figuresNXX }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 
   % \score {
   %   \scoreTitleNXXI
