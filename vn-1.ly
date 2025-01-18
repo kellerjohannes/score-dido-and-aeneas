@@ -356,3 +356,14 @@ vnINXVIII = \relative d {
   }
   \bar "|."
 }
+
+vnINXIX = \relative d'' {
+  \time 3/4 \partial 4
+  \key f \major
+  \clef \vnIClef
+  d8 d | c4 c bes | a2 bes4 | a2 a8 bes | c4 d8 c bes a | g2 bes8 a | g2 c4 | es es d |
+  c c c | es es d | c c e | f f e | f f es | d d es | d d c | c c b | c2 c4 |
+
+  c4 c b | c2 c4 | a bes c | f,2 c'4 | f,2 c'4 | d e f | e2 f4 | e2 f4 |
+  g c, e | f c f | g c, e | f c d8 c | bes4 a g | f2 d'8 c | bes4 a g | f2*3/2 \bar "|."
+}

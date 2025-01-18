@@ -263,3 +263,28 @@ chorusSNXVII = \relative c'' {
 lyricsSNXVII = \lyricmode {
   Ho, \repeat unfold 35 { ho, } ho!
 }
+
+chorusSNXIX = \relative d'' {
+  \time 3/4 \partial 4
+  \key f \major
+  \clef \chorusSClef
+  \autoBeamOff
+  d8 d | c4 c bes | a2 r4 | r r a8([ bes)] | c4 d8([ c)] bes([ a)] | g2 r4 | r r c | es es d |
+  c4 c r | R2. | r4 r e | f f r | r r e | d d r | r r c | c c b | c2 r4 |
+
+  R2. | r4 r c8 c | a4 bes c | f,2 r4 | r r c' | d e f | e2 r4 | r r f |
+  g c, e | f c r | R2. | r4 r d8([ c)] | bes4 a g | f2 r4 | R2. | r4 r s4 \bar "|."
+}
+
+lyricsNXIX = \lyricmode {
+  In our deep vault -- ed cell
+  The charm we'll pre -- pare,
+  Too dread -- ful a prac -- tice,
+  too dread -- ful a prac -- tice
+  for this op -- en air;
+
+  In our deep vault -- ed cell
+  The charm we'll pre -- pare,
+  too dread -- ful a prac -- tice
+  for this op -- en air.
+}

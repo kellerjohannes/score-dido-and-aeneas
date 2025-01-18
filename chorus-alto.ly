@@ -217,3 +217,15 @@ chorusANXVII = \relative f' {
 lyricsANXVII = \lyricmode {
   Ho, \repeat unfold 40 { ho, } ho!
 }
+
+chorusANXIX = \relative f' {
+  \time 3/4 \partial 4
+  \key f \major
+  \clef \chorusAClef
+  \autoBeamOff
+  f8 f | g4 g g | f2 r4 | r r f8([ g)] | a4 bes8([ a)] g([ f)] | e2 r4 | r r g | g g g |
+  es4 es r | R2. | r4 r g | f f r | r r g | as as r | r r g | f g4. f8 | e2 r4 |
+
+  R2. | r4 r e8 e | f4 f e | d2 r4 | r r a' | bes bes a | g2 r4 | r r a |
+  g a g | f f r | R2. | r4 r f | f f e | f2 r4 | R2. | r4 r s4 \bar "|."
+}

@@ -341,3 +341,14 @@ vlaNXVIII = \relative d {
   }
   \bar "|."
 }
+
+vlaNXIX = \relative bes {
+  \time 3/4 \partial 4
+  \key f \major
+  \clef \vlaClef
+  bes8 a | g4 c c | c2 c4 | c2 d4 | c f f, | c'2 f,4 | c'2 es4 | c c b |
+  c g g | c c b | c g bes | c c bes | c c es | f f es | f f c | d es d | c2 c4 |
+
+  d4 es d | c2 a8 g | f4 d' c | bes2 c4 | bes2 f4 | bes g c | c2 c4 | c2 c8 d |
+  e4 c c | c a c8 d | e4 c c | c a d | d c c | c2 d4 | d c4. bes8 | a2*3/2 \bar "|."
+}

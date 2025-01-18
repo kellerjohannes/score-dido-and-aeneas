@@ -802,3 +802,22 @@ bcNXVIII = \relative d {
 
 figuresNXVIII = \figuremode {
 }
+
+bcNXIX = \relative d {
+  \time 3/4 \partial 4
+  \key f \major
+  \clef \bcClef
+  d4 | e e e | f2 e4 | f2 d4 | a a bes | c2 bes4 | c2 c4 | c' c g |
+  c, c c | c' c g | c, c g' | as as g | as as g | f f g | f f es | d g g, | c2 es4 |
+
+  d g g, | c2 c4 | d d a | bes2 a4 | bes2 a4 | g g f | c'2 f,4 | c'2 f4 |
+  c' c bes | a f f | c' c bes | a f bes | bes, c c, | f2 bes'4 | bes, c c, | f2*3/2 \bar "|."
+}
+
+figuresNXIX = \figuremode {
+  < 6 >8 < 5 > | < 6 >2 < 6 5 >4 | s2 < 6 5 >4 | s2 < 5 >8 < 6 4 > | < 6 >2 < 6 >4 | s2 < 6 >4 | s2 < _- >4 | < _- >2 < _! >4 |
+  < _- >2. | < _- >2 < _! >4 | < _- >2 < 6! _- >4 | < 6 >2 < 6! >4 | < 6 >2 < 6- 4 >4 | < 6 _- >2 < 6- 4 >4 | < 6 _- >2 < 6- >4 | < 7 5- >4 < 6- 4 > < 5 _! > | < _! >2 < 6 >4 |
+
+  < 7 5- >4 < 6- 4 > < 5 _! > | < _! > < 6 > < 5 > | s4 < 6 >2 | s2. | s2 < 6 >4 | s4 < 6 >2 | s2. | s2 < 6 4 >4 |
+  < 5 3 >4 < 6 > < 4 2 > | < 6 >2. | s4 < 6 > < 4 2 > | < 6 >2. | s4 < 6 4 > < 5 3 > | s2. | s4 < 6 4 > < 7 > | s2. |
+}

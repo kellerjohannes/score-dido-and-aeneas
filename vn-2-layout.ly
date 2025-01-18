@@ -236,6 +236,16 @@
     }
   }
 
+  \score {
+    \partbookTitleNXIX
+    <<
+      \new Staff { \compressMMRests { \vnIINXIX } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
+
   % \score {
   %   \partbookTitleNXX
   %   <<

@@ -200,3 +200,15 @@ lyricsBNXVII = \lyricmode {
   -_way.
   Ho, \repeat unfold 39 { ho, } ho!
 }
+
+chorusBNXIX = \relative d {
+  \time 3/4 \partial 4
+  \key f \major
+  \clef \chorusBClef
+  \autoBeamOff
+  d8 d | e4 e e | f2 r4 | r r d | a a bes | c2 r4 | r r c | c' c g |
+  c, c r | R2. | r4 r g' | as as r | r r g | f f r | r r es | d g g, | c2 r4 |
+
+  R2. | r4 r c8 c | d4 d a | bes2 r4 | r r a | g g f | c'2 r4 | r r f |
+  c' c bes | a f r | R2. | r4 r bes | bes, c4. c8 | f2 r4 | R2. | r4 r s4 \bar "|."
+}

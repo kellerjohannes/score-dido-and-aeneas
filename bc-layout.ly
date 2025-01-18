@@ -344,20 +344,20 @@
     }
   }
 
-  % \score {
-  %   \scoreTitleNXIX
-  %   <<
-  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-  %     \bcNXIX
-  %     \new FiguredBass { \figuresNXIX }
-  %   >>
-  %   \layout {
-  %     \context {
-  %       \Staff
-  %       \RemoveAllEmptyStaves
-  %     }
-  %   }
-  % }
+  \score {
+    \scoreTitleNXIX
+    <<
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXIX
+      \new FiguredBass { \figuresNXIX }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 
   % \score {
   %   \scoreTitleNXX

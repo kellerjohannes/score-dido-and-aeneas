@@ -207,3 +207,15 @@ chorusTNXVII = \relative c' {
 lyricsTNXVII = \lyricmode {
   Ho, \repeat unfold 28 { ho, } ho!
 }
+
+chorusTNXIX = \relative bes {
+  \time 3/4 \partial 4
+  \key f \major
+  \clef \chorusTClef
+  \autoBeamOff
+  bes8 a | g4 c c | c2 r4 | r r d | c f f, | c'2 r4 | r r e | c c b |
+  c g r | R2. | r4 r bes | c c r | r r es | f f r | r r c | d es d | c2 r4 |
+
+  R2. | r4 r a8 g | f4 d' c | bes2 r4 | r r f | bes g c | c2 r4 | r r c8([ d)] |
+  e4 c c | c a r | R2. | r4 r d | d c4. bes8 | a2 r4 | R2. | r4 r s4 \bar "|."
+}

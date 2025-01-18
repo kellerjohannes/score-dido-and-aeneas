@@ -350,3 +350,14 @@ vnIINXVIII = \relative d {
   }
   \bar "|."
 }
+
+vnIINXIX = \relative f' {
+  \time 3/4 \partial 4
+  \key f \major
+  \clef \vnIIClef
+  f8 f | g4 g g | f2 g4 | f2 f8 g | a4 bes8 a g f | e2 g8 f | e2 g4 | g g g |
+  es es es | g g g | es es g | f f g | f f g | as as g | as as g | f g4. f8 | e2 g4 |
+
+  f4 g4. f8 | e2 e4 | f f e | d2 e4 | d2 a'4 | bes bes a | g2 a4 | g2 a4 |
+  g a g | f f a | g a g | f f f | f f e | f2 f4 | f f e | f2*3/2 \bar "|."
+}
