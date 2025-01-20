@@ -387,3 +387,12 @@ vnINXXI = \relative a'' {
   R1*28 | r2 a4. a8 | a2 g4. g8 | g2 f4. f8 | e4. e8 e4. a8 | f4 d a4. d8 |
   bes4 g e'4. e8 | cis4 a f'2~ | f4 bes8 a g4. f16 g | a2 a4. a8 | d,4 d g4. g8 | cis,4 cis f2~ | f4. e8 f4 e | d1 \bar "|."
 }
+
+vnINXXII = \relative a'' {
+  \time 4/4
+  \key c \major
+  \clef \vnIClef
+  R1*5 |
+  r2 a16 a a a a a a a |
+  a4 r r2 | R1*2 | r4 a16 a a a a a a a a4 \bar "|."
+}

@@ -372,3 +372,12 @@ vlaNXXI = \relative f' {
   R1*28 | r2 f4. e8 | d2 g4. f8 | e4 a a4. a8 | bes4. bes8 a4. a8 | a4 f d4. d8 |
   d4. d8 cis4 d | a e'2 d4~ | d g2 c4~ | c c, f f~ | f d d4. e8 | f4 e2 d4~ | d d2 cis4 | d1 \bar "|."
 }
+
+vlaNXXII = \relative d'' {
+  \time 4/4
+  \key c \major
+  \clef \vlaClef
+  R1*5 |
+  r2 d16 d d d d d d d |
+  d4 r r2 | R1*2 | r4 d16 d d d d d d d d4 \bar "|."
+}

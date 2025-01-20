@@ -661,3 +661,25 @@ lyricsNXXI = \lyricmode {
   too, too late dis -- co -- ver'd, too, too late,
   here Ac -- te -- on met his fate.
 }
+
+soloVoiceNXXII = \relative d {
+  \time 4/4
+  \key c \major
+  \clef \aeneasClef
+  \autoBeamOff
+  r8 d a'4. a8 a8. a16 | f8. a16 d,8. a'16 d8 d d cis | d d4 d8 d c c8. d16 |
+  bes8 bes a a16 a a8 f g8. a16 | a4 \clef \didoClef r8^\didoName a' fis8. fis16 a8 d, | r4 a'4 r2 |
+  r4 d r8 d d16([ e d e] | fis8[ g16 fis] e[ d cis b] a[ g fis e] d8) d | fis16([ e fis g] a[ b]) a8 b16([ cis)] d8 d cis | d8 d, r4 r2 \bar "|."
+}
+
+lyricsNXXII = \lyricmode {
+  %% Aeneas
+  Be -- hold, up -- on my ben -- ding spear
+  A mon -- ster's head stands blee -- ding, With tu -- shes far ex -- cee -- ding
+  Those that did Ve -- nus' hunts -- man tear.
+
+  %% Dido
+  The skies are clou -- ded hark!, hark!,
+  how thun -- der
+  Rends the moun -- tain oaks a -- sun -- der!
+}

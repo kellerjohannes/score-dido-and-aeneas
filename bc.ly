@@ -857,3 +857,17 @@ bcNXXI = \relative d {
 
 figuresNXXI = \figuremode {
 }
+
+bcNXXII = \relative d, {
+  \time 4/4
+  \key c \major
+  \clef \bcClef
+  d1~ | d~ | d2 fis |
+  g4 a bes2 | a d | d d,16 d d d d d d d |
+  d2 d'~ | d1~ | d2 g,4 a | d d,16 d d d d d d d d4 \bar "|."
+}
+
+figuresNXXII = \figuremode {
+  s1*2 s2 < 6 5 > | < _- >4 < _+ > < 7 > < 6 > | < _+ >2 < _+ > | s1 |
+  s2 < _+ > | s1 | s2 < 6 5 >4 < 6 4 >8 < 5 _+ > | < _+ >1 |
+}

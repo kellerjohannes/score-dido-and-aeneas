@@ -381,3 +381,12 @@ vnIINXXI = \relative d'' {
   R1*28 | r2 d4. c8 | b2 e4. d8 | cis2 d4. d8 | d4. d8 d4 cis | d a f4. f8 |
   f4 e8 f g4. g8 | g4 e a g8 a | d4. d8 e4. d16 e | f4. f8 f e d c | b4 b bes4. bes8 | a4 a a4. a8 | bes4 bes a4. a8 | a1 \bar "|."
 }
+
+vnIINXXII = \relative fis'' {
+  \time 4/4
+  \key c \major
+  \clef \vnIIClef
+  R1*5 |
+  r2 fis16 fis fis fis fis fis fis fis |
+  fis4 r r2 | R1*2 | r4 fis16 fis fis fis fis fis fis fis fis4 \bar "|."
+}
