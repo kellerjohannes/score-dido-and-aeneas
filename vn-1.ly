@@ -410,3 +410,10 @@ vnINXXIII = \relative d' {
   fis8 e16 d d8 cis b d b4 | r8 d, g b d4 r8 d |
   b cis16 d e fis e d cis8 e fis4 | r8 e fis4 r8 e fis e16 fis | g8 fis16 g fis8 e d2 \bar "|."
 }
+
+vnINXXIV = \relative {
+  \time 4/4
+  \key a \minor
+  \clef \vnIClef
+  R1*15 \bar "|."
+}

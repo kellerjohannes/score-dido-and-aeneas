@@ -294,15 +294,15 @@
     }
   }
 
-  % \score {
-  %   \partbookTitleNXXIV
-  %   <<
-  %     \new Staff { \compressMMRests { \vnIINXXIV } }
-  %   >>
-  %   \layout {
-  %     indent = #0
-  %   }
-  % }
+  \score {
+    \partbookTitleNXXIV
+    <<
+      \new Staff { \compressMMRests { \vnIINXXIV } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
 
   % \score {
   %   \partbookTitleNXXV

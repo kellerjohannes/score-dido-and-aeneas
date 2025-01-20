@@ -395,3 +395,10 @@ vlaNXXIII = \relative d' {
   d8 cis16 b b8 ais b4 r8 d | b4 r8 d, g b d b |
   g16 a g a b8 b a cis d4 | r8 cis d4 r8 cis d4 | r8 d d cis d2 \bar "|."
 }
+
+vlaNXXIV = \relative {
+  \time 4/4
+  \key a \minor
+  \clef \vlaClef
+  R1*15 \bar "|."
+}

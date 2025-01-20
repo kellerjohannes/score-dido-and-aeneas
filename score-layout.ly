@@ -873,4 +873,25 @@
       }
     }
   }
+
+  \score {
+    \scoreTitleNXXIV
+    <<
+      \new Staff = "voiceStaff" \with { instrumentName = \spiritName }
+      \new Voice= "voice"
+      \soloVoiceNXXIV
+      \new Lyrics \lyricsto "voice" { \lyricsNXXIV }
+
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXXIV
+      \new FiguredBass { \figuresNXXIV }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
+
 }

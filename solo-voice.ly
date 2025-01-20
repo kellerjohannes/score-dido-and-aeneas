@@ -704,3 +704,37 @@ lyricsSoloNXXIII = \lyricmode {
   haste, haste, haste, haste to town,
   haste, haste to town, haste, haste, haste, haste, haste, haste, haste to town.
 }
+
+soloVoiceNXXIV = \relative a' {
+  \time 4/4
+  \key a \minor
+  \clef \spiritClef
+  \autoBeamOff
+  r4 a2 a8 gis | a4 c2 e8. e,16 | a4 r8 b c16 a a a gis8. a16 |
+  b4 \clef \aeneasClef r8^\aeneasName e,, b'4 \clef \spiritClef r8^\spiritName e | b'16 b b c d8. e16 c4 r8 c | cis16 cis cis cis cis8 d d4. cis8 |
+  d4 r r b8. b16 | e8 e c8. c16 c bes bes bes bes8. bes16 | c4( bes8.) a16 a4 r8 a |
+  a8 a16 a b8. c16 d8. c16 b4~ | b8 c a gis16([ a)] gis4 r8 b | c16 e,8. a8 gis a4 r |
+  \clef \aeneasClef r4^\aeneasName f,8. g16 a8 a g f | bes4 r8 f g4. c8 | a bes bes a bes2 \bar "|."
+}
+
+lyricsNXXIV = \lyricmode {
+  %% Spirit
+  Stay, Prince! and hear great Jove's com -- mand,
+  He sum -- mons thee, this night, a -- way.
+
+  %% Aeneas
+  To -- night?
+
+  %% Spirit
+  To -- night, thou must for -- sake this land,
+  The an -- gry Gods will brook no lon -- ger stay.
+  Jove com -- mands thee, waste no more
+  In Love's de -- lights, those pre -- cious hours,
+  Al -- low'd by th'Al -- migh -- ty Pow'r
+  To gain the La -- tian shore
+  And ru -- in'd Troy re -- store.
+
+  %% Aeneas
+  Jove's com -- mands must be o -- bey'd,
+  To -- night, our an -- chors shall be weigh'd.
+}

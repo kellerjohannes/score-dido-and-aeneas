@@ -900,3 +900,22 @@ figuresNXXIII = \figuremode {
   < 6 >4 < 6 4 >8 < 5 _+ > s2 | s2. < 6 >8 < 6 > |
   s1*2 | < 6 >4 < 6 4 >8 < 5 3 > s2 |
 }
+
+bcNXXIV = \relative a, {
+  \time 4/4
+  \key a \minor
+  \clef \bcClef
+  a1~ | a~ | a |
+  e~ | e2 a~ | a1 |
+  d4 d8. d16 g2 | c,1~ | c2 f~ |
+  f d | d e | e, a |
+  f1 | d'2 es f bes, \bar "|."
+}
+
+figuresNXXIV = \figuremode {
+  s1*3 |
+  < _+ >1 | s1 | < _+ > |
+  s1 | < 8 >2 < 7- > | s1 |
+  s2 < 6 > | < 6 >4 < 5 > < _+ >2 | < 6 4 >4 < _+ > s2 |
+  s1 | < 6- >2 < 5 >4 < 6 > | < 5 3 >8 < 6 4- > \ext < 7- 4- > \ext < 7- 3 > s2 |
+}
