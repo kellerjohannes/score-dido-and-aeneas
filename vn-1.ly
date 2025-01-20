@@ -379,3 +379,11 @@ vnINXX = \relative d'' {
   cis4 d e | f2. | b,4 c d | e2 r8 e | e4 a, c8 b | gis4. b8 c d | e d c4 b | a2. |
   cis4 d e | f2. | d4 e f | g2 r8 f | e4 f e8 d | cis4. d8 e d | d e f4 e | d2. \bar "|."
 }
+
+vnINXXI = \relative a'' {
+  \time 4/4
+  \key d \minor
+  \clef \vnIClef
+  R1*28 | r2 a4. a8 | a2 g4. g8 | g2 f4. f8 | e4. e8 e4. a8 | f4 d a4. d8 |
+  bes4 g e'4. e8 | cis4 a f'2~ | f4 bes8 a g4. f16 g | a2 a4. a8 | d,4 d g4. g8 | cis,4 cis f2~ | f4. e8 f4 e | d1 \bar "|."
+}

@@ -764,4 +764,34 @@
       }
     }
   }
+
+  \score {
+    \scoreTitleNXXI
+    <<
+      \new StaffGroup = "strings"
+      <<
+        \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
+        \vnINXXI
+        \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
+        \vnIINXXI
+        \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
+        \vlaNXXI
+      >>
+      \new Staff = "soloVoice" \with { instrumentName = \attendantName }
+      \new Voice = "voice"
+      \soloVoiceNXXI
+      \new Lyrics \lyricsto "voice" { \lyricsNXXI }
+
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXXI
+      \new FiguredBass { \figuresNXXI }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
+
 }

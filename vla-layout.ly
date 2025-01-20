@@ -256,15 +256,15 @@
     }
   }
 
-  % \score {
-  %   \partbookTitleNXXI
-  %   <<
-  %     \new Staff { \compressMMRests { \vlaNXXI } }
-  %   >>
-  %   \layout {
-  %     indent = #0
-  %   }
-  % }
+  \score {
+    \partbookTitleNXXI
+    <<
+      \new Staff { \compressMMRests { \vlaNXXI } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
 
   % \score {
   %   \partbookTitleNXXII

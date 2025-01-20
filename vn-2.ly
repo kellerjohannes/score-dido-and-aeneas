@@ -373,3 +373,11 @@ vnIINXX = \relative a' {
   R2. | f4 g a | g2. | e4 f g | a4. g8 f4 | e4. gis8 a4 | a a gis | s2. |
   R2. | f4 g a | g2.~ | g~ | g4 f g | e2 f4 | f8 g a4 a | a2. \bar "|."
 }
+
+vnIINXXI = \relative d'' {
+  \time 4/4
+  \key d \minor
+  \clef \vnIIClef
+  R1*28 | r2 d4. c8 | b2 e4. d8 | cis2 d4. d8 | d4. d8 d4 cis | d a f4. f8 |
+  f4 e8 f g4. g8 | g4 e a g8 a | d4. d8 e4. d16 e | f4. f8 f e d c | b4 b bes4. bes8 | a4 a a4. a8 | bes4 bes a4. a8 | a1 \bar "|."
+}

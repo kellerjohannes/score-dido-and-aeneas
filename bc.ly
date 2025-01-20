@@ -462,7 +462,7 @@ figuresNVI = \figuremode {
   s2 < 6 >4 |
   s4 < 6 4 > < 7 > |
   s2. |
-  \repeat unfold 8 { s2. }
+  s2.*8
   s2 < 6 4 >4 |
   s2 < 6 5>4 |
   s4 < 6/ >2 |
@@ -472,7 +472,7 @@ figuresNVI = \figuremode {
   s2 < 6 >4 |
   s4 < 6 4 > < 7 > |
   s2.
-  \repeat unfold 8 { s2. }
+  s2.*8
   s2 < 6 4 >4 |
   s2 < 6 5 >4 |
   s4 < 6/ >2 |
@@ -852,5 +852,8 @@ bcNXXI = \relative d {
   \repeat unfold 8 {
     d8 cis d e f e f d | g f g a bes a bes g | a b cis a d c bes a | g e f g a g a a, |
   }
-  d cis d e f e f d | g f g a bes a bes g | a b cis a d c bes a | bes g a bes c bes c c, | f g f e d e f d | g f g a bes a bes g | a b cis a d c bes a \ g e f g a g a a, | d1 \bar "|."
+  d cis d e f e f d | g f g a bes a bes g | a b cis a d c bes a | bes g a bes c bes c c, | f g f e d e f d | g f g a bes a bes g | a b cis a d c bes a | g e f g a g a a, | d1 \bar "|."
+}
+
+figuresNXXI = \figuremode {
 }

@@ -23,6 +23,8 @@ annaDidoName = \markup { \column { \line { \right-align \caps Anna }
                                    \line { \right-align \caps Dido } } }
 
 attendantClef = "tenor"
+%% TODO To be figured out, Attendant is notated in tenor and in treble clefs.
+attendantSopranoClef = "treble"
 attendantName = \markup { \caps Attendant }
 
 aeneasClef = "tenor"

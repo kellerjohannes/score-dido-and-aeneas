@@ -364,3 +364,11 @@ vlaNXX = \relative f' {
   a4 b cis | d2. | g,4 a b | c2 r8 c | c4 d2 | b e8 d | c d e4 e | e2. |
   a,4 b cis | d2. | b4 c d | e2 r8 d | cis4 d c8 bes | a2 b8 cis | d4 d cis | d2. \bar "|."
 }
+
+vlaNXXI = \relative f' {
+  \time 4/4
+  \key d \minor
+  \clef \vlaClef
+  R1*28 | r2 f4. e8 | d2 g4. f8 | e4 a a4. a8 | bes4. bes8 a4. a8 | a4 f d4. d8 |
+  d4. d8 cis4 d | a e'2 d4~ | d g2 c4~ | c c, f f~ | f d d4. e8 | f4 e2 d4~ | d d2 cis4 | d1 \bar "|."
+}

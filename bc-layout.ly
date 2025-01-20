@@ -35,6 +35,12 @@
       \new Staff { \compressMMRests { \bcNI } }
       \new FiguredBass { \figuresNI }
     >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
   }
 
   \score {
@@ -117,8 +123,8 @@
       \new Lyrics \lyricsto "voiceII" { \lyricsSoloNVI }
 
       \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-      \bcNVI
-      \new FiguredBass { \figuresNVI }
+      \compressMMRests { \bcNVI }
+      \new FiguredBass { \compressMMRests { \figuresNVI } }
     >>
     \layout {
       \context {
@@ -367,7 +373,6 @@
       \soloVoiceNXX
       \new Lyrics \lyricsto "voice" { \lyricsSoloNXX }
 
-
       \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
       \bcNXX
       \new FiguredBass { \figuresNXX }
@@ -380,20 +385,25 @@
     }
   }
 
-  % \score {
-  %   \scoreTitleNXXI
-  %   <<
-  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-  %     \bcNXXI
-  %     \new FiguredBass { \figuresNXXI }
-  %   >>
-  %   \layout {
-  %     \context {
-  %       \Staff
-  %       \RemoveAllEmptyStaves
-  %     }
-  %   }
-  % }
+  \score {
+    \scoreTitleNXXI
+    <<
+      \new Staff \with { instrumentName = \attendantName }
+      \new Voice = "voice"
+      \soloVoiceNXXI
+      \new Lyrics \lyricsto "voice" { \lyricsNXXI }
+
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXXI
+      \new FiguredBass { \figuresNXXI }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 
   % \score {
   %   \scoreTitleNXXII

@@ -20,6 +20,7 @@ soloVoiceNI = \relative es' {
   c2 es8.[( d16 c8. d16] |
   b8.[ d16 c8. es16] d8. es16) f4 |
   b,4 c es8([ d)] c([ b)] | c2 s2 |
+  R1*12 \bar "|."
 }
 
 lyricsNI = \lyricmode {
@@ -635,7 +636,28 @@ lyricsSoloNXX = \lyricmode {
 soloVoiceNXXI = \relative a' {
   \time 4/4
   \key d \minor
-  \clef \attendantClef
+  \clef \attendantSopranoClef
   \autoBeamOff
   R1*4 | a4 a d d | e8([ f)] e([ d)] d4 d, |
-  a' e' f d |
+  a' e' f d | e16([ f g8)] f([ e)] d([ cis)] b([ a)] | a4 a d d | e8([ f)] e([ d)] d4 d, | a' e' f d |
+  e16([ f g8)] f([ e)] d([ cis)] b([ a)] | r4 d r a~ | a g g4. f8 | e4. e8 f4 r | bes4. bes8 a4. e'8 |
+  f([ e)] d([ cis)] d4 a | bes g e'8.([ f16)] e8.([ d16)] | cis8([ b)] a8.([ g16)] f8([ g)] a f | bes8([ a)] g([ f)] e4. a8 | f4 d a' r |
+  bes4. a8 d4. e8 | cis4 a f'2(~ | f8[ e]) d([ e)] \grace { d8( } cis4.) cis8 | d4. a8 d([ e d c] | b8.[ c16)] b8.([ cis16)] d4 f8.([ e16)] |
+  cis4 r f4. fis8 | g4 f8([ e)] d4 cis | d2 r |
+  R1*12 \bar "|."
+}
+
+lyricsNXXI = \lyricmode {
+  Oft she vi -- sits this lov'd moun -- tain,
+  Oft she bathes her in this foun -- tain;
+  Oft she vi -- sits this lov'd moun -- tain,
+  Oft she bathes her in this foun -- tain;
+  Here, here, Ac -- te -- on met his fate,
+  Here, pur -- su'd by his own hounds
+  And, af -- ter mor -- tal wounds,
+  Dis -- co -- ver'd too late.
+  Ac -- te -- on met his fate
+  af -- ter mor -- tal wound dis -- co -- ver'd
+  too, too late dis -- co -- ver'd, too, too late,
+  here Ac -- te -- on met his fate.
+}
