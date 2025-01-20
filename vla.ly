@@ -381,3 +381,17 @@ vlaNXXII = \relative d'' {
   r2 d16 d d d d d d d |
   d4 r r2 | R1*2 | r4 d16 d d d d d d d d4 \bar "|."
 }
+
+vlaNXXIII = \relative d' {
+  \time 4/4
+  \key d \major
+  \clef \vlaClef
+  R1*11 |
+  r4 r8 d fis a d, cis | d4 r8 cis d4 r8 d16 cis |
+
+  b8 a16 b gis a b gis a4 r8 e | a cis e cis a b cis a |
+  d d4 d8 d cis b d | cis8. d16 cis8 b ais16 b cis ais b cis b cis |
+
+  d8 cis16 b b8 ais b4 r8 d | b4 r8 d, g b d b |
+  g16 a g a b8 b a cis d4 | r8 cis d4 r8 cis d4 | r8 d d cis d2 \bar "|."
+}

@@ -871,3 +871,32 @@ figuresNXXII = \figuremode {
   s1*2 s2 < 6 5 > | < _- >4 < _+ > < 7 > < 6 > | < _+ >2 < _+ > | s1 |
   s2 < _+ > | s1 | s2 < 6 5 >4 < 6 4 >8 < 5 _+ > | < _+ >1 |
 }
+
+bcNXXIII = \relative d {
+  \time 4/4
+  \key d \major
+  \clef \bcClef
+  d2 r8 d fis a | d d, a'4 r8 d, a4 | r8 b gis e a2 |
+  r8 a cis e a4 r8 a | d, e fis d g4 r8 g | e d e cis fis g fis e |
+  d b fis' fis, b4 r8 b | g2 r8 g b d | g4 r8 e a4 r8 d | a4 r8 d a4 r8 d |
+  b g a a, d2 | d r8 d fis a | d d, a4 r8 d a4 |
+
+  r8 d e e, a2~ | a8 a cis e a4 r8 a, |
+  d e fis d g g4 g8 | e d e cis fis g fis e |
+
+  d b fis' fis, b4 r8 b' | g2~ g8 g, b d |
+  g4 r8 e a4 r8 d | a4 r8 d a4 r8 d | b g a a, d2 \bar "|."
+}
+
+figuresNXXIII = \figuremode {
+  s2. < 6 >4 | s1 | s4 < 6 >2. |
+  s4 < 6 >8 < _+ > s2 | < _ >8 \extOn 8 8 8 \extOff s2 | < _ >8 \extOn 8 8 8 \extOff < _+ > \extOn 8 8 8 \extOff |
+  s4 < 6 4 >8 < 5 _+ > s2 | s2. < 6 >4 | s1*2 |
+  < 6 >1 | s2. < 6 >4 | s1 |
+
+  s8 < 6 > < _+ >2. | s4 < 6 >8 < _+ > s2 |
+  < 8 3 >8 \extOn < 8 3\! > < 8 3\! > < 8 3\! > \extOff s2 | < 6 >4 < 6 >8 < 7 > < _+ > \extOn 8 8 8 \extOff |
+
+  < 6 >4 < 6 4 >8 < 5 _+ > s2 | s2. < 6 >8 < 6 > |
+  s1*2 | < 6 >4 < 6 4 >8 < 5 3 > s2 |
+}

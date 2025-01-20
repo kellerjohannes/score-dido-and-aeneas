@@ -225,3 +225,27 @@ chorusBNXX = \relative d {
   R2. d4 e f | g2. | c,4 d e | f4. e8 f d | e4. d8 c4 | a e'4. e8 | a,2. |
   R2. d4 e f | g2. | e4 f g | a4. a8 bes g | a4. g8 f4 | d a' a, | d2. \bar "|."
 }
+
+chorusBNXXIII = \relative d {
+  \time 4/4
+  \key d \major
+  \clef \chorusBClef
+  \autoBeamOff
+  R1*11 |
+  r2 r8 d fis a | d d a4 r8 d a4 |
+
+  r8 d, e e a,4 r | r8 a cis e a4 r8 a |
+  d, e fis d g g4 g8 | e d e cis fis g fis e |
+
+  d16([ cis d b] fis'8) fis b,4 r8 b' | g4 r r8 g, b d |
+  g4 r8 e a4 r8 d | a4 r8 d a4 r8 d | b g a a, d2 \bar "|."
+}
+
+lyricsBNXXIII = \lyricmode {
+  Haste, haste to town, haste, haste, haste, haste,
+  haste, haste to town, haste, haste to town,
+  this op -- en field no shel -- ter,
+  this op -- en field no shel -- ter from the storm can yield,
+  haste, haste, haste, haste to town,
+  haste, haste, haste, haste, haste, haste, haste, haste, haste, haste to town.
+}

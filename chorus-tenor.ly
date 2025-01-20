@@ -232,3 +232,27 @@ chorusTNXX = \relative f' {
   a4 b cis | d2. | g,4 a b | c2 r8 c | c4 d2 | b4. b8 e([ d)] | c([ d)] e4 e | e2. |
   a,4 b cis | d2. | b4 c d | e2 r8 d | cis4( d) c8([ bes)] | a4. a8 b([ cis)] | d4 d cis | d2. \bar "|."
 }
+
+chorusTNXXIII = \relative d {
+  \time 4/4
+  \key d \major
+  \clef \chorusTClef
+  \autoBeamOff
+  R1*11 |
+  r4 r8 d fis a d cis | d4 r8 cis d4 r8 d16([ cis)] |
+
+  b8 a16([ b)] gis([ a)] b([ gis)] a4 r8 e | a cis e cis a b cis a |
+  d8 d4 d8 d cis b d | cis8. d16 cis8 b ais16([ b cis b] b[ cis b cis] |
+
+  d8) cis16([ b)] b8 ais b4 r8 d | b4 r8 d, g b d b( |
+  g16[ a g a] b8) b a cis d4 | r8 cis d4 r8 cis d4 | r8 d d cis d2 \bar "|."
+}
+
+lyricsTNXXIII = \lyricmode {
+  Haste, haste to town, haste, haste, haste, haste, haste, haste, haste, haste to town,
+  haste, haste, haste, haste this op -- en field,
+  no shel -- ter, this op -- en field, no shel -- ter from the storm,
+  the storm can yield,
+  haste, haste, haste, haste to town, haste to town,
+  haste, haste, haste, haste, haste, haste, haste, haste to town.
+}

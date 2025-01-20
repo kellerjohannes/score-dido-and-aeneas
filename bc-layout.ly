@@ -425,20 +425,25 @@
     }
   }
 
-  % \score {
-  %   \scoreTitleNXXIII
-  %   <<
-  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-  %     \bcNXXIII
-  %     \new FiguredBass { \figuresNXXIII }
-  %   >>
-  %   \layout {
-  %     \context {
-  %       \Staff
-  %       \RemoveAllEmptyStaves
-  %     }
-  %   }
-  % }
+  \score {
+    \scoreTitleNXXIII
+    <<
+      \new Staff \with { instrumentName = \annaName }
+      \new Voice = "voice"
+      \soloVoiceNXXIII
+      \new Lyrics \lyricsto "voice" { \lyricsSoloNXXIII }
+
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXXIII
+      \new FiguredBass { \figuresNXXIII }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 
   % \score {
   %   \scoreTitleNXXIV

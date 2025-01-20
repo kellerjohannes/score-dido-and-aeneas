@@ -683,3 +683,24 @@ lyricsNXXII = \lyricmode {
   how thun -- der
   Rends the moun -- tain oaks a -- sun -- der!
 }
+
+soloVoiceNXXIII = \relative d {
+  \time 4/4
+  \key d \major
+  \clef \annaClef
+  \autoBeamOff
+  r8 d fis a d4 r8 e | fis4 r8 e fis4 r8 fis16([ e] | d8[ cis16 d]) b8 e cis e, a cis |
+  e4 r8 e cis d e cis | fis fis4 fis8 b, cis d b | e8. fis16 g([ fis)] e([ d)] cis([ d e cis] d[ e d e] |
+  fis8) e16([ d)] d8 cis b d b4 | r8 d, g b d4 r8 d | b([ cis16 d] e[ fis)] e([ d)] cis8 e fis4 | r8 e fis4 r8 e fis([ e16 fis] |
+  g[ fis e d] cis[ d)] e([ cis)] d2 | R1*11 \bar "|."
+}
+
+lyricsSoloNXXIII = \lyricmode {
+  Haste, haste to town, haste, haste, haste, haste, haste to town,
+  haste, haste, haste, haste,
+  this op -- en field
+  No shel -- ter, this op -- en field no shel -- ter from the storm,
+  the storm can yield,
+  haste, haste, haste, haste to town,
+  haste, haste to town, haste, haste, haste, haste, haste, haste, haste to town.
+}

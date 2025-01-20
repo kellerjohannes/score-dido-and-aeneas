@@ -401,6 +401,6 @@ vnIINXXIII = \relative d' {
   d8 fis e e e4 r8 e | cis a e' e e4 r8 g |
   fis g a fis fis d4 d8 | g fis e e e cis' ais fis |
 
-  b d fis fis d d g b | d4 r8 d, b g g' fis |
+  b, d fis fis d d g b | d4 r8 d, b g g' fis |
   g d g g e a fis d | a'4 r8 a a4 r8 a | g a16 b a8 a a2 \bar "|."
 }

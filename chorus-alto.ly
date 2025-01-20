@@ -242,3 +242,29 @@ chorusANXX = \relative a' {
   R2. | f4 g a | g2. | e4 f g | a4. g8 f f | e4. gis8 a4 | a a gis | a2. |
   R2. | f4 g a | g2.~ | g~ | g8 g f4 g | e4. e8 f4 | f8([ g)] a4 a | g2. \bar "|."
 }
+
+chorusANXXIII = \relative d {
+  \time 4/4
+  \key d \major
+  \clef \chorusAClef
+  \autoBeamOff
+  R1*10 |
+  r2 r8 d fis a | d4 r8 fis d fis a4 | r8 d, fis a d,4 r8 a |
+
+  d8 fis e e e4 r8 e | cis a e' e e4 r8 g |
+  fis g a fis fis d4 d8 | g fis e e e cis ais fis |
+
+  b d fis fis d d, g b | d4 r8 d b g g' fis |
+  g d g g e a fis d | a'4 r8 a a4 r8 a | g8([ a16 b] a8) a a2 \bar "|."
+}
+
+lyricsANXXIII = \lyricmode {
+  Haste, haste to town, haste haste to town, haste haste to town,
+  haste, haste, haste, haste to town, haste haste to town, haste haste,
+  this op -- en field no shel -- ter,
+  this op -- en field no shel -- ter from the storm,
+  the sotrm can yield, haste, haste to town,
+  haste, haste, haste, haste to town,
+  haste, haste tot town, haste, haste, haste, haste, haste, haste,
+  haste, haste to town.
+}
