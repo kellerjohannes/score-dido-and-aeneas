@@ -396,3 +396,17 @@ vnINXXII = \relative a'' {
   r2 a16 a a a a a a a |
   a4 r r2 | R1*2 | r4 a16 a a a a a a a a4 \bar "|."
 }
+
+vnINXXIII = \relative d' {
+  \time 4/4
+  \key d \major
+  \clef \vnIClef
+  R1*11 |
+  r8 d fis a d4 r8 e | fis4 r8 e fis4 r8 fis16 e |
+
+  d8 cis16 d b8 e cis e, a cis | e4 r8 e cis d e cis |
+  fis fis4 fis8 b, cis d b | e8. fis16 g fis e d cis d e cis d e d e |
+
+  fis8 e16 d d8 cis b d b4 | r8 d, g b d4 r8 d |
+  b cis16 d e fis e d cis8 e fis4 | r8 e fis4 r8 e fis e16 fis | g8 fis16 g fis8 e d2 \bar "|."
+}
