@@ -266,15 +266,23 @@
     }
   }
 
-  % \score {
-  %   \partbookTitleNXXII
-  %   <<
-  %     \new Staff { \compressMMRests { \vlaNXXII } }
-  %   >>
-  %   \layout {
-  %     indent = #0
-  %   }
-  % }
+  \score {
+    \partbookTitleNXXII
+    <<
+      \new Staff { \compressMMRests { \vlaNXXII } }
+      \new Staff \with { \magnifyStaff #0.7 }
+      \new Voice = "voice"
+      \soloVoiceNXXII
+      \new Lyrics \lyricsto "voice" { \lyricsNXXII }
+    >>
+    \layout {
+      indent = #0
+      \context {
+        \Score
+        \override LyricText.font-size = #'-1.0
+      }
+    }
+  }
 
   % \score {
   %   \partbookTitleNXXIII

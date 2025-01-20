@@ -405,20 +405,25 @@
     }
   }
 
-  % \score {
-  %   \scoreTitleNXXII
-  %   <<
-  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-  %     \bcNXXII
-  %     \new FiguredBass { \figuresNXXII }
-  %   >>
-  %   \layout {
-  %     \context {
-  %       \Staff
-  %       \RemoveAllEmptyStaves
-  %     }
-  %   }
-  % }
+  \score {
+    \scoreTitleNXXII
+    <<
+      \new Staff \with { instrumentName = \aeneasName }
+      \new Voice = "voice"
+      \soloVoiceNXXII
+      \new Lyrics \lyricsto "voice" { \lyricsNXXII }
+
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXXII
+      \new FiguredBass { \figuresNXXII }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 
   % \score {
   %   \scoreTitleNXXIII
