@@ -424,11 +424,11 @@ vnINXXV = \relative bes' {
   \clef \vnIClef
   bes8 c | d4  d d8 es | f4 f f8 d | es4 es es8 f | d4 d d | d c c | c c c | c8 es d4 c | bes2 bes8 c | d4 d d8 e |
   f2 a4 | a a a | a g f | g8 bes a4 g | f2 a,8 bes | c4 c c8 d | es4 f8 es d c | d2 d4 | es4 es es8 f | g4 g g8 a |
-  bes2.~ | bes2 bes8 g | as2 as4 | as bes8 as g f | e4 c es~ | es d f~ | f g8 f es d | c4 a d~ | d bes c~ | a bes |
+  bes2.~ | bes2 bes8 g | as2 as4 | as bes8 as g f | e4 c es~ | es d f~ | f g8 f es d | c4 a d~ | d bes c~ | c a bes |
   a a bes~ | bes c2 | d e4~ | e d4. d8 | c es d4 c | bes2 r4 |
   R2.*30 |
   r4 r bes8 bes | bes2 bes8 c | d4 d f8 f, |
-  bes2 bes4 c4. d8 es | d bes d8 es | f4. f8 a, bes | c4 g8 a bes4 | a f a8 bes |
+  bes2 bes4 c4. d8 es4 | d bes d8 es | f4. f8 a, bes | c4 g8 a bes4 | a f a8 bes |
   c4 c d8 a | bes4. a8 g4 | c c d | es2 es4 | d g, g | as g g |
 
   g c, c' | b b b | c d es | d fis, d' | d8 c bes4 a | g2 bes4 | bes f d' |

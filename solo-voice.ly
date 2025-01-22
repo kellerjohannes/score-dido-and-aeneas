@@ -738,3 +738,29 @@ lyricsNXXIV = \lyricmode {
   Jove's com -- mands must be o -- bey'd,
   To -- night, our an -- chors shall be weigh'd.
 }
+
+soloVoiceNXXV = \relative bes {
+  \time 3/4 \partial 4
+  \key bes \major
+  \clef \sailorClef
+  \autoBeamOff
+  r4 | R2.*34 |
+  r4 r bes8^\sailorName bes | bes2 bes8 c | d4 d f8 f, | bes2 bes4 |
+
+  c4. d8 es4 | d bes d8 es | f4. f8 a,([ bes)] | c4 g8([ a)] bes4 | a f a8 bes | c4 c d8([ a)] |
+  bes4. a8 g4 | c c d | es2 es4 | d g, g | as g g | g c, c' |
+  b b b | c d es | d fis, d' | d8([ c)] bes4 a | g2 bes4 | bes f d' | d g, d' |
+  es4. d8 c([ bes)] | a2 f'4 | d8 c4. f4 | d8 c4. d4 | es4. f8 g([ f)] | f([ es)] d4 c bes2 r4 | R2.*31 \bar "|."
+}
+
+lyricsSoloNXXV = \lyricmode {
+  Come a -- way, fel -- low sai -- lors, come a -- way,
+  Your an -- chors be weigh -- ing,
+  Time and tide will ad -- mit no de -- lay -- ing,
+  Take a bow -- sey short leave of your nymphs on the shore,
+  And si -- lence their mour -- ning
+  With vows of re -- turn -- ing,
+  Tho' ne -- ver in -- tend -- ing to vi -- sit them more,
+  tho' ne -- ver in -- ten -- ding to vi -- sit them more,
+  tho' ne -- ver, tho' ne -- ver in -- tend -- ing to vi -- sit them more.
+}

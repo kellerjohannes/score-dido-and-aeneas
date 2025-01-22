@@ -420,7 +420,7 @@ vnIINXXV = \relative bes' {
 
   a4 a f' | f f f | f e f~ | f f e | f2 f,8 g | a4 a a8 bes | c4 d8 c bes a | bes4 f f | bes bes c8 d | es2 g8 es |
   d4 d d8 c | bes2 d4~ | d c c | c c bes | c g c~ | c bes d~ | d es8 d c bes | a4 f bes~ | bes g a | a f g |
-  f2 f4 | g2 a4~ | a bes2 | c bes4~ | bes bes a | bes2 r4 | R2.*28 \
+  f2 f4 | g2 a4~ | a bes2 | c bes4~ | bes bes a | bes2 r4 | R2.*28 |
 
   r4 r d,8 d | d2 f8 es | d4 d d8 es | f2 d8 c | bes2 bes8 c |
 

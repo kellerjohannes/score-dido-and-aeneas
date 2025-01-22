@@ -919,3 +919,42 @@ figuresNXXIV = \figuremode {
   s2 < 6 > | < 6 >4 < 5 > < _+ >2 | < 6 4 >4 < _+ > s2 |
   s1 | < 6- >2 < 5 >4 < 6 > | < 5 3 >8 < 6 4- > \ext < 7- 4- > \ext < 7- 3 > s2 |
 }
+
+bcNXXV = \relative f {
+  \time 3/4 \partial 4
+  \key bes \major
+  \clef \bcClef
+  r4 | R2.*9 |
+  r4 r f8 g | a4 a a8 bes | c4 c d8 a | bes4 c c, | f2.~ | f | f, | bes2 bes'8 as | g4 g g8 f | es4. d8 c4 |
+  bes2 bes8 c | d4 d d8 e | f2 es4 | des2. | c | d | es | f | f,~^\markup { 7x } | f~ |
+  f~ | f~ | f~ | f~ | f | bes | bes2 f'4 | bes2 a4 | g2 d4 |
+
+  es4 f f, | bes2 bes8 c | d4. es8 f4 | a, bes c | f,2 f'4 | fis2 d4 |
+  g2 f4 | es2 d4 | c2 c4~ | c b b | c b bes | a as2 |
+  g4 g' f | es d c | c2 bes4 | d2 d,4 | g2 g'4 | d2 bes4 | es2 d4 |
+  c d es | f2 f4 | bes8 f4. f4 | bes8 f4. bes4 | es,2 bes4 | f'2 f,4 |
+  bes2 bes'8 bes | bes2 d8 c | bes4 bes bes8 f | bes2 bes8 a | g2 f8 es |
+
+  d2 bes4 | f'2 f,4 | bes bes bes8 c | d4. es8 f4 | a, bes c | f,2 f'4 |
+  fis4. fis8 e d | g2 f4 | es2 d4 | c2 c'4 | c b b | c b bes |
+
+  a a as | g2 f4 | es d c | c2 bes4 | d2 d,4 | g2 g'4 | d2 bes4 |
+  es2 d4 | c4. d8 es4 | f2 f4 | bes8 f4. f4 | bes8 f4. bes4 | es,2 bes4 | f'2 f,4 | bes2. \bar "|."
+}
+
+figuresNXXV = \figuremode {
+  s4 | s2.*35 |
+  s2 < 6 4 >8 < 5 3 > | s2 < 6 >4 | s2 < 6 >4 |
+
+  < 6 >2 < 7 >4 | s2 < 8 5 3 >8 \extOn < 8 5 3\! > | < 8 5 3\! >4. < 8 5 >8 \extOff < 6 >4 | < 6 > < 6 5 > < 7 _! > | s2. | < 6 5 >2 < 7 _+ >4 |
+  s2 < 4 2 >4 | < 6 >2 < 6! >4 | s2. | < 6- 4 2 >4 < 6 5 >2 | < 6- >4 < 6 > < 6 > | < 7 > < 6 >2 |
+  < _! >2 < 4 2 >4 | < 6 > < 6! >2 | < 4+ 2 >2 < 6 >4 | < 6 4 >2 < 5 _+ >4 | s2. | < 6 3! >2. | < 7 >4 < 6 > < 6! > |
+  < 9 > < 8! > < 6 >8 < 5- > | s2.*3 | s2 < 6 >8 < 5 > | < 6 4 >2 < 5 3 >4 |
+  s2. | s2 < 6 3 >8 \ext < 6 3\! > | s2 < 8 3 >8 \extOn < 8 7 5 > | < 8 5\! 3 >2 \extOff s8 < 6 > | s2 < 4 3 8 >8 \ext < 6 3\! 8 > |
+
+  < 6 >2. | < 5 3 >4 < 6 4 > < 7 > | s2 < 8 3 >8 \ext < 8 3\! > | < 6 3 >4 \extOn < 5 3 >8 < 3 3 > \extOff < 6 >4 | < 6 > < 6 5 > < 7 _! > | s2 < 5 3 >8 < 4 2 > |
+  < 6 5 >2 < 7 5 >8 < _+ > | s2 < 4 2 >4 | s2 < 6! >4 | s2. | < 4 2 >4 < 6 5 >2 | < 6- >4 < 6 > < 6 > |
+
+  < 7 5 >2 < 6 4 3 >4 | < 6 _! >4 \extOn < 5 _! > < 5 _! > \extOff | < 6 > < 6! 4 > < 6 > | < 4+ 2 >2 < 6 >4 | < 6 4 >2 < 5 _+ >4 | s2. | < 6 _! >2. |
+  < 7 >4 < 6 > < 6 4 > \extOn | 4. 8 4 \extOff | s2.*4 | < 6 4 >2 < 5 3 >4 | s2. |
+}

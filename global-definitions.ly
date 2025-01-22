@@ -42,6 +42,9 @@ secondWitchName = \markup { 2. \hspace #-1.2 \super nd \caps Witch }
 spiritClef = "treble"
 spiritName = \markup { \caps Spirit }
 
+sailorClef = "tenor"
+sailorName = \markup { \caps Sailor }
+
 %% Add more characters here
 
 

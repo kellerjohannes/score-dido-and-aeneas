@@ -275,11 +275,16 @@ chorusANXXV = \relative d' {
   \clef \chorusAClef
   \autoBeamOff
   r4 | R2.*63 |
-  r4 r d8 d |
+  r4 r d8 d | d2 f8 es | d4 d d8 es | f2 d8 c | bes2 bes8 c |
 
+  d2 f4 | f4. f8 f4 | f4 f bes8 bes | bes4 a8([ g)] f4 | f f e | f f f8 g |
+  a4 a bes8([ fis)] | g4. a8 bes4 | g g f | g2 g4 | f f f | es d d |
+
+  es es f | g g g | g g a | fis d g | g8([ a)] g4 fis | g2 g4 | f f f |
+  g g g | g4. g8 g4 | f2 a4 | bes8 a4. a4 | bes8 a4. bes4 | g4. g8 f4 | f4. f8 f4 | f2. \bar "|."
 }
 
-lyricsSNXXV = \lyricmode {
+lyricsANXXV = \lyricmode {
   Come a -- way, fel -- low sai -- lors, come a -- way, come a -- way, come a -- way,
 
   %% From here: homophonic in all four choir parts.
@@ -290,6 +295,5 @@ lyricsSNXXV = \lyricmode {
   With vows of re -- turn -- ing,
   Tho' ne -- ver in -- tend -- ing to vi -- sit them more,
   tho' ne -- ver in -- ten -- ding to vi -- sit them more,
-  tho' ne -- ver, tho' ne -- ver,
-  tho' ne -- ver in -- tend -- ing to vi -- sit them more.
+  tho' ne -- ver, tho' ne -- ver in -- tend -- ing to vi -- sit them more.
 }

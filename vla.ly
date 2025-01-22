@@ -403,7 +403,7 @@ vlaNXXIV = \relative {
   R1*15 \bar "|."
 }
 
-vlaNXXV = \relative bes' {
+vlaNXXV = \relative bes {
   \time 3/4 \partial 4
   \key bes \major
   \clef \vlaClef

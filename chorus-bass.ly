@@ -249,3 +249,32 @@ lyricsBNXXIII = \lyricmode {
   haste, haste, haste, haste to town,
   haste, haste, haste, haste, haste, haste, haste, haste, haste, haste to town.
 }
+
+chorusBNXXV = \relative bes {
+  \time 3/4 \partial 4
+  \key bes \major
+  \clef \chorusBClef
+  \autoBeamOff
+  r4 | R2.*63 |
+  r4 r bes8 bes | bes2 d8 c | bes4 bes bes8 f | bes2 bes8 a | g2 f8 es |
+
+  d2 bes4 | f'4. f8 f4 | bes,4 bes bes8 c | d4. es8 f4 | a, bes c | f f f8 f |
+  fis4. fis8 e([ d)] | g4. g8 f4 | es es d | c2 c'4 | c b b | c b bes |
+
+  a a as | g g f | es d c | c c bes | d4. d8 d4 | g,2 g'4 | d d bes |
+  es es d | c4. d8 es4 | f2 f4 | bes8 f4. f4 | bes8 f4. bes4 | es,4. es8 bes4 | f'4. f8 f4 | bes,2. \bar "|."
+}
+
+lyricsBNXXV = \lyricmode {
+  Come a -- way fel -- low sai -- lors, come a -- way, come a -- way, come a -- way,
+
+  %% From here: homophonic in all four choir parts.
+  Your an -- chors be weigh -- ing,
+  Time and tide will ad -- mit no de -- lay -- ing,
+  Take a bow -- sey short leave of your nymphs on the shore,
+  And si -- lence their mour -- ning
+  With vows of re -- turn -- ing,
+  Tho' ne -- ver in -- tend -- ing to vi -- sit them more,
+  tho' ne -- ver in -- ten -- ding to vi -- sit them more,
+  tho' ne -- ver, tho' ne -- ver in -- tend -- ing to vi -- sit them more.
+}

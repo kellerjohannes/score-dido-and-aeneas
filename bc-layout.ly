@@ -465,20 +465,25 @@
     }
   }
 
-  % \score {
-  %   \scoreTitleNXXV
-  %   <<
-  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-  %     \bcNXXV
-  %     \new FiguredBass { \figuresNXXV }
-  %   >>
-  %   \layout {
-  %     \context {
-  %       \Staff
-  %       \RemoveAllEmptyStaves
-  %     }
-  %   }
-  % }
+  \score {
+    \scoreTitleNXXV
+    <<
+      \new Staff \with { instrumentName = \sailorName }
+      \new Voice = "voice"
+      \soloVoiceNXXV
+      \new Lyrics \lyricsto "voice" { \lyricsSoloNXXV }
+
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \compressMMRests { \bcNXXV }
+      \new FiguredBass { \compressMMRests { \figuresNXXV } }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 
   % \score {
   %   \scoreTitleNXXVI

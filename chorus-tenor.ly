@@ -256,3 +256,32 @@ lyricsTNXXIII = \lyricmode {
   haste, haste, haste, haste to town, haste to town,
   haste, haste, haste, haste, haste, haste, haste, haste to town.
 }
+
+chorusTNXXV = \relative bes {
+  \time 3/4 \partial 4
+  \key bes \major
+  \clef \chorusTClef
+  \autoBeamOff
+  r4 | R2.*64 |
+  r4 r bes8 bes | bes2 bes8 c | d4 d f8 f, | bes2 a8 g |
+
+  f2 d'4 | c4. bes8 c4 | d d f8 f | f4. es8 d4 | c d c | c a c8 bes |
+  a4 d d | d4. c8 d4 | es es b | c2 c4 | d d d | c d g, |
+
+  c4 c d | es d d | c b c | d d d | d4. d8 d4 | d2 d4 | d d d |
+  bes bes bes | c4. c8 c4 | c2 f4 | f8 f4. f4 | f8 f4. d4 | c4. d8 d4 | f8([ c)] bes4 a | bes2. \bar "|."
+}
+
+lyricsTNXXV = \lyricmode {
+  Come a -- way, fel -- low sai -- lors, come a -- way, come a -- way,
+
+  %% From here: homophonic in all four choir parts.
+  Your an -- chors be weigh -- ing,
+  Time and tide will ad -- mit no de -- lay -- ing,
+  Take a bow -- sey short leave of your nymphs on the shore,
+  And si -- lence their mour -- ning
+  With vows of re -- turn -- ing,
+  Tho' ne -- ver in -- tend -- ing to vi -- sit them more,
+  tho' ne -- ver in -- ten -- ding to vi -- sit them more,
+  tho' ne -- ver, tho' ne -- ver in -- tend -- ing to vi -- sit them more.
+}
