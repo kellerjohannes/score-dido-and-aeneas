@@ -268,3 +268,28 @@ lyricsANXXIII = \lyricmode {
   haste, haste tot town, haste, haste, haste, haste, haste, haste,
   haste, haste to town.
 }
+
+chorusANXXV = \relative d' {
+  \time 3/4 \partial 4
+  \key bes \major
+  \clef \chorusAClef
+  \autoBeamOff
+  r4 | R2.*63 |
+  r4 r d8 d |
+
+}
+
+lyricsSNXXV = \lyricmode {
+  Come a -- way, fel -- low sai -- lors, come a -- way, come a -- way, come a -- way,
+
+  %% From here: homophonic in all four choir parts.
+  Your an -- chors be weigh -- ing,
+  Time and tide will ad -- mit no de -- lay -- ing,
+  Take a bow -- sey short leave of your nymphs on the shore,
+  And si -- lence their mour -- ning
+  With vows of re -- turn -- ing,
+  Tho' ne -- ver in -- tend -- ing to vi -- sit them more,
+  tho' ne -- ver in -- ten -- ding to vi -- sit them more,
+  tho' ne -- ver, tho' ne -- ver,
+  tho' ne -- ver in -- tend -- ing to vi -- sit them more.
+}

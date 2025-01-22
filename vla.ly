@@ -402,3 +402,22 @@ vlaNXXIV = \relative {
   \clef \vlaClef
   R1*15 \bar "|."
 }
+
+vlaNXXV = \relative bes' {
+  \time 3/4 \partial 4
+  \key bes \major
+  \clef \vlaClef
+  r4 | r2.*3 | r4 r bes8 c | d4 d d8 es | f4 f g8 d | es4 f f, | bes2 bes8 a | g2. |
+
+  g4 f'8 e d4 | c c c | c c'8 bes a c | d4 c bes | a f c | f2. | r4 r f8 es | d4 d d8 c | bes2 bes4 | bes2 bes8 c |
+  d4 d d8 es | f2 f4 | f2 f4~ | f e f | g8 f e f g4 | f2 bes8 a | g4 g4. g8 | f2 d4 | es2 c4 | d2 bes4 |
+  c4 c d~ | d es2 | f2 g4 | a2 bes8 f | f4 f es | d2 r4 | R2.*29 |
+
+  r4 r bes8 bes | bes2 bes8 c | d4 d f8 f, | bes2 a8 g |
+
+  f2 d'4 | c4. bes8 c4 | d d f8 f | f4. es8 d4 | c d c | c a c8 bes |
+  a4 d d | d4. c8 d4 | es es b | c2 c4 | d d d | c d g, |
+
+  c4 c d | es d d | c b c | d d d | d4. d8 d4 | d2 d4 | d d d |
+  bes bes bes | c4. c8 c4 | c2 f4 | f8 f4. f4 | f8 f4. d4 | c4. d8 d4 | d8 c bes4 a | bes2. \bar "|."
+}

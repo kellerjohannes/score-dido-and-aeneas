@@ -411,3 +411,22 @@ vnIINXXIV = \relative {
   \clef \vnIIClef
   R1*15 \bar "|."
 }
+
+vnIINXXV = \relative bes' {
+  \time 3/4 \partial 4
+  \key bes \major
+  \clef \vnIIClef
+  r4 | r r bes8 c | d4 d d8 bes | c4 c c8 a | bes4 f bes | bes bes bes | bes a bes~ | bes bes a | bes2 f4 | bes bes bes8 g |
+
+  a4 a f' | f f f | f e f~ | f f e | f2 f,8 g | a4 a a8 bes | c4 d8 c bes a | bes4 f f | bes bes c8 d | es2 g8 es |
+  d4 d d8 c | bes2 d4~ | d c c | c c bes | c g c~ | c bes d~ | d es8 d c bes | a4 f bes~ | bes g a | a f g |
+  f2 f4 | g2 a4~ | a bes2 | c bes4~ | bes bes a | bes2 r4 | R2.*28 \
+
+  r4 r d,8 d | d2 f8 es | d4 d d8 es | f2 d8 c | bes2 bes8 c |
+
+  d2 f4 | f4. f8 f4 | f f bes8 bes | bes4 a8 g f4 | f f e | f f f8 g |
+  a4 a bes8 fis | g4. a8 bes4 | g g f | g2 g4 | f f f | es d d |
+
+  es es f | g g g | g g a | fis d g | g8 a g4 fis | g2 g4 | f f f |
+  g g g | g4. g8 g4 | f2 a4 | bes8 a4. a4 | bes8 a4. bes4 | g4. g8 f4 | f4. f8 f4 | f2. \bar "|."
+}
