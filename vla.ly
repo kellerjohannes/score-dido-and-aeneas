@@ -433,3 +433,24 @@ vlaNXXVI = \relative d' {
     bes4 f d2 | f4 bes bes2 | g1 | d2. es4 | c2 bes4 es | c4. f8 f4 bes,8 c | d4 c bes4. c8 | d4 c bes2 |
   }
 }
+
+vlaNXXVII = \relative {
+  \time 4/4
+  \key bes \major
+  \clef \vlaClef
+  R1*18 \bar "|."
+}
+
+vlaNXXVIII = \relative {
+  \time 3/4
+  \key bes \major
+  \clef \vlaClef
+    \repeat volta 2 {
+      R2.*6
+    \alternative {
+      { R2. }
+      { R2. }
+    }
+  }
+  R2.*12 \bar "|."
+}

@@ -996,3 +996,31 @@ figuresNXXVII = \figuremode {
   s1*3 |
   s4 < 6 >2 < 6 >4 | s1 | s8 < 6 >4 < 7 >4. < 8 4 2 >8 \ext < 7 4 2 > | < 5 3 >1 |
 }
+
+bcNXXVIII = \relative bes, {
+  \time 3/4
+  \key bes \major
+  \clef \bcClef
+  \repeat volta 2 {
+    bes8. a16 bes8. c16 d8. es16 | f2 es4 | d8. c16 d8. es16 d8. c16 | bes8. a16 bes8. c16 bes8. a16 | g2 f8 es | d2 es4 |
+    \alternative {
+      { f8 c' f es d c }
+      { f,8 c' f g a f }
+    }
+  }
+  bes2 bes8 as | g4. f8 es4 | as4. f8 g4 | c,2 c'8. bes16 | a8. g16 f8. g16 a4 |
+  bes4. a8 g8. f16 | es8. d16 es8. f16 g4 |
+  c,8. bes16 c8. d16 es8. c16 | f4 f4. es8 | d8. c16 bes8. c16 d4 | es f f, | bes2 r4 \bar "|."
+}
+
+figuresNXXVIII = \figuremode {
+    \repeat volta 2 {
+      < _ >8. \extOn 16 8. 16 \extOff < 6 >4 | s2 < 4 2 >4 | < 6 >8. \extOn 16 8. 16 8. \extOff < 6 >16 | < _ >8. \extOn 16 8. 16 8. 16 \extOff | s2 < 6 4 >4 | < 6 >2. |
+      \alternative {
+        { < _ >8 \extOn 8 8 8 8 8 \extOff }
+        { < _ >8 \extOn 8 8 8 \extOff < 6 > < 7 > }
+      }
+    }
+    s2 < _ >8 \ext 8 \extOff | < 6 >4. < 6 4 >8 s4 | < 7 >4 < 6 >8 < 6 > < _! >4 | s2 < _ >8. \ext 16 | < 6 >8. \extOn 16 8. 16 \extOff < 6 >8 < 5 > |
+    s4. < 6 >8 \extOn 8. 16 \extOff | < 6 >8. \extOn 16 8. 16 \extOff s4 | < _ >8. \extOn 16 8. 16 8. 16 \extOff | s4 s4. < 4 2 >8 | < 6 >2 < 6 >4 | < 6 > < 6 4 > < 5 3 > | s2. |
+}

@@ -442,3 +442,24 @@ vnIINXXVI = \relative f'' {
     d4 bes f2 | d' es | d c8 bes a g | g4 fis g2 | f2. g4 | f a bes4. bes8 | f'2 d8 c bes4 | f2 f |
   }
 }
+
+vnIINXXVII = \relative {
+  \time 4/4
+  \key bes \major
+  \clef \vnIIClef
+  R1*18 \bar "|."
+}
+
+vnIINXXVIII = \relative {
+  \time 3/4
+  \key bes \major
+  \clef \vnIIClef
+    \repeat volta 2 {
+      R2.*6
+    \alternative {
+      { R2. }
+      { R2. }
+    }
+  }
+  R2.*12 \bar "|."
+}

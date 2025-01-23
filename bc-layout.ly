@@ -500,35 +500,49 @@
     }
   }
 
-  % \score {
-  %   \scoreTitleNXXVII
-  %   <<
-  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-  %     \bcNXXVII
-  %     \new FiguredBass { \figuresNXXVII }
-  %   >>
-  %   \layout {
-  %     \context {
-  %       \Staff
-  %       \RemoveAllEmptyStaves
-  %     }
-  %   }
-  % }
+  \score {
+    \scoreTitleNXXVII
+    <<
+      \new Staff \with { instrumentName = \firstWitchName }
+      \new Voice = "voiceOne"
+      \soloVoiceINXXVII
+      \new Lyrics \lyricsto "voiceOne" { \lyricsSoloVoiceINXXVII }
+      \new Staff \with { instrumentName = \sorceressName }
+      \new Voice = "voiceTwo"
+      \soloVoiceIINXXVII
+      \new Lyrics \lyricsto "voiceTwo" { \lyricsSoloVoiceIINXXVII }
 
-  % \score {
-  %   \scoreTitleNXXVIII
-  %   <<
-  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-  %     \bcNXXVIII
-  %     \new FiguredBass { \figuresNXXVIII }
-  %   >>
-  %   \layout {
-  %     \context {
-  %       \Staff
-  %       \RemoveAllEmptyStaves
-  %     }
-  %   }
-  % }
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXXVII
+      \new FiguredBass { \figuresNXXVII }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
+
+  \score {
+    \scoreTitleNXXVIII
+    <<
+      \new Staff \with { instrumentName = \firstWitchName }
+      \new Voice = "voice"
+      \soloVoiceNXXVIII
+      \new Lyrics \lyricsto "voice" { \lyricsNXXVIII }
+
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXXVIII
+      \new FiguredBass { \figuresNXXVIII }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 
   % \score {
   %   \scoreTitleNXXIX

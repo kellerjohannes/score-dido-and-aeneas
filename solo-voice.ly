@@ -771,7 +771,7 @@ soloVoiceINXXVII = \relative a' {
   \clef \firstWitchClef
   \autoBeamOff
   R1*3 |
-  r4 a8 bes c8. c16 d8 a | bes4 g8 a bes16([ a)] a([ g)] f8 e | d4 r r2 |
+  r4^\firstWitchName a8 bes c8. c16 d8 a | bes4 g8 a bes16([ a)] a([ g)] f8 e | d4 r r2 |
   r2 r8 d' \grace { d16([ es] } f8.) f16 | d8 bes r es16([ d)] c4 r8 d16([ c)] | bes4 r8 c16([ bes)] a8 bes16([ a)] g([ a)] bes8 |
 
   a8 c \grace { d16([ es] } f8.) f16 d8 bes r4 | r8 bes16([ a)] g4 r8 a16([ g)] f4 | r8 bes16([ a)] g8 g'16([ f)] es8 f16([ es)] d([ es)] f([ d)] |
@@ -838,4 +838,35 @@ lyricsSoloVoiceIINXXVII = \lyricmode {
   E -- lis -- sa's ru -- in'd,
   ho, ho!
   ho, ho, ho, ho, ho, ho, ho, ho, ho, ho, ho, ho!
+}
+
+soloVoiceNXXVIII = \relative f' {
+  \time 3/4
+  \key bes \major
+  \clef \firstWitchClef
+  \autoBeamOff
+  \repeat volta 2 {
+    f2 bes4 | a4.( g8) f4 | bes4 bes4. c8 | d8.([ c16 d8. es16 d8. c16] | bes8.[ a16 bes8. c16)] d8.([ es16)] | f4 f es16([ d)] c([ bes)] |
+    \alternative {
+      { a4 a r }
+      { a4 a f'8 es }
+    }
+  }
+  d4. c8 bes4 | es4. f8 g4 | g8( c,4) d8 b4 | c4 c r8 c | f4 f4. es8( |
+  d8.[ c16 bes8. c16)] d4 | g,2 r8 d' | es4 es4. d8( | c8.[ bes16 a8. bes16)] c4 | f,2 f'4 | es8 c bes4 a | bes bes r4 \bar "|."
+}
+
+lyricsNXXVIII = \lyricmode {
+  \repeat volta 2 {
+    Our next mo -- tion
+    Must be to storm her lo -- ver on the
+    \alternative {
+      { o -- cean; }
+      { o -- cean; From the }
+    }
+  }
+  ru -- in of o -- thers our plea -- sures we bor -- row,
+  E -- lis -- sa bleeds to -- night,
+  E -- lis -- sa bleeds to -- night,
+  and Car -- thage flames to -- mor -- row.
 }
