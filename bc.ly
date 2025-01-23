@@ -957,8 +957,9 @@ figuresNXXV = \figuremode {
 
   < 7 5 >2 < 6 4 3 >4 | < 6 _! >4 \extOn < 5 _! > < 5 _! > \extOff | < 6 > < 6! 4 > < 6 > | < 4+ 2 >2 < 6 >4 | < 6 4 >2 < 5 _+ >4 | s2. | < 6 _! >2. |
   < 7 >4 < 6 > < 6 4 > \extOn | 4. 8 4 \extOff | s2.*4 | < 6 4 >2 < 5 3 >4 | s2. |
+}
 
-\bcNXXVI = \relative bes, {
+bcNXXVI = \relative bes, {
   \time 2/2
   \key bes \major
   \clef \bcClef
@@ -966,9 +967,32 @@ figuresNXXV = \figuremode {
     bes2 es | d4 bes g es | f2 bes4 c | f,1 | bes | es4 c f2 | f bes4 g | c c, f2 |
   }
   \repeat volta 2 {
-    bes,1 | bes2 es | b c | d g4 c, | f2 d4 es | f2 bes,4 es | d8 es f4 bes,8 c d es | f4 f, bes2 \bar "|."
+    bes,1 | bes2 es | b c | d g4 c, | f2 d4 es | f2 bes,4 es | d8 es f4 bes,8 c d es | f4 f, bes2 |
   }
 }
 
 figuresNXXVI = \figuremode {
+}
+
+bcNXXVII = \relative bes, {
+  \time 4/4
+  \key bes \major
+  \clef \bcClef
+  bes1~ | bes | bes2 a4 g |
+  f f'2 fis4 | g c f,8 g a a, | d1~ |
+  d4. c8 bes4 a | bes es f d | g c, d8 bes c4 |
+
+  f,4 a bes a | bes es f d | g es as8 f g g, |
+  c1~ | c4 f d g | c, f bes, es |
+  f e f a | bes es,8 c f4 d | g8 es f f, bes bes bes bes | bes2 r \bar "|."
+}
+
+figuresNXXVII = \figuremode {
+  s1*2 | s2 < 6 >4 < 7 >8 < 6! > |
+  s2. < 6 >4 | s4 < _! > s8 < 6! > < 6 4 > < 5 _+ > | s1 |
+  < 6 >4. < 6 _- >8 s4 < 6 > | s1 | s4 < _! > s8 < 6 > < 7 _! >4 |
+
+  s4 < 6 > s4 < 6 > | s1 | s2 s8 < 6 > < _! > < 7 > |
+  s1*3 |
+  s4 < 6 >2 < 6 >4 | s1 | s8 < 6 >4 < 7 >4. < 8 4 2 >8 \ext < 7 4 2 > | < 5 3 >1 |
 }

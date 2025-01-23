@@ -894,48 +894,97 @@
   %   }
   % }
 
+  % \score {
+  %   \scoreTitleNXXV
+  %   <<
+  %     \new StaffGroup = "strings"
+  %     <<
+  %       \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
+  %       \vnINXXV
+  %       \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
+  %       \vnIINXXV
+  %       \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
+  %       \vlaNXXV
+  %     >>
+  %     \new ChoirStaff = "chorus"
+  %     <<
+  %       \new Staff = "chorusSoprano" \with { instrumentName = \instrumentNameChorusS }
+  %       \new Voice = "chorusS"
+  %       \chorusSNXXV
+  %       \new Lyrics \lyricsto "chorusS" { \lyricsSNXXV }
+
+  %       \new Staff = "chorusAlto" \with { instrumentName = \instrumentNameChorusA }
+  %       \new Voice = "chorusA"
+  %       \chorusANXXV
+  %       \new Lyrics \lyricsto "chorusA" { \lyricsANXXV }
+
+  %       \new Staff = "chorusT" \with { instrumentName = \instrumentNameChorusT }
+  %       \new Voice = "chorusT"
+  %       \chorusTNXXV
+  %       \new Lyrics \lyricsto "chorusT" { \lyricsTNXXV }
+
+  %       \new Staff = "chorusBass" \with { instrumentName = \instrumentNameChorusB }
+  %       \new Voice = "chorusB"
+  %       \chorusBNXXV
+  %       \new Lyrics \lyricsto "chorusB" { \lyricsBNXXV }
+  %     >>
+  %     \new Staff = "soloVoice" \with { instrumentName = \sailorName }
+  %     \new Voice = "solo"
+  %     \soloVoiceNXXV
+  %     \new Lyrics \lyricsto "solo" { \lyricsSoloNXXV }
+
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXXV
+  %     \new FiguredBass { \figuresNXXV }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXXVI
+  %   <<
+  %     \new StaffGroup = "strings"
+  %     <<
+  %       \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
+  %       \vnINXXVI
+  %       \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
+  %       \vnIINXXVI
+  %       \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
+  %       \vlaNXXVI
+  %       \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %       \bcNXXVI
+  %       \new FiguredBass { \figuresNXXVI }
+  %     >>
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
   \score {
-    \scoreTitleNXXV
+    \scoreTitleNXXVII
     <<
-      \new StaffGroup = "strings"
-      <<
-        \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
-        \vnINXXV
-        \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
-        \vnIINXXV
-        \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
-        \vlaNXXV
-      >>
-      \new ChoirStaff = "chorus"
-      <<
-        \new Staff = "chorusSoprano" \with { instrumentName = \instrumentNameChorusS }
-        \new Voice = "chorusS"
-        \chorusSNXXV
-        \new Lyrics \lyricsto "chorusS" { \lyricsSNXXV }
+      \new Staff = "topVoice" \with { instrumentName = \firstWitchName }
+      \new Voice= "voiceOne"
+      \soloVoiceINXXVII
+      \new Lyrics \lyricsto "voiceOne" { \lyricsSoloVoiceINXXVII }
 
-        \new Staff = "chorusAlto" \with { instrumentName = \instrumentNameChorusA }
-        \new Voice = "chorusA"
-        \chorusANXXV
-        \new Lyrics \lyricsto "chorusA" { \lyricsANXXV }
-
-        \new Staff = "chorusT" \with { instrumentName = \instrumentNameChorusT }
-        \new Voice = "chorusT"
-        \chorusTNXXV
-        \new Lyrics \lyricsto "chorusT" { \lyricsTNXXV }
-
-        \new Staff = "chorusBass" \with { instrumentName = \instrumentNameChorusB }
-        \new Voice = "chorusB"
-        \chorusBNXXV
-        \new Lyrics \lyricsto "chorusB" { \lyricsBNXXV }
-      >>
-      \new Staff = "soloVoice" \with { instrumentName = \sailorName }
-      \new Voice = "solo"
-      \soloVoiceNXXV
-      \new Lyrics \lyricsto "solo" { \lyricsSoloNXXV }
+      \new Staff = "bottomVoice" \with { instrumentName = \sorceressName }
+      \new Voice= "voiceTwo"
+      \soloVoiceIINXXVII
+      \new Lyrics \lyricsto "voiceTwo" { \lyricsSoloVoiceIINXXVII }
 
       \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-      \bcNXXV
-      \new FiguredBass { \figuresNXXV }
+      \bcNXXVII
+      \new FiguredBass { \figuresNXXVII }
     >>
     \layout {
       \context {

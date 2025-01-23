@@ -764,3 +764,78 @@ lyricsSoloNXXV = \lyricmode {
   tho' ne -- ver in -- ten -- ding to vi -- sit them more,
   tho' ne -- ver, tho' ne -- ver in -- tend -- ing to vi -- sit them more.
 }
+
+soloVoiceINXXVII = \relative a' {
+  \time 4/4
+  \key bes \major
+  \clef \firstWitchClef
+  \autoBeamOff
+  R1*3 |
+  r4 a8 bes c8. c16 d8 a | bes4 g8 a bes16([ a)] a([ g)] f8 e | d4 r r2 |
+  r2 r8 d' \grace { d16([ es] } f8.) f16 | d8 bes r es16([ d)] c4 r8 d16([ c)] | bes4 r8 c16([ bes)] a8 bes16([ a)] g([ a)] bes8 |
+
+  a8 c \grace { d16([ es] } f8.) f16 d8 bes r4 | r8 bes16([ a)] g4 r8 a16([ g)] f4 | r8 bes16([ a)] g8 g'16([ f)] es8 f16([ es)] d([ es)] f([ d)] |
+  es8 g, c b c8. d16 es8 d | es8. d16 c8. c16 f4 r8 g16([ f)] | es4 r8 f16([ es)] d4 r8 es16([ d)] |
+  c4 r r8 c \grace { d16([ es] } f8.) f16 | d8 bes r es16([ d)] c4 r8 d16([ c)] | bes8 c16([ bes)] a([ bes)] c([ a)] bes8 f bes f' | d2 r \bar "|."
+}
+
+lyricsSoloVoiceINXXVII = \lyricmode {
+  Phœ -- be's pale de -- lu -- ding beams
+  Gli -- ding o'er de -- ceit -- ful streams.
+
+  E -- lis -- sa's ru -- in'd,
+  ho, ho!
+  ho, ho!
+  ho, ho, ho, ho, ho, ho!
+  E -- lis -- sa's ru -- in'd,
+  ho, ho!
+  ho, ho!
+  ho, ho, ho, ho, ho, ho, ho, ho!
+  Our plot has took,
+  our plot has took,
+  the Queen's for -- sook,
+  ho, ho!
+  ho, ho!
+  ho, ho!
+  E -- lis -- sa's ru -- in'd,
+  ho, ho!
+  ho, ho, ho, ho, ho, ho, ho, ho, ho, ho!
+}
+
+soloVoiceIINXXVII = \relative f {
+  \time 4/4
+  \key bes \major
+  \clef \sorceressClef
+  \autoBeamOff
+  r4 f r f8 d | f8. f16 bes8 a bes8.([ c16)] bes4 | r4 d8 bes c f, f e |
+  f8 f r4 r2 | R1 | r4 \clef \secondWitchClef r8^\secondWitchName a' d cis d4 |
+  r8 f, bes8. a16 bes4 r | r8 bes16([ a)] g4 r8 a16([ g)] f4 | r8 g16([ f)] e8 a16([ g)] f8 g16([ f)] es([ f)] g8 |
+
+  f4 r r8 d' \grace { d16([ es] } f8.) f16 | d8 bes r es16([ d)] c4 r8 f16([ es)] | d4 r8 es16([ d)] c8 d16([ c)] b([ c)] d([ bes)] |
+  c4 r r8 g c b | c8. bes16 a8. a16 d8 d16([ c)] bes4 | r8 c16([ bes)] a4 r8 bes16([ a)] g8 c16([ bes)] |
+  a8 f \grace { a16([ bes] } c8.) c16 a8 f r4 | r8 bes16([ a)] g4 r8 a16([ g)] f8 f'16([ es)] | d8 es16([ d)] c([ d)] es([ c)] d([ es)] f8 es16([ d)] c8 | bes2 r \bar "|."
+}
+
+lyricsSoloVoiceIINXXVII = \lyricmode {
+  %% Sorceress:
+  See, see, the falgs and strea -- mers cur -- ling,
+  An -- chors weigh -- ing, sails un -- furl -- ing.
+
+  %% Second witch:
+  Our plot has took,
+  The Queen's for -- sook,
+  ho, ho!
+  ho, ho!
+  ho, ho, ho, ho, ho, ho, ho, ho!
+  E -- lis -- sa's ru -- in'd,
+  ho, ho!
+  ho, ho!
+  ho, ho, ho, ho, ho, ho!
+  Our plot has took,
+  The Queen's for -- sook, ho, ho!
+  ho, ho!
+  ho, ho, ho, ho!
+  E -- lis -- sa's ru -- in'd,
+  ho, ho!
+  ho, ho, ho, ho, ho, ho, ho, ho, ho, ho, ho, ho!
+}

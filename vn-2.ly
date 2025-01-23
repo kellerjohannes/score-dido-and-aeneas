@@ -431,7 +431,7 @@ vnIINXXV = \relative bes' {
   g g g | g4. g8 g4 | f2 a4 | bes8 a4. a4 | bes8 a4. bes4 | g4. g8 f4 | f4. f8 f4 | f2. \bar "|."
 }
 
-\vnIINXXVI = \relative f'' {
+vnIINXXVI = \relative f'' {
   \time 2/2
   \key bes \major
   \clef \vnIIClef
@@ -439,6 +439,6 @@ vnIINXXV = \relative bes' {
     f4 d es2 | bes2. bes4 | a2 bes4 g | f1 | bes,2 d | es4 es f2 | a2 bes4 d | c2 c |
   }
   \repeat volta 2 {
-    d4 bes f2 | d' es | d c8 bes a g | g4 fis g2 | f2. g4 | f a bes4. bes8 | f'2 d8 c bes4 | f2 f \bar "|."
+    d4 bes f2 | d' es | d c8 bes a g | g4 fis g2 | f2. g4 | f a bes4. bes8 | f'2 d8 c bes4 | f2 f |
   }
 }
