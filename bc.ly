@@ -957,4 +957,18 @@ figuresNXXV = \figuremode {
 
   < 7 5 >2 < 6 4 3 >4 | < 6 _! >4 \extOn < 5 _! > < 5 _! > \extOff | < 6 > < 6! 4 > < 6 > | < 4+ 2 >2 < 6 >4 | < 6 4 >2 < 5 _+ >4 | s2. | < 6 _! >2. |
   < 7 >4 < 6 > < 6 4 > \extOn | 4. 8 4 \extOff | s2.*4 | < 6 4 >2 < 5 3 >4 | s2. |
+
+\bcNXXVI = \relative bes, {
+  \time 2/2
+  \key bes \major
+  \clef \bcClef
+  \repeat volta 2 {
+    bes2 es | d4 bes g es | f2 bes4 c | f,1 | bes | es4 c f2 | f bes4 g | c c, f2 |
+  }
+  \repeat volta 2 {
+    bes,1 | bes2 es | b c | d g4 c, | f2 d4 es | f2 bes,4 es | d8 es f4 bes,8 c d es | f4 f, bes2 \bar "|."
+  }
+}
+
+figuresNXXVI = \figuremode {
 }

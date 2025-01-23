@@ -421,3 +421,15 @@ vlaNXXV = \relative bes {
   c4 c d | es d d | c b c | d d d | d4. d8 d4 | d2 d4 | d d d |
   bes bes bes | c4. c8 c4 | c2 f4 | f8 f4. f4 | f8 f4. d4 | c4. d8 d4 | d8 c bes4 a | bes2. \bar "|."
 }
+
+\vlaNXXVI = \relative d' {
+  \time 2/2
+  \key bes \major
+  \clef \vlaClef
+  \repeat volta 2 {
+    d4 bes bes2 | f' g | f2. e4 | f1 | f,2. bes4 | bes es d c | f2. bes4 | g2 a |
+  }
+  \repeat volta 2 {
+    bes4 f d2 | f4 bes bes2 | g1 | d2. es4 | c2 bes4 es | c4. f8 f4 bes,8 c | d4 c bes4. c8 | d c bes2 \bar "|."
+  }
+}

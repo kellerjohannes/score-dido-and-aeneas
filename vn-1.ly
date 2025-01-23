@@ -434,3 +434,15 @@ vnINXXV = \relative bes' {
   g c, c' | b b b | c d es | d fis, d' | d8 c bes4 a | g2 bes4 | bes f d' |
   d g, d' | es4. d8 c bes | a2 f'4 | d8 c4. f4 | d8 c4. d4 | es4. f8 g f | f es d4 c | bes2. \bar "|."
 }
+
+\vnINXXVI = \relative bes'' {
+  \time 2/2
+  \key bes \major
+  \clef \vnIClef
+  \repeat volta 2 {
+    bes4 f g2 | f4 d es2 | c4 bes8 a d4 a8 bes | a4 f f2 | d4 f bes f | g c bes a | c f d g | a8 g f e f2 |
+  }
+  \repeat volta 2 {
+    f4 d bes2 | bes'4 f g2 | g4 d es8 d c bes | a c bes a g4. c8 | a4 g8 f bes4 a8 g | a c f c d4 g8 a | bes4 a8 g f es d c | bes d c a bes2 \bar "|."
+  }
+}
