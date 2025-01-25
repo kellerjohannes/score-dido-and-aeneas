@@ -467,3 +467,17 @@ vnINXXVIII = \relative {
   }
   R2.*12 \bar "|."
 }
+
+vnINXXIX = \relative d'' {
+  \time 4/4 \partial 4
+  \key bes \major
+  \clef \vnIClef
+  d4 | d d d8 es f4 | d2 r4 d | d d d e | f f2 f4 | g g g8 d d4 |
+  es2 r4 d8 es | f4 es8 d es4 d | c c2 r4 | r2 r4 f8 es | d c bes a g4 g'8 f |
+
+  es8 d c bes a4 c | f f d d | es2 r4 c | d bes a g | a f2 f'4 |
+  d d d8 es f4 | d2 r4 d | d d d e | f f2 f4 | g g g8 d d4 |
+
+  es2 r4 d8 es | f4 es8 d es4 d | c c2 r4 | r2 r4 f8 es | d c bes a g4 g'8 f |
+  es8 d c bes a4 c | f f d d | es2 r4 d8 es | f4 es d c | bes bes2. \bar "|."
+}

@@ -463,3 +463,17 @@ vnIINXXVIII = \relative {
   }
   R2.*12 \bar "|."
 }
+
+vnIINXXIX = \relative bes' {
+  \time 4/4 \partial 4
+  \key bes \major
+  \clef \vnIIClef
+  bes4 | bes bes bes a | bes2 r4 bes | bes bes bes bes | a a2 f4 | f d g g |
+  g2 r4 g | as as g g | es c2 es'8 d | c bes a g f f g a | bes2 r8 g a bes |
+
+  c2 r4 f, | a a g g | g2 r4 f | f g f e | f f2 a4 |
+  bes bes bes a | bes2 r4 bes | bes bes bes bes | a a2 f4 | f d g g |
+
+  g2 r4 g | as as g4. f8 | es4 c2 es'8 d | c bes a g f f g a | bes2 r8 g a bes |
+  c2 r4 f, | a a g g | g2 r4 es | d g f es | d d2. \bar "|."
+}

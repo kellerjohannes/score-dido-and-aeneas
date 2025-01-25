@@ -1024,3 +1024,28 @@ figuresNXXVIII = \figuremode {
     s2 < _ >8 \ext 8 \extOff | < 6 >4. < 6 4 >8 s4 | < 7 >4 < 6 >8 < 6 > < _! >4 | s2 < _ >8. \ext 16 | < 6 >8. \extOn 16 8. 16 \extOff < 6 >8 < 5 > |
     s4. < 6 >8 \extOn 8. 16 \extOff | < 6 >8. \extOn 16 8. 16 \extOff s4 | < _ >8. \extOn 16 8. 16 8. 16 \extOff | s4 s4. < 4 2 >8 | < 6 >2 < 6 >4 | < 6 > < 6 4 > < 5 3 > | s2. |
 }
+
+bcNXXIX = \relative bes, {
+  \time 4/4 \partial 4
+  \key bes \major
+  \clef \bcClef
+  bes4 | bes' bes bes f | bes2 r4 bes | bes bes g g | d d2 d'4 | b b g g |
+  c2 r4 bes | as f g g, | c4 c2 c'8 bes | a g f es d2 | r8 bes c d es2 |
+
+  r8 c d es f4 f | d d g g | c,2 r4 a | bes g c c, | f f2 f4 |
+  bes bes bes' f | bes2 r4 bes | bes bes g g | d' d2 d4 | b b g g |
+
+  c2 r4 bes4 | as f g g, | c c2 c'8 bes | a g f es d2 | r8 bes c d es2 |
+  r8 c d es f4 f | d d g g, | c2 r4 c | d es f f, | bes bes2. \bar "|."
+}
+
+figuresNXXIX = \figuremode {
+  s4 | s1*2 | s2 < 5 >4 < 6! > | s1 | < 6 5 >2 < 6 _! >8 < 5 > s4 |
+  s2. < 6 >4 | < 6 > < 6 5 > < 6 4 > < 5 _! > | s1*3 |
+
+  s1*2 | s2. < 6 >4 | s2 < 6 4 >4 < 5 _! > | s1 |
+  s1*2 | s2. < 6! >4 | s1 | < 6 5 >2 < 6 _! >8 < 5 > s4 |
+
+  s2. < 6 >4 | < 6 > < 6 5 > < 6 4 > < 5 _! > | s1*3 |
+  s1*2 | s2. < 6 >4 | < 6 >2 < 6 4 >4 < 7 > | s1 |
+}

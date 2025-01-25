@@ -354,9 +354,9 @@
   }
 
   % \score {
-  %   \partbookTitleNXIX
+  %   \partbookTitleNXXIX
   %   <<
-  %     \new Staff { \compressMMRests { \vnINXIX } }
+  %     \new Staff { \compressMMRests { \vnINXXIX } }
   %   >>
   %   \layout {
   %     indent = #0

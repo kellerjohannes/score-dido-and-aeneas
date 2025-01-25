@@ -360,3 +360,35 @@ lyricsSNXXV = \lyricmode {
   tho' ne -- ver in -- ten -- ding to vi -- sit them more,
   tho' ne -- ver, tho' ne -- ver in -- tend -- ing to vi -- sit them more.
 }
+
+chorusSNXXIX = \relative d'' {
+  \time 4/4 \partial 4
+  \key bes \major
+  \clef \chorusSClef
+  \autoBeamOff
+  d4 | d d d8([ es)] f4 | d2 r4 d | d d d e | f f2 f4 | g g g8([ d)] d4 |
+  es2 r4 d8([ es)] | f4 es8([ d)] es4 d | c c2 r4 | r2 r4 f8([ es)] | d([ c bes a )] g4 g'8([ f)] |
+
+  es([ d c bes)] a4 c | f f d d es2 r4 c | d bes a g | a f2 f'4 |
+  d4 d d8([ es)] f4 | d2 r4 d | d d d e | f f2 f4 | g g g8([ d)] d4 |
+
+  es2 r4 d8([ es)] | f4 es8([ d)] es4 d | c c2 r4 | r2 r4 f8([ es)] | d([ c bes a )] g4 g'8([ f)] |
+  es([ d c bes)] a4 c | f f d d | es2 r4 d8([ es)] | f4 es d c | bes bes2. \bar "|."
+}
+
+lyricsSTNXXIX = \lyricmode {
+  De -- struc -- tion's our de -- light,
+  De -- light our grea -- test sor -- row!
+  E -- lis -- sa bleeds to -- night
+  and Car -- thage flames to -- mor -- row.
+  Ho, ho, ho!, ho, ho, ho!
+  E -- lis -- sa bleeds to -- night
+  and Car -- thage flames to -- mor -- row.
+  De -- struc -- tion's our de -- light,
+  De -- light our grea -- test sor -- row!
+  E -- lis -- sa bleeds to -- night
+  and Car -- thage flames to -- mor -- row.
+  Ho, ho, ho!, ho, ho, ho!
+  E -- lis -- sa bleeds to -- night
+  and Car -- thage flames to -- mor -- row.
+}

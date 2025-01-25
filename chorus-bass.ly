@@ -278,3 +278,18 @@ lyricsBNXXV = \lyricmode {
   tho' ne -- ver in -- ten -- ding to vi -- sit them more,
   tho' ne -- ver, tho' ne -- ver in -- tend -- ing to vi -- sit them more.
 }
+
+chorusBNXXIX = \relative bes {
+  \time 4/4 \partial 4
+  \key bes \major
+  \clef \chorusBClef
+  \autoBeamOff
+  bes4 | bes bes bes f | bes2 r4 bes | bes bes g g | d d2 d'4 | b b g g |
+  c2 r4 bes | as f g4. g8 | c,4 c2 c'8([ bes)] | a([ g f es)] d2 | r8 bes([ c d)] es2 |
+
+  r8 c([ d es)] f4 f | d d g g | c,2 r4 a' | bes g c c, | f f2 f4 |
+  bes bes bes f | bes2 r4 bes | bes bes g g | d'4 d2 d4 | b b g g |
+
+  c2 r4 bes | as f g4. g8 | c,4 c2 c'8([ bes)] | a([ g f es)] d2 | r8 bes8([ c d)] es2 |
+  r8 c([ d es)] f4 f | d d g4. g8 | c,2 r4 c | d es f4. f8 | bes,4 bes2. \bar "|."
+}

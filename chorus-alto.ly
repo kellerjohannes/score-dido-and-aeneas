@@ -297,3 +297,35 @@ lyricsANXXV = \lyricmode {
   tho' ne -- ver in -- ten -- ding to vi -- sit them more,
   tho' ne -- ver, tho' ne -- ver in -- tend -- ing to vi -- sit them more.
 }
+
+chorusANXXIX = \relative bes' {
+  \time 4/4 \partial 4
+  \key bes \major
+  \clef \chorusAClef
+  \autoBeamOff
+  bes4 | bes bes bes a | bes2 r4 bes | bes bes bes bes | a a2 f4 | f d g g |
+  g2 r4 g4 | as as g4. g8 | es4 c2 es8([ d)] | c([ bes a g)] f f([ g a)] | bes2 r8 g([ a bes)] |
+
+  c2 r4 f | a a g g | g2 r4 f | f g f e | f f2 a4 |
+  bes bes bes a | bes2 r4 bes | bes bes bes bes | a4 a2 f4 | f d g g |
+
+  g2 r4 g | a a g4. f8 | es4 c2 es8([ d)] | c([ bes a g)] f f([ g a)] | bes2 r8 g([ a bes)] |
+  c2 r4 f | a a g4. g8 | g2 r4 es | d g f es | d d2. \bar "|."
+}
+
+lyricsABNXXIX = \lyricmode {
+  De -- struc -- tion's our de -- light,
+  De -- light our grea -- test sor -- row!
+  E -- lis -- sa bleeds to -- night
+  and Car -- thage flames to -- mor -- row.
+  Ho, ho, ho!, ho, ho!, ho, ho!
+  E -- lis -- sa bleeds to -- night
+  and Car -- thage flames to -- mor -- row.
+  De -- struc -- tion's our de -- light,
+  De -- light our grea -- test sor -- row!
+  E -- lis -- sa bleeds to -- night
+  and Car -- thage flames to -- mor -- row.
+  Ho, ho, ho!, ho, ho!, ho, ho!
+  E -- lis -- sa bleeds to -- night
+  and Car -- thage flames to -- mor -- row.
+}

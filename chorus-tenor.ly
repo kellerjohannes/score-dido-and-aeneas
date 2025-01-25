@@ -285,3 +285,18 @@ lyricsTNXXV = \lyricmode {
   tho' ne -- ver in -- ten -- ding to vi -- sit them more,
   tho' ne -- ver, tho' ne -- ver in -- tend -- ing to vi -- sit them more.
 }
+
+chorusTNXXIX = \relative f' {
+  \time 4/4 \partial 4
+  \key bes \major
+  \clef \chorusTClef
+  \autoBeamOff
+  f4 | f f f f | f2 r4 f | f f g g | f4 f2 d4 | d d es8([ b)] b4 |
+  c2 r4 g | c c c b | c c2 r4 r2 r4 d8([ c)] | bes([ a g f)] es4 es'8([ d)] |
+
+  c([ bes a g)] f4 a | d d bes bes | c2 r4 f | d d c4. c8 | c4 a2 f'4 |
+  f f f f | f2 r4 f4 | f f g g | f f2 d4 | d d es8([ b)] b4 |
+
+  c2 r4 g | c c c b | c c2 r4 | r2 r4 d8([ c)] | bes([ a g f)] es4 es'8([ d)] |
+  c([ bes a g)] f4 a | d d bes bes | c2 r4 a | bes bes bes a | bes bes2. \bar "|."
+}
