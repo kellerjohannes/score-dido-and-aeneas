@@ -870,3 +870,13 @@ lyricsNXXVIII = \lyricmode {
   E -- lis -- sa bleeds to -- night,
   and Car -- thage flames to -- mor -- row.
 }
+
+soloVoiceIINXXX = \relative g' {
+  \time 4/4
+  \key g \minor
+  \clef \didoClef
+  \autoBeamOff
+  r2 r4 r8 g | bes bes d4. d8 fis,8. fis16 | g4 r4 r8 d' d8. d16 | g4. d8 bes4. a8 |
+
+
+}

@@ -481,3 +481,10 @@ vnINXXIX = \relative d'' {
   es2 r4 d8 es | f4 es8 d es4 d | c c2 r4 | r2 r4 f8 es | d c bes a g4 g'8 f |
   es8 d c bes a4 c | f f d d | es2 r4 d8 es | f4 es d c | bes bes2. \bar "|."
 }
+
+vnIXXX = \relative {
+  \time 4/4
+  \key g \minor
+  \clef \vnIClef
+  R1*54 \bar "|."
+}

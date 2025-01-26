@@ -353,15 +353,15 @@
     }
   }
 
-  % \score {
-  %   \partbookTitleNXXIX
-  %   <<
-  %     \new Staff { \compressMMRests { \vnINXXIX } }
-  %   >>
-  %   \layout {
-  %     indent = #0
-  %   }
-  % }
+  \score {
+    \partbookTitleNXXIX
+    <<
+      \new Staff { \compressMMRests { \vnINXXIX } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
 
   % \score {
   %   \partbookTitleNXXX
