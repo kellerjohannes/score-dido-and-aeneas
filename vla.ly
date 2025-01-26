@@ -469,9 +469,16 @@ vlaNXXIX = \relative f' {
   c8 bes a g f4 a | d d bes bes | c2 r4 a | bes bes bes a | bes bes2. \bar "|."
 }
 
-vlaXXX = \relative {
+vlaNXXX = \relative {
   \time 4/4
   \key g \minor
   \clef \vlaClef
   R1*54 \bar "|."
+}
+
+vlaNXXXI = \relative {
+  \time 4/4
+  \key c \major
+  \clef \vlaClef
+  R1*4 \bar "|."
 }

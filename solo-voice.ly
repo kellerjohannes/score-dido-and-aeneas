@@ -877,6 +877,116 @@ soloVoiceIINXXX = \relative g' {
   \clef \didoClef
   \autoBeamOff
   r2 r4 r8 g | bes bes d4. d8 fis,8. fis16 | g4 r4 r8 d' d8. d16 | g4. d8 bes4. a8 |
+  a4 r4 r8 d d8. d16 | g4 r4 f8([ es)] f d | es4 r r d8. d16 | g4. g16([ d)] bes4 a |
+  g r r8 g g8. g16 | c4 r8 d c16 g8. a8 bes | a4 r8 a d4. c8 | bes16 e,8. f8 g f4. es8 |
+  d2 \clef \annaClef bes4^\annaName bes8 d | bes8. c16 d8 c16([ bes)] d4 r8 d | b16 b b b b8. b16 c8. c16 d8 es |
+  es8 a bes g fis4 r | \clef \aeneasClef d,4.^\aeneasName e8 f4. g8 | f4 es8([ d)] es4 r | e r c'8([ es,)] es es |
+  f8. fis16 fis8 fis g8. g16 g8 fis | a4 r8 a bes4 bes | r4 c8 fis, g4 r |
+  \clef \didoClef d''4^\didoName r8 d16 d d8 d d e | f4 f8( cis4) cis16 cis cis8. cis16 | d16 d d8 r d b16 b b b c8. d16 |
 
+  es4 r8 f g8. f16 es([ d)] c([ bes)] | a8 d c a bes4 r | \clef \aeneasClef r8^\aeneasName f,8 bes8. bes16 d8. \clef \didoClef f16^\didoName bes8. bes16 |
+  d4 r8 fis, g4 bes8. bes16 | d4 r8 g, es4. d8 | d4 r8 a'16 a a8 d, a'8. bes16 | a([ bes] c4.) r8 c d es |
+  d16([ e,8)] f16 f8 es f4 \clef \aeneasClef r8^\aeneasName c8 | c f, c'8. c16 f4. c8 | f,8 r16 a a8. b16 c8. c16 c8 b |
+  c4 r \clef \didoClef es'4^\didoName es8 g, | c8. bes16 a8 bes fis8. a16 a8 a | d8. d16 d8 cis d4 r8 f16 d |
+  c16([ bes)] bes8 bes a g8. d'16 es8 d | c c c d b4 r16 b b b | c8. d16 c4. bes8 a bes |
+  a4 r16 a a a cis4. d8 | d4. cis8 d8. d16 d4 | \clef \aeneasClef r8^\aeneasName g,,8 g4. a8 bes g |
+  d'4 r8 d, g2 | r4 r8 g d g bes4 | r4 r8 bes f bes d4 |
 
+  r8 f, bes4 r8 d, g4 | r8 g c4. c8 bes a16([ bes)] | a4 r8 c a f bes d, |
+  es4 r8 a fis d d'4~ | d8 c16([ bes)] a([ g)] f([ e)] fis4 g16([ a bes a)] | g4 fis g r4 | R1 \bar "|."
+}
+
+lyricsIINXXX = \lyricmode {
+  %% Dido
+  Your coun -- sel, all is urg'd in vain;
+  To Earth and Heav'n I will com -- plain!
+  To Earth and Heav'n, why do I call?
+  Earth and Heav'n con -- spire my fall:
+  To Fate I sue, of o -- ther means be -- reft,
+  The on -- ly re -- fuge for the wretch -- ed left.
+
+  %% Anna
+  See, sis -- ter, where the Prince ap -- pears;
+  Such sor -- row, in his looks, he bears
+  As should con -- vince you still he's true.
+
+  %% Aeneas
+  What shall lost Æ -- ne -- as do?
+  How, how, roy -- al Fair, shall I im -- part
+  The God's de -- cree,
+  and tell you we must part?
+
+  %% Dido
+  Thus, on the fa -- tal bank of Nile,
+  Weeps the de -- ceit -- ful cro -- co -- dile;
+  Thus, hy -- po -- crites, that mur -- der act,
+  Make Heav'n and Gods the au -- thors of the fact.
+
+  %% Aeneas
+  By all that's good,
+
+  %% Dido
+  By all that's good, no more!
+  All that's good you hvae for -- swore.
+  To you pro -- mis'd Em -- pire, fly,
+  And let for -- sa -- ken Di -- do die.
+
+  %% Aeneas
+  In spite of Jove's com -- mands, I'll stay,
+  Of -- fend the Gods, and Love o -- bey.
+
+  %% Dido
+  No, faith -- less man, thy course pur -- sue;
+  I'm now re -- solv'd, as well as you.
+  No re -- pen -- tance shall re -- claim
+  The in -- jur'd Di -- do's slight -- ed flame,
+  For 'tis e -- nough, what -- e'er you now de -- cree,
+  That you had once a thought of leav -- ing me.
+
+  %% Aeneas
+  Let Jove say what he please, I'll stay!
+  No, no, I'll stay.
+  No, no, I'll stay.
+  I'll stay, I'll stay, I'll stay,
+  and Love o -- bey!
+  I'll stay and Love o -- bey;
+  I'll stay, I'll stay and Love o -- bey,
+  and Love o -- bey.
+}
+
+soloVoiceINXXX = \relative d'' {
+  \time 4/4
+  \key g \minor
+  \clef \didoClef
+  \autoBeamOff
+  R1*44 |
+  r2 r4 r8 d^\didoName | g8. d16 g,4 r r8 d' | f8. d16 bes4 r4 r8 f'8 |
+
+  d4 r8 d bes4 r8 g' | es4 r8 es d d d e | f([ e16 d] c[ bes a g] f8) a d4~ |
+  d8 g, c4~ c8 d16([ c)] bes([ a)] g([ fis)] | g([ a bes g] c4~ c8) a bes16([ c)] d([ c)] | bes4 a g8. d'16 g8. d16 | g,2 r2 \bar "|."
+}
+
+lyricsINXXX = \lyricmode {
+  %% Dido
+  A -- way, a -- way,
+  a -- way, a -- way,
+  No, no,
+  no, no,
+  no, no,
+  a -- way, a -- way, a -- way, a -- way, a -- way.
+  To Deatch I'll fly if lon -- ger you de -- lay;
+  a -- way, a -- way!
+}
+
+soloVoiceNXXXI = \relative a' {
+  \time 4/4
+  \key c \major
+  \clef \didoClef
+  \autoBeamOff
+  r2 r4 r8 a | a d16([ a)] a4. a8 b e, | f4 r f8( e4) a8 | d, bes'16([ g)] f8 e d2 \bar "|."
+}
+
+lyricsNXXXI = \lyricmode {
+  But Death, a -- las! I can -- not shun;
+  Death must come when he is gone.
 }

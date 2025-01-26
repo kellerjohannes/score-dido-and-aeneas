@@ -354,25 +354,25 @@
     }
   }
 
-  % \score {
-  %   \partbookTitleNXXX
-  %   <<
-  %     \new Staff { \compressMMRests { \vlaNXXX } }
-  %   >>
-  %   \layout {
-  %     indent = #0
-  %   }
-  % }
+  \score {
+    \partbookTitleNXXX
+    <<
+      \new Staff { \compressMMRests { \vlaNXXX } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
 
-  % \score {
-  %   \partbookTitleNXXXI
-  %   <<
-  %     \new Staff { \compressMMRests { \vlaNXXXI } }
-  %   >>
-  %   \layout {
-  %     indent = #0
-  %   }
-  % }
+  \score {
+    \partbookTitleNXXXI
+    <<
+      \new Staff { \compressMMRests { \vlaNXXXI } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
 
   % \score {
   %   \partbookTitleNXXXII

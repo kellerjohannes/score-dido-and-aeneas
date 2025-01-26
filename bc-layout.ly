@@ -559,20 +559,49 @@
     }
   }
 
-  % \score {
-  %   \scoreTitleNXXX
-  %   <<
-  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-  %     \bcNXXX
-  %     \new FiguredBass { \figuresNXXX }
-  %   >>
-  %   \layout {
-  %     \context {
-  %       \Staff
-  %       \RemoveAllEmptyStaves
-  %     }
-  %   }
-  % }
+  \score {
+    \scoreTitleNXXX
+    <<
+      \new Staff \with { instrumentName = \didoName }
+      \new Voice = "voiceOne"
+      \soloVoiceINXXX
+      \new Lyrics \lyricsto "voiceOne" { \lyricsINXXX }
+      \new Staff \with { instrumentName = \didoName }
+      \new Voice = "voiceTwo"
+      \soloVoiceIINXXX
+      \new Lyrics \lyricsto "voiceTwo" { \lyricsIINXXX }
+
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXXX
+      \new FiguredBass { \figuresNXXX }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
+
+  \score {
+    \scoreTitleNXXX
+    <<
+      \new Staff \with { instrumentName = \didoName }
+      \new Voice = "voice"
+      \soloVoiceNXXXI
+      \new Lyrics \lyricsto "voice" { \lyricsNXXXI }
+
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXXXI
+      \new FiguredBass { \figuresNXXXI }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 
   % \score {
   %   \scoreTitleNXXXI

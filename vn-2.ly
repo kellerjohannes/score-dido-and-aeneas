@@ -478,9 +478,16 @@ vnIINXXIX = \relative bes' {
   c2 r4 f, | a a g g | g2 r4 es | d g f es | d d2. \bar "|."
 }
 
-vnIIXXX = \relative {
+vnIINXXX = \relative {
   \time 4/4
   \key g \minor
   \clef \vnIIClef
   R1*54 \bar "|."
+}
+
+vnIINXXXI = \relative {
+  \time 4/4
+  \key c \major
+  \clef \vnIIClef
+  R1*4 \bar "|."
 }
