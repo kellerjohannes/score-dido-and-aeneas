@@ -318,3 +318,11 @@ lyricsTNXXXII = \lyricmode {
   And shun the cure they most de -- sire;
   and shun the cure, the cure they most de -- sire.
 }
+
+chorusTNXXXV = \relative d' {
+  \time 4/4
+  \key g \minor
+  \clef \chorusTClef
+  \autoBeamOff
+
+}

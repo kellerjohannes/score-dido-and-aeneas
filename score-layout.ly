@@ -1150,17 +1150,46 @@
   %   }
   % }
 
+  % \score {
+  %   \scoreTitleNXXXIII
+  %   <<
+  %     \new Staff = "voiceStaff" \with { instrumentName = \didoName }
+  %     \new Voice= "voice"
+  %     \soloVoiceNXXXIII
+  %     \new Lyrics \lyricsto "voice" { \lyricsNXXXIII }
+
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXXXIII
+  %     \new FiguredBass { \figuresNXXXIII }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
   \score {
-    \scoreTitleNXXXIII
+    \scoreTitleNXXXIV
     <<
-      \new Staff = "voiceStaff" \with { instrumentName = \didoName }
-      \new Voice= "voice"
-      \soloVoiceNXXXIII
-      \new Lyrics \lyricsto "voice" { \lyricsNXXXIII }
+      \new StaffGroup = "strings"
+      <<
+        \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
+        \vnINXXXIV
+        \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
+        \vnIINXXXIV
+        \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
+        \vlaNXXXIV
+      >>
+      \new Staff = "soloVoice" \with { instrumentName = \didoName }
+      \new Voice = "solo"
+      \soloVoiceNXXXIV
+      \new Lyrics \lyricsto "solo" { \lyricsNXXXIV }
 
       \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-      \bcNXXXIII
-      \new FiguredBass { \figuresNXXXIII }
+      \bcNXXXIV
+      \new FiguredBass { \figuresNXXXIV }
     >>
     \layout {
       \context {

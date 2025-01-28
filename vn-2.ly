@@ -508,3 +508,36 @@ vnIINXXXIII = \relative {
   \clef \vnIIClef
   R1*9 \bar "|."
 }
+
+vnIINXXXIV = \relative bes {
+  \time 3/2 \partial 2
+  \key g \minor
+  \clef \vnIIClef
+  r2 | R1.*4 | bes1 bes2 | c1 d2~ | d c1 |
+  c1 bes2 | a bes a | g1 bes2 | c d1 | d2 c1 | c d2 | es d1 |
+
+  d1 d2~ | d es d | g1 g2 | fis1 g2 | es d1~ | d2 es1 |
+  d1 a'2 | bes2. a4 g2 | a1 g2 | es d1 | d1. | r2 r d'~ | d cis c~ |
+  c b bes~ | bes a d~ | d2. d4 c4. bes8 | a1 a2 | bes2. a4 g2 | a1 g2 | g1 fis2 | g1. \bar "|."
+}
+
+vnIINXXXV = \relative g' {
+  \time 4/4
+  \key g \minor
+  \clef \vnIIClef
+  R1 | \repeat volta 2 {
+    R1*2 | r4 g f es | d c bes a |
+    d es8 f g4 r | r2 r4 d' | c bes a g | fis d c bes |
+
+    a d d r8 fis | g fis g a bes4 bes | f8 g f es d es f d | es4 g fis g | fis2 g4 fis |
+    bes a g fis | g a a8 d, a'4 | bes4. a8 g4 f | e e d r | d cis f e | d a' a8 bes a g |
+
+    g8. bes16 a8 g f4 e | d r8 fis g4 r | g a8. bes16 a4 r8 a | bes4 r bes bes | bes a bes r8 f |
+    g g r4 f8 f r4 | e4 fis8 g fis4 r8 f | bes bes r4 bes8 a r4 | a8 fis g a g4 fis |
+    \alternative {
+      { g4 r r2 }
+      { g1 }
+    }
+  }
+  \bar "|."
+}

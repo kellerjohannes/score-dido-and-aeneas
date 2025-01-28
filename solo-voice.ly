@@ -1006,3 +1006,25 @@ lyricsNXXXIII = \lyricmode {
   More I would, but Death in -- vades me.
   Death is now a wel -- come guest!
 }
+
+soloVoiceNXXXIV = \relative g' {
+  \time 3/2 \partial 2
+  \key g \minor
+  \clef \didoClef
+  \autoBeamOff
+  r2 | r1.*4 | g2 a bes | bes( a) b | c4.( bes8 a4. g8) fis4.( g8) |
+  fis1 d'4. d8 | c2( bes) a | bes1 es2 | es4( a,) a2 d | d4 g, a2 g | a1 r2 | r r r4 d |
+
+  d4. d8 d2 r | r r r4 d | d4. d8 d2 r | r r d | c( bes) c4( a) bes4.( c8 c2.) d4 |
+  d1 r4 d | g4. g8 g2. c,4 | d8([ es] f2) es4( d2) | c( bes) a | g1. | R1.*10 \bar "|."
+}
+
+lyricsNXXXIV = \lyricmode {
+  When I am laid, am laid in earth,
+  may my wrongs cre -- ate
+  No trou -- ble, no trou -- ble in thy breast;
+  Re -- mem -- ber me,
+  re -- mem -- ber me,
+  but ah! for -- get my fate.
+  Re -- mem -- ber me, but ah! for -- get my fate.
+}

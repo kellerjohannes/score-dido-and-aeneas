@@ -499,3 +499,36 @@ vlaNXXXIII = \relative {
   \clef \vlaClef
   R1*9 \bar "|."
 }
+
+vlaNXXXIV = \relative g {
+  \time 3/2 \partial 2
+  \key g \minor
+  \clef \vlaClef
+  r2 | r1.*4 | g1 g2 | a1 g2 | g1 g2 |
+  a1 g2 | g1 fis2 | g g' es | a,1 a2 | bes c1 | a bes2 | a bes a |
+
+  bes1 bes2 | c1 a2 | bes1 g2 | a1 g2 | a2 bes a | g fis g |
+  a1 a2 | g2 c es | a, d1 | g,2 d' c | bes1 bes'2~ | bes a a~ | a g2. a4 |
+  fis1 d2~ | d c a | bes1 c2 | d1 d2 | g,1 g'2 | fis1 d2 | es d c | bes1. \bar "|."
+}
+
+vlaNXXXV = \relative d' {
+  \time 4/4
+  \key g \minor
+  \clef \vlaClef
+  r2 r4 d | \repeat volta 2 {
+    c4 bes a g | fis d g8 a bes g | a4 r r c | bes a g bes |
+    a8 bes c4 d f | g d es bes | a g fis d' | c bes a g |
+
+    fis8 g a fis g4 r | r2 r4 r8 d' | bes a bes c d c bes a | g4 c c d | d2 r |
+    d4 c es d | bes a g fis' | g d g, r | R1 | r2 d4 a | bes c d bes |
+
+    bes8 e, f g a4 a | a r8 d d4 r | c4. c8 c4 r8 a | d4 r8 bes4 es | d8 c d es d4 r8 d |
+    es8 bes r4 d8 d r4 | g,4. g8 d'4 r8 d | g,8 g r4 es'8 es r4 a,4 d d4. d8
+    \alternative {
+      { d4 r r d }
+      { d1 }
+    }
+  }
+  \bar "|."
+}
