@@ -383,25 +383,25 @@
     }
   }
 
-  % \score {
-  %   \partbookTitleNXXXII
-  %   <<
-  %     \new Staff { \compressMMRests { \vnINXXXII } }
-  %   >>
-  %   \layout {
-  %     indent = #0
-  %   }
-  % }
+  \score {
+    \partbookTitleNXXXII
+    <<
+      \new Staff { \compressMMRests { \vnINXXXII } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
 
-  % \score {
-  %   \partbookTitleNXXXIII
-  %   <<
-  %     \new Staff { \compressMMRests { \vnINXXXIII } }
-  %   >>
-  %   \layout {
-  %     indent = #0
-  %   }
-  % }
+  \score {
+    \partbookTitleNXXXIII
+    <<
+      \new Staff { \compressMMRests { \vnINXXXIII } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
 
   % \score {
   %   \partbookTitleNXXXIV

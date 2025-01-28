@@ -1084,17 +1084,83 @@
   %   }
   % }
 
+  % \score {
+  %   \scoreTitleNXXXI
+  %   <<
+  %     \new Staff = "voiceStaff" \with { instrumentName = \didoName }
+  %     \new Voice= "voice"
+  %     \soloVoiceNXXXI
+  %     \new Lyrics \lyricsto "voice" { \lyricsNXXXI }
+
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXXXI
+  %     \new FiguredBass { \figuresNXXXI }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
+  % \score {
+  %   \scoreTitleNXXIX
+  %   <<
+  %     \new StaffGroup = "strings"
+  %     <<
+  %       \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
+  %       \vnINXXXII
+  %       \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
+  %       \vnIINXXXII
+  %       \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
+  %       \vlaNXXXII
+  %     >>
+  %     \new ChoirStaff = "chorus"
+  %     <<
+  %       \new Staff = "chorusSoprano" \with { instrumentName = \instrumentNameChorusS }
+  %       \new Voice = "chorusS"
+  %       \chorusSNXXXII
+  %       \new Lyrics \lyricsto "chorusS" { \lyricsSNXXXII }
+
+  %       \new Staff = "chorusAlto" \with { instrumentName = \instrumentNameChorusA }
+  %       \new Voice = "chorusA"
+  %       \chorusANXXXII
+  %       \new Lyrics \lyricsto "chorusA" { \lyricsANXXXII }
+
+  %       \new Staff = "chorusT" \with { instrumentName = \instrumentNameChorusT }
+  %       \new Voice = "chorusT"
+  %       \chorusTNXXXII
+  %       \new Lyrics \lyricsto "chorusT" { \lyricsTNXXXII }
+
+  %       \new Staff = "chorusBass" \with { instrumentName = \instrumentNameChorusB }
+  %       \new Voice = "chorusB"
+  %       \chorusBNXXXII
+  %       \new Lyrics \lyricsto "chorusB" { \lyricsBNXXXII }
+  %     >>
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNXXXII
+  %     \new FiguredBass { \figuresNXXXII }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
+
   \score {
-    \scoreTitleNXXXI
+    \scoreTitleNXXXIII
     <<
       \new Staff = "voiceStaff" \with { instrumentName = \didoName }
       \new Voice= "voice"
-      \soloVoiceNXXXI
-      \new Lyrics \lyricsto "voice" { \lyricsNXXXI }
+      \soloVoiceNXXXIII
+      \new Lyrics \lyricsto "voice" { \lyricsNXXXIII }
 
       \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-      \bcNXXXI
-      \new FiguredBass { \figuresNXXXI }
+      \bcNXXXIII
+      \new FiguredBass { \figuresNXXXIII }
     >>
     \layout {
       \context {

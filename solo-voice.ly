@@ -990,3 +990,19 @@ lyricsNXXXI = \lyricmode {
   But Death, a -- las! I can -- not shun;
   Death must come when he is gone.
 }
+
+soloVoiceNXXXIII = \relative c'' {
+  \time 4/4
+  \key c \major
+  \clef \didoClef
+  \autoBeamOff
+  r8 c c b c c r4 | c4( bes as) g | as4. as8 r4 as8 as | as( g4) g8 r4 g8 f |
+  g4 r r g8 g | g8([ f)] r f f4( e8) f | e e r4 es4. es8 | d4. fis8 fis([ g)] g([ cis,)] | d2 r \bar "|."
+}
+
+lyricsNXXXIII = \lyricmode {
+  Thy hand, my An -- na; dark -- ness shades me:
+  On thy bo -- som let me rest;
+  More I would, but Death in -- vades me.
+  Death is now a wel -- come guest!
+}

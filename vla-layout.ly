@@ -374,25 +374,25 @@
     }
   }
 
-  % \score {
-  %   \partbookTitleNXXXII
-  %   <<
-  %     \new Staff { \compressMMRests { \vlaNXXXII } }
-  %   >>
-  %   \layout {
-  %     indent = #0
-  %   }
-  % }
+  \score {
+    \partbookTitleNXXXII
+    <<
+      \new Staff { \compressMMRests { \vlaNXXXII } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
 
-  % \score {
-  %   \partbookTitleNXXXIII
-  %   <<
-  %     \new Staff { \compressMMRests { \vlaNXXXIII } }
-  %   >>
-  %   \layout {
-  %     indent = #0
-  %   }
-  % }
+  \score {
+    \partbookTitleNXXXIII
+    <<
+      \new Staff { \compressMMRests { \vlaNXXXIII } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
 
   % \score {
   %   \partbookTitleNXXXIV

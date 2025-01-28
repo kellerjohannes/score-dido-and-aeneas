@@ -584,7 +584,7 @@
   }
 
   \score {
-    \scoreTitleNXXX
+    \scoreTitleNXXXI
     <<
       \new Staff \with { instrumentName = \didoName }
       \new Voice = "voice"
@@ -603,50 +603,40 @@
     }
   }
 
-  % \score {
-  %   \scoreTitleNXXXI
-  %   <<
-  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-  %     \bcNXXXI
-  %     \new FiguredBass { \figuresNXXXI }
-  %   >>
-  %   \layout {
-  %     \context {
-  %       \Staff
-  %       \RemoveAllEmptyStaves
-  %     }
-  %   }
-  % }
+  \score {
+    \scoreTitleNXXXII
+    <<
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXXXII
+      \new FiguredBass { \figuresNXXXII }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 
-  % \score {
-  %   \scoreTitleNXXXII
-  %   <<
-  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-  %     \bcNXXXII
-  %     \new FiguredBass { \figuresNXXXII }
-  %   >>
-  %   \layout {
-  %     \context {
-  %       \Staff
-  %       \RemoveAllEmptyStaves
-  %     }
-  %   }
-  % }
+  \score {
+    \scoreTitleNXXXIII
+    <<
+      \new Staff \with { instrumentName = \didoName }
+      \new Voice = "voice"
+      \soloVoiceNXXXIII
+      \new Lyrics \lyricsto "voice" { \lyricsNXXXIII }
 
-  % \score {
-  %   \scoreTitleNXXXIII
-  %   <<
-  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-  %     \bcNXXXIII
-  %     \new FiguredBass { \figuresNXXXIII }
-  %   >>
-  %   \layout {
-  %     \context {
-  %       \Staff
-  %       \RemoveAllEmptyStaves
-  %     }
-  %   }
-  % }
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXXXIII
+      \new FiguredBass { \figuresNXXXIII }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 
   % \score {
   %   \scoreTitleNXXXIV

@@ -300,3 +300,21 @@ chorusTNXXIX = \relative f' {
   c2 r4 g | c c c b | c c2 r4 | r2 r4 d8([ c)] | bes([ a g f)] es4 es'8([ d)] |
   c([ bes a g)] f4 a | d d bes bes | c2 r4 a | bes bes bes a | bes bes2. \bar "|."
 }
+
+chorusTNXXXII = \relative f' {
+  \time 2/2
+  \key bes \major
+  \clef \chorusTClef
+  \autoBeamOff
+  f2 f4. f8 | f4 d c4. c8 | a2 c | d d | c4. c8 c4 c |
+
+  d4 d es d | d r r d | a bes fis g | a fis g r |
+  r2 r4 d' | c bes a g | g es' d4. d8 | d1 \bar "|."
+}
+
+lyricsTNXXXII = \lyricmode {
+  Great minds, a -- gainst them -- selves con -- spire;
+  great minds, great minds a -- gainst, a -- gainst them -- selves con -- spire;
+  And shun the cure they most de -- sire;
+  and shun the cure, the cure they most de -- sire.
+}

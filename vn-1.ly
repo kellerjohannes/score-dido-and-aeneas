@@ -495,3 +495,20 @@ vnINXXXI = \relative {
   \clef \vnIClef
   R1*4 \bar "|."
 }
+
+vnINXXXII = \relative d'' {
+  \time 2/2
+  \key bes \major
+  \clef \vnIClef
+  d2 c4. f8 | d4 d es4. d8 | c2 f | d g | e4. e8 f4. g8 |
+
+  fis4 d c bes | a d a bes | f g a bes | c a bes r |
+  r a d bes | es d c bes | bes16 c d8 c a bes4 a | g1 \bar "|."
+}
+
+vnINXXXIII = \relative {
+  \time 4/4
+  \key c \major
+  \clef \vnIClef
+  R1*9 \bar "|."
+}

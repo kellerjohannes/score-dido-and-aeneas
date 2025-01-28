@@ -1107,3 +1107,34 @@ bcNXXXI = \relative d {
 figuresNXXXI = \figuremode {
   < _! >1 | s2 < 6 >4 < 7- > | s2 < 7 _- >8 < 6 > < _+ >4 | s8 < 4- 2 > < 7 > < _+ > s2 |
 }
+
+bcNXXXII = \relative bes {
+  \time 2/2
+  \key bes \major
+  \clef \bcClef
+  \autoBeamOff
+  bes2 f | bes es, | f1 | bes2 g | c a |
+
+  d4 fis, g g, | d'1~ | d~ | d4 d g fis |
+  bes a g g, | c g' d es | bes c d d, | g1 \bar "|."
+}
+
+figuresNXXXII = \figuremode {
+  s1 | s2 < 6 > | s1*2 | < _! >2 < 6 > |
+
+  < _+ >4 < 6 > < 6- 4 > < 5 3 > | < _+ >2. < 6 4 >4 | < 5 _+ >4 < 6 4 > < 5 _+ > < 6 4 > | < 9 7 > < 5 _+ > s4 < 6 > |
+  < 6 > < 6/ > < 6 >2 | s2 < 7 _+ > | < 6 >4 < 6 5 > < 6 4 > < _+ > | s1 |
+}
+
+bcNXXXIII = \relative c {
+  \time 4/4
+  \key c \major
+  \clef \bcClef
+  c1~ | c | f, | g2 as |
+  g1 | g | c | d2 es | d r \bar "|."
+}
+
+figuresNXXXIII = \figuremode {
+  < _- >1 | < 7- _! > | < _- > | < 6- 4 >2 < 7 >4 < 6 > |
+  < _! >1 | < 7 > | < _! >2 < _- > | < _+ > < 7 >4 < 6/ > | < _+ >2 s2 |
+}

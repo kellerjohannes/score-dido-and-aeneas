@@ -293,3 +293,21 @@ chorusBNXXIX = \relative bes {
   c2 r4 bes | as f g4. g8 | c,4 c2 c'8([ bes)] | a([ g f es)] d2 | r8 bes8([ c d)] es2 |
   r8 c([ d es)] f4 f | d d g4. g8 | c,2 r4 c | d es f4. f8 | bes,4 bes2. \bar "|."
 }
+
+chorusBNXXXII = \relative bes {
+  \time 2/2
+  \key bes \major
+  \clef \chorusBClef
+  \autoBeamOff
+  bes2 f4. f8 | bes4 bes es,4. es8 | f1 | bes2 g | c a4. a8 |
+
+  d4 fis, g g, | d' r r2 | R1 | r4 d g fis |
+  bes a g8.([a16)] g4 | c, g' d es | bes c d4. d8 | g1 \bar "|."
+}
+
+lyricsBNXXXII = \lyricmode {
+  Great minds, a -- gainst them -- selves con -- spire;
+  great minds, great minds a -- gainst them -- selves con -- spire;
+  And shun the cure they most de -- sire,
+  and shun the cure they most de -- sire.
+}

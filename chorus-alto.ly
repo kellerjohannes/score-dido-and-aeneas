@@ -329,3 +329,21 @@ lyricsABNXXIX = \lyricmode {
   E -- lis -- sa bleeds to -- night
   and Car -- thage flames to -- mor -- row.
 }
+
+chorusANXXXII = \relative bes' {
+  \time 2/2
+  \key bes \major
+  \clef \chorusAClef
+  \autoBeamOff
+  bes2 a4. a8 | bes4 bes g4. f8 | f2 a | bes bes | g4. g8 a4 a |
+
+  a a g g | fis r r2 | r4 g, d' bes | es d bes d |
+  g fis es g | g g fis g | g g g fis | g1 \bar "|."
+}
+
+lyricsANXXXII = \lyricmode {
+  Great minds, a -- gainst them -- selves con -- spire;
+  great minds, great minds a -- gainst, a -- gainst them -- selves con -- spire;
+  And shun the cure, the cure, and shun the cure they most de -- sire,
+  the cure they most de -- sire.
+}

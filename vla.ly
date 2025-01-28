@@ -482,3 +482,20 @@ vlaNXXXI = \relative {
   \clef \vlaClef
   R1*4 \bar "|."
 }
+
+vlaNXXXII = \relative f' {
+  \time 2/2
+  \key bes \major
+  \clef \vlaClef
+  f2 f4. f8 | f4 d c c | a2 c | d d | c4. c8 c4 c |
+
+  d4 d es d | d r r d | a bes fis g | a fis g r |
+  r2 r4 d' | c bes a g | g es' d4. d8 | d1 \bar "|."
+}
+
+vlaNXXXIII = \relative {
+  \time 4/4
+  \key c \major
+  \clef \vlaClef
+  R1*9 \bar "|."
+}

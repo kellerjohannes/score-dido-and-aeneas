@@ -392,3 +392,21 @@ lyricsSTNXXIX = \lyricmode {
   E -- lis -- sa bleeds to -- night
   and Car -- thage flames to -- mor -- row.
 }
+
+chorusSNXXXII = \relative d'' {
+  \time 2/2
+  \key bes \major
+  \clef \chorusSClef
+  \autoBeamOff
+  d2 c4. f8 | d4 d es4. d8 | c2 f | d g | e4. e8 f4. g8 |
+
+  fis4 d c bes | a d a bes | fis g a bes | c a bes r |
+  r a d bes | es d c bes | bes16([ c d8)] c([ a)] bes4 a | g1 \bar "|."
+}
+
+lyricsSNXXXII = \lyricmode {
+  Great minds, a -- gainst them -- selves con -- spire;
+  great minds, great minds a -- gainst, a -- gainst them -- selves con -- spire;
+  And shun the cure they most, they most de -- sire;
+  and shun the cure they most de -- sire, they most de -- sire.
+}
