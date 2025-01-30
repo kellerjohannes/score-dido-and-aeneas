@@ -549,7 +549,8 @@ partbookTitleNXXXV = \header {
 
 scorePaperBlock = \paper {
   print-all-headers = ##t
-  #(set-paper-size '(cons (* 277 mm) (* 364 mm)))
+  #(set-default-paper-size "a4")
+  %%#(set-paper-size '(cons (* 277 mm) (* 364 mm)))
 }
 
 
