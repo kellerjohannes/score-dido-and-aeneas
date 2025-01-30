@@ -1159,3 +1159,41 @@ figuresNXXXIV = \figuremode {
   < 6 >1 < 6 >2 | < 7 5 > < 6 > < 6 > | < 7 5 > \ext < 6 5 > < 6 > | < 6 5 > < 6 4 > < 7 _+ > | s1. | < 6 4 >2 \ext < 6 3 > < 6 > | < 7 4 > < 6/ 3 > < 6! > |
   < 7 _+ > \ext < 6/ _+ > < 8/ 6 > | < 9 7 > < 7 _+ > < 5 _! > | < 7 5 > \ext < 6/ 5 > < 6- 4 > | < 7 > < 6 > < 6 > | < 7 5 > \ext < 6/ 5 > < 6! > | < 7 5 _+ > \ext < 6! 5 _+ > < 6 > | < 6 5 > < 6 4 > < 7 _+ > | s1. |
 }
+
+bcNXXXV = \relative g {
+  \time 4/4
+  \key g \minor
+  \clef \bcClef
+  R1 | \repeat volta 2 {
+    r4 g f es | d c bes g | c8 d es c d4 r | R1 |
+    r4 c' bes a | g f es d | es bes d2~ | d~ d4 g, |
+
+    d' d, g r | r r8 d' g fis g a | bes4 bes bes,8 c d bes | es d c bes a4 g | d'2 r |
+    R1 | g4 fis bes a | g f e d | d cis f e | d a d a' | d, c bes2 |
+
+    a1 | d4 r8 d g4 r | c,2 f | d4 r es es | f f, bes r8 bes |
+    es es r4 d8 d r4 | c4. c8 d4 r8 d | bes bes r4 c8 c r4 | d g, d' d, |
+    \alternative {
+      { g r r2 }
+      { g1 }
+    }
+  }
+  \bar "|."
+}
+
+figuresNXXXV = \figuremode {
+  s1 | \repeat volta 2 {
+    s2 < 6 > | < _+ >4 < 4+ 2 > < 6 >2 | < 6 >4 < 5 >8 \ext 8 < _! >2 | s1 |
+    s2 < 6 >4 < 6 > | s4 < 6 >2 < 6 >4 | < 6 4 > < 6 > < 7 _+ > < 6 4 > | < 7 _+ > < 6 4 > < 7 _+ >2 |
+
+    < _+ >4 < 7 >2. | s1 | s2 s8 < 5 > < 6 > < 9 7 > | < 5 >4 < 6 5 >8 \ext 8 < 6/ >4 < 4 >8 < 3 > | < _+ >1 |
+    s1 | s4 < 6 > < 7 > < 6/ > | < 6 > < 6 4 >8 \ext < 6 3 > < 6/ >2 | < 5 2! >4 < 6 > < 6 > < 6/ > | s4 < _+ > s4 < _+ > | s4 < 6 _! > < 7 > < 6 4 > |
+
+    < 9 7 _+ >8 < 6 4 > < 7 _+ >4 < 6 4 > < 5 _+ > | s4. < _+ >8 s2 | < 5 3 >4 < 6 >8 < 9 7 > s2 | < 6 >1 | < 6 4 >4 \ext < 6 3 >8 \ext < 7 3 > s2 |
+    s2 < 6! > | < _! >4 < 6 4+ >8 < 7 5 > < _+ >4. < _! >8 | < 6 >2 < 9 7 >8 < 8 6 > s4 | < 7 _+ >2 < 6 4 >4 < 5 _+ >
+    \alternative {
+      { s1 }
+      { s1 }
+    }
+  }
+}

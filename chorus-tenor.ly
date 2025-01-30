@@ -324,5 +324,39 @@ chorusTNXXXV = \relative d' {
   \key g \minor
   \clef \chorusTClef
   \autoBeamOff
+  r2 r4 d | \repeat volta 2 {
+    c( bes a g) | fis d g8([ a)] bes([ g)] | a4 r r c | bes( a g bes) |
+    a8([ bes)] c4 d f | g d es bes | a g fis d' | c bes a g |
 
+    fis8([ g)] a([ fis)] g4 r | r2 r4 r8 d' | bes8([ a)] bes([ c)] d([ c)] bes([ a)] | g4 c c d | d2 r |
+    d4( c) es( d) | bes a g fis' | g d g, r | R1 | r2 d'4( a) | bes( c) d( bes) |
+
+    bes8([ e,)] f([ g)] a4 a | a r8 d d4 r | c4. c8 c4 r8 a | d4 r bes es | d8([ c)] d([ es)] d4 r8 d |
+    es8 bes r4 d8 d r4 | g,4. r8 d'4 r8 d | g,8 g r4 es'8 es r4 | a, d d4. d8 |
+    \alternative {
+      { d4 r r2 }
+      { d1 }
+    }
+  }
+  \bar "|."
+}
+
+lyricsTNXXXV = \lyricmode {
+  With droop -- \repeat volta 2 {
+    ing wings, ye Cu -- pids come,
+    with droop -- ing wings,
+    with droop -- ing wings,
+    with droop -- ing wings,
+    ye Cupids come and scat -- ter ro -- ses,
+    scat -- ter, scat -- ter ro -- ses on her tomb,
+    Soft, soft and gen -- tle, soft, soft, soft, soft and gen -- tle
+    as her heart,
+    Keep here, here your watch, keep here, here, keep here your watch,
+    and ne -- ver, ne -- ver, ne -- ver part,
+    and ne -- ver, ne -- ver, ne -- ver, ne -- ver, ne -- ver
+    \alternative {
+      { part. }
+      { part. }
+    }
+  }
 }

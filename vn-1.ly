@@ -534,9 +534,9 @@ vnINXXXV = \relative d'' {
     f es d c | bes a g r | r d' c bes | a g fis g |
 
     a8 bes c a bes4 r8 a | bes a bes c d8. es16 d4 | d8 c d es f es d c | bes g a bes c d c bes | a2 r |
-    R1 | r2 d c | es d cis d | d8 a a2 d cis | f e d cis | f e d e |
+    R1 | r2 d4 c | es d cis d | d8 a a4 d cis | f e d cis | f e d e |
 
-    cis4 d8 e d4 c | d r8 d bes4 r | es4. d8 c4 r8 c | f4 r g4. g8 | f es d c | bes4 r8 bes |
+    cis4 d8 e d4 c | d r8 d bes4 r | es4. d8 c4 r8 c | f4 r g4. g8 | f8 es d c bes4 r8 bes |
     bes bes r4 b8 b r4 | c4 a8 bes a4 r8 a | d d r4 d8 c r4 | c8 a bes c bes4 a |
     \alternative {
       { bes4 d c bes }

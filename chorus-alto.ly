@@ -360,7 +360,7 @@ chorusANXXXV = \relative g' {
     a d) d r8 fis | g8([ fis)] g([ a)] bes4 bes | f8([ g)] f([ es)] d([ es)] f([ d)] | es4 g fis g | fis2 g4( f) |
     bes( a) g( fis) | g a a8( d,) a'4 | bes4.( a8) g4 f | e e d r | d( cis) f( e) | d a' a8[( bes)] a([ g)] |
 
-    g8.([ bes16)] a8([ g)] f4 e | d r8 fis g4 r | g a8.([ bes16)] a4 r8 a | bes4 r bes bes | bes a bes r8 f, |
+    g8.([ bes16)] a8([ g)] f4 e | d r8 fis g4 r | g a8.([ bes16)] a4 r8 a | bes4 r bes bes | bes a bes r8 f |
     g g r4 f8 f r4 | e4( fis8) g fis4 r8 f | bes bes r4 bes8 a r4 | a8([ fis g)] a g4 fis |
     \alternative {
       { g4 r r2 }
@@ -368,4 +368,24 @@ chorusANXXXV = \relative g' {
     }
   }
   \bar "|."
+}
+
+lyricsANXXXV = \lyricmode {
+  With droop -- \repeat volta 2 {
+    ing wings, ye Cu -- pids come,
+    with droop -- ing wings,
+    with droop -- ing wings,
+    with droop -- ing wings,
+    ye Cupids come and scat -- ter ro -- ses,
+    scat -- ter, scat -- ter ro -- ses on her tomb,
+    Soft, soft and gen -- tle, soft, soft, soft, soft and gen -- tle
+    as her heart,
+    Keep here, here your watch, keep here, here, keep here your watch,
+    and ne -- ver, ne -- ver, ne -- ver part,
+    and ne -- ver, ne -- ver, ne -- ver, ne -- ver
+    \alternative {
+      { part. }
+      { part. }
+    }
+  }
 }

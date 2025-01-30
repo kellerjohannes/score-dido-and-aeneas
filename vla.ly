@@ -521,9 +521,9 @@ vlaNXXXV = \relative d' {
     a8 bes c4 d f | g d es bes | a g fis d' | c bes a g |
 
     fis8 g a fis g4 r | r2 r4 r8 d' | bes a bes c d c bes a | g4 c c d | d2 r |
-    d4 c es d | bes a g fis' | g d g, r | R1 | r2 d4 a | bes c d bes |
+    d4 c es d | bes a g fis' | g d g, r | R1 | r2 d'4 a | bes c d bes |
 
-    bes8 e, f g a4 a | a r8 d d4 r | c4. c8 c4 r8 a | d4 r8 bes4 es | d8 c d es d4 r8 d |
+    bes8 e, f g a4 a | a r8 d d4 r | c4. c8 c4 r8 a | d4 r bes es | d8 c d es d4 r8 d |
     es8 bes r4 d8 d r4 | g,4. g8 d'4 r8 d | g,8 g r4 es'8 es r4 a,4 d d4. d8
     \alternative {
       { d4 r r d }

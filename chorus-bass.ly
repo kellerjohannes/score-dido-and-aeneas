@@ -311,3 +311,45 @@ lyricsBNXXXII = \lyricmode {
   And shun the cure they most de -- sire,
   and shun the cure they most de -- sire.
 }
+
+chorusBNXXXV = \relative g {
+  \time 4/4
+  \key g \minor
+  \clef \chorusBClef
+  \autoBeamOff
+  R1 | \repeat volta 2 {
+    r4 g f( es | d c) bes g | c8([ d)] es([ c)] d4 r | R1 |
+    r4 c' bes( a | g f) es d | es bes d2~ | d2~ d4 g, |
+
+    d' d g, r | r r8 d' g([ fis)] g([ a)] | bes4 bes bes,8([ c)] d([ bes)] | es([ d)] c([ bes)] a4 g | d'2 r |
+    R1 | g4( fis) bes( a | g) f e d | d( cis) f( e) | d( a) d( a') | d,( c bes) bes |
+
+    a4. a8 a4 a | d r8 d g4 r | c,4. c8 f4 r8 f | d4 r es es | f4. f8 bes,4 r8 bes |
+    es es r4 d8 d r4 | c4. c8 d4 r8 d | bes bes r4 c8 c r4 | d g, d'4. d8 |
+    \alternative {
+      { g,4 r r2 }
+      { g1 }
+    }
+  }
+  \bar "|."
+}
+
+lyricsBNXXXV = \lyricmode {
+  With droop -- \repeat volta 2 {
+    ing wings, ye Cu -- pids come,
+    with droop -- ing wings,
+    with droop -- ing wings,
+    with droop -- ing wings,
+    ye Cupids come and scat -- ter ro -- ses,
+    scat -- ter, scat -- ter ro -- ses on her tomb,
+    Soft, soft and gen -- tle, soft, soft, soft, soft and gen -- tle
+    as her heart,
+    Keep here, here your watch, keep here, here, keep here your watch,
+    and ne -- ver, ne -- ver, ne -- ver part,
+    and ne -- ver, ne -- ver, ne -- ver, ne -- ver, ne -- ver
+    \alternative {
+      { part. }
+      { part. }
+    }
+  }
+}

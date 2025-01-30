@@ -417,18 +417,38 @@ chorusSNXXXV = \relative d'' {
   \clef \chorusSClef
   \autoBeamOff
   r4 d c( bes | \repeat volta 2 {
-    a) g d g | a8([ bes)] c([ a)] bes4 d | c4( bes a g | fis8([ e)] fis([ d)] g4 g' |
-    f4( es d c | bes a) g r | r d' c( bes | a g) fis g |
+    a) g d g | a8([ bes)] c([ a)] bes4 d | c4( bes a g | fis8[ e)] fis([ d)] g4 g' |
+    f4( es d c | bes) a g r | r d' c( bes | a) g fis g |
 
-    a8([ bes)] c([ a)] bes4 r8 a | bes([ a)] bes([ c)] d8.([ es16)] d4 | d([ c)] d([ es)] f([ es)] d([ c)] | bes([ g)] a([ bes)] c([ d)] c([ bes)] | a2 r |
+    a8([ bes)] c([ a)] bes4 r8 a | bes([ a)] bes([ c)] d8.([ es16)] d4 | d8([ c)] d([ es)] f([ es)] d([ c)] | bes([ g)] a([ bes)] c([ d)] c([ bes)] | a2 r |
     R1 | r2 d4( c) | es( d cis) d | d8([ a)] a4 d4( cis) | f( e) d( cis) | f( e) d( e) |
 
     cis4 d8([ e)] d4 cis | d r8 d bes4 r | es4. d8 c4 r8 c | f4 r g4. g8 | f8([ es)] d([ c)] bes4 r8 bes |
     bes8 bes r4 b8 b r4 | c4( a8) bes a4 r8 a | d d r4 d8 c r4 | c8([ a bes)] c8 bes4 a |
-    \alterative {
-      { bes4 d c( bes }
+    \alternative {
+      { bes4 d c bes }
       { g1 }
     }
   }
   \bar "|."
+}
+
+lyricsSNXXXV = \lyricmode {
+  With droop -- \repeat volta 2 {
+    ing wings, ye Cu -- pids come,
+    with droop -- ing wings,
+    with droop -- ing wings,
+    with droop -- ing wings,
+    ye Cu -- pids come and scat -- ter ro -- ses,
+    scat -- ter, scat -- ter ro -- ses on her tomb,
+    Soft, soft and gen -- tle, soft, soft, soft, soft and gen -- tle
+    as her heart,
+    Keep here, here your watch, keep here, here, keep here your watch,
+    and ne -- ver, ne -- ver, ne -- ver part,
+    and ne -- ver, ne -- ver, ne -- ver, ne -- ver
+    \alternative {
+      { part. With droop_- }
+      { part. }
+    }
+  }
 }
