@@ -503,11 +503,11 @@
   \score {
     \scoreTitleNXXVII
     <<
-      \new Staff \with { instrumentName = \firstWitchName }
+      \new Staff \with { instrumentName = \sorceressName }
       \new Voice = "voiceOne"
       \soloVoiceINXXVII
       \new Lyrics \lyricsto "voiceOne" { \lyricsSoloVoiceINXXVII }
-      \new Staff \with { instrumentName = \sorceressName }
+      \new Staff \with { instrumentName = \secondWitchName }
       \new Voice = "voiceTwo"
       \soloVoiceIINXXVII
       \new Lyrics \lyricsto "voiceTwo" { \lyricsSoloVoiceIINXXVII }
@@ -527,7 +527,7 @@
   \score {
     \scoreTitleNXXVIII
     <<
-      \new Staff \with { instrumentName = \firstWitchName }
+      \new Staff \with { instrumentName = \sorceressName }
       \new Voice = "voice"
       \soloVoiceNXXVIII
       \new Lyrics \lyricsto "voice" { \lyricsNXXVIII }

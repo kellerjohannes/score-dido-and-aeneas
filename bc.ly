@@ -4,45 +4,55 @@ bcOuverture = \relative c' {
   \clef \bcClef
   \time 4/4
   \key c \minor
-  c1~ |
-  c~ |
-  c~ |
-  c4 b c4. bes8 |
-  as2 a |
-  bes fis |
-  g e |
-  f es |
-  d2. c4 |
-  b2. c8. bes16 |
-  as4 g fis f~ |
-  f4 es g2 \bar "||"
+  \repeat volta 2 {
+    c1~ |
+    c~ |
+    c~ |
+    c4 b c4. bes8 |
+    as2 a |
+    bes fis |
+    g e |
+    f es |
+    d2. c4 |
+    b2. c8. bes16 |
+    as4 g fis f~ |
+    f4 es g2
+    \alternative {
+      { c1 | }
+      { c4 r r2 | }
+    }
+  }
 
-  c4 r r2 |
-  R1*2 |
-  r2 r8 d[ g d] |
-  g[ bes g bes] g[ d g d] |
-  g[ g, c g] c[ es c es] |
+  \repeat volta 2 {
+    R1*2 |
+    r2 r8 d[ g d] |
+    g[ bes g bes] g[ d g d] |
+    g[ g, c g] c[ es c es] |
 
-  c[ c f c] f[ as f as] |
-  g[ g, g' g,] g'[ g, g' g,] |
-  c4 r r2 |
-  r8 f[ bes f] bes[ d bes d] |
-  bes[ bes, es bes] es[ g es g] |
-  es[ f g es] as[ as f as] |
-  f[ f, f' f,] f'[ f, f' f,] |
-  bes[ bes' bes, bes'] as,[ as' as, as'] |
-  g,[ g' g, g'] f,[ f' f, f'] |
-  es,[ es' es, es'] d,[ d' d, d'] |
-  c,[ c' c, c'] d,[ d' d, d'] |
-  es,[ es' es, es'] f,[ f' f, f'] |
-  es,[ es' es, es'] d,[ d' d, d'] |
-  e,[ e' e, e'] f,[ f' f, f'] |
-  g,[ g' g, g'] a,[ a' a, a'] |
-  bes,[ bes' bes, bes'] c,[ c' c, c'] |
-  d,[ d' d, d'] es,,[ es' es, es'] |
-  f,[ f' f, f'] g,[ g' g, g'] |
-  as,[ as' as, as'] g[ f g g,] |
-  c1 \bar "|."
+    c[ c f c] f[ as f as] |
+    g[ g, g' g,] g'[ g, g' g,] |
+    c4 r r2 |
+    r8 f[ bes f] bes[ d bes d] |
+    bes[ bes, es bes] es[ g es g] |
+    es[ f g es] as[ as f as] |
+    f[ f, f' f,] f'[ f, f' f,] |
+    bes[ bes' bes, bes'] as,[ as' as, as'] |
+    g,[ g' g, g'] f,[ f' f, f'] |
+    es,[ es' es, es'] d,[ d' d, d'] |
+    c,[ c' c, c'] d,[ d' d, d'] |
+    es,[ es' es, es'] f,[ f' f, f'] |
+    es,[ es' es, es'] d,[ d' d, d'] |
+    e,[ e' e, e'] f,[ f' f, f'] |
+    g,[ g' g, g'] a,[ a' a, a'] |
+    bes,[ bes' bes, bes'] c,[ c' c, c'] |
+    d,[ d' d, d'] es,,[ es' es, es'] |
+    f,[ f' f, f'] g,[ g' g, g'] |
+    as,[ as' as, as'] g[ f g g,] |
+    \alternative {
+      { c4 r r2 | }
+      { c2*2 \bar "|." }
+    }
+  }
 }
 
 figuresOuverture = \figuremode { }
@@ -128,22 +138,24 @@ bcNII = \relative c' {
   \key c \minor
   \clef \bcClef
   c4 b c |
-  g as es |
-  f g g, |
-  c2. |
-  c'4 b c |
-  g as es |
-  f g g, |
-  c2. |
-  c'4 b c |
-  g as es |
-  f g g, |
-  c2. |
-  c'4 b c |
-  g as es |
-  f g g, |
-  c2. |
-  c'4 b c |
+  \repeat volta 2 {
+    g as es |
+    f g g, |
+    c2. |
+    c'4 b c |
+    g as es |
+    f g g, |
+    c2. |
+    c'4 b c |
+    g as es |
+    f g g, |
+    c2. |
+    c'4 b c |
+    g as es |
+    f g g, |
+    c2. |
+    c'4 b c |
+  }
   g as es |
   f g g, |
   c2. |
@@ -653,8 +665,7 @@ bcNXI = \relative c {
   g4 g, g' | g g, g' | c8. b16 c8. d16 c8. d16 | c4 c, c' | a4. g8 f4 | e4. d8 c4 |
   f2 f4 | a f f | a f d | g g g, | g g g' | g g g |
 
-  c g g | a e e | f4. d8 g4 | c,2 f4 | a f f | a f d | g g g, |
-  g g g' | g g g | c g g | a e e | f4. d8 g4 | c,2. \bar "|."
+  c g g | a e e | f4. d8 g4 | c,2. \bar "|."
 }
 
 figuresNXI = \figuremode {
@@ -670,9 +681,10 @@ figuresNXI = \figuremode {
   s2. | s2. | < _ >8. \extOn 16 8. 16 8. 16 | 4 \extOff s2 | < 6 >4. < 4 _- > | < 6 5- > < 7 3 >8 < 8 7- >4 |
   s2. | < 6 > | < 6 > | < 7 >4 < 5 >2 | s2. | < 6 >4 < 5 >2 |
 
-  s2. | s4 < 6 >2 | < 6 5 3 >4 \ext < 6 5 4- >8 < 5 > < 6 4 > < 7 _! > | s2. | < 6 > | < 6 > | < 7 >4 < 5 >2 |
-  s2. | < 6 >4 < 5 >2 | s2. | s4 < 6 >2 | < 6 5 3 >4 \ext < 6 5 4- >8 < 5 > < 7 _! >4 | s2. |
+  s2. | s4 < 6 >2 | < 6 5 3 >4 \ext < 6 5 4- >8 < 5 > < 6 4 > < 7 _! > | s2.
 }
+
+%% TODO The Triumphing Dance
 
 bcNXII = \relative f, {
   \time 4/4
@@ -822,41 +834,70 @@ figuresNXIX = \figuremode {
   < 5 3 >4 < 6 > < 4 2 > | < 6 >2. | s4 < 6 > < 4 2 > | < 6 >2. | s4 < 6 4 > < 5 3 > | s2. | s4 < 6 4 > < 7 > | s2. |
 }
 
+%% TODO Echo Dance of Furies
+
+%% TODO The Grove
+
 bcNXX = \relative d {
   \time 3/4
   \key d \minor
   \clef \bcClef
-  d2 d'4 | a d d, | a' d,2 | a' a,4 | b cis2 | d c4 | bes2. | a4 a'8 g f e |
-  d4. a'8 d4 | a d d, | a' d,2 | a' f4 | e a2 | d, c4 | bes4. a8 bes4 | a2. |
-  a' | d,4 e f | g2. | c,4 d e | f2 d4 | e4. d8 c b | a4 e' e, | a a' gis |
-  a2 a,4 | d e f | g2. | e4 f g | a2 bes4 | a4. g8 f4 | d a' a, | d4 f g |
-
-  a2 a,4 | d e f | g2 g,4 | c d e | f4. e8 f d | e4. d8 c4 | a e' e, | a4. e'8 fis gis |
-  a2 a,4 | d e f | g2 f4 | e f g | a4. a8 bes g | a4. g8 f4 | d a' a, | d2. \bar "|."
+  \repeat volta 2 {
+    d2 d'4 | a d d, | a' d,2 | a' a,4 | b cis2 | d c4 | bes2. |
+    \alternative {
+      { a4 a'8 g f e | }
+      { a2. | }
+    }
+  }
+  \repeat volta 2 {
+    a | d,4 e f | g2. | c,4 d e | f2 d4 | e4. d8 c b | a4 e' e, | a a' gis |
+    a2 a,4 | d e f | g2. | e4 f g | a2 bes4 | a4. g8 f4 | d a' a, |
+    \alternative {
+      { d4 f g | }
+      { d2. | }
+    }
+  }
+  \repeat volta 2 {
+    d4. a'8 d4 | a d d, | a' d,2 | a' f4 | e a2 | d, c4 | bes4. a8 bes4 | a2. |
+  }
+  \repeat volta 2 {
+    a'2 a,4 | d e f | g2 g,4 | c d e | f4. e8 f d | e4. d8 c4 | a e' e, | a4. e'8 fis gis |
+    a2 a,4 | d e f | g2 f4 | e f g | a4. a8 bes g | a4. g8 f4 | d a' a, | d2. |
+  }
 }
 
 figuresNXX = \figuremode {
-  s2. | < _+ > | < _+ > | < _+ >2 < 6 >4 | < 6 >2 < 6 >4 | < 5 3 > < 5 2 > \ext < 5 2 > | < 7 >4 < 6 >2 | < _+ >4 \extOn 8 8 8 8 \extOff |
-  s4. < _+ > | < _+ >2. | < _+ > | < _+ >2 < 6 >4 | s4 < _+ >2 | < 5 3 >4 < 5 2 > \ext 4 | < 7 >4. \ext 8 < 5 >4 | < 6 4 > < 5 _+ >2 |
-  < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2. | < _ >4 \extOn 4 4 \extOff | < 7 >4 < 6 > < 6 > | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5! _+ > | s2 < 6 >4 |
-  < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2. | < 6 >4 \ext 4 < 7 > | < 7 _+ > < 6 >2 | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5 _+ > | < _ >4 \extOn 4 4 \extOff |
+  % s2. | < _+ > | < _+ > | < _+ >2 < 6 >4 | < 6 >2 < 6 >4 | < 5 3 > < 5 2 > \ext < 5 2 > | < 7 >4 < 6 >2 | < _+ >4 \extOn 8 8 8 8 \extOff |
+  % s4. < _+ > | < _+ >2. | < _+ > | < _+ >2 < 6 >4 | s4 < _+ >2 | < 5 3 >4 < 5 2 > \ext 4 | < 7 >4. \ext 8 < 5 >4 | < 6 4 > < 5 _+ >2 |
+  % < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2. | < _ >4 \extOn 4 4 \extOff | < 7 >4 < 6 > < 6 > | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5! _+ > | s2 < 6 >4 |
+  % < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2. | < 6 >4 \ext 4 < 7 > | < 7 _+ > < 6 >2 | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5 _+ > | < _ >4 \extOn 4 4 \extOff |
 
-  < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2 \ext 4 | < _ >4 \extOn 4 4 \extOff | < 7 >4. < 6 >8 \ext 8 < 6! > | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5! _+ > | < _ >4. \extOn 8 8 8 \extOff |
-  < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2 \ext 4 | < 6 >2 < 7 >4 | < 7 _+ >4 < 6 > < 4 2 >8 < 5 3 > | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5 _+ > | s2. |
+  % < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2 \ext 4 | < _ >4 \extOn 4 4 \extOff | < 7 >4. < 6 >8 \ext 8 < 6! > | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5! _+ > | < _ >4. \extOn 8 8 8 \extOff |
+  % < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2 \ext 4 | < 6 >2 < 7 >4 | < 7 _+ >4 < 6 > < 4 2 >8 < 5 3 > | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5 _+ > | s2. |
 }
 
 bcNXXI = \relative d {
   \time 4/4
   \key d \minor
   \clef \bcClef
-  \repeat unfold 8 {
+  \repeat unfold 5 {
     d8 cis d e f e f d | g f g a bes a bes g | a b cis a d c bes a | g e f g a g a a, |
   }
-  d cis d e f e f d | g f g a bes a bes g | a b cis a d c bes a | bes g a bes c bes c c, | f g f e d e f d | g f g a bes a bes g | a b cis a d c bes a | g e f g a g a a, | d1 \bar "|."
+  d8 cis d e f e f d | g f g a bes a bes g | a b cis a d c bes a | g e f g a d, e e, |
+  a cis d e f e f d | g f g a bes a bes g | a b cis a d c bes a g e f g a g a a, |
+  \repeat unfold 3 {
+    d8 cis d e f e f d | g f g a bes a bes g | a b cis a d c bes a | g e f g a g a a, |
+  }
+  d8 cis d e f e f d | g f g a bes a bes g | a b cis a d c bes a | bes g a bes c bes c c, |
+  f g f e d e f d | g f g a bes a bes g | a b cis a d c bes a | g e f g a g a a, |
+  d8 cis d e f e f d | g f g a bes a bes g | a b cis a d c bes a | g e f g a g a a, |
+  d1 \bar "|."
 }
 
 figuresNXXI = \figuremode {
 }
+
+%% TODO Mr. Purcell's Farewell
 
 bcNXXII = \relative d, {
   \time 4/4
@@ -1051,6 +1092,7 @@ figuresNXXIX = \figuremode {
 }
 
 
+%% TODO The Witches Dance
 
 bcNXXX = \relative g, {
   \time 4/4
@@ -1069,8 +1111,8 @@ bcNXXX = \relative g, {
   bes4 c f,2~ | f1~ | f4 f' es d |
   c1~ | c2 d | fis,4 a d2~ |
   d es | as g | e1 |
-  f2 e4 d | a2 d | g,1~ |
-  g~ | g | d' |
+  f2 bes,4 c | d d, g2~ | g1~ |
+  g1~ | g | d' |
 
   bes2 g | c g' | f~ f8 d bes4 |
   c2 d | es4. c8 d4 g, | d' d, g2~ | g1 \bar "|."
@@ -1083,7 +1125,7 @@ figuresNXXX = \figuremode {
   s1*2 | < 6/ >1 |
   < 6 >4 < 7 > < _+ >2 | < _! >2 < 6 5 > | s2 < _- > | < 7 _! >1 |
   < _! >4 < 7 _+ > < 5 > < 6 > | < _+ >2 < 7 ! > | < 6 4 >4 < 7 _+ > s2 |
-  s1 | < 5 3 >2 < 7+ 6 4 > | < 5 3 > < 7 _! > |
+  s1 | < 5 3 >2 < 7+ 6 4 > | < 5 3 > < 7 _- > |
 
   < _- >1 | < 5 3 >8 < 6 4 > < 5 3 > < 7 > s2 | s1 |
   s4 < _+ > s2 | < 6 >1 | < _+ >1 | < 6! 5- >1 |
@@ -1131,11 +1173,11 @@ bcNXXXIII = \relative c {
   \key c \major
   \clef \bcClef
   c1~ | c | f, | g2 as |
-  g1 | g | c | d2 es | d r \bar "|."
+  g1 | g | c | d2 es | d2*2 \bar "|."
 }
 
 figuresNXXXIII = \figuremode {
-  < _- >1 | < 7- _! > | < _- > | < 6- 4 >2 < 7 >4 < 6 > |
+  < _- >1 | < 7- _! > | < _! > | < 6- 4 >2 < 7 >4 < 6 > |
   < _! >1 | < 7 > | < _! >2 < _- > | < _+ > < 7 >4 < 6/ > | < _+ >2 s2 |
 }
 
@@ -1143,57 +1185,41 @@ bcNXXXIV = \relative g {
   \time 3/2 \partial 2
   \key g \minor
   \clef \bcClef
-  g | fis1 f2 | e1 es2 | d1 bes2 | c d1 | g, g'2 | fis1 f2 | e1 es2 |
-  d1 bes2 | c d d, | g1 g'2 | fis1 f2 | e1 es2 | d1 bes2 | c d d, |
-
-  g1 g'2 | fis1 f2 | e1 es2 | d1 bes2 | c d d, | g1 g'2 |
-  fis1 f2 | e1 es2 | d1 bes2 | c d d, | g1 g'2 | fis1 f2 | e1 es2 |
-  d1 bes2 | c d d, | g1 g'2 | fis1 f2 | e1 es2 | d1 bes2 | c d d, | g1. \bar "|."
+  g | fis1 f2 | e1 es2 | d1 bes2 | c d1 |
+  \repeat unfold 10 { g, g'2 | fis1 f2 | e1 es2 | d1 bes2 | c d d, | }
+  g1. \bar "|."
 }
 
 figuresNXXXIV = \figuremode {
-  s2 | s1.*5 | < 6 5 >1 < 4+ 2 >2 | < 7 >2 < 6 > < 6 > |
-  < 7 _+ >1 < 6 >2 | < 6 5 > < 6 4 > < 5 _+ > | s1 < 6 >2 | < 7 5 > < 6 > < 6 > | < 7 5 > < 6 2 > < 6 3 > | < 7 _+ >1 < 6 >2 | < 6 5 > < 6 4 > < 5 _+ > |
+  % s2 | s1.*5 | < 6 5 >1 < 4+ 2 >2 | < 7 >2 < 6 > < 6 > |
+  % < 7 _+ >1 < 6 >2 | < 6 5 > < 6 4 > < 5 _+ > | s1 < 6 >2 | < 7 5 > < 6 > < 6 > | < 7 5 > < 6 2 > < 6 3 > | < 7 _+ >1 < 6 >2 | < 6 5 > < 6 4 > < 5 _+ > |
 
-  s1. | < 6 5 4 >2 \ext < 7 5 3 > < 6 > | < 7 5 4 > \ext < 7 5 3 > < 6 > | < 7 _+ > < 6 > < 6 > | < 6 > < 6 4 > < 7 _+ > | < 5 3 > < 7/ 6 4 2 > \ext < 8 6 4 2 > |
-  < 6 >1 < 6 >2 | < 7 5 > < 6 > < 6 > | < 7 5 > \ext < 6 5 > < 6 > | < 6 5 > < 6 4 > < 7 _+ > | s1. | < 6 4 >2 \ext < 6 3 > < 6 > | < 7 4 > < 6/ 3 > < 6! > |
-  < 7 _+ > \ext < 6/ _+ > < 8/ 6 > | < 9 7 > < 7 _+ > < 5 _! > | < 7 5 > \ext < 6/ 5 > < 6- 4 > | < 7 > < 6 > < 6 > | < 7 5 > \ext < 6/ 5 > < 6! > | < 7 5 _+ > \ext < 6! 5 _+ > < 6 > | < 6 5 > < 6 4 > < 7 _+ > | s1. |
+  % s1. | < 6 5 4 >2 \ext < 7 5 3 > < 6 > | < 7 5 4 > \ext < 7 5 3 > < 6 > | < 7 _+ > < 6 > < 6 > | < 6 > < 6 4 > < 7 _+ > | < 5 3 > < 7/ 6 4 2 > \ext < 8 6 4 2 > |
+  % < 6 >1 < 6 >2 | < 7 5 > < 6 > < 6 > | < 7 5 > \ext < 6 5 > < 6 > | < 6 5 > < 6 4 > < 7 _+ > | s1. | < 6 4 >2 \ext < 6 3 > < 6 > | < 7 4 > < 6/ 3 > < 6! > |
+  % < 7 _+ > \ext < 6/ _+ > < 8/ 6 > | < 9 7 > < 7 _+ > < 5 _! > | < 7 5 > \ext < 6/ 5 > < 6- 4 > | < 7 > < 6 > < 6 > | < 7 5 > \ext < 6/ 5 > < 6! > | < 7 5 _+ > \ext < 6! 5 _+ > < 6 > | < 6 5 > < 6 4 > < 7 _+ > | s1. |
 }
 
 bcNXXXV = \relative g {
   \time 4/4
   \key g \minor
   \clef \bcClef
-  R1 | \repeat volta 2 {
-    r4 g f es | d c bes g | c8 d es c d4 r | R1 |
-    r4 c' bes a | g f es d | es bes d2~ | d~ d4 g, |
+  R1 | r4 g f es | d c bes g | c8 d es c d4 r | R1 |
+  r4 c' bes a | g f es d | es bes d2~ | d~ d4 g, |
 
-    d' d, g r | r r8 d' g fis g a | bes4 bes bes,8 c d bes | es d c bes a4 g | d'2 r |
-    R1 | g4 fis bes a | g f e d | d cis f e | d a d a' | d, c bes2 |
+  d' d, g r | r r8 d' g fis g a | bes4 bes bes,8 c d bes | es d c bes a4 g | d'2 r |
+  R1 | g4 fis bes a | g f e d | d cis f e | d a d a' | d, c bes2 |
 
-    a1 | d4 r8 d g4 r | c,2 f | d4 r es es | f f, bes r8 bes |
-    es es r4 d8 d r4 | c4. c8 d4 r8 d | bes bes r4 c8 c r4 | d g, d' d, |
-    \alternative {
-      { g r r2 }
-      { g1 }
-    }
-  }
-  \bar "|."
+  a1 | d4 r8 d g4 r | c,2 f | d4 r es es | f f, bes r8 bes |
+  es es r4 d8 d r4 | c4. c8 d4 r8 d | bes bes r4 c8 c r4 | d g, d' d, | g1 \bar "|."
 }
 
 figuresNXXXV = \figuremode {
-  s1 | \repeat volta 2 {
-    s2 < 6 > | < _+ >4 < 4+ 2 > < 6 >2 | < 6 >4 < 5 >8 \ext 8 < _! >2 | s1 |
+  s1 | s2 < 6 > | < _+ >4 < 4+ 2 > < 6 >2 | < 6 >4 < 5 >8 \ext 8 < _! >2 | s1 |
     s2 < 6 >4 < 6 > | s4 < 6 >2 < 6 >4 | < 6 4 > < 6 > < 7 _+ > < 6 4 > | < 7 _+ > < 6 4 > < 7 _+ >2 |
 
     < _+ >4 < 7 >2. | s1 | s2 s8 < 5 > < 6 > < 9 7 > | < 5 >4 < 6 5 >8 \ext 8 < 6/ >4 < 4 >8 < 3 > | < _+ >1 |
     s1 | s4 < 6 > < 7 > < 6/ > | < 6 > < 6 4 >8 \ext < 6 3 > < 6/ >2 | < 5 2! >4 < 6 > < 6 > < 6/ > | s4 < _+ > s4 < _+ > | s4 < 6 _! > < 7 > < 6 4 > |
 
     < 9 7 _+ >8 < 6 4 > < 7 _+ >4 < 6 4 > < 5 _+ > | s4. < _+ >8 s2 | < 5 3 >4 < 6 >8 < 9 7 > s2 | < 6 >1 | < 6 4 >4 \ext < 6 3 >8 \ext < 7 3 > s2 |
-    s2 < 6! > | < _! >4 < 6 4+ >8 < 7 5 > < _+ >4. < _! >8 | < 6 >2 < 9 7 >8 < 8 6 > s4 | < 7 _+ >2 < 6 4 >4 < 5 _+ >
-    \alternative {
-      { s1 }
-      { s1 }
-    }
-  }
+    s2 < 6! > | < _! >4 < 6 4+ >8 < 7 5 > < _+ >4. < _! >8 | < 6 >2 < 9 7 >8 < 8 6 > s4 | < 7 _+ >2 < 6 4 >4 < 5 _+ > | s1
 }

@@ -204,8 +204,7 @@ chorusSNXI = \relative g' {
   e4 e f | g g g8 d | e([ d)] c([ b)] a([ g)] | fis2 d'8 a | bes4 bes4. a8 | g4 g b8. c16 |
   d8.([ c16 d8. e16 d8. e16] | d4) b d8. d16 | e8.([ d16 e8. f16 e8. f16] | e4) c e | f c c | bes4. a8 bes4 |
   a2 r4 | r r c | f c d | d b b | b g d' | g d d |
-  e b b | c g c | c4. d8 c([ b)] | c2 r4 | r r c | f c d | d b b |
-  b g d' | g d d | e b b | c g c | c4. d8 c([ b)] | c2. \bar "|."
+  e b b | c g c | c4. d8 c([ b)] | c2. \bar "|."
 }
 
 lyricsSNXI = \lyricmode {
@@ -218,9 +217,7 @@ lyricsSNXI = \lyricmode {
   To the mu -- si -- cal groves and the cool sha -- dy foun -- tains,
   Let the tri -- umphs, let the tri -- umphs of love and of beau -- ty be shewn.
   Go re -- vel ye Cu -- pids, go re -- vel, go re -- vel ye Cu -- pids,
-  go re -- vel, the day is your own,
-  go re -- vel ye Cu -- pids, go re -- vel, go re -- vel ye Cu -- pids,
-  go re -- vel the day is your own.
+  go re -- vel, the day is your own.
 }
 
 chorusSNXIII = \relative d'' {
@@ -242,13 +239,13 @@ chorusSNXV = \relative c'' {
   \key c \major
   \clef \chorusSClef
   \autoBeamOff
-  R4.*2 | r8 c b | c e d | c g' f | e d c | d c bes | a c c |
+  c8 r r | R4. | r8 c b | c e d | c g' f | e d c | d c bes | a c c |
 
   c f e | f4 r8 | f f f | f f e | f c c | c c b | c c c | c4. \bar "|."
 }
 
 lyricsSNXV = \lyricmode {
-  Ho, \repeat unfold 35 { ho, } ho!
+  Love. Ho, \repeat unfold 35 { ho, } ho!
 }
 
 chorusSNXVII = \relative c'' {
@@ -294,12 +291,14 @@ chorusSNXX = \relative d'' {
   \key d \minor
   \clef \chorusSClef
   \autoBeamOff
-  R2.*8 |
-  d4. cis8 d4 | e( f) e8([ d)] | e4 f2 | e f4 | g e2 | f4( e) a, | a( d) f8([ e)] | \grace { d4( } cis2.) |
-  R2.*16 |
+  R2.*26 |
+  \repeat volta 2 {
+    d4. cis8 d4 | e( f) e8([ d)] | e4 f2 | e f4 | g e2 | f4( e) a, | a( d) f8([ e)] | \grace { d4( } cis2.) |
+  }
+  \repeat volta 2 {
 
-  cis4 d e | f2. | b,4 c d | e2 r8 e | e4( a,) c8([ b)] | gis4. b8 c([ d)] | e([ d)] c4 b | a2. |
-  cis4 d e | f2. | d4 e f | g2 r8 f | e4( f) e8([ d)] | cis4. d8 e([ d)] | d([ e)] f4 e | d2. \bar "|."
+    cis4 d e | f2. | b,4 c d | e2 r8 e | e4( a,) c8([ b)] | gis4. b8 c([ d)] | e([ d)] c4 b | a2. |
+    cis4 d e | f2. | d4 e f | g2 r8 f | e4( f) e8([ d)] | cis4. d8 e([ d)] | d([ e)] f4 e | d2. }
 }
 
 lyricsNXX = \lyricmode {
@@ -416,26 +415,18 @@ chorusSNXXXV = \relative d'' {
   \key g \minor
   \clef \chorusSClef
   \autoBeamOff
-  r4 d c( bes | \repeat volta 2 {
-    a) g d g | a8([ bes)] c([ a)] bes4 d | c4( bes a g | fis8[ e)] fis([ d)] g4 g' |
-    f4( es d c | bes) a g r | r d' c( bes | a) g fis g |
+  r4 d c( bes | a) g d g | a8([ bes)] c([ a)] bes4 d | c4( bes a g | fis8[ e)] fis([ d)] g4 g' |
+  f4( es d c | bes) a g r | r d' c( bes | a) g fis g |
 
-    a8([ bes)] c([ a)] bes4 r8 a | bes([ a)] bes([ c)] d8.([ es16)] d4 | d8([ c)] d([ es)] f([ es)] d([ c)] | bes([ g)] a([ bes)] c([ d)] c([ bes)] | a2 r |
-    R1 | r2 d4( c) | es( d cis) d | d8([ a)] a4 d4( cis) | f( e) d( cis) | f( e) d( e) |
+  a8([ bes)] c([ a)] bes4 r8 a | bes([ a)] bes([ c)] d8.([ es16)] d4 | d8([ c)] d([ es)] f([ es)] d([ c)] | bes([ g)] a([ bes)] c([ d)] c([ bes)] | a2 r |
+  R1 | r2 d4( c) | es( d cis) d | d8([ a)] a4 d4( cis) | f( e) d( cis) | f( e) d( e) |
 
-    cis4 d8([ e)] d4 cis | d r8 d bes4 r | es4. d8 c4 r8 c | f4 r g4. g8 | f8([ es)] d([ c)] bes4 r8 bes |
-    bes8 bes r4 b8 b r4 | c4( a8) bes a4 r8 a | d d r4 d8 c r4 | c8([ a bes)] c8 bes4 a |
-    \alternative {
-      { bes4 d c bes }
-      { g1 }
-    }
-  }
-  \bar "|."
+  cis4 d8([ e)] d4 cis | d r8 d bes4 r | es4. d8 c4 r8 c | f4 r g4. g8 | f8([ es)] d([ c)] bes4 r8 bes |
+  bes8 bes r4 b8 b r4 | c4( a8) bes a4 r8 a | d d r4 d8 c r4 | c8([ a bes)] c8 bes4 a | g1 \bar "|."
 }
 
 lyricsSNXXXV = \lyricmode {
-  With droop -- \repeat volta 2 {
-    ing wings, ye Cu -- pids come,
+  With droop -- ing wings, ye Cu -- pids come,
     with droop -- ing wings,
     with droop -- ing wings,
     with droop -- ing wings,
@@ -445,10 +436,5 @@ lyricsSNXXXV = \lyricmode {
     as her heart,
     Keep here, here your watch, keep here, here, keep here your watch,
     and ne -- ver, ne -- ver, ne -- ver part,
-    and ne -- ver, ne -- ver, ne -- ver, ne -- ver
-    \alternative {
-      { part. With droop_- }
-      { part. }
-    }
-  }
+    and ne -- ver, ne -- ver, ne -- ver, ne -- ver part.
 }

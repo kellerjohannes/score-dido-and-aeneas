@@ -1,6 +1,6 @@
 \include "global-definitions.ly"
 
-soloVoiceNI = \relative es' {
+soloVoiceNI = \relative es'' {
   \time 4/4
   \key c \minor
   \clef \annaClef
@@ -8,15 +8,15 @@ soloVoiceNI = \relative es' {
   es8.[( d16 c8. d16]) b4 c8.( d16) |
   es4 c g4. c8 |
   b2 es4. d8 |
-  c8([ bes)] as([ g)] f4. bes8 |
+  c8([ bes)] c([ g)] f4. bes8 |
   g2 g4 es |
   bes' bes d bes |
   f'8.[( g16 f8. es16] d8.[ es16 c8. es16] |
   d8. c16) bes4 es4. d8 |
-  d8( g,) d'4 bes a |
+  d8( g,) d'4 bes a8([ g)] |
   g2 es'8.([ d16 c8. d16] |
   b8.[ d16 c8. es16] d8. es16) f4 |
-  b, c es8( d) c( b) |
+  b, c es8[( d)] c[( b)] |
   c2 es8.[( d16 c8. d16] |
   b8.[ d16 c8. es16] d8. es16) f4 |
   b,4 c es8([ d)] c([ b)] | c2 s2 |
@@ -25,7 +25,7 @@ soloVoiceNI = \relative es' {
 
 lyricsNI = \lyricmode {
   Shake __ _ the cloud from off your brow,
-  Fate your wi -- shes doth al -- low,
+  Fate your wish -- es doth al -- low,
   Em -- pire grow -- ing, Plea -- sures flow -- ing,
   For -- tune smiles and so should you.
 
@@ -38,22 +38,24 @@ soloVoiceNII = \relative c'' {
   \key c \minor
   \clef \didoClef
   R2. |
-  r4 c2 |
-  r4 c( b) |
-  r es4. es8 |
-  es8( d) g,2 |
-  g4( f) g |
-  as8.([ g16 f8. es16)] d8( es16 f) |
-  es4.( d8) c4 |
-  r4 g'2 |
-  r4 c2 |
-  r4 d8([ es]) f[( d]) |
-  es4.( d8) c4 |
-  d8.( es16 f4) es8.( d16) |
-  c8([ b c d)] es( c) |
-  d([ as g f)] es([ d)] |
-  \autoBeamOff es8. f16 \autoBeamOn f4. g8 |
-  g2. |
+  \repeat volta 2 {
+    r4 c2 |
+    r4 c( b) |
+    r es4. es8 |
+    es8( d) g,2 |
+    g4( f) g |
+    as8.([ g16 f8. es16)] d8( es16 f) |
+    es4.( d8) c4 |
+    r4 g'2 |
+    r4 c2 |
+    r4 d8([ es]) f[( d]) |
+    es4.( d8) c4 |
+    d8.( es16 f4) es8.( d16) |
+    c8([ b c d)] es( c) |
+    d([ as g f)] es([ d)] |
+    \autoBeamOff es8. f16 \autoBeamOn f4. g8 |
+    g2. |
+  }
   R2.*2 |
   c4( b) c |
   g2 es'4 |
@@ -97,10 +99,12 @@ soloVoiceNII = \relative c'' {
 }
 
 lyricsNII = \lyricmode {
-  Ah! Ah! Ah! my An -- na, I am press'd
-  With tor -- ment,
-  Ah! Ah! Ah! my An -- na, I am press'd
-  With tor -- ment not to be ex -- press'd;
+  \repeat volta 2 {
+    Ah! Ah! Ah! Be -- lin -- da, I am press'd
+    With tor -- ment,
+    Ah! Ah! Ah! Be -- lin -- da, I am press'd
+    With tor -- ment not to be con -- fest,
+  }
   Peace and I are stran -- gers grown,
   Peace and I are stran -- gers, stran -- gers grown,
   I lan -- guish 'till my grief is known,
@@ -115,24 +119,24 @@ soloVoiceNIII = \relative g {
   \key c \minor
   \clef \annaClef
   \autoBeamOff
-  r4^\annaName g8. g16 c8 c d8. es16 |
+  r4^\annaName g'8. g16 c8 c d8. es16 |
   c8 c
   \clef \didoClef
-  es'8.^\didoName f16 g8 g, c es16[( d)] |
+  es8.^\didoName f16 g8 g, c es16[( d)] |
   b8 b
   \clef \annaClef
-  r8^\annaName d,8 d d g,4 |
+  r8^\annaName d8 d d g,4 |
   r8 d'8 d d es8. a,16 bes8 c |
-  fis, g bes8. a16 g4 r8 d' |
+  fis, d bes'8. fis16 g4 r8 d' |
   g4 d es d8([ c)] |
   g4 c a4. c8 |
   f4 c d c8([ bes)] |
-  g4 es' d c |
+  g4 es' c4. f8 |
   d4 r8 d g4 d |
   es d8([ c)] g4 c |
   a4. c8 f4 d |
   es d8([ c)] b4 g' |
-  f8([ es)] es([ d)] c2 \bar "|."
+  f8([ es)] d([ c)] c2 \bar "|."
 }
 
 lyricsNIII = \lyricmode {
@@ -200,7 +204,7 @@ lyricsNV = \lyricmode {
 }
 
 
-soloVoiceINVI = \relative es' {
+soloVoiceINVI = \relative es'' {
   \time 3/4
   \key c \major
   \clef \annaClef
@@ -241,12 +245,12 @@ soloVoiceINVI = \relative es' {
   b8( c b4) a4 |
   g2. |
 
-  e4 g2 |
+  e'4 g2 |
   e c4 |
   d e2 |
   f d4 |
   e f2 |
-  d g'4 |
+  d g4 |
   f( e) d |
   c2. |
   R2.*48 |
@@ -316,7 +320,7 @@ lyricsSoloNVI = \lyricmode {
   Fear no dan -- ger to en -- sue, The He -- ro loves as well as you.
 }
 
-soloVoiceNVII = \relative g {
+soloVoiceNVII = \relative g' {
   \time 4/4
   \key c \major
   \clef \annaClef
@@ -325,7 +329,7 @@ soloVoiceNVII = \relative g {
   e c c g c4 r8 e |
   g c, d e c4. b8 |
 
-  d4 r \clef \aeneasClef d,4^\aeneasName r |
+  d4 r \clef \aeneasClef d,,4^\aeneasName r |
   g4 g8 fis g8. a16 a8. g16 |
   a4. b8 c8.([ d16)] e([ d8.)] |
   b4 a8([ g)] g8.([ a16)] b16([ a8.)] |
@@ -362,7 +366,7 @@ soloVoiceNIX = \relative {
   g4 r8 g gis gis gis b |
   a4. gis8 a4 c |
 
-  r4 cis4 d8 a b a |
+  r4 cis4 d8 a b g |
   c8.([ b16] a16[ g)] fis([ g)] fis8. a16 d8 c16([ b)] |
   e16([ d c b] a[ g]) fis16([ e)] d8 b' g fis |
   g2*2 \bar "|."
@@ -375,7 +379,7 @@ lyricsNIX = \lyricmode {
   A He -- ro fall and Troy once more ex -- pire.
 }
 
-soloVoiceNX = \relative c' {
+soloVoiceNX = \relative c'' {
   \time 4/4 \partial 8
   \key c \major
   \clef \annaClef
@@ -428,7 +432,7 @@ lyricsNX = \lyricmode {
   pur -- sue thy con -- quest, Love, pur -- sue thy con -- quest, Love.
 }
 
-soloVoiceNXII = \relative f {
+soloVoiceNXII = \relative f' {
   \time 4/4
   \key f \minor
   \clef \sorceressClef
@@ -437,7 +441,7 @@ soloVoiceNXII = \relative f {
 
   f4 r r8 f f4 | f8( es4) es8 es4. d8 | d4 d2 d8 d | g4. as8 g4( f8) e16([ f)] | e4 e2 g4 |
   c4 r8 c c4 c8 e | c2 r4 c | c8([ bes)] bes bes bes4 as8 g | as4 as2 f4 | des'2 f,4.( g8) | as2 g |
-  f4 r8 f c'4 r8 c | c4 r8 c, f4 r8 f | f2 r | \clef \firstWitchClef bes'2^\firstWitchName r4 bes8 f | bes4 f'8 d16 c bes4 r \bar "|."
+  f4 r8 f c'4 r8 c | c4 r8 c, f4 r8 f | f2 r | \clef \firstWitchClef bes2^\firstWitchName r4 bes8 f | bes4 f'8 d16 c bes4 r \bar "|."
 }
 
 lyricsNXII = \lyricmode {
@@ -451,13 +455,13 @@ lyricsNXII = \lyricmode {
   Say Bel -- dame, say what is thy will.
 }
 
-soloVoiceNXIV = \relative f {
+soloVoiceNXIV = \relative f' {
   \time 4/4
   \key f \minor
   \clef \sorceressClef
   \autoBeamOff
   r4 r8 f^\sorceressName f4. g8 | as4 as r as8 c | f,4 r r8 f as f | d'4 c16( bes8.) bes4 a | bes4 r r f |
-  bes4 bes r8 bes g4 | as2( e4.) f8 | e4 r8 g g4. g8 | c2. c,4 | c8([ d e f] g4) g, \bar "||"
+  bes4 bes r8 bes g4 | as2( e4.) f8 | e4 r8 g g4. g8 | c2. c4 | c8([ d e f] e4) d8([ c)] \bar "||"
 }
 
 lyricsNXIV = \lyricmode {
@@ -486,10 +490,10 @@ soloVoiceIINXVI = \relative a' {
   \clef \firstWitchClef
   \autoBeamOff
   R1 | r2 bes16^\secondWitchName f8. r4 | d'16 bes8. bes4~ bes8 a g f |
-  e4 r4 \clef \sorceressClef r8^\sorceressName g,8 g g | g g g a bes4 r8 bes | c c c d bes4. bes8 |
+  e4 r4 \clef \sorceressClef r8^\sorceressName g8 g g | g g g a bes4 r8 bes | c c c d bes4. bes8 |
 
-  a4 r8 a d8. d16 d4~ | d8 d d cis d4 r | R1 | r4 \clef \firstWitchClef a'4^\firstWitchName r2 |
-  r2 r4 d | r8 d d16([ e] fis4) e8 d a | d,4 r r2 | R1 | r2 \clef \sorceressClef r8^\sorceressName f,8 f f |
+  a4 r8 a d8. d16 d4~ | d8 d d cis d4 r | R1 | r4 \clef \firstWitchClef a4^\firstWitchName r2 |
+  r2 r4 d | r8 d d16([ e] fis4) e8 d a | d,4 r r2 | R1 | r2 \clef \sorceressClef r8^\sorceressName f8 f f |
   bes4 r8 bes bes a bes4~ | bes8 bes bes bes a a a bes | c4 r8 c c c c8. d16 |
   es4( d8.) es16 d4 r8 c | bes[( a g)] f g8. c,16 c'4~ | c8 a d g, a4 g \bar "||"
 }
@@ -614,22 +618,46 @@ lyricsIINXVIII = \lyricmode {
   \bar "|."
 }
 
-soloVoiceNXX = \relative d' {
+soloVoiceNXX = \relative d'' {
   \time 3/4
   \key d \minor
   \clef \annaClef
   \autoBeamOff
-  d4. cis8 d4 | e( f) e8([ d)] | e4 f2 | e f4 | g e2 | f4( e) a, | a( d) f8([ e)] | \grace { d4( } cis2.) |
-  R2.*8 |
-  cis4^\annaName d e | f2. | b,4 c d | e2 r8 e | e4( a,) c8([ b)] | gis4. b8 c4 | d8([ e)] d([ c)] c([ b)] | a2 r4 |
-  cis4 d e | f2. | d4 e f | g2 r8 f | e4( f) e8([ d)] | cis4. d8 e([ d)] | d([ e)] f4 e | d2. |
-  R2.*16 |
+  \repeat volta 2 {
+    d4. cis8 d4 | e( f) e8([ d)] | e4 f2 | e f4 | g e2 | f4( e) a, | a( d) f8([ e)] |
+    \alternative {
+      { cis2. | }
+      { cis2. | }
+    }
+  }
+
+  \repeat volta 2 {
+    cis4 d e | f2. | b,4 c d | e2 r8 e | e4( a,) c8([ b)] | gis4. b8 c4 | d8([ e)] d([ c)] c([ b)] | a2 r4 |
+    cis4 d e | f2. | d4 e f | g2 r8 f | e4( f) e8([ d)] | cis4. d8 e([ d)] | d([ e)] f4 e |
+    \alternative {
+      { d2. | }
+      { d2. | }
+    }
+  }
+  R2.*24 \bar "|."
 }
 
 lyricsSoloNXX = \lyricmode {
-  Thanks to these lone -- some, lone -- some vales, These de -- sart, de -- sart hills and dales;
-  So fair the game, so rich the sport, Di -- a -- na's self might to these woods re -- sort.
-  So fair the game, so rich the sport, Di -- a -- na's self might to these woods re -- sort.
+  \repeat volta 2 {
+    Thanks to these lone -- some, lone -- some vales, These de -- sart, de -- sart hills and
+    \alternative {
+      { dales. }
+      { dales. }
+    }
+  }
+  \repeat volta 2 {
+    So fair the game, so rich the sport, Di -- a -- na's self might to these woods re -- sort.
+    So fair the game, so rich the sport, Di -- a -- na's self might to these woods re --
+    \alternative {
+      { sort. }
+      { sort. }
+    }
+  }
 }
 
 %% There are significant differences to King's music, which is modulating.
@@ -640,11 +668,15 @@ soloVoiceNXXI = \relative a' {
   \autoBeamOff
   R1*4 | a4 a d d | e8([ f)] e([ d)] d4 d, |
   a' e' f d | e16([ f g8)] f([ e)] d([ cis)] b([ a)] | a4 a d d | e8([ f)] e([ d)] d4 d, | a' e' f d |
-  e16([ f g8)] f([ e)] d([ cis)] b([ a)] | r4 d r a~ | a g g4. f8 | e4. e8 f4 r | bes4. bes8 a4. e'8 |
-  f([ e)] d([ cis)] d4 a | bes g e'8.([ f16)] e8.([ d16)] | cis8([ b)] a8.([ g16)] f8([ g)] a f | bes8([ a)] g([ f)] e4. a8 | f4 d a' r |
-  bes4. a8 d4. e8 | cis4 a f'2(~ | f8[ e]) d([ e)] \grace { d8( } cis4.) cis8 | d4. a8 d([ e d c] | b8.[ c16)] b8.([ cis16)] d4 f8.([ e16)] |
-  cis4 r f4. fis8 | g4 f8([ e)] d4 cis | d2 r |
-  R1*12 \bar "|."
+  e16([ f g8)] f([ e)] d([ cis)] b([ a)] | r4 d r a~ | a g g4. f8 | e4. e8 f4 r | % From here different in King's Music
+  bes4 r a4. e'8 |
+  f4 e8([ d)] d( a4) d8 |
+  b4. b8 es8.([ f16 es8. d16] | cis8.[ b16 a8. g16] f8.[ g16)] a([ f8.)] |
+  bes8([ a)] g([ f)] e4. a8 |
+  f4 d a'4. d8 | bes4 a d4. e8 | cis4 a f'2~( | f8[ e)] d([ e)] c4 b8([ a)] |
+  a4. a8 d([ e d8. c16] | b8.[ c16]) b8.([ cis16)] d4 f8([ e)] | cis4. a8 bes4. c8 | b4 a8([ g)] c4.( d8 |
+  c4 bes8) a16([ bes)] a4. d8 | es4 d8([ c)] d4. e8 |
+  f2 fis4. fis8 | g4 f8([ e)] cis4. d8 | d2 r | R1*20 \bar "|."
 }
 
 lyricsNXXI = \lyricmode {
@@ -653,13 +685,15 @@ lyricsNXXI = \lyricmode {
   Oft she vi -- sits this lov'd moun -- tain,
   Oft she bathes her in this foun -- tain;
   Here, here, Ac -- te -- on met his fate,
-  Here, pur -- su'd by his own hounds
-  And, af -- ter mor -- tal wounds,
-  Dis -- co -- ver'd too late.
-  Ac -- te -- on met his fate
-  af -- ter mor -- tal wound dis -- co -- ver'd
-  too, too late dis -- co -- ver'd, too, too late,
-  here Ac -- te -- on met his fate.
+
+  here, here Ac -- te -- con met his fate;
+  Pur -- sued by his own hounds,
+  And af -- ter, af -- ter mor -- tal wounds,
+  And af -- ter, af -- ter mor -- tal wounds,
+  Dis -- cov -- er'd too, too late,
+  and af -- ter, af -- ter mor -- tal wounds,
+  dis -- cov -- er'd too, too late.
+  Here Ac -- te -- on met his fate.
 }
 
 soloVoiceNXXII = \relative d {
@@ -684,7 +718,7 @@ lyricsNXXII = \lyricmode {
   Rends the moun -- tain oaks a -- sun -- der!
 }
 
-soloVoiceNXXIII = \relative d {
+soloVoiceNXXIII = \relative d' {
   \time 4/4
   \key d \major
   \clef \annaClef
@@ -697,12 +731,12 @@ soloVoiceNXXIII = \relative d {
 
 lyricsSoloNXXIII = \lyricmode {
   Haste, haste to town, haste, haste, haste, haste, haste to town,
-  haste, haste, haste, haste,
+  haste, haste, haste to town,
   this op -- en field
   No shel -- ter, this op -- en field no shel -- ter from the storm,
   the storm can yield,
   haste, haste, haste, haste to town,
-  haste, haste to town, haste, haste, haste, haste, haste, haste, haste to town.
+  haste, haste to town, haste, haste, haste, haste, haste, haste to town.
 }
 
 soloVoiceNXXIV = \relative a' {
@@ -710,11 +744,12 @@ soloVoiceNXXIV = \relative a' {
   \key a \minor
   \clef \spiritClef
   \autoBeamOff
-  r4 a2 a8 gis | a4 c2 e8. e,16 | a4 r8 b c16 a a a gis8. a16 |
+  r4 a2 a8 gis | a4 c2 e8. e,16 | a4 r8 b c16 gis gis gis gis8. a16 |
   b4 \clef \aeneasClef r8^\aeneasName e,, b'4 \clef \spiritClef r8^\spiritName e | b'16 b b c d8. e16 c4 r8 c | cis16 cis cis cis cis8 d d4. cis8 |
   d4 r r b8. b16 | e8 e c8. c16 c bes bes bes bes8. bes16 | c4( bes8.) a16 a4 r8 a |
   a8 a16 a b8. c16 d8. c16 b4~ | b8 c a gis16([ a)] gis4 r8 b | c16 e,8. a8 gis a4 r |
   \clef \aeneasClef r4^\aeneasName f,8. g16 a8 a g f | bes4 r8 f g4. c8 | a bes bes a bes2 \bar "|."
+  %% TODO More Recit!
 }
 
 lyricsNXXIV = \lyricmode {
@@ -770,8 +805,9 @@ soloVoiceINXXVII = \relative a' {
   \key bes \major
   \clef \firstWitchClef
   \autoBeamOff
-  R1*3 |
-  r4^\firstWitchName a8 bes c8. c16 d8 a | bes4 g8 a bes16([ a)] a([ g)] f8 e | d4 r r2 |
+  r4 f r f8 d | f8. f16 bes8 a bes8.([ c16)] bes4 | r4 d8 bes c f, f e |
+  f8 f
+  \clef \firstWitchClef a8.^\firstWitchName bes16 c8. c16 d8 a | bes4 g8 a bes16([ a)] a([ g)] f8 e | d4 r r2 |
   r2 r8 d' \grace { d16([ es] } f8.) f16 | d8 bes r es16([ d)] c4 r8 d16([ c)] | bes4 r8 c16([ bes)] a8 bes16([ a)] g([ a)] bes8 |
 
   a8 c \grace { d16([ es] } f8.) f16 d8 bes r4 | r8 bes16([ a)] g4 r8 a16([ g)] f4 | r8 bes16([ a)] g8 g'16([ f)] es8 f16([ es)] d([ es)] f([ d)] |
@@ -780,6 +816,11 @@ soloVoiceINXXVII = \relative a' {
 }
 
 lyricsSoloVoiceINXXVII = \lyricmode {
+  %% Sorceress:
+  See, see, the falgs and strea -- mers cur -- ling,
+  An -- chors weigh -- ing, sails un -- furl -- ing.
+
+  %% 1st Witch:
   Phœ -- be's pale de -- lu -- ding beams
   Gli -- ding o'er de -- ceit -- ful streams.
 
@@ -802,13 +843,13 @@ lyricsSoloVoiceINXXVII = \lyricmode {
   ho, ho, ho, ho, ho, ho, ho, ho, ho, ho!
 }
 
-soloVoiceIINXXVII = \relative f {
+soloVoiceIINXXVII = \relative f' {
   \time 4/4
   \key bes \major
   \clef \sorceressClef
   \autoBeamOff
-  r4 f r f8 d | f8. f16 bes8 a bes8.([ c16)] bes4 | r4 d8 bes c f, f e |
-  f8 f r4 r2 | R1 | r4 \clef \secondWitchClef r8^\secondWitchName a' d cis d4 |
+  R1*5 |
+  r4 \clef \secondWitchClef r8^\secondWitchName a d cis d4 |
   r8 f, bes8. a16 bes4 r | r8 bes16([ a)] g4 r8 a16([ g)] f4 | r8 g16([ f)] e8 a16([ g)] f8 g16([ f)] es([ f)] g8 |
 
   f4 r r8 d' \grace { d16([ es] } f8.) f16 | d8 bes r es16([ d)] c4 r8 f16([ es)] | d4 r8 es16([ d)] c8 d16([ c)] b([ c)] d([ bes)] |
@@ -817,10 +858,6 @@ soloVoiceIINXXVII = \relative f {
 }
 
 lyricsSoloVoiceIINXXVII = \lyricmode {
-  %% Sorceress:
-  See, see, the falgs and strea -- mers cur -- ling,
-  An -- chors weigh -- ing, sails un -- furl -- ing.
-
   %% Second witch:
   Our plot has took,
   The Queen's for -- sook,
@@ -879,17 +916,17 @@ soloVoiceIINXXX = \relative g' {
   r2 r4 r8 g | bes bes d4. d8 fis,8. fis16 | g4 r4 r8 d' d8. d16 | g4. d8 bes4. a8 |
   a4 r4 r8 d d8. d16 | g4 r4 f8([ es)] f d | es4 r r d8. d16 | g4. g16([ d)] bes4 a |
   g r r8 g g8. g16 | c4 r8 d c16 g8. a8 bes | a4 r8 a d4. c8 | bes16 e,8. f8 g f4. es8 |
-  d2 \clef \annaClef bes4^\annaName bes8 d | bes8. c16 d8 c16([ bes)] d4 r8 d | b16 b b b b8. b16 c8. c16 d8 es |
-  es8 a bes g fis4 r | \clef \aeneasClef d,4.^\aeneasName e8 f4. g8 | f4 es8([ d)] es4 r | e r c'8([ es,)] es es |
+  d2 \clef \annaClef bes'4^\annaName bes8 d | bes8. c16 d8 c16([ bes)] f'4. f8 | f16 b, b b b8. b16 c8. c16 d8 es |
+  d16 fis,8. g8 bes16([ a)] fis2 | \clef \aeneasClef d,4.^\aeneasName e8 f4. g8 | f4 es8([ d)] es4 r | e r c'8([ es,)] es es |
   f8. fis16 fis8 fis g8. g16 g8 fis | a4 r8 a bes4 bes | r4 c8 fis, g4 r |
-  \clef \didoClef d''4^\didoName r8 d16 d d8 d d e | f4 f8( cis4) cis16 cis cis8. cis16 | d16 d d8 r d b16 b b b c8. d16 |
+  \clef \didoClef d''4^\didoName r8 d16 d d8 d d e | f4 f8( cis4) cis16 cis cis8. cis16 | d16 d d8 r d bes16 bes bes bes c8. d16 |
 
   es4 r8 f g8. f16 es([ d)] c([ bes)] | a8 d c a bes4 r | \clef \aeneasClef r8^\aeneasName f,8 bes8. bes16 d8. \clef \didoClef f16^\didoName bes8. bes16 |
   d4 r8 fis, g4 bes8. bes16 | d4 r8 g, es4. d8 | d4 r8 a'16 a a8 d, a'8. bes16 | a([ bes] c4.) r8 c d es |
   d16([ e,8)] f16 f8 es f4 \clef \aeneasClef r8^\aeneasName c8 | c f, c'8. c16 f4. c8 | f,8 r16 a a8. b16 c8. c16 c8 b |
   c4 r \clef \didoClef es'4^\didoName es8 g, | c8. bes16 a8 bes fis8. a16 a8 a | d8. d16 d8 cis d4 r8 f16 d |
   c16([ bes)] bes8 bes a g8. d'16 es8 d | c c c d b4 r16 b b b | c8. d16 c4. bes8 a bes |
-  a4 r16 a a a cis4. d8 | d4. cis8 d8. d16 d4 | \clef \aeneasClef r8^\aeneasName g,,8 g4. a8 bes g |
+  a4 r16 a a a d4. a8 | a( bes4) bes16([ fis)] g8. g16 g4 | \clef \aeneasClef r8^\aeneasName g,8 g4. a8 bes g |
   d'4 r8 d, g2 | r4 r8 g d g bes4 | r4 r8 bes f bes d4 |
 
   r8 f, bes4 r8 d, g4 | r8 g c4. c8 bes a16([ bes)] | a4 r8 c a f bes d, |
@@ -906,7 +943,7 @@ lyricsIINXXX = \lyricmode {
   The on -- ly re -- fuge for the wretch -- ed left.
 
   %% Anna
-  See, sis -- ter, where the Prince ap -- pears;
+  See, Ma -- dam, where the Prince ap -- pears;
   Such sor -- row, in his looks, he bears
   As should con -- vince you still he's true.
 
@@ -996,8 +1033,8 @@ soloVoiceNXXXIII = \relative c'' {
   \key c \major
   \clef \didoClef
   \autoBeamOff
-  r8 c c b c c r4 | c4( bes as) g | as4. as8 r4 as8 as | as( g4) g8 r4 g8 f |
-  g4 r r g8 g | g8([ f)] r f f4( e8) f | e e r4 es4. es8 | d4. fis8 fis([ g)] g([ cis,)] | d2 r \bar "|."
+  r8 c c b c c r4 | c4( bes as) g | a4. a8 r4 as8 as | as( g4) g8 r4 g8 f |
+  g4 r r g8 g | g8([ f)] r f f4( e8) f | e e r4 es4. es8 | d4. fis8 fis([ g)] g([ cis,)] | d2*2 \bar "|."
 }
 
 lyricsNXXXIII = \lyricmode {
@@ -1012,17 +1049,29 @@ soloVoiceNXXXIV = \relative g' {
   \key g \minor
   \clef \didoClef
   \autoBeamOff
-  r2 | r1.*4 | g2 a bes | bes( a) b | c4.( bes8 a4. g8) fis4.( g8) |
-  fis1 d'4. d8 | c2( bes) a | bes1 es2 | es4( a,) a2 d | d4 g, a2 g | a1 r2 | r r r4 d |
 
-  d4. d8 d2 r | r r r4 d | d4. d8 d2 r | r r d | c( bes) c4( a) bes4.( c8 c2.) d4 |
-  d1 r4 d | g4. g8 g2. c,4 | d8([ es] f2) es4( d2) | c( bes) a | g1. | R1.*10 \bar "|."
+  r2 | r1.*4 | g2 a bes | bes( a) b | c4.( bes8 a4. g8) fis4.( g8) |
+  fis1 d'4. d8 | c2( bes) a | bes1 es2 | es4( a,) a2 d | d4 g, a2 g |
+  a1 r2 | R1. | g2 a bes | bes( a) b | c4.( bes8 a4. g8 fis4.) g8 | fis1 d'4. es8 |
+  d4.( c8 bes2.) a4 | bes1 es2 | es4( a,) a2 d | d8([ g,)] g4 a2( g4.) fis8 | a1 r2 | r r r4 d | d4. d8 d2 r | r r r4 d | d4. d8 d2 r | r r d | c( bes) c4( a) bes4.( c8 c2.) d4 |
+  d1 r4 d | g4. g8 g2. c,4 | d8([ es] f2) es4( d2) | c( bes) a | g1 r4 d'4 | d4. d8 d2 r2 |
+  r2 r r4 d | d4. d8 d2 r4 d | c2( bes c4 a | bes4.) c8 c2. d4 | d1 r4 d | g4. g8 g2. c,4 | d8([ es] f2 es4 d2) | c4( bes) bes2 a4( g) | g1. | R1.*10 \bar "|."
 }
 
 lyricsNXXXIV = \lyricmode {
   When I am laid, am laid in earth,
   may my wrongs cre -- ate
   No trou -- ble, no trou -- ble in thy breast;
+
+  When I am laid, am laid in earth,
+  may my wrongs cre -- ate
+  No trou -- ble, no trou -- ble in thy breast;
+
+  Re -- mem -- ber me,
+  re -- mem -- ber me,
+  but ah! for -- get my fate.
+  Re -- mem -- ber me, but ah! for -- get my fate.
+
   Re -- mem -- ber me,
   re -- mem -- ber me,
   but ah! for -- get my fate.

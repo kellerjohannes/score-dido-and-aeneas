@@ -4,46 +4,56 @@ vnIIOuverture = \relative es'' {
   \time 4/4
   \key c \minor
   \clef \vnIIClef
-  es4. es8 es4 d~ |
-  d8 d c4 bes4. bes8 |
-  as4. as8 g4 c |
-  d4. d8 c d es4~ |
-  es8 es d4 c2 |
-  bes4. c8 d4. d8 |
-  d4 es8. d16 c2~ |
-  c4 c c4. c8 |
-  c4 bes bes8.[ bes16 a8. bes16] |
-  g2~ g8.[ g16 as8. g16] |
-  c4 bes a as |
-  g4 c2 b4 \bar "||"
+  \repeat volta 2 {
+    es4. es8 es4 d~ |
+    d8 d c4 bes4. bes8 |
+    as4. as8 g4 c |
+    d4. d8 c d es4~ |
+    es8 es d4 c2 |
+    bes4. c8 d4. d8 |
+    d4 es8. d16 c2~ |
+    c4 c c4. c8 |
+    c4 bes bes8.[ bes16 a8. bes16] |
+    g2~ g8.[ g16 as8. g16] |
+    c4 bes a as |
+    g4 c2 b4 \bar "||"
+    \alternative {
+      { c1 | }
+      { c4 r4 r2 | }
+    }
+  }
 
-  c4 r4 r2 |
-  r8 g[ c g] c[ es c es] |
-  d[ c d b] c[ b c a] |
-  bes[ bes g bes] g[ fis bes d] |
-  bes[ d bes d] bes[ d bes d] |
-  bes[ d c b] c[ g c g] |
+  \repeat volta 2 {
+    r8 g[ c g] c[ es c es] |
+    d[ c d b] c[ b c a] |
+    bes[ bes g bes] g[ fis bes d] |
+    bes[ d bes d] bes[ d bes d] |
+    bes[ d c b] c[ g c g] |
 
-  c[ es f es] d[ c b c] |
-  d[ b g b] g[ g a b] |
-  c[ b c d] es[ g es g] |
-  es[ f16 es] d8 c bes[ bes d bes] |
-  d[ f es d] es[ es, g g] |
-  bes[ as bes g] as[ as c as] |
-  c[ f c f] c[ f c c] |
-  c[ bes g g] g[ f as f] |
-  f[ es g es] es[ d f d] |
-  d[ c g' es] f[ as f f] |
-  g[ c c c] c[ bes d bes] |
-  bes[ g es es] es[ d f d] |
-  d[ c es c] c[ bes d d] |
-  d[ c c c] c[ a' f f] |
-  f[ es g g] g[ f a a] |
-  a[ g bes bes] bes[ as c c] |
-  c[ bes d d] d[ c c c] |
-  c[ c d c] b[ b es d] |
-  c b c2 b4 | c1 \bar "|."
-
+    c[ es f es] d[ c b c] |
+    d[ b g b] g[ g a b] |
+    c[ b c d] es[ g es g] |
+    es[ f16 es] d8 c bes[ bes d bes] |
+    d[ f es d] es[ es, g g] |
+    bes[ as bes g] as[ as c as] |
+    c[ f c f] c[ f c c] |
+    c[ bes g g] g[ f as f] |
+    f[ es g es] es[ d f d] |
+    d[ c g' es] f[ as f f] |
+    g[ c c c] c[ bes d bes] |
+    bes[ g es es] es[ d f d] |
+    d[ c es c] c[ bes d d] |
+    d[ c c c] c[ a' f f] |
+    f[ es g g] g[ f a a] |
+    a[ g bes bes] bes[ as c c] |
+    c[ bes d d] d[ c c c] |
+    c[ c d c] b[ b es d] |
+    c b c2 b4 |
+    \alternative {
+      { c4 r4 r2 | }
+      { c2*2 \bar "|." }
+    }
+  }
 }
 
 vnIINI = \relative g' {
@@ -268,9 +278,10 @@ vnIINXI = \relative e' {
   g4 g g g8. f16 g8. a16 g8. a16 | g4 e g | g e g | f4. e8 f4 | c c c |
   c2 r4 | R2. | r4 r f | f d d | d b b | b g g' |
 
-  g4 g g | e e g | a bes8 a g f | e2 r4 R2. | r4 r f | f d d |
-  d b b | b g g' | g g g | e e g | a bes8 a g f | e2. \bar "|."
+  g4 g g | e e g | a bes8 a g f | e2. \bar "|."
 }
+
+%% TODO The Triumphing Dance
 
 vnIINXII = \relative as' {
   \time 4/4
@@ -297,7 +308,7 @@ vnIINXIV = \relative c' {
   \time 4/4
   \key f \minor
   \clef \vnIIClef
-  c1~ | c | d2 c~ | c8 bes d4 c2 | bes1~ |
+  c1~ | c | des2 c~ | c8 bes d4 c2 | bes1~ |
   bes~ | bes2. c4 | g2 c | e g~ | g1 \bar "||"
 }
 
@@ -362,24 +373,33 @@ vnIINXIX = \relative f' {
   g a g | f f a | g a g | f f f | f f e | f2 f4 | f f e | f2*3/2 \bar "|."
 }
 
+%% TODO Echo Dance of Furies
+
+%% TODO The Grove
+
 vnIINXX = \relative a' {
   \time 3/4
   \key d \minor
   \clef \vnIIClef
-  R2.*8 |
-  a2 a4 | a2 a4 | a2 a4 | a2 a4 | bes a2 | a4 g8 f e4 | d2 g4 | \grace { f4( } e2.) |
-  R2.*16 |
-
-  R2. | f4 g a | g2. | e4 f g | a4. g8 f4 | e4. gis8 a4 | a a gis | s2. |
-  R2. | f4 g a | g2.~ | g~ | g4 f g | e2 f4 | f8 g a4 a | a2. \bar "|."
+  R2.*26 |
+  \repeat volta 2 {
+    a2 a4 | a2 a4 | a2 a4 | a2 a4 | bes a2 | a4 g8 f e4 | d2 g4 | \grace { f4( } e2.) |
+  }
+  \repeat volta 2 {
+    R2. | f4 g a | g2. | e4 f g | a4. g8 f4 | e4. gis8 a4 | a a gis | s2. |
+    R2. | f4 g a | g2.~ | g~ | g4 f g | e2 f4 | f8 g a4 a | a2. \bar "|."
+  }
 }
 
 vnIINXXI = \relative d'' {
   \time 4/4
   \key d \minor
   \clef \vnIIClef
-  R1*28 | r2 d4. c8 | b2 e4. d8 | cis2 d4. d8 | d4. d8 d4 cis | d a f4. f8 |
-  f4 e8 f g4. g8 | g4 e a g8 a | d4. d8 e4. d16 e | f4. f8 f e d c | b4 b bes4. bes8 | a4 a a4. a8 | bes4 bes a4. a8 | a1 \bar "|."
+  R1*31 |
+  r2 r4 r8 e | d4 d d4. c8 | b2 e4. d8 | cis2 d4. d8 | d4 d cis4. d8 | d4 f d4. c8 |
+  b2 e4. d8 | cis2 d4. d8 | d4 d cis4. d8 | d4 a f4. f8 | f4 e8 f g4. g8 |
+  g4 e a bes8 c | d4. d8 e4. d16 e | f4. f8 f e d c | b4 b bes4. bes8 | a4 a a4. a8 |
+  bes4 bes a4. a8 | a4. f'8 f e d c | b4 b bes4. bes8 | a4 a a4. a8 | bes4 bes a4. a8 | a1 \bar "|."
 }
 
 vnIINXXII = \relative fis'' {
@@ -404,6 +424,8 @@ vnIINXXIII = \relative d' {
   b, d fis fis d d g b | d4 r8 d, b g g' fis |
   g d g g e a fis d | a'4 r8 a a4 r8 a | g a16 b a8 a a2 \bar "|."
 }
+
+%% TODO Mr. Purcell's Farewell
 
 vnIINXXIV = \relative {
   \time 4/4
@@ -478,6 +500,8 @@ vnIINXXIX = \relative bes' {
   c2 r4 f, | a a g g | g2 r4 es | d g f es | d d2. \bar "|."
 }
 
+%% TODO The Witches Dance
+
 vnIINXXX = \relative {
   \time 4/4
   \key g \minor
@@ -515,9 +539,12 @@ vnIINXXXIV = \relative bes {
   \clef \vnIIClef
   r2 | R1.*4 | bes1 bes2 | c1 d2~ | d c1 |
   c1 bes2 | a bes a | g1 bes2 | c d1 | d2 c1 | c d2 | es d1 |
-
-  d1 d2~ | d es d | g1 g2 | fis1 g2 | es d1~ | d2 es1 |
-  d1 a'2 | bes2. a4 g2 | a1 g2 | es d1 | d1. | r2 r d'~ | d cis c~ |
+  d2 c bes | c1 d2 | d c1 | c bes2 |
+  a1 a2 | g1 bes2 | c d1 | d2 c1 | c d2 | es d1 |
+  d1 d2 | d es d | g1 g2 | fis1 g2 | es d1 | d2 es1 |
+  d1 a'2 | bes2. a4 g2 | a1 g2 | es d1 | d d2 | d1 d2 |
+  d e4 fis g2 | fis1 g2 | es2 d1 | d2 es1 | d a'2 | bes2. a4 g2 |
+  a1 g2 | es d1 | d1. r2 r d'~ | d cis c~ |
   c b bes~ | bes a d~ | d2. d4 c4. bes8 | a1 a2 | bes2. a4 g2 | a1 g2 | g1 fis2 | g1. \bar "|."
 }
 
@@ -525,19 +552,12 @@ vnIINXXXV = \relative g' {
   \time 4/4
   \key g \minor
   \clef \vnIIClef
-  R1 | \repeat volta 2 {
-    R1*2 | r4 g f es | d c bes a |
-    d es8 f g4 r | r2 r4 d' | c bes a g | fis d c bes |
+  R1*3 | r4 g f es | d c bes a |
+  d es8 f g4 r | r2 r4 d' | c bes a g | fis d c bes |
 
-    a d d r8 fis | g fis g a bes4 bes | f8 g f es d es f d | es4 g fis g | fis2 g4 fis |
-    bes a g fis | g a a8 d, a'4 | bes4. a8 g4 f | e e d r | d cis f e | d a' a8 bes a g |
+  a d d r8 fis | g fis g a bes4 bes | f8 g f es d es f d | es4 g fis g | fis2 g4 fis |
+  bes a g fis | g a a8 d, a'4 | bes4. a8 g4 f | e e d r | d cis f e | d a' a8 bes a g |
 
-    g8. bes16 a8 g f4 e | d r8 fis g4 r | g a8. bes16 a4 r8 a | bes4 r bes bes | bes a bes r8 f |
-    g g r4 f8 f r4 | e4 fis8 g fis4 r8 f | bes bes r4 bes8 a r4 | a8 fis g a g4 fis |
-    \alternative {
-      { g4 r r2 }
-      { g1 }
-    }
-  }
-  \bar "|."
+  g8. bes16 a8 g f4 e | d r8 fis g4 r | g a8. bes16 a4 r8 a | bes4 r bes bes | bes a bes r8 f |
+  g g r4 f8 f r4 | e4 fis8 g fis4 r8 f | bes bes r4 bes8 a r4 | a8 fis g a g4 fis | g1 \bar "|."
 }

@@ -21,6 +21,12 @@
 
   \markup { \vspace #1 }
 
+  \pageBreak
+
+  \titleASA
+
+  \pageBreak
+
   \score {
     \scoreTitleOuverture
     <<
@@ -38,6 +44,12 @@
       >>
     >>
   }
+
+  \pageBreak
+
+  \titleASB
+
+  \pageBreak
 
   \score {
     \scoreTitleNI
@@ -88,6 +100,12 @@
       }
     }
   }
+
+  \pageBreak
+
+  \titleASC
+
+  \pageBreak
 
   \score {
     \scoreTitleNII
@@ -198,6 +216,12 @@
     }
   }
 
+  \pageBreak
+
+  \titleASD
+
+  \pageBreak
+
   \score {
     \scoreTitleNVI
     <<
@@ -252,6 +276,12 @@
       }
     }
   }
+
+  \pageBreak
+
+  \titleASE
+
+  \pageBreak
 
   \score {
     \scoreTitleNVII
@@ -412,6 +442,22 @@
       }
     }
   }
+
+  %% TODO
+  \score {
+    \scoreTitleNaddXIII
+    { s1 }
+  }
+
+  \pageBreak
+
+  \titleASF
+
+  \pageBreak
+
+  \titleASFa
+
+  \pageBreak
 
   \score {
     \scoreTitleNXII
@@ -715,6 +761,26 @@
   }
 
   \score {
+    \scoreTitleNaddXXII
+    { s1 }
+  }
+
+  \pageBreak
+
+  \titleASG
+
+  \pageBreak
+
+  \titleNaddSolitude
+
+  \pageBreak
+
+  \score {
+    \scoreTitleNaddXXIII
+    { s1 }
+  }
+
+  \score {
     \scoreTitleNXX
     <<
       \new StaffGroup = "strings"
@@ -764,6 +830,12 @@
       }
     }
   }
+
+  \pageBreak
+
+  \titleASH
+
+  \pageBreak
 
   \score {
     \scoreTitleNXXI
@@ -874,6 +946,17 @@
     }
   }
 
+  \pageBreak
+
+  \titleASI
+
+  \pageBreak
+
+  \score {
+    \scoreTitleNaddFarewell
+    { s1 }
+  }
+
   \score {
     \scoreTitleNXXIV
     <<
@@ -969,15 +1052,21 @@
     }
   }
 
+  \pageBreak
+
+  \titleASJ
+
+  \pageBreak
+
   \score {
     \scoreTitleNXXVII
     <<
-      \new Staff = "topVoice" \with { instrumentName = \firstWitchName }
+      \new Staff = "topVoice" \with { instrumentName = \sorceressName }
       \new Voice= "voiceOne"
       \soloVoiceINXXVII
       \new Lyrics \lyricsto "voiceOne" { \lyricsSoloVoiceINXXVII }
 
-      \new Staff = "bottomVoice" \with { instrumentName = \sorceressName }
+      \new Staff = "bottomVoice" \with { instrumentName = \secondWitchName }
       \new Voice= "voiceTwo"
       \soloVoiceIINXXVII
       \new Lyrics \lyricsto "voiceTwo" { \lyricsSoloVoiceIINXXVII }
@@ -997,7 +1086,7 @@
   \score {
     \scoreTitleNXXVIII
     <<
-      \new Staff = "voiceStaff" \with { instrumentName = \firstWitchName }
+      \new Staff = "voiceStaff" \with { instrumentName = \sorceressName }
       \new Voice= "voice"
       \soloVoiceNXXVIII
       \new Lyrics \lyricsto "voice" { \lyricsNXXVIII }
@@ -1060,6 +1149,21 @@
   }
 
   \score {
+    \scoreTitleNaddXXXIV
+    { s1 }
+  }
+
+  \pageBreak
+
+  \titleASK
+
+  \pageBreak
+
+  \titleASL
+
+  \pageBreak
+
+  \score {
     \scoreTitleNXXVII
     <<
       \new Staff = "topVoice" \with { instrumentName = \didoName }
@@ -1083,6 +1187,12 @@
       }
     }
   }
+
+  \pageBreak
+
+  \titleASM
+
+  \pageBreak
 
   \score {
     \scoreTitleNXXXI

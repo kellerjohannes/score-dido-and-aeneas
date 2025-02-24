@@ -13,24 +13,24 @@ operaComposer = "Henry Purcell"
 operaContext = "Theater Basel, 2024/2025"
 operaEditor = "Fassung: The Peeping Tom, Notensatz: Johannes Keller"
 
-annaClef = "alto"
-annaName = \markup { \caps Anna }
+annaClef = "treble"
+annaName = \markup { \caps Belinda }
 
 didoClef = "treble"
 didoName = \markup { \caps Dido }
 
-annaDidoName = \markup { \column { \line { \right-align \caps Anna }
+annaDidoName = \markup { \column { \line { \right-align \caps Belinda }
                                    \line { \right-align \caps Dido } } }
 
-attendantClef = "tenor"
+attendantClef = "treble_8"
 %% TODO To be figured out, Attendant is notated in tenor and in treble clefs.
 attendantSopranoClef = "treble"
-attendantName = \markup { \caps Attendant }
+attendantName = \markup { 2. \hspace #-1.2 \super nd \caps Woman }
 
-aeneasClef = "tenor"
+aeneasClef = "treble_8"
 aeneasName = \markup { \caps Æneas }
 
-sorceressClef = "bass"
+sorceressClef = "treble"
 sorceressName = \markup { \caps Sorceress }
 
 firstWitchClef = "treble"
@@ -42,7 +42,7 @@ secondWitchName = \markup { 2. \hspace #-1.2 \super nd \caps Witch }
 spiritClef = "treble"
 spiritName = \markup { \caps Spirit }
 
-sailorClef = "tenor"
+sailorClef = "treble_8"
 sailorName = \markup { \caps Sailor }
 
 %% Add more characters here
@@ -73,11 +73,11 @@ chorusSClef = "treble"
 
 instrumentNameChorusA = \markup { \caps Alto }
 instrumentHintChorusA = \markup { \italic \instrumentNameChorusA }
-chorusAClef = "alto"
+chorusAClef = "treble"
 
 instrumentNameChorusT = \markup { \caps Tenore }
 instrumentHintChorusT = \markup { \italic \instrumentNameChorusT }
-chorusTClef = "tenor"
+chorusTClef = "treble_8"
 
 instrumentNameChorusB = \markup { \caps Basso }
 instrumentHintChorusB = \markup { \italic \instrumentNameChorusB }
@@ -88,42 +88,101 @@ chorusBClef = "bass"
 
 
 
-titleOuverture = "Ouverture."
-titleNI = \markup { \concat { N \super o } \hspace #-2 . 1, Song & Chorus. }
-titleNII = \markup { \concat { N \super o } \hspace #-2 . 2, Song. }
-titleNIII = \markup { \concat { N \super o } \hspace #-2 . 3, Recitative. }
-titleNIV = \markup { \concat { N \super o } \hspace #-2 . 4, Chorus. }
-titleNV = \markup { \concat { N \super o } \hspace #-2 . 5, Recitative. }
-titleNVI = \markup { \concat { N \super o } \hspace #-2 . 6, Duet & Chorus. }
-titleNVII = \markup { \concat { N \super o } \hspace #-2 . 7, Recitative. }
-titleNVIII = \markup { \concat { N \super o } \hspace #-2 . 8, Chorus. }
-titleNIX = \markup { \concat { N \super o } \hspace #-2 . 9, Recitative. }
-titleNX = \markup { \concat { N \super o } \hspace #-2 . 10, Air. }
-titleNXI = \markup { \concat { N \super o } \hspace #-2 . 11, Chorus. }
-titleNXII = \markup { \concat { N \super o } \hspace #-2 . 12, Recitative Accompanied. }
-titleNXIII = \markup { \concat { N \super o } \hspace #-2 . 13, Chorus. }
-titleNXIV = \markup { \concat { N \super o } \hspace #-2 . 14, Recitative Accompanied. }
-titleNXV = \markup { \concat { N \super o } \hspace #-2 . 15, Chorus. }
-titleNXVI = \markup { \concat { N \super o } \hspace #-2 . 16, Recitative Accompanied. }
-titleNXVII = \markup { \concat { N \super o } \hspace #-2 . 17, Chorus. }
-titleNXVIII = \markup { \concat { N \super o } \hspace #-2 . 18, Duet. }
-titleNXIX = \markup { \concat { N \super o } \hspace #-2 . 19, Chorus. }
-titleNXX = \markup { \concat { N \super o } \hspace #-2 . 20, Song & Chorus. }
-titleNXXI = \markup { \concat { N \super o } \hspace #-2 . 21, Song. }
-titleNXXII = \markup { \concat { N \super o } \hspace #-2 . 22, Recitative Accompanied. }
-titleNXXIII = \markup { \concat { N \super o } \hspace #-2 . 23, Song & Chorus. }
-titleNXXIV = \markup { \concat { N \super o } \hspace #-2 . 24, Recitative. }
-titleNXXV = \markup { \concat { N \super o } \hspace #-2 . 25, Song & Chorus. }
-titleNXXVI = \markup { \concat { N \super o } \hspace #-2 . 26, Dance. }
-titleNXXVII = \markup { \concat { N \super o } \hspace #-2 . 27, Recitative. }
-titleNXXVIII = \markup { \concat { N \super o } \hspace #-2 . 28, Song. }
-titleNXXIX = \markup { \concat { N \super o } \hspace #-2 . 29, Chorus. }
-titleNXXX = \markup { \concat { N \super o } \hspace #-2 . 30, Recitative. }
-titleNXXXI = \markup { \concat { N \super o } \hspace #-2 . 31, Recitative. }
-titleNXXXII = \markup { \concat { N \super o } \hspace #-2 . 32, Chorus. }
-titleNXXXIII = \markup { \concat { N \super o } \hspace #-2 . 33, Recitative. }
-titleNXXXIV = \markup { \concat { N \super o } \hspace #-2 . 34, Song. }
-titleNXXXV = \markup { \concat { N \super o } \hspace #-2 . 35, Chorus. }
+titleASA = "Sakaï: A. Waking up prayer"
+%% titleOuverture = "Ouverture."
+titleOuverture = "1. Ouverture"
+titleASB = "Sakaï: B. Protocole"
+%%titleNI = \markup { \concat { N \super o } \hspace #-2 . 1, Song & Chorus. }
+titleNI = "2. «Shake the Cloud» (Belinda), «Banish sorrow» (Chorus)"
+titleASC = "Sakaï: C. Conversation"
+%%titleNII = \markup { \concat { N \super o } \hspace #-2 . 2, Song. }
+titleNII = "3. «Ah! Belinda, I am prest with torment» (Dido)"
+%%titleNIII = \markup { \concat { N \super o } \hspace #-2 . 3, Recitative. }
+titleNIII = "4. «Grief increases by concealing» (Belinda, Dido)"
+%%titleNIV = \markup { \concat { N \super o } \hspace #-2 . 4, Chorus. }
+titleNIV = "5. «When monarchs unite» (Chorus)"
+%%titleNV = \markup { \concat { N \super o } \hspace #-2 . 5, Recitative. }
+titleNV = "6. «Whence could so much virtue spring» (Dido)"
+titleASD = "Sakaï: D. Sensitive"
+%%titleNVI = \markup { \concat { N \super o } \hspace #-2 . 6, Duet & Chorus. }
+titleNVI = "7. «Fear no danger to ensue» (Belinda, 2nd Woman, Chorus)"
+titleASE = "Sakaï: E. RRR"
+%%titleNVII = \markup { \concat { N \super o } \hspace #-2 . 7, Recitative. }
+titleNVII = "8. «See your royal guest appears» (Belinda, Æneas)"
+%titleNVIII = \markup { \concat { N \super o } \hspace #-2 . 8, Chorus. }
+titleNVIII = "9. «Cupid only throws the dart» (Chorus)"
+%%titleNIX = \markup { \concat { N \super o } \hspace #-2 . 9, Recitative. }
+titleNIX = "10. «If not for mine» (Æneas)"
+%%titleNX = \markup { \concat { N \super o } \hspace #-2 . 10, Air. }
+titleNX = "11. «Pursue thy conquest» (Belinda)"
+%%titleNXI = \markup { \concat { N \super o } \hspace #-2 . 11, Chorus. }
+titleNXI = "12. «To the hills and the vales» (Chorus)"
+titleNaddXIII = "13. The triumphing dance"
+titleASF = "Sakaï: F. End of Act I"
+titleASFa = "Sakaï: Slo-Mo"
+%%titleNXII = \markup { \concat { N \super o } \hspace #-2 . 12, Recitative Accompanied. }
+titleNXII = "14. «Wayward sisters» (Sorceress)"
+%%titleNXIII = \markup { \concat { N \super o } \hspace #-2 . 13, Chorus. }
+titleNXIII = "15. «Harm's our delight» (Chorus)"
+%%titleNXIV = \markup { \concat { N \super o } \hspace #-2 . 14, Recitative Accompanied. }
+titleNXIV = "16. «The queen of Carthage whom we hate» (Sorceress)"
+%%titleNXV = \markup { \concat { N \super o } \hspace #-2 . 15, Chorus. }
+titleNXV = "17. «Ho, ho, ho» (Chorus)"
+%%titleNXVI = \markup { \concat { N \super o } \hspace #-2 . 16, Recitative Accompanied. }
+titleNXVI = "18. «Ruin'd ere the set of sun» (Witches, Sorceress)"
+%%titleNXVII = \markup { \concat { N \super o } \hspace #-2 . 17, Chorus. }
+titleNXVII = "19. «Ho, ho, ho» (Chorus)"
+%%titleNXVIII = \markup { \concat { N \super o } \hspace #-2 . 18, Duet. }
+titleNXVIII = "20. «But ere we this perform» (Witches)"
+%%titleNXIX = \markup { \concat { N \super o } \hspace #-2 . 19, Chorus. }
+titleNXIX = "21. «In our deep valuted cell» (Chorus)"
+titleNaddXXII = "22. Echo dance of furies»"
+titleASG = "Sakaï: G. Royce"
+titleNaddSolitude = "Purcell: «Oh Solitude» (Æneas)"
+titleNaddXXIII = "23. The Grove"
+%%titleNXX = \markup { \concat { N \super o } \hspace #-2 . 20, Song & Chorus. }
+titleNXX = "24. «Thanks to these lonesome vales» (Belinda, Chorus)"
+titleASH = "Sakaï: H. Abus («Permets qu'un instant je me repose à tes côtés»)"
+%%titleNXXI = \markup { \concat { N \super o } \hspace #-2 . 21, Song. }
+titleNXXI = "25. «Oft she visits» (2nd Woman)"
+%%titleNXXII = \markup { \concat { N \super o } \hspace #-2 . 22, Recitative Accompanied. }
+titleNXXII = "26. «Behold upon my bending spear» (Æneas, Dido)"
+%%titleNXXIII = \markup { \concat { N \super o } \hspace #-2 . 23, Song & Chorus. }
+titleNXXIII = "27. «Haste to town» (Belinda, Chorus)"
+titleASI = "Sakaï: I. Ode"
+titleNaddFarewell = "Jeremiah Clarke: «Come along» (Mr. Purcell's farewell)"
+%%titleNXXIV = \markup { \concat { N \super o } \hspace #-2 . 24, Recitative. }
+titleNXXIV = "28. «Stay prince and hear great Jove» (Spirig, Æneas)"
+%%titleNXXV = \markup { \concat { N \super o } \hspace #-2 . 25, Song & Chorus. }
+titleNXXV = "29. «Come away fellow sailors» (Sailor, Chorus)"
+%%titleNXXVI = \markup { \concat { N \super o } \hspace #-2 . 26, Dance. }
+titleNXXVI = "30. The sailors' dance"
+titleASJ = "Sakaï: J. Troisième fenêtre / Kneel / Solo of Euridike / Schizo-Dido / Loop-Ode"
+%%titleNXXVII = \markup { \concat { N \super o } \hspace #-2 . 27, Recitative. }
+titleNXXVII = "31. «See the flags and steamers curling» (Sorceress, Witches)"
+%%titleNXXVIII = \markup { \concat { N \super o } \hspace #-2 . 28, Song. }
+titleNXXVIII = "32. «Our next motion must be to storm» (Sorceress)"
+%%titleNXXIX = \markup { \concat { N \super o } \hspace #-2 . 29, Chorus. }
+titleNXXIX = "33. «Destruction's our delight» (Chorus)"
+titleNaddXXXIV = "34. The witches' dance"
+titleASK = "Sakaï: K. Kneel / Doom-zoom / Riot of Dido"
+titleASL = "Sakaï: L. Cauchemar"
+%%titleNXXX = \markup { \concat { N \super o } \hspace #-2 . 30, Recitative. }
+titleNXXX = "35a. «Your counsel all is urg'd in vain» (Dido, Belinda, Æneas)"
+titleASM = "Sakaï: M. Départ d'Enée"
+%%titleNXXXI = \markup { \concat { N \super o } \hspace #-2 . 31, Recitative. }
+titleNXXXI = "35b. «But death, alas!» (Dido)"
+%%titleNXXXII = \markup { \concat { N \super o } \hspace #-2 . 32, Chorus. }
+titleNXXXII = "36. «Great minds» (Dido)"
+%%titleNXXXIII = \markup { \concat { N \super o } \hspace #-2 . 33, Recitative. }
+titleNXXXIII = "37. «Thy hand Belinda» (Dido)"
+%%titleNXXXIV = \markup { \concat { N \super o } \hspace #-2 . 34, Song. }
+titleNXXXIV = "38. «When I am laid» (Belinda)"
+%%titleNXXXV = \markup { \concat { N \super o } \hspace #-2 . 35, Chorus. }
+titleNXXXV = "39. «With drooping wings» (Chorus)"
+
+
+
 
 %% Add more section titles here
 
@@ -138,8 +197,74 @@ titlePartbook = \header {
   tagline = \operaEditor
 }
 
-
 titleScore = \titlePartbook
+
+
+
+%% Added pieces to 1841
+
+
+scoreTitleNaddXIII = \header {
+  title = \titleNaddXIII
+  composer = ##f
+  subtitle = ##f
+}
+
+partbookTitleNaddXIII = \header {
+  title = \titleNaddXIII
+  composer = ##f
+  subtitle = ##f
+}
+
+scoreTitleNaddXXII = \header {
+  title = \titleNaddXXII
+  composer = ##f
+  subtitle = ##f
+}
+
+partbookTitleNaddXXII = \header {
+  title = \titleNaddXXII
+  composer = ##f
+  subtitle = ##f
+}
+
+scoreTitleNaddXXIII = \header {
+  title = \titleNaddXXIII
+  composer = ##f
+  subtitle = ##f
+}
+
+partbookTitleNaddXXIII = \header {
+  title = \titleNaddXXIII
+  composer = ##f
+  subtitle = ##f
+}
+
+scoreTitleNaddXXXIV = \header {
+  title = \titleNaddXXXIV
+  composer = ##f
+  subtitle = ##f
+}
+
+partbookTitleNaddXXXIV = \header {
+  title = \titleNaddXXXIV
+  composer = ##f
+  subtitle = ##f
+}
+
+scoreTitleNaddFarewell = \header {
+  title = \titleNaddFarewell
+  composer = ##f
+  subtitle = ##f
+}
+
+partbookTitleNaddFarewell = \header {
+  title = \titleNaddFarewell
+  composer = ##f
+  subtitle = ##f
+}
+
+%% Regular score 1841
 
 
 scoreTitleOuverture = \header {

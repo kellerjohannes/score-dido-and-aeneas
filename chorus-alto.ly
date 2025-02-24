@@ -153,8 +153,7 @@ chorusANXI = \relative e' {
   g4 g4. g8 | g8.([ f16 g8. a16 g8. a16] | g4) e g | g e g | f4. e8 f4 | c4. c8 c4 |
   c2 r4 | R2. | r4 r f | f d d | d b b | b g g' |
 
-  g g g | e e g | a bes8([ a)] g([ f)] | e2 r4 R2. | r4 r f | f d d |
-  d b b | b g g' | g g g | e e g | a bes8([ a)] g([ f)] | e2. \bar "|."
+  g g g | e e g | a bes8([ a)] g([ f)] | e2. \bar "|."
 }
 
 lyricsANXI = \lyricmode {
@@ -171,8 +170,6 @@ lyricsANXI = \lyricmode {
   the tri -- umphs of love and of beau -- ty be shewn.
 
   Go re -- vel ye Cu -- pids, go re -- vel, go re -- vel ye Cu -- pids,
-  the day is your own,
-  go re -- vel, ye Cu -- pids, go re -- vel, go re -- vel ye Cu -- pids,
   the day is your own.
 }
 
@@ -235,26 +232,28 @@ chorusANXX = \relative a' {
   \key d \minor
   \clef \chorusAClef
   \autoBeamOff
-  R2.*8 |
-  a4. a8 a4 | a2 a4 | a a2 | a a4 | bes a2 | a4( g8[ f]) e4 | d2 g4 | \grace { f4( } e2.) |
-  R2.*16 |
-
-  R2. | f4 g a | g2. | e4 f g | a4. g8 f f | e4. gis8 a4 | a a gis | a2. |
-  R2. | f4 g a | g2.~ | g~ | g8 g f4 g | e4. e8 f4 | f8([ g)] a4 a | g2. \bar "|."
+  R2.*26 |
+  \repeat volta 2 {
+    a4. a8 a4 | a2 a4 | a a2 | a a4 | bes a2 | a4( g8[ f]) e4 | d2 g4 | \grace { f4( } e2.) |
+  }
+  \repeat volta 2 {
+    R2. | f4 g a | g2. | e4 f g | a4. g8 f f | e4. gis8 a4 | a a gis | a2. |
+    R2. | f4 g a | g2.~ | g~ | g8 g f4 g | e4. e8 f4 | f8([ g)] a4 a | g2. \bar "|."
+  }
 }
 
-chorusANXXIII = \relative d {
+chorusANXXIII = \relative d' {
   \time 4/4
   \key d \major
   \clef \chorusAClef
   \autoBeamOff
   R1*10 |
-  r2 r8 d fis a | d4 r8 fis d fis a4 | r8 d, fis a d,4 r8 a |
+  r2 r8 d fis a | d4 r8 fis, d fis a4 | r8 d, fis a d,4 r8 a |
 
   d8 fis e e e4 r8 e | cis a e' e e4 r8 g |
   fis g a fis fis d4 d8 | g fis e e e cis ais fis |
 
-  b d fis fis d d, g b | d4 r8 d b g g' fis |
+  b d fis fis d d g b | d4 r8 d, b g g' fis |
   g d g g e a fis d | a'4 r8 a a4 r8 a | g8([ a16 b] a8) a a2 \bar "|."
 }
 
@@ -353,39 +352,26 @@ chorusANXXXV = \relative g' {
   \key g \minor
   \clef \chorusAClef
   \autoBeamOff
-  R1 | \repeat volta 2 {
-    R1*2 r4 g f( es | d c) bes g |
-    d' es8( f) g4 r | r2 r4 d | c( bes a g) | fis d' c( bes |
+  R1*3 r4 g f( es | d) c bes g |
+    d' es8( f) g4 r | r2 r4 d | c( bes a) g | fis d' c( bes |
 
-    a d) d r8 fis | g8([ fis)] g([ a)] bes4 bes | f8([ g)] f([ es)] d([ es)] f([ d)] | es4 g fis g | fis2 g4( f) |
+    a) d d r8 fis | g8([ fis)] g([ a)] bes4 bes | f8([ g)] f([ es)] d([ es)] f([ d)] | es4 g fis g | fis2 g4( f) |
     bes( a) g( fis) | g a a8( d,) a'4 | bes4.( a8) g4 f | e e d r | d( cis) f( e) | d a' a8[( bes)] a([ g)] |
 
     g8.([ bes16)] a8([ g)] f4 e | d r8 fis g4 r | g a8.([ bes16)] a4 r8 a | bes4 r bes bes | bes a bes r8 f |
-    g g r4 f8 f r4 | e4( fis8) g fis4 r8 f | bes bes r4 bes8 a r4 | a8([ fis g)] a g4 fis |
-    \alternative {
-      { g4 r r2 }
-      { g1 }
-    }
-  }
+    g g r4 f8 f r4 | e4( fis8) g fis4 r8 f | bes bes r4 bes8 a r4 | a8([ fis g)] a g4 fis | g1
   \bar "|."
 }
 
 lyricsANXXXV = \lyricmode {
-  With droop -- \repeat volta 2 {
-    ing wings, ye Cu -- pids come,
-    with droop -- ing wings,
-    with droop -- ing wings,
-    with droop -- ing wings,
-    ye Cupids come and scat -- ter ro -- ses,
-    scat -- ter, scat -- ter ro -- ses on her tomb,
-    Soft, soft and gen -- tle, soft, soft, soft, soft and gen -- tle
-    as her heart,
-    Keep here, here your watch, keep here, here, keep here your watch,
-    and ne -- ver, ne -- ver, ne -- ver part,
-    and ne -- ver, ne -- ver, ne -- ver, ne -- ver
-    \alternative {
-      { part. }
-      { part. }
-    }
-  }
+  With droop -- ing wings, ye Cu -- pids come,
+  with droop -- ing wings, ye Cu -- pids come,
+  and scat -- ter ro -- ses,
+  scat -- ter, scat -- ter ro -- ses on her tomb,
+  Soft, soft and gen -- tle, as her heart, gen -- tle as her heart,
+  Soft, soft, soft and gen -- tle,
+  gen -- tle as her heart,
+  Keep here, here your watch, keep here, here, keep here your watch,
+  and ne -- ver, ne -- ver, ne -- ver part,
+  and ne -- ver, ne -- ver, ne -- ver, ne -- ver part.
 }

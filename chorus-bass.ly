@@ -135,8 +135,7 @@ chorusBNXI = \relative c {
   g4 g, g' | g g, g' | c8.([ b16 c8. d16 c8. d16] | c4) c, c' | a4. g8 f4 | e4. d8 c4 |
   f2 f4 | a f f | a f d | g g g, | g g g' | g g g |
 
-  c4 g g | a e e | f4. d8 g4 | c,2 f4 | a f f | a f d | g g g, |
-  g g g' | g g g | c g g | a e e | f4. d8 g4 | c,2. \bar "|."
+  c4 g g | a e e | f4. d8 g4 | c,2. \bar "|."
 }
 
 lyricsBNXI = \lyricmode {
@@ -153,10 +152,7 @@ lyricsBNXI = \lyricmode {
   Let the tri -- umphs, the tri -- umphs,
   the tri -- umphs of love and of beau -- ty be shewn.
   Go re -- vel ye Cu -- pids, go re -- vel, go re -- vel ye Cu -- pids,
-  go re -- vel ye Cu -- pids, the day is your own,
-  go re -- vel ye Cu -- pids, go re -- vel,
-  go re -- vel ye Cu -- pids, go re -- vel ye Cu -- pids,
-  the day is your own.
+  go re -- vel ye Cu -- pids, the day is your own.
 }
 
 chorusBNXIII = \relative bes {
@@ -218,12 +214,14 @@ chorusBNXX = \relative d {
   \key d \minor
   \clef \chorusBClef
   \autoBeamOff
-  R2.*8 |
-  d4. a'8 d4 | a( d) d, | a' d,2 | a' f4 | e a2 | d, c4 | bes4.( a8) bes4 | a2.
-  R2.*16 |
-
-  R2. d4 e f | g2. | c,4 d e | f4. e8 f d | e4. d8 c4 | a e'4. e8 | a,2. |
-  R2. d4 e f | g2. | e4 f g | a4. a8 bes g | a4. g8 f4 | d a' a, | d2. \bar "|."
+  R2.*26 |
+  \repeat volta 2 {
+    d4. a'8 d4 | a( d) d, | a' d,2 | a' f4 | e a2 | d, c4 | bes4.( a8) bes4 | a2.
+  }
+  \repeat volta 2 {
+    R2. d4 e f | g2. | c,4 d e | f4. e8 f d | e4. d8 c4 | a e'4. e8 | a,2. |
+    R2. d4 e f | g2. | e4 f g | a4. a8 bes g | a4. g8 f4 | d a' a, | d2. \bar "|."
+  }
 }
 
 chorusBNXXIII = \relative d {
@@ -317,39 +315,25 @@ chorusBNXXXV = \relative g {
   \key g \minor
   \clef \chorusBClef
   \autoBeamOff
-  R1 | \repeat volta 2 {
-    r4 g f( es | d c) bes g | c8([ d)] es([ c)] d4 r | R1 |
-    r4 c' bes( a | g f) es d | es bes d2~ | d2~ d4 g, |
+  R1 | r4 g f( es | d) c bes g | c8([ d)] es([ c)] d4 r | R1 |
+  r4 c' bes( a | g) f es d | es bes d2~ | d2~ d4 g, |
 
-    d' d g, r | r r8 d' g([ fis)] g([ a)] | bes4 bes bes,8([ c)] d([ bes)] | es([ d)] c([ bes)] a4 g | d'2 r |
-    R1 | g4( fis) bes( a | g) f e d | d( cis) f( e) | d( a) d( a') | d,( c bes) bes |
+  d' d g, r | r r8 d' g([ fis)] g([ a)] | bes4 bes bes,8([ c)] d([ bes)] | es([ d)] c([ bes)] a4 g | d'2 r |
+  R1 | g4( fis) bes( a | g) f e d | d( cis) f( e) | d( a) d( a') | d,( c bes) bes |
 
-    a4. a8 a4 a | d r8 d g4 r | c,4. c8 f4 r8 f | d4 r es es | f4. f8 bes,4 r8 bes |
-    es es r4 d8 d r4 | c4. c8 d4 r8 d | bes bes r4 c8 c r4 | d g, d'4. d8 |
-    \alternative {
-      { g,4 r r2 }
-      { g1 }
-    }
-  }
-  \bar "|."
+  a4. a8 a4 a | d r8 d g4 r | c,4. c8 f4 r8 f | d4 r es es | f4. f8 bes,4 r8 bes |
+  es es r4 d8 d r4 | c4. c8 d4 r8 d | bes bes r4 c8 c r4 | d g, d'4. d8 | g1 \bar "|."
 }
 
 lyricsBNXXXV = \lyricmode {
-  With droop -- \repeat volta 2 {
-    ing wings, ye Cu -- pids come,
-    with droop -- ing wings,
-    with droop -- ing wings,
-    with droop -- ing wings,
-    ye Cupids come and scat -- ter ro -- ses,
-    scat -- ter, scat -- ter ro -- ses on her tomb,
-    Soft, soft and gen -- tle, soft, soft, soft, soft and gen -- tle
-    as her heart,
-    Keep here, here your watch, keep here, here, keep here your watch,
-    and ne -- ver, ne -- ver, ne -- ver part,
-    and ne -- ver, ne -- ver, ne -- ver, ne -- ver, ne -- ver
-    \alternative {
-      { part. }
-      { part. }
-    }
-  }
+  With droop -- ing wings, ye Cu -- pids come,
+  with droop -- ing wings,
+  ye Cu -- pids come, ye Cu -- pids come,
+  and scat -- ter ro -- ses,
+  scat -- ter, ro -- ses on her tomb,
+  Soft, soft and gen -- tle, soft, soft, soft, soft, soft and gen -- tle
+  as her heart,
+  Keep here, here your watch, keep here, here, keep here your watch,
+  and ne -- ver, ne -- ver, ne -- ver part,
+  and ne -- ver, ne -- ver, ne -- ver, ne -- ver part.
 }
