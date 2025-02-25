@@ -286,7 +286,20 @@ vnINXI = \relative g' {
   e b b | c g c | c4. d8 c b | c2. \bar "|."
 }
 
-%% TODO The Triumphing Dance
+vnINaddXIII = \relative c'' {
+  \time 3/4
+  \key c \major
+  \clef \vnIClef
+  c4 g c | a d b | c8. d16 c8. e16 d8. f16 | e4. d8 c4 | e4. f16 g4 e | a bes8 a g f |
+  e8. d16 c4. b8 | c4. d8 c8. d16 | e8. d16 c8. d16 c8. b16 | a8. b16 a8. c16 b8. d16 | c4 b8. a16 g8. f16 | e8. f16 e8. f16 g8. a16 |
+  b8. c16 d8. e16 d8. f16 | e8. f16 e8. g16 fis8. a16 | g4 g4. fis8 | g8. fis16 g8. a16 g4 | g g4. f16 g | a4. a8 b4 |
+  c4 g8. a16 g8. f16 | e8. f16 e8. d16 c4 | g' g4. f16 g | a4. a8 b4 | c g8. a16 g8. f16 | e8. f16 e8. d16 c4 |
+  e4 e4. e8 | e d4. d8 | d8 c c4. b8 | c4. d8 c4 | c e c | f d g | a g8. f16 e8. f16 |
+  d4 d4. d8 | d4 d4. c16 d | e8. f16 e8. d16 e8. f16 | g8. a16 g4. f8 | e8. d16 c8. b16 a8. d16 | c8. b16 a4. g8 |
+  g2 r8 g' | g4 g4. g8 | g4 f4. f8 | f4 e8. f16 e8. d16 | e8. f16 e8. f16 g8. a16 | g4 g4. g8 | g4 f4. f8 |
+  f4 e8. f16 e8. d16 | e8. f16 e8. f16 g8. a16 | g8. a16 bes4. bes8 | a8. g16 f8. e16 d8. g16 | f8. e16 d4. c8 | c2 c4 \bar "|."
+}
+
 
 vnINXII = \relative c'' {
   \time 4/4

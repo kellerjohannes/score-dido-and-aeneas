@@ -281,7 +281,16 @@ vnIINXI = \relative e' {
   g4 g g | e e g | a bes8 a g f | e2. \bar "|."
 }
 
-%% TODO The Triumphing Dance
+vnIINaddXIII = \relative e' {
+  \time 3/4
+  \key c \major
+  \clef \vnIIClef
+  e4 e e | f8. g16 a4 g8. f16 | e8. f16 g4 g | g4. f8 e4 | g c c | c4. d8 b4 |
+  c4 b8. a16 g8. f16 | e4. f8 e f | g4 g4. g8 | g4 g4. f8 | e4. f8 d4 | c8. d16 c8. d16 e8. f16 |
+
+
+}
+
 
 vnIINXII = \relative as' {
   \time 4/4
