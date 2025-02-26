@@ -23,7 +23,6 @@ annaDidoName = \markup { \column { \line { \right-align \caps Belinda }
                                    \line { \right-align \caps Dido } } }
 
 attendantClef = "treble_8"
-%% TODO To be figured out, Attendant is notated in tenor and in treble clefs.
 attendantSopranoClef = "treble"
 attendantName = \markup { 2. \hspace #-1.2 \super nd \caps Woman }
 
@@ -63,6 +62,17 @@ vlaClef = "alto"
 instrumentNameBc = \markup { \caps Bassi }
 instrumentHintBc = \markup { \italic \instrumentNameBc }
 bcClef = "bass"
+
+instrumentNameTrumpetI = \markup { \caps Trumpet I }
+instrumentHintTrumpetI = \markup { \caps Trumpet I }
+instrumentNameTrumpetII = \markup { \caps Trumpet II }
+instrumentHintTrumpetII = \markup { \caps Trumpet II }
+instrumentNameOboeI = \markup { \caps Oboe I }
+instrumentHintOboeI = \markup { \caps Oboe I }
+instrumentNameOboeII = \markup { \caps Oboe II }
+instrumentHintOboeII = \markup { \caps Oboe II }
+instrumentNameTimpani = \markup { \caps Timpani }
+instrumentHintTimpani = \markup { \caps Timpani }
 
 %% Add more instruments here
 
@@ -136,7 +146,7 @@ titleNXVII = "19. «Ho, ho, ho» (Chorus)"
 titleNXVIII = "20. «But ere we this perform» (Witches)"
 %%titleNXIX = \markup { \concat { N \super o } \hspace #-2 . 19, Chorus. }
 titleNXIX = "21. «In our deep valuted cell» (Chorus)"
-titleNaddXXII = "22. Echo dance of furies»"
+titleNaddXXII = "22. Echo dance of furies"
 titleASG = "Sakaï: G. Royce"
 titleNaddSolitude = "Purcell: «Oh Solitude» (Æneas)"
 titleNaddXXIII = "23. The Grove"
@@ -177,7 +187,7 @@ titleNXXXII = "36. «Great minds» (Dido)"
 %%titleNXXXIII = \markup { \concat { N \super o } \hspace #-2 . 33, Recitative. }
 titleNXXXIII = "37. «Thy hand Belinda» (Dido)"
 %%titleNXXXIV = \markup { \concat { N \super o } \hspace #-2 . 34, Song. }
-titleNXXXIV = "38. «When I am laid» (Belinda)"
+titleNXXXIV = "38. «When I am laid» (Dido)"
 %%titleNXXXV = \markup { \concat { N \super o } \hspace #-2 . 35, Chorus. }
 titleNXXXV = "39. «With drooping wings» (Chorus)"
 
@@ -675,34 +685,98 @@ partbookTitleNXXXV = \header {
 scorePaperBlock = \paper {
   print-all-headers = ##t
   #(set-default-paper-size "a4")
-  %%#(set-paper-size '(cons (* 277 mm) (* 364 mm)))
+  #(set-paper-size '(cons (* 277 mm) (* 364 mm)))
 }
 
 
 partbookVnIPaperBlock = \paper {
   print-all-headers = ##t
-  oddHeaderMarkup = \markup { \fill-line { \instrumentNameVnI } }
+  oddHeaderMarkup = ""
   evenHeaderMarkup = \oddHeaderMarkup
+  oddFooterMarkup = \markup {
+    \fill-line {
+      \if \should-print-page-number
+      \fromproperty #'page:page-number-string
+    }
+  }
+  evenFooterMarkup = \oddFooterMarkup
   #(set-paper-size '(cons (* 277 mm) (* 364 mm)))
+  top-margin = 3\cm
+  bottom-margin = 3\cm
+  line-width = 237\mm
+  ragged-bottom = ##t
+  ragged-last-bottom = ##t
+  score-markup-spacing = #'((basic-distance . 20)
+                            (minimum-distance . 15)
+                            (padding . 2)
+                            (stretchability . 2))
 }
 
 partbookVnIIPaperBlock = \paper {
   print-all-headers = ##t
-  oddHeaderMarkup = \markup { \fill-line { \instrumentNameVnII } }
+  oddHeaderMarkup = ""
   evenHeaderMarkup = \oddHeaderMarkup
+  oddFooterMarkup = \markup {
+    \fill-line {
+      \if \should-print-page-number
+      \fromproperty #'page:page-number-string
+    }
+  }
+  evenFooterMarkup = \oddFooterMarkup
   #(set-paper-size '(cons (* 277 mm) (* 364 mm)))
+  top-margin = 3\cm
+  bottom-margin = 3\cm
+  line-width = 237\mm
+  ragged-bottom = ##t
+  ragged-last-bottom = ##t
+  score-markup-spacing = #'((basic-distance . 20)
+                            (minimum-distance . 15)
+                            (padding . 2)
+                            (stretchability . 2))
 }
 
 partbookVlaPaperBlock = \paper {
   print-all-headers = ##t
-  oddHeaderMarkup = \markup { \fill-line { \instrumentNameVla } }
+  oddHeaderMarkup = ""
   evenHeaderMarkup = \oddHeaderMarkup
+  oddFooterMarkup = \markup {
+    \fill-line {
+      \if \should-print-page-number
+      \fromproperty #'page:page-number-string
+    }
+  }
+  evenFooterMarkup = \oddFooterMarkup
   #(set-paper-size '(cons (* 277 mm) (* 364 mm)))
+  top-margin = 3\cm
+  bottom-margin = 3\cm
+  line-width = 237\mm
+  ragged-bottom = ##t
+  ragged-last-bottom = ##t
+  score-markup-spacing = #'((basic-distance . 20)
+                            (minimum-distance . 15)
+                            (padding . 2)
+                            (stretchability . 2))
 }
 
 partbookBcPaperBlock = \paper {
   print-all-headers = ##t
-  oddHeaderMarkup = \markup { \fill-line { \instrumentNameBc } }
+  oddHeaderMarkup = ""
   evenHeaderMarkup = \oddHeaderMarkup
+  oddFooterMarkup = \markup {
+    \fill-line {
+      \if \should-print-page-number
+      \fromproperty #'page:page-number-string
+    }
+  }
+  evenFooterMarkup = \oddFooterMarkup
   #(set-paper-size '(cons (* 277 mm) (* 364 mm)))
+  top-margin = 3\cm
+  bottom-margin = 3\cm
+  line-width = 237\mm
+  ragged-bottom = ##t
+  ragged-last-bottom = ##t
+  score-markup-spacing = #'((basic-distance . 20)
+                            (minimum-distance . 15)
+                            (padding . 2)
+                            (stretchability . 2))
 }

@@ -232,6 +232,13 @@ vnINIX = \relative {
 }
 
 vnINX = \relative c'' {
+  \time 4/4
+  \key c \major
+  \clef \vnIClef
+  R1*24 \bar "|."
+}
+
+vnINXalt = \relative c'' {
   \time 4/4 \partial 8
   \key c \major
   \clef \vnIClef
@@ -290,14 +297,15 @@ vnINaddXIII = \relative c'' {
   \time 3/4
   \key c \major
   \clef \vnIClef
-  c4 g c | a d b | c8. d16 c8. e16 d8. f16 | e4. d8 c4 | e4. f16 g4 e | a bes8 a g f |
-  e8. d16 c4. b8 | c4. d8 c8. d16 | e8. d16 c8. d16 c8. b16 | a8. b16 a8. c16 b8. d16 | c4 b8. a16 g8. f16 | e8. f16 e8. f16 g8. a16 |
-  b8. c16 d8. e16 d8. f16 | e8. f16 e8. g16 fis8. a16 | g4 g4. fis8 | g8. fis16 g8. a16 g4 | g g4. f16 g | a4. a8 b4 |
-  c4 g8. a16 g8. f16 | e8. f16 e8. d16 c4 | g' g4. f16 g | a4. a8 b4 | c g8. a16 g8. f16 | e8. f16 e8. d16 c4 |
-  e4 e4. e8 | e d4. d8 | d8 c c4. b8 | c4. d8 c4 | c e c | f d g | a g8. f16 e8. f16 |
-  d4 d4. d8 | d4 d4. c16 d | e8. f16 e8. d16 e8. f16 | g8. a16 g4. f8 | e8. d16 c8. b16 a8. d16 | c8. b16 a4. g8 |
-  g2 r8 g' | g4 g4. g8 | g4 f4. f8 | f4 e8. f16 e8. d16 | e8. f16 e8. f16 g8. a16 | g4 g4. g8 | g4 f4. f8 |
-  f4 e8. f16 e8. d16 | e8. f16 e8. f16 g8. a16 | g8. a16 bes4. bes8 | a8. g16 f8. e16 d8. g16 | f8. e16 d4. c8 | c2 c4 \bar "|."
+  c4 g c | a d b | c8.[ d16 c8. e16 d8. f16] | e4. d8 c4 | e8. f16 g4 e | a bes8[ a g f] |
+  e8. d16 c4. b8 | c4. d8 c8. d16 | e8.[ d16 c8. d16 c8. b16] | a8.[ b16 a8. c16 b8. d16] | c4 b8.[ a16 g8. f16] | e8.[ f16 e8. f16 g8. a16] |
+  b8.[ c16 d8. e16 d8. f16] | e8.[ f16 e8. g16 fis8. a16] | g4 g4. fis8 | g8.[ fis16 g8. a16] g4 | g g4. f16 g | a4. a8 b4 |
+  c4 g8.[ a16 g8. f16] | e8.[ f16 e8. d16] c4 | g' g4. f16 g | a4. a8 b4 | c g8.[ a16 g8. f16] | e8.[ f16 e8. d16] c4 |
+
+  e4 e4. e8 | e4 d4. d8 | d8 c c4. b8 | c4. d8 c4 | c e c | f d g | a g8.[ f16 e8. f16] |
+  d4 d4. d8 | d4 d4. c16 d | e8.[ f16 e8. d16 e8. f16] | g8. a16 g4. f8 | e8.[ d16 c8. b16] a8. d16 | c8. b16 a4. g8 |
+  g2 r8 g' | g4 g4. g8 | g4 f4. f8 | f4 e8.[ f16 e8. d16] | e8.[ f16 e8. f16 g8. a16] | g4 g4. g8 | g4 f4. f8 |
+  f4 e8.[ f16 e8. d16] | e8.[ f16 e8. f16 g8. a16] | g8. a16 bes4. bes8 | a8.[ g16 f8. e16 d8. g16] | f8. e16 d4. c8 | c2 c4 \bar "|."
 }
 
 
@@ -392,9 +400,70 @@ vnINXIX = \relative d'' {
   g c, e | f c f | g c, e | f c d8 c | bes4 a g | f2 d'8 c | bes4 a g | f2*3/2 \bar "|."
 }
 
-%% TODO Echo Dance of Furies
+vnINaddXXII = \relative c'' {
+  \time 2/2 \partial 4
+  \key f \major
+  \clef \vnIClef
+  r16 c d e |
+  f8 e16 d c bes a g f8 g16 a bes c d e |
+  f8. g16 g8.-+ f32 g a4 f8. \omit TupletNumber \omit TupletBracket \tuplet 3/2 { c32 d e } |
+  f8. g16 g8.-+ f32 g a4 f8. a16 |
 
-%% TODO The Grove
+  a16 bes a g f g f e d c d e f g a f |
+  bes4~ bes16 g[ f e] d c d e f g a f |
+  bes4~ bes16 a[ g f] e f e d c d e c |
+
+  g'8.[ g16] g8. f16 e f e d c d e c |
+  g'8. g16 g8. \omit TupletNumber \omit TupletBracket \tuplet 3/2 { f32 e d } c16 d es d c bes a g |
+  a8 f r8 r32 f' e d c16 d es d c bes a g |
+
+  a8 f r16 f g a bes a bes c c8.-+ bes32 c |
+  d4 r16 f,16 g a bes a bes c c8.-+ bes32 c |
+  d4~ d16 e[ f d] g8 a16 g f e d c |
+
+  b8 g r8 e'16 f g8 a16 g f e d c |
+  b g[ a b] c d e f g8 f16 e d8.-+[ c16] |
+  c g[ a b] c d e f g8 f16 e d8.-+[ c16] |
+
+  c4 r16 c bes a g f g a bes c d e |
+  f4 r16 c bes a g f g a bes c d e |
+  f4 r8 f16 e d8 es16 d c bes c a |
+
+  bes8 g r d' d es16 d c bes c a |
+  bes8 g r16 d' e f g a bes a g f e d |
+  e8 c r16 d e f g a bes a g f e d |
+
+  e8 c r16 c d e f e f g a8 g16 f |
+  f4.-+ e8 f4 r16 c d e |
+  f e f g a8 g16 f f4.-+ e8 |
+  f2*2 \bar "|."
+}
+
+vnINaddXXIII = \relative a' {
+  \time 2/2 \partial 4
+  \key d \minor
+  \clef \vnIClef
+  a4 |
+  \repeat volta 2 {
+    d8 cis d4 e8 f g4 | a8[ g] f[ e] f[ g] a4 | d, a' bes8[ a] g[ f] |
+    e f g4 b,8 cis d4 |
+    \alternative {
+      { cis2 r4 a }
+      { cis2 r4 e }
+    }
+  }
+  \repeat volta 2 {
+    f8 e f4 g8 e c4 | a'8 g a4 bes8 g e4 |
+    f8 g a4 g8 f e d | cis8 d e4 e4. d8 |
+    \alternative {
+      { d2 r4 e }
+      { d1 }
+    }
+  }
+  \bar "|."
+}
+
+
 
 vnINXX = \relative d'' {
   \time 3/4
@@ -444,7 +513,34 @@ vnINXXIII = \relative d' {
   b cis16 d e fis e d cis8 e fis4 | r8 e fis4 r8 e fis e16 fis | g8 fis16 g fis8 e d2 \bar "|."
 }
 
-%% TODO Mr. Purcell's Farewell
+trumpetINaddFarewell = \relative a' {
+  \time 3/2
+  \key d \minor
+  \clef \vnIClef
+  R1.*2 | a1 a2 | a1. |
+  R1.*16 |
+  r2 e' e | e1 e2 | r2 e e | e1 e2 | r a a | a1 a2~ | a a1 | a1. \bar "|."
+}
+
+oboeINaddFarewell = \relative a'' {
+  \time 3/2
+  \key d \minor
+  \clef \vnIClef
+  R1.*12 |
+  r2 a a | a1 a2 | r2 a a | a1 a2 | r2 a a | a1 a2 | bes g1 | e e2 | R1.*6 |
+  a2 a1 | a1. \bar "|."
+}
+
+vnINaddFarewell = \relative a' {
+  \time 3/2
+  \key d \minor
+  \clef \vnIClef
+  R1.*2 |
+  a1 a2 | a1. | R1. | r2 d c | bes1 a2 |
+  r2 d c | bes d e | f1 fis2 | r g e | cis a1 | R1. |
+  r2 d c | bes1 a2 | r d c | bes1 a2 | r d c | bes1. | a |
+  r2 e' e | e1 e2 | r e e | e1 e2 | r e e | e1 e2~ | e e2. d4 | d1. \bar "|."
+}
 
 vnINXXIV = \relative {
   \time 4/4
@@ -517,7 +613,38 @@ vnINXXIX = \relative d'' {
   es8 d c bes a4 c | f f d d | es2 r4 d8 es | f4 es d c | bes bes2. \bar "|."
 }
 
-%% TODO The Witches Dance
+vnINaddXXXIV = \relative f' {
+  \time 4/4 \partial 4
+  \key bes \major
+  \clef \vnIClef
+  r16 f g a
+  \repeat volta 2 {
+    bes16 bes bes bes bes2 r8 f16 es |
+    d4. d16 f bes,4. f''16 es |
+    d2~ d4 r16 c d es |
+    f4. bes16 f g4. d8 |
+    es2~ es4 r16 d,16 es f |
+    g2 c4. bes8 |
+    a2~ a8 bes'16[ a g f] es8 |
+    d4. g8 e4. f8 |
+    \alternative {
+      { f2 r4 r16 f, g a }
+      { f'1 }
+    }
+  }
+  \time 3/4
+  \repeat volta 2 {
+    bes4 f f | g d d | es c f | d bes2 | f'8 es d4 f |
+    d8 c bes4 d | bes8 a g4 c | a f2
+    \time 2/2 \partial 8
+    g'8 | fis1 | bes2 a4. g8 | g2~ g4. g8 | a2 d,4. d8 | d2. bes'8 a |
+    g4 bes r2 | a4 d, r2 | g4 d g,4. c8 | a2. d8 c | d4 g r2 | c,4 f r2 | f8 g f d c4. bes8 |
+    bes2 bes4 bes'8 a |
+    g4 bes g bes | a g a d, | g d es8 d c bes | a2. g8 fis | g4 g' c, f | bes, es d g | f d es8 d c bes | bes1
+  }
+  \bar "|."
+}
+
 
 vnINXXX = \relative {
   \time 4/4

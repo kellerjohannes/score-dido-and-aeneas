@@ -166,15 +166,15 @@ soloVoiceNV = \relative c'' {
   c16([ g a b] c[ d c d] e[ f]) g8 f16([ es)] d([ c)] |
   c4 r
   \clef \annaClef
-  r8^\annaName c, c8. d16 |
+  r8^\annaName c c8. d16 |
   d4( es) r8 g, g a |
   b4. b8 c8.([ bes16 a8)] bes16([ g)] |
-  fis8 d' bes a g4 r8 bes |
+  fis8 d' bes a g4 r8 \clef \attendantSopranoClef bes^\attendantName |
   bes es, es'8. bes16 c4. des8 |
   c4 r8 c16 c e8([ f)] r8 f |
   b,8. b16 b4
   \clef \didoClef
-  r4^\didoName d'8. d16 |
+  r4^\didoName d8. d16 |
   g8([ f16 es] d[ es f d] es4.) d16([ c)] |
   f4( es16[ d)] es8 d4 r8 d |
   es b c( f,4) f8 g as |
@@ -360,7 +360,6 @@ soloVoiceNIX = \relative {
   \time 4/4
   \key c \major
   \clef \aeneasClef
-
   \autoBeamOff
   r8 e e fis g8. g16 c8 e, |
   g4 r8 g gis gis gis b |
@@ -369,7 +368,7 @@ soloVoiceNIX = \relative {
   r4 cis4 d8 a b g |
   c8.([ b16] a16[ g)] fis([ g)] fis8. a16 d8 c16([ b)] |
   e16([ d c b] a[ g]) fis16([ e)] d8 b' g fis |
-  g2*2 \bar "|."
+  g4*4 \bar "||"
 }
 
 lyricsNIX = \lyricmode {
@@ -380,6 +379,58 @@ lyricsNIX = \lyricmode {
 }
 
 soloVoiceNX = \relative c'' {
+  \time 4/4
+  \key c \major
+  \clef \annaClef
+  \autoBeamOff
+  r2 r4 r8 c^\f |
+  c g c8. c16 e4 r8 c^\p |
+  c g c8. c16 e4 r8 c^\f |
+  b g b16([ c b c] d4) r8 d |
+
+  e8 d e d r4 r8 d | e d16([ e)] f([ e)] d([ c)] c4 r8 c |
+  c g c8. c16 e4 r8 c^\p |
+
+  c g c8. c16 e4 r8 c^\f |
+  b g b16([ c b c] d4) r8 d | e d e d r4 r8 d |
+
+  e8 d16([ e)] f([ d)] d([ c)] c4 r8 g | e e e fis g4 r8 c |
+  a a a b c g a16([ g)] f([ e)] |
+
+  d4 r8 d' b b b c | d4 r8 e c c c d |
+  e8([ f16 e] d[ c b a] gis8) a16([ b]) c([ b)] a8 |
+
+  a4 r8 c^\f c g c8. c16 | e4 r8 c^\p c g c8. c16 | e4 r8 c^\f b g b16([ c b c] |
+  d4) r8 d^\p e d e d | r4 r8 d^\f e d16([ e)] f([ e)] d([ c)] |
+  c4 r8 d^\p e d16([ e)] f([ e)] d([ c)] | c2 r | R1 \bar "||"
+}
+
+lyricsNX = \lyricmode {
+  Pur -- sue thy con -- quest, Love,
+  pur -- sue thy con -- quest, Love,
+  pur -- sue, pur -- sue, pur -- sue thy con -- quest,
+  pur -- sue thy con -- quest, love.
+
+  Pur -- sue thy con -- quest, love,
+  pur -- sue thy con -- quest, love,
+  pur -- sue, pur -- sue, pur -- sue thy con -- quest,
+  pur -- sue thy con -- quest, love.
+
+  Her eyes con -- fess the flame,
+  her eyes con -- fess the flame,
+  her tongue de -- nies,
+  her eyes con -- fess the flame,
+  her eyes con -- fess the flame,
+  her tongue de -- nies.
+
+  Pur -- sue thy con -- quest, love,
+  pur -- sue thy con -- quest, love,
+  pur -- sue, pur -- sue, pur -- sue thy con -- quest,
+  pur -- sue they con -- quest, love,
+  pur -- sue thy con -- quest, love.
+}
+
+soloVoiceNXalt = \relative c'' {
   \time 4/4 \partial 8
   \key c \major
   \clef \annaClef
@@ -416,7 +467,7 @@ soloVoiceNX = \relative c'' {
   c2 r2 \bar "|."
 }
 
-lyricsNX = \lyricmode {
+lyricsNXalt = \lyricmode {
   Pur -- sue thy con -- quest, Love, pur -- sue thy con -- quest, Love,
   pur -- sue, pur -- sue, pur -- sue thy con -- quest,
   pur -- sue thy con -- quest, Love, pur -- sue thy con -- quest,
@@ -747,9 +798,26 @@ soloVoiceNXXIV = \relative a' {
   r4 a2 a8 gis | a4 c2 e8. e,16 | a4 r8 b c16 gis gis gis gis8. a16 |
   b4 \clef \aeneasClef r8^\aeneasName e,, b'4 \clef \spiritClef r8^\spiritName e | b'16 b b c d8. e16 c4 r8 c | cis16 cis cis cis cis8 d d4. cis8 |
   d4 r r b8. b16 | e8 e c8. c16 c bes bes bes bes8. bes16 | c4( bes8.) a16 a4 r8 a |
-  a8 a16 a b8. c16 d8. c16 b4~ | b8 c a gis16([ a)] gis4 r8 b | c16 e,8. a8 gis a4 r |
-  \clef \aeneasClef r4^\aeneasName f,8. g16 a8 a g f | bes4 r8 f g4. c8 | a bes bes a bes2 \bar "|."
-  %% TODO More Recit!
+  a8 a16 a b8. c16 d8. c16 b4~ | b8 c a gis16([ a)] gis4 r8 b | c16 e,8. a8 gis a4
+  \clef \aeneasClef e,8.^\aeneasName e16 |
+  a8 a a16 b8. c4 r8 c | c b c4. d8 d8. e16 | e4 r r8 gis,8 gis4( |
+  gis8.[ a16] b4~ b8.[ a16] gis4) |
+  r8 b b4( b8.[ c16] d4~ | d8.[ c16] b8.) e16 gis,8 gis gis gis |
+  a4 r8 a a16[( g)] g8 g8. fis16 |
+  fis8. fis16 fis4 r4 r8 a |
+  a16 d,8. r8 d16 d g4. a8 |
+  b4 r8 c d16 g,8. c4~ |
+  c8 c c8. b16 c2 |
+  e4 r8 e16 e, f8. f16 f8. e16 |
+  e4 c'2 c16 fis,8. |
+  dis4 r8 b'8 g4. fis16([ e)] |
+  e2 e'4 r8 e16 e |
+  e dis8. e4 r8 b8 gis8. b16 |
+  c4. c16([ gis)] a4 r8 a16 a |
+  d2~ d8. c16([ b c]) b([ a)] |
+  gis4 r8 b16 b e2 |
+  r4 f4~ f8.([ e16 b8. c16)] |
+  b8([ e,)] r gis a2 \bar "|."
 }
 
 lyricsNXXIV = \lyricmode {
@@ -771,7 +839,16 @@ lyricsNXXIV = \lyricmode {
 
   %% Aeneas
   Jove's com -- mands must be o -- bey'd,
-  To -- night, our an -- chors shall be weigh'd.
+  To -- night, our an -- chors shall be weigh'd,
+  but ah!, but ah! what lan -- guage can I try
+  My in -- jur'd Queen to pa -- ci -- fy?
+  No soon -- er she re -- signs her heart,
+  But from her arms I'm forc'd to part.
+  How can so hard a fate be took,
+  one night en -- joy'd, the next for -- sook.
+  Yours be the blame, ye Gods!
+  For I o -- bey your will, but with more ease could dye,
+  but with more, more ease could dye.
 }
 
 soloVoiceNXXV = \relative bes {
@@ -822,7 +899,7 @@ lyricsSoloVoiceINXXVII = \lyricmode {
 
   %% 1st Witch:
   Phœ -- be's pale de -- lu -- ding beams
-  Gli -- ding o'er de -- ceit -- ful streams.
+  Gil -- ding o'er de -- ceit -- ful streams.
 
   E -- lis -- sa's ru -- in'd,
   ho, ho!

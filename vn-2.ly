@@ -223,7 +223,14 @@ vnIINIX = \relative {
   R1*6 \bar "|."
 }
 
-vnIINX = \relative e' {
+vnIINX = \relative c'' {
+  \time 4/4
+  \key c \major
+  \clef \vnIIClef
+  r8 R1*24 \bar "|."
+}
+
+vnIINXalt = \relative e' {
   \time 4/4 \partial 8
   \key c \major
   \clef \vnIIClef
@@ -286,9 +293,14 @@ vnIINaddXIII = \relative e' {
   \key c \major
   \clef \vnIIClef
   e4 e e | f8. g16 a4 g8. f16 | e8. f16 g4 g | g4. f8 e4 | g c c | c4. d8 b4 |
-  c4 b8. a16 g8. f16 | e4. f8 e f | g4 g4. g8 | g4 g4. f8 | e4. f8 d4 | c8. d16 c8. d16 e8. f16 |
+  c4 b8.[ a16 g8. f16] | e4. f8 e f | g4 g4. g8 | g4 g4. f8 | e4. f8 d4 | c8.[ d16 c8. d16 e8. f16] |
+  d4 g4. g8 | g4 a4. b8 | b c a4. c8 | b8.[ a16 b8. a16] b4 | c c4. c8 | c4 d4. d8 |
+  d8 c c4. b8 | c2 g4 | c c4. c8 | c4 d4. d8 | d c c4. b8 | c2 g4 |
 
-
+  c4 c4. b8 | a4 a b | c8 b16 a g4. g8 | g2 g4 | r g a | f bes g | c2 c4 |
+  c c b | c4. d8 b4 | c8.[ d16 c8. b16 c8. a16] | b8.[ c16 d8. c16 b8. a16] | g4. a8 fis4 | g4 g fis |
+  g8.[ a16 b8. c16 d8. b16] | e4 e4. e8 | e4 d4. d8 | d4 c8.[ d16 c8. b16] | c8.[ d16 c8. d16 e8. f16] | e4 e4. e8 | e4 d4. d8 |
+  d4 c8.[ d16 c8. b16] | c8.[ d16 c8. d16 e8. f16] | e8.[ f16 g8. f16 e8. d16] | c4. d8 b4 | c c4. b8 | c2 g4 \bar "|."
 }
 
 
@@ -382,9 +394,65 @@ vnIINXIX = \relative f' {
   g a g | f f a | g a g | f f f | f f e | f2 f4 | f f e | f2*3/2 \bar "|."
 }
 
-%% TODO Echo Dance of Furies
+vnIINaddXXII = \relative a' {
+  \time 2/2 \partial 4
+  \key f \major
+  \clef \vnIIClef
+  r8 a | a f16 g a bes c bes a8 f g16 a bes c |
+  d8. e16 e8.-+ d32 e f4 c16 a bes c |
+  d8. e16 e8.-+ d32 e f4 f,8. f'16 |
 
-%% TODO The Grove
+  f16 d c bes a bes a g f e f g a bes c a |
+  d4~ d16 es[ d c] bes a bes g c bes c a |
+  d4~ d16 g,[ a b] c b c d e d c a |
+
+  d e d c b8[ d] c4. c8 |
+  c16 b c d e d c bes a4 g |
+  f8 c r g' g f f e |
+  f c r c d16 f g a a8.-+ g32 a |
+  bes4 r8 c, d16 e32 f g16 a a8.-+ g32 a |
+  bes4 r8 bes bes4 a |
+
+  g4 r8 g g4 g |
+  g r16 b c d e8 d16 c b8.-+[ c16] |
+  c g'[ f e] d c b a g8 c b8.-+[ c16] |
+
+  c4 r16 a g f e d e f g a bes g |
+  a4 r16 a g f d4 g |
+  a bes bes8 a16 g fis8. g16 |
+
+  g4 r8 bes bes c16 bes a g a fis |
+  g8 d r bes' d c d b |
+  c g r c c4 c |
+
+  c8 g r c c16 c d e f8 e16 d |
+  c8. bes16 bes8. a16 a4 r8 g |
+  a16 g a bes c8 bes16 a g4.-+ a8 |
+  a2*2 \bar "|."
+}
+
+vnIINaddXXIII = \relative f' {
+  \time 2/2 \partial 4
+  \key d \minor
+  \clef \vnIIClef
+  f8 g
+  \repeat volta 2 {
+    a4 a a e' | d a a a |
+    bes8 c d4 c2 | bes4. a8 g4 f |
+    \alternative {
+      { e2 r4 f8 g }
+      { e2 r4 cis'4 }
+    }
+  }
+  \repeat volta 2 {
+    d8 cis d4 e8 g e4 | f8 e d4~ d8 c bes4~ | bes a a g | a bes a4. a8 |
+    \alternative {
+      { a2 r4 cis | }
+      { a1 }
+    }
+  }
+  \bar "|."
+}
 
 vnIINXX = \relative a' {
   \time 3/4
@@ -434,7 +502,39 @@ vnIINXXIII = \relative d' {
   g d g g e a fis d | a'4 r8 a a4 r8 a | g a16 b a8 a a2 \bar "|."
 }
 
-%% TODO Mr. Purcell's Farewell
+trumpetIINaddFarewell = \relative d' {
+  \time 3/2
+  \key d \minor
+  \clef \vnIIClef
+  R1.*2 |
+  d1 d2 | d1. |
+  R1.*16 |
+  r2 a' a | a1 a2 | r a a | a1 a2 | a1. | a1. | a1. | fis1. \bar "|."
+}
+
+oboeIINaddFarewell = \relative fis'' {
+  \time 3/2
+  \key d \minor
+  \clef \vnIIClef
+  R1.*12 |
+  r2 fis fis | fis1 fis2 | r fis fis | fis1 fis2 | r fis fis | fis1 fis2 |
+  g e2. d4 | cis1 cis2 |
+  R1.*6 |
+  d2 cis1 | d1. \bar "|."
+}
+
+vnIINaddFarewell = \relative f' {
+  \time 3/2
+  \key d \minor
+  \clef \vnIIClef
+  R1.*2 |
+  f1 f2 | f1. | R1.*2 | r2 f e | d r r | R1. |
+  r2 d' c | bes1. | a | r2 d c | bes1 a2 |
+  r2 d c | bes1 a2 | r d c | bes1 a2 | g1. | a |
+  r2 cis cis | cis1 cis2 | r2 cis cis | cis1 cis2 | r cis cis |
+  cis1 d2~ | d cis1 | d1. \bar "|."
+}
+
 
 vnIINXXIV = \relative {
   \time 4/4
@@ -509,7 +609,30 @@ vnIINXXIX = \relative bes' {
   c2 r4 f, | a a g g | g2 r4 es | d g f es | d d2. \bar "|."
 }
 
-%% TODO The Witches Dance
+vnIINaddXXXIV = \relative f' {
+  \time 4/4 \partial 4
+  \key bes \major
+  \clef \vnIIClef
+  r4
+  \repeat volta 2 {
+    f1 | f | bes | d2 es4 g, | c1 | es,2 e |
+    f1 | f4 bes g2 |
+    \alternative {
+      { a2 r }
+      { a1 }
+    }
+  }
+  \time 3/4
+  \repeat volta 2 {
+    R2.*2 | c4 f, f | bes d, d | d' bes d |
+    bes f bes | g2. f
+    \time 2/2 \partial 8
+    r8 | d'1 | d4 g g fis | g1 | d2 a | bes1 |
+    bes2 r | a r | bes2. g4 | fis2. bes8 a | bes4 d r2 | f,4 a r2 | d4 bes bes a |
+    bes1 | d1~ | d | d4 bes c8 bes a g | fis2. d4 | d es' a, d | g, c bes bes | bes2 bes4 a | bes1
+  }
+  \bar "|."
+}
 
 vnIINXXX = \relative {
   \time 4/4

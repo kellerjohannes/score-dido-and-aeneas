@@ -1,4 +1,5 @@
 \version "2.24.4"
+\pointAndClickOff
 
 #(set-global-staff-size 25)
 
@@ -12,7 +13,11 @@
 
   \titlePartbook
 
-  \markup { \vspace #1 }
+  \pageBreak
+
+  \titleASA
+
+  \pageBreak
 
   \score {
     \partbookTitleOuverture
@@ -24,6 +29,12 @@
     }
   }
 
+  \pageBreak
+
+  \titleASB
+
+  \pageBreak
+
   \score {
     \partbookTitleNI
     <<
@@ -33,6 +44,12 @@
       indent = #0
     }
   }
+
+  \pageBreak
+
+  \titleASC
+
+  \pageBreak
 
   \score {
     \partbookTitleNII
@@ -74,6 +91,12 @@
     }
   }
 
+  \pageBreak
+
+  \titleASD
+
+  \pageBreak
+
   \score {
     \partbookTitleNVI
     <<
@@ -83,6 +106,12 @@
       indent = #0
     }
   }
+
+  \pageBreak
+
+  \titleASE
+
+  \pageBreak
 
   \score {
     \partbookTitleNVII
@@ -133,6 +162,26 @@
       indent = #0
     }
   }
+
+  \score {
+    \partbookTitleNaddXIII
+    <<
+      \new Staff { \compressMMRests { \vnIINaddXIII } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
+
+  \pageBreak
+
+  \titleASF
+
+  \pageBreak
+
+  \titleASFa
+
+  \pageBreak
 
   \score {
     \partbookTitleNXII
@@ -247,6 +296,36 @@
   }
 
   \score {
+    \partbookTitleNaddXXII
+    <<
+      \new Staff { \compressMMRests { \vnIINaddXXII } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
+
+  \pageBreak
+
+  \titleASG
+
+  \pageBreak
+
+  \titleNaddSolitude
+
+  \pageBreak
+
+  \score {
+    \partbookTitleNaddXXIII
+    <<
+      \new Staff { \compressMMRests { \vnIINaddXXIII } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
+
+  \score {
     \partbookTitleNXX
     <<
       \new Staff { \compressMMRests { \vnIINXX } }
@@ -255,6 +334,12 @@
       indent = #0
     }
   }
+
+  \pageBreak
+
+  \titleASH
+
+  \pageBreak
 
   \score {
     \partbookTitleNXXI
@@ -294,6 +379,24 @@
     }
   }
 
+  \pageBreak
+
+  \titleASI
+
+  \pageBreak
+
+  \score {
+    \partbookTitleNaddFarewell
+    <<
+      \new Staff = "trumpetII" \with { instrumentName = \instrumentNameTrumpetII }
+      \trumpetIINaddFarewell
+      \new Staff = "oboeII" \with { instrumentName = \instrumentNameOboeII }
+      \oboeIINaddFarewell
+      \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
+      \vnIINaddFarewell
+    >>
+  }
+
   \score {
     \partbookTitleNXXIV
     <<
@@ -323,6 +426,12 @@
       indent = #0
     }
   }
+
+  \pageBreak
+
+  \titleASJ
+
+  \pageBreak
 
   \score {
     \partbookTitleNXXVII
@@ -355,6 +464,26 @@
   }
 
   \score {
+    \partbookTitleNaddXXXIV
+    <<
+      \new Staff { \compressMMRests { \vnIINaddXXXIV } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
+
+  \pageBreak
+
+  \titleASJ
+
+  \pageBreak
+
+  \titleASL
+
+  \pageBreak
+
+  \score {
     \partbookTitleNXXX
     <<
       \new Staff { \compressMMRests { \vnIINXXX } }
@@ -363,6 +492,12 @@
       indent = #0
     }
   }
+
+  \pageBreak
+
+  \titleASK
+
+  \pageBreak
 
   \score {
     \partbookTitleNXXXI
@@ -404,13 +539,13 @@
     }
   }
 
-  % \score {
-  %   \partbookTitleNXXXV
-  %   <<
-  %     \new Staff { \compressMMRests { \vnIINXXXV } }
-  %   >>
-  %   \layout {
-  %     indent = #0
-  %   }
-  % }
+  \score {
+    \partbookTitleNXXXV
+    <<
+      \new Staff { \compressMMRests { \vnIINXXXV } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
 }

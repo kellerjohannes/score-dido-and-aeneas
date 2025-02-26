@@ -219,7 +219,14 @@ vlaNIX = \relative {
   R1*6 \bar "|."
 }
 
-vlaNX = \relative g' {
+vlaNX = \relative c'' {
+  \time 4/4
+  \key c \major
+  \clef \vlaClef
+  r8 R1*24 \bar "|."
+}
+
+vlaNXalt = \relative g' {
   \time 4/4 \partial 8
   \key c \major
   \clef \vlaClef
@@ -272,7 +279,20 @@ vlaNXI = \relative c' {
   c4 d d | c c e | d4. d8 e d | c2. \bar "|."
 }
 
-%% TODO The Triumphing Dance
+vlaNaddXIII = \relative g {
+  \time 3/4
+  \key c \major
+  \clef \vlaClef
+  g4 c c | c f d | c4. c8 b4 | c2 g4 | c4. d8 e4 | d4 d4. c8 |
+  c4 g'8.[ f16 e8. d16] | c4 g g | c c4. c8 | d4 d4. d8 | c4. c8 b4 | c g g |
+  g4. a8 b4 | c4. e8 d4 | g,4 d'4. d8 | d4. c8 d4 | e4 e4. f8 | f4 f4. g8 |
+  e4. e8 d4 | c4. d8 e4 | e e4. e8 | e8 c f4. f8 | e4. e8 d4 | c4. d8 e4 |
+
+  g4 g4. g8 | g4 f4. f8 | e4 e4. d8 | e2 c4 | e c f | d g e | e8. f16 g4 g |
+  a4. a8 g4 | f g g | g4. f8 e4 | d4 d4. d8 | e4. c8 d4 | g, d'4. d8 |
+  d4. c8 b d | c4 c4. b8 | a4 g' b | c8. b32 a g4. g8 | g2 g4 | c4 c4. b8 | a4 b4. b8 |
+  c8. b32 a g4. g8 | g2 g4 | c c g | a4. g8 f8. e16 | d8. c16 g'4. g8 | e2 e4 \bar "|."
+}
 
 vlaNXII = \relative c' {
   \time 4/4
@@ -365,9 +385,66 @@ vlaNXIX = \relative bes {
   e4 c c | c a c8 d | e4 c c | c a d | d c c | c2 d4 | d c4. bes8 | a2*3/2 \bar "|."
 }
 
-%% TODO Echo Dance of Furies
+vlaNaddXXII = \relative c' {
+  \time 2/2 \partial 4
+  \key f \major
+  \clef \vlaClef
+  r8 c | c4. c8 d4 c |
+  bes8 a c4 c4. c8 |
+  c8 b c4 c a8. c16 |
 
-%% TODO The Grove
+  c4. c8 d4 c |
+  bes4~ bes8 c d4 c |
+  bes g8 g' a4. a8 |
+
+  g4. g8 g16 a g f e f g f |
+  e f e d c4 c4. c8 |
+  c a r c c4 d8 c |
+
+  c a r a f f' es c |
+  f4 r8 c bes d f4 |
+  f8 f16 e d c bes d c4 c8 f |
+
+  d4 r8 e d4 c8 f |
+  d4 e8 d c a' f8. e16 |
+  e8 g, a b c a' f8. e16 |
+
+  e4 r8 c c4 d |
+  c r8 a bes4 g |
+  d' r8 d d4 a8 d |
+
+  d4 r8 g g4 d |
+  d8 bes r g' g g g g |
+  g e r g16 a bes4 a |
+
+  g8 e r g a4 c8 bes16 a |
+  a8. g16 g8. f16 f4 r8 c8 |
+  c16 bes a g f8 f' c4. c8 |
+  c2*2 \bar "|."
+}
+
+vlaNaddXXIII = \relative d' {
+  \time 2/2 \partial 4
+  \key d \minor
+  \clef \vlaClef
+  d8 e
+  \repeat volta 2 {
+    f4 d d cis | d e d e8 f | g4 f f e8 f | g4. f8 e4 d |
+    \alternative {
+      { a2 r4 d8 e }
+      { a,2 r4 a' }
+    }
+  }
+  \repeat volta 2 {
+    a b c8 g a g | f c f4~ f8 e16 f g4 | cis, cis d4. d8 |
+    e8 f g4 cis,4. d8
+    \alternative {
+      { d2 r4 a'}
+      { d,1 }
+    }
+  }
+  \bar "|."
+}
 
 vlaNXX = \relative f' {
   \time 3/4
@@ -417,8 +494,16 @@ vlaNXXIII = \relative d' {
   g16 a g a b8 b a cis d4 | r8 cis d4 r8 cis d4 | r8 d d cis d2 \bar "|."
 }
 
-
-%% TODO Mr. Purcell's Farewell
+vlaNaddFarewell = \relative d' {
+  \time 3/2
+  \key d \minor
+  \clef \vlaClef
+  R1.*2 |
+  d1 d2 | d1. | r2 d c | bes1 a2 | r d c | bes1 a2 |
+  r2 d c | bes1 a2 | g1. | a2 a' g | fis d1 |
+  R1.*8 |
+  r2 a' g | f1 e2 | r a g | f1 e2 | R1. | r2 a g | fis1. \bar "|."
+}
 
 vlaNXXIV = \relative {
   \time 4/4
@@ -493,7 +578,31 @@ vlaNXXIX = \relative f' {
   c8 bes a g f4 a | d d bes bes | c2 r4 a | bes bes bes a | bes bes2. \bar "|."
 }
 
-%% TODO The Witches Dance
+vlaNaddXXXIV = \relative d' {
+  \time 4/4 \partial 4
+  \key bes \major
+  \clef \vlaClef
+  r4
+  \repeat volta 2 {
+    d1 | bes | f' | bes | bes4 g g2 | c,1 |
+    c2. f4 | f d c c |
+    \alternative {
+      { c2 r }
+      { c1 }
+    }
+  }
+  \time 3/4
+  \repeat volta 2 {
+    R2. | es4 bes bes | c a a | bes bes2 | bes'4 f bes |
+    f d f | es2. | c |
+    \time 2/2 \partial 8
+    r8 | a'2. d,4 | d1 | d | d | d | d2. r4 | d2 r | d bes4 c |
+    d2. d4 | f bes r2 | c,2 d | bes'4 f c2 | d1 |
+    bes'4 g bes g | c,2 a | bes4 g g2 | d'2. a4 | bes bes' f a | d, f f es |
+    f2. f4 | d1 \bar "|."
+  }
+}
+
 
 vlaNXXX = \relative {
   \time 4/4

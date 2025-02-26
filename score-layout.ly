@@ -1,6 +1,6 @@
 \version "2.24.4"
 
-#(set-global-staff-size 16)
+#(set-global-staff-size 19)
 
 \include "global-definitions.ly"
 \include "vn-1.ly"
@@ -371,20 +371,10 @@
   \score {
     \scoreTitleNX
     <<
-      \new StaffGroup = "strings"
-      <<
-        \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
-        \vnINX
-        \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
-        \vnIINX
-        \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
-        \vlaNX
-      >>
-      \new Staff = "anna" \with { instrumentName = \annaName }
-      \new Voice = "voice"
+      \new Staff = "voiceStaff" \with { instrumentName = \annaName }
+      \new Voice= "voice"
       \soloVoiceNX
       \new Lyrics \lyricsto "voice" { \lyricsNX }
-
       \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
       \bcNX
       \new FiguredBass { \figuresNX }
@@ -396,6 +386,36 @@
       }
     }
   }
+
+  % NXalt: only in 1841 edition with orchestra.
+  % \score {
+  %   \scoreTitleNX
+  %   <<
+  %     \new StaffGroup = "strings"
+  %     <<
+  %       \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
+  %       \vnINX
+  %       \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
+  %       \vnIINX
+  %       \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
+  %       \vlaNX
+  %     >>
+  %     \new Staff = "anna" \with { instrumentName = \annaName }
+  %     \new Voice = "voice"
+  %     \soloVoiceNX
+  %     \new Lyrics \lyricsto "voice" { \lyricsNX }
+
+  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+  %     \bcNX
+  %     \new FiguredBass { \figuresNX }
+  %   >>
+  %   \layout {
+  %     \context {
+  %       \Staff
+  %       \RemoveAllEmptyStaves
+  %     }
+  %   }
+  % }
 
   \score {
     \scoreTitleNXI
@@ -443,10 +463,22 @@
     }
   }
 
-  %% TODO
   \score {
     \scoreTitleNaddXIII
-    { s1 }
+    <<
+      \new StaffGroup
+      <<
+        \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
+        \vnINaddXIII
+        \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
+        \vnIINaddXIII
+        \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
+        \vlaNaddXIII
+        \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+        \bcNaddXIII
+        \new FiguredBass { \figuresNaddXIII }
+      >>
+    >>
   }
 
   \pageBreak
@@ -762,7 +794,20 @@
 
   \score {
     \scoreTitleNaddXXII
-    { s1 }
+    <<
+      \new StaffGroup
+      <<
+        \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
+        \vnINaddXXII
+        \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
+        \vnIINaddXXII
+        \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
+        \vlaNaddXXII
+        \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+        \bcNaddXXII
+        \new FiguredBass { \figuresNaddXXII }
+      >>
+    >>
   }
 
   \pageBreak
@@ -777,7 +822,20 @@
 
   \score {
     \scoreTitleNaddXXIII
-    { s1 }
+    <<
+      \new StaffGroup
+      <<
+        \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
+        \vnINaddXXIII
+        \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
+        \vnIINaddXXIII
+        \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
+        \vlaNaddXXIII
+        \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+        \bcNaddXXIII
+        \new FiguredBass { \figuresNaddXXIII }
+      >>
+    >>
   }
 
   \score {
@@ -954,7 +1012,33 @@
 
   \score {
     \scoreTitleNaddFarewell
-    { s1 }
+    <<
+      \new StaffGroup
+      <<
+        \new Staff = "trumpetI" \with { instrumentName = \instrumentNameTrumpetI }
+        \trumpetINaddFarewell
+        \new Staff = "trumpetII" \with { instrumentName = \instrumentNameTrumpetII }
+        \trumpetIINaddFarewell
+        \new Staff = "oboeI" \with { instrumentName = \instrumentNameOboeI }
+        \oboeINaddFarewell
+        \new Staff = "oboeII" \with { instrumentName = \instrumentNameOboeII }
+        \oboeIINaddFarewell
+      >>
+      \new Staff = "timp" \with { instrumentName = \instrumentNameTimpani }
+      \timpaniNaddFarewell
+      \new StaffGroup
+      <<
+        \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
+        \vnINaddFarewell
+        \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
+        \vnIINaddFarewell
+        \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
+        \vlaNaddFarewell
+        \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+        \bcNaddFarewell
+        \new FiguredBass { \figuresNaddFarewell }
+      >>
+    >>
   }
 
   \score {
@@ -1150,7 +1234,26 @@
 
   \score {
     \scoreTitleNaddXXXIV
-    { s1 }
+    <<
+      \new StaffGroup = "strings"
+      <<
+        \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
+        \vnINaddXXXIV
+        \new Staff = "vnII" \with { instrumentName = \instrumentNameVnII }
+        \vnIINaddXXXIV
+        \new Staff = "vla" \with { instrumentName = \instrumentNameVla }
+        \vlaNaddXXXIV
+        \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+        \bcNaddXXXIV
+        \new FiguredBass { \figuresNaddXXXIV }
+      >>
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
   }
 
   \pageBreak
@@ -1164,7 +1267,7 @@
   \pageBreak
 
   \score {
-    \scoreTitleNXXVII
+    \scoreTitleNXXX
     <<
       \new Staff = "topVoice" \with { instrumentName = \didoName }
       \new Voice= "voiceOne"
@@ -1215,7 +1318,7 @@
   }
 
   \score {
-    \scoreTitleNXXIX
+    \scoreTitleNXXXII
     <<
       \new StaffGroup = "strings"
       <<

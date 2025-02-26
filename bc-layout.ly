@@ -1,4 +1,5 @@
 \version "2.24.4"
+\pointAndClickOff
 
 #(set-global-staff-size 25)
 
@@ -12,7 +13,11 @@
 
   \titlePartbook
 
-  \markup { \vspace #1 }
+  \pageBreak
+
+  \titleASA
+
+  \pageBreak
 
   \score {
     \partbookTitleOuverture
@@ -24,6 +29,12 @@
       indent = #0
     }
   }
+
+  \pageBreak
+
+  \titleASB
+
+  \pageBreak
 
   \score {
     \partbookTitleNI
@@ -42,6 +53,12 @@
       }
     }
   }
+
+  \pageBreak
+
+  \titleASC
+
+  \pageBreak
 
   \score {
     \partbookTitleNII
@@ -109,6 +126,12 @@
     }
   }
 
+  \pageBreak
+
+  \titleASD
+
+  \pageBreak
+
   \score {
     \scoreTitleNVI
     <<
@@ -133,6 +156,12 @@
       }
     }
   }
+
+  \pageBreak
+
+  \titleASE
+
+  \pageBreak
 
   \score {
     \scoreTitleNVII
@@ -210,6 +239,21 @@
       \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
       \bcNXI
       \new FiguredBass { \figuresNXI }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
+
+  \score {
+    \scoreTitleNaddXIII
+    <<
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNaddXIII
+      \new FiguredBass { \figuresNaddXIII }
     >>
     \layout {
       \context {
@@ -366,6 +410,56 @@
   }
 
   \score {
+    \scoreTitleNaddXXII
+    <<
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNaddXXII
+      \new FiguredBass { \figuresNaddXXII }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
+
+  \pageBreak
+
+  \titleASG
+
+  \pageBreak
+
+  \titleNaddSolitude
+
+  \pageBreak
+
+  \score {
+    \scoreTitleNaddXXIII
+    <<
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNaddXXIII
+      \new FiguredBass { \figuresNaddXXIII }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
+
+  \pageBreak
+
+  \titleASF
+
+  \pageBreak
+
+  \titleASFa
+
+  \pageBreak
+
+  \score {
     \scoreTitleNXX
     <<
       \new Staff \with { instrumentName = \annaName }
@@ -384,6 +478,12 @@
       }
     }
   }
+
+  \pageBreak
+
+  \titleASH
+
+  \pageBreak
 
   \score {
     \scoreTitleNXXI
@@ -436,6 +536,27 @@
       \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
       \bcNXXIII
       \new FiguredBass { \figuresNXXIII }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
+
+  \pageBreak
+
+  \titleASI
+
+  \pageBreak
+
+  \score {
+    \scoreTitleNaddFarewell
+    <<
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNaddFarewell
+      \new FiguredBass { \figuresNaddFarewell }
     >>
     \layout {
       \context {
@@ -500,6 +621,12 @@
     }
   }
 
+  \pageBreak
+
+  \titleASJ
+
+  \pageBreak
+
   \score {
     \scoreTitleNXXVII
     <<
@@ -560,6 +687,32 @@
   }
 
   \score {
+    \scoreTitleNaddXXXIV
+    <<
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNaddXXXIV
+      \new FiguredBass { \figuresNaddXXXIV }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
+
+  \pageBreak
+
+  \titleASJ
+
+  \pageBreak
+
+  \titleASL
+
+  \pageBreak
+
+
+  \score {
     \scoreTitleNXXX
     <<
       \new Staff \with { instrumentName = \didoName }
@@ -582,6 +735,12 @@
       }
     }
   }
+
+  \pageBreak
+
+  \titleASK
+
+  \pageBreak
 
   \score {
     \scoreTitleNXXXI
@@ -653,18 +812,18 @@
     }
   }
 
-  % \score {
-  %   \scoreTitleNXXXV
-  %   <<
-  %     \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
-  %     \bcNXXXV
-  %     \new FiguredBass { \figuresNXXXV }
-  %   >>
-  %   \layout {
-  %     \context {
-  %       \Staff
-  %       \RemoveAllEmptyStaves
-  %     }
-  %   }
-  % }
+  \score {
+    \scoreTitleNXXXV
+    <<
+      \new Staff = "bc" \with { instrumentName = \instrumentNameBc }
+      \bcNXXXV
+      \new FiguredBass { \figuresNXXXV }
+    >>
+    \layout {
+      \context {
+        \Staff
+        \RemoveAllEmptyStaves
+      }
+    }
+  }
 }

@@ -139,7 +139,6 @@ chorusBNXI = \relative c {
 }
 
 lyricsBNXI = \lyricmode {
-  %% TODO To be double checked, copied from chorusS
   To the hills and the vales, to the rocks and the moun -- tains,
   To the mu -- si -- cal groves and the cool sha -- dy foun -- tains,
   Let the tri -- umphs, let the tri -- umphs,

@@ -563,7 +563,7 @@ bcNIX = \relative e {
   a'4. g8 fis4 g |
   e c d b8 g |
   c2 d |
-  g,2*2 \bar "|."
+  g,4*4 \bar "||"
 }
 
 figuresNIX = \figuremode {
@@ -574,7 +574,23 @@ figuresNIX = \figuremode {
   s1
 }
 
-bcNX = \relative c {
+bcNX = \relative g {
+  \time 4/4
+  \key c \major
+  \clef \bcClef
+  s4 g8 a g f e d | c4 r8 c c g c8. c16 | e4 r8 c c g c e |
+  g4. g8 g d g b | c4 r8 g a g a g16 f | e8 f g g, c2~ | c4 r8 c c g c8. c16 |
+  e4 r8 c c g c e | g4 r8 g g d g b | c4. g8 a g a g16 f |
+  e8 f g g, c2~ | c4 r8 c b b b c | d4 r8 g e e e f |
+  g b, d d, g4 r8 g' | fis fis fis gis a4 a,8 b | c c c d e f d e |
+  a, a' g f e d c c | c g c8. c16 e4 r8 c | c g c e g4 r8 g |
+  g d g b c4. g8 | a g a g16 f e8 f g g, | c g' c b a f g g, | c d e c f d g g, | d2*2 \bar "||"
+}
+
+figuresNX = \figuremode {
+}
+
+bcNXalt = \relative c {
   \time 4/4 \partial 8
   \key c \major
   \clef \bcClef
@@ -613,7 +629,7 @@ bcNX = \relative c {
   c2 r2 \bar "|."
 }
 
-figuresNX = \figuremode {
+figuresNXalt = \figuremode {
   s8 | s2 s8 < 6 4 >8 s4 |
   < 6 >2 s8 < 6 4 >4 < 6 >8 |
   s2 s8 < 6 4 >4 < 6 >8 |
@@ -684,7 +700,23 @@ figuresNXI = \figuremode {
   s2. | s4 < 6 >2 | < 6 5 3 >4 \ext < 6 5 4- >8 < 5 > < 6 4 > < 7 _! > | s2.
 }
 
-%% TODO The Triumphing Dance
+bcNaddXIII = \relative c {
+  \time 3/4
+  \key c \major
+  \clef \bcClef
+  c4 e c | f d g | a e g | c,2 c4 | c e c | f d g |
+  a e g | c,2 c4 | c e c | f d g | a e g | c,2 c4 |
+  g4 b g | c a d | e b d | g,2 g4 | c e c | f d g |
+  a e g | c,2 c4 | c e c | f d g | a e g | c,2 c4 |
+
+  c4 e c | f d g | a e g | c,2 c4 | R2.*2 | c4 e c |
+  f d g | a e g | c,2 c4 | g b g | c a d | e b d |
+  g,2 g4 | c e c | f d g | a e g | c,2 c4 | c e c | f d g |
+  a e g | c,2 c4 | c e c | f d g | a e g | c,2 c4 \bar "|."
+}
+
+figuresNaddXIII = \figuremode {
+}
 
 bcNXII = \relative f, {
   \time 4/4
@@ -805,7 +837,7 @@ bcNXVIII = \relative d {
     c a | bes g | e f | bes c | f d | g c, |
     f bes, | e a, | d2. g,4 | a1 |
     \alternative {
-      { d4. e8 f2 }
+      { d2 r2 }
       { d,1 }
     }
   }
@@ -834,9 +866,48 @@ figuresNXIX = \figuremode {
   < 5 3 >4 < 6 > < 4 2 > | < 6 >2. | s4 < 6 > < 4 2 > | < 6 >2. | s4 < 6 4 > < 5 3 > | s2. | s4 < 6 4 > < 7 > | s2. |
 }
 
-%% TODO Echo Dance of Furies
+bcNaddXXII = \relative f, {
+  \time 2/2 \partial 4
+  \key f \major
+  \clef \bcClef
+  r4 | f2. f'8 e | d4 c f4. e8 | d4 c f2 |
+  f,4. f'8 bes4 a | g g,8 a bes4 a | g a8 b c4 c' |
+  b g c2 | c,4. d8 e4 c | f2 e |
+  f4. es8 d4 c | bes4. a8 g4 f | bes g e f |
 
-%% TODO The Grove
+  g4. f8 e4 f | g a b8 c g4 | c4. d8 e f g g, |
+  c2~ c4 bes | a f f' e | d4. e8 fis4 d |
+  g g, c d | g, a bes b | c c'2 b4 |
+  c4. bes8 a4 f | c2 f4. e8 | d4 a c2 | f,2*2 \bar "|."
+}
+
+figuresNaddXXII = \figuremode {
+}
+
+bcNaddXXIII = \relative d {
+  \time 2/2 \partial 4
+  \key d \minor
+  \clef \bcClef
+  r4
+  \repeat volta 2 {
+    d2 a' | b4 cis d c | bes2 a | g g, |
+    \alternative {
+      { a'4. bes8 a g f e }
+      { a,2 r4 a }
+    }
+  }
+  \repeat volta 2 {
+    d2 c | f g | a bes | a4 g a a,
+    \alternative {
+      { d2 r4 a }
+      { d1 }
+    }
+  }
+  \bar "|."
+}
+
+figuresNaddXXIII = \figuremode {
+}
 
 bcNXX = \relative d {
   \time 3/4
@@ -867,13 +938,13 @@ bcNXX = \relative d {
 }
 
 figuresNXX = \figuremode {
-  % s2. | < _+ > | < _+ > | < _+ >2 < 6 >4 | < 6 >2 < 6 >4 | < 5 3 > < 5 2 > \ext < 5 2 > | < 7 >4 < 6 >2 | < _+ >4 \extOn 8 8 8 8 \extOff |
-  % s4. < _+ > | < _+ >2. | < _+ > | < _+ >2 < 6 >4 | s4 < _+ >2 | < 5 3 >4 < 5 2 > \ext 4 | < 7 >4. \ext 8 < 5 >4 | < 6 4 > < 5 _+ >2 |
-  % < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2. | < _ >4 \extOn 4 4 \extOff | < 7 >4 < 6 > < 6 > | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5! _+ > | s2 < 6 >4 |
-  % < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2. | < 6 >4 \ext 4 < 7 > | < 7 _+ > < 6 >2 | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5 _+ > | < _ >4 \extOn 4 4 \extOff |
+                                % s2. | < _+ > | < _+ > | < _+ >2 < 6 >4 | < 6 >2 < 6 >4 | < 5 3 > < 5 2 > \ext < 5 2 > | < 7 >4 < 6 >2 | < _+ >4 \extOn 8 8 8 8 \extOff |
+                                % s4. < _+ > | < _+ >2. | < _+ > | < _+ >2 < 6 >4 | s4 < _+ >2 | < 5 3 >4 < 5 2 > \ext 4 | < 7 >4. \ext 8 < 5 >4 | < 6 4 > < 5 _+ >2 |
+                                % < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2. | < _ >4 \extOn 4 4 \extOff | < 7 >4 < 6 > < 6 > | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5! _+ > | s2 < 6 >4 |
+                                % < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2. | < 6 >4 \ext 4 < 7 > | < 7 _+ > < 6 >2 | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5 _+ > | < _ >4 \extOn 4 4 \extOff |
 
-  % < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2 \ext 4 | < _ >4 \extOn 4 4 \extOff | < 7 >4. < 6 >8 \ext 8 < 6! > | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5! _+ > | < _ >4. \extOn 8 8 8 \extOff |
-  % < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2 \ext 4 | < 6 >2 < 7 >4 | < 7 _+ >4 < 6 > < 4 2 >8 < 5 3 > | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5 _+ > | s2. |
+                                % < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2 \ext 4 | < _ >4 \extOn 4 4 \extOff | < 7 >4. < 6 >8 \ext 8 < 6! > | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5! _+ > | < _ >4. \extOn 8 8 8 \extOff |
+                                % < _+ >2. | < _ >4 \extOn 4 4 \extOff | < _! >2 \ext 4 | < 6 >2 < 7 >4 | < 7 _+ >4 < 6 > < 4 2 >8 < 5 3 > | < _+ >4. \ext 8 < 6 >4 | s4 < 6 4 > < 5 _+ > | s2. |
 }
 
 bcNXXI = \relative d {
@@ -897,7 +968,30 @@ bcNXXI = \relative d {
 figuresNXXI = \figuremode {
 }
 
-%% TODO Mr. Purcell's Farewell
+timpaniNaddFarewell = \relative d {
+  \time 3/2
+  \key d \minor
+  \clef \bcClef
+  \repeat unfold 10 { d2 r r | }
+  R1.*2 |
+  d2 r r |
+  R1.*12 |
+  r1 d4 d8 d | d2 a1 | d1. \bar "|."
+}
+
+bcNaddFarewell = \relative d {
+  \time 3/2
+  \key d \minor
+  \clef \bcClef
+  \repeat unfold 10 { d2 r r | }
+  R1.*2 |
+  \repeat unfold 6 { d2 r r | }
+  R1.*2 |
+  r2 a' g | f1 e2 | r a g | f1 e2 | r a g | f1 d2~ | d a1 | d,1. \bar "|."
+}
+
+figuresNaddFarewell = \figuremode {
+}
 
 bcNXXII = \relative d, {
   \time 4/4
@@ -950,7 +1044,12 @@ bcNXXIV = \relative a, {
   e~ | e2 a~ | a1 |
   d4 d8. d16 g2 | c,1~ | c2 f~ |
   f d | d e | e, a |
-  f1 | d'2 es f bes, \bar "|."
+  a1~ | a4. g8 f2 | e e' | dis e~ |
+  e2 f | e d | cis1 | d2. c4 |
+  b2. a4 | g2~ g8 f' e4 | d g c,2~ |
+  c~ c4 b |
+  c a gis a | b g a b | e,1~ | e |
+  e'2 f~ | f4 fis gis a | e2 cis | d e~ | e4 e, a2 \bar "|."
 }
 
 figuresNXXIV = \figuremode {
@@ -958,13 +1057,13 @@ figuresNXXIV = \figuremode {
   < _+ >1 | s1 | < _+ > |
   s1 | < 8 >2 < 7- > | s1 |
   s2 < 6 > | < 6 >4 < 5 > < _+ >2 | < 6 4 >4 < _+ > s2 |
-  s1 | < 6- >2 < 5 >4 < 6 > | < 5 3 >8 < 6 4- > \ext < 7- 4- > \ext < 7- 3 > s2 |
 }
 
 bcNXXV = \relative f {
   \time 3/4 \partial 4
   \key bes \major
   \clef \bcClef
+  \override Staff.VerticalAxisGroup.remove-first = ##f
   r4 | R2.*9 |
   r4 r f8 g | a4 a a8 bes | c4 c d8 a | bes4 c c, | f2.~ | f | f, | bes2 bes'8 as | g4 g g8 f | es4. d8 c4 |
   bes2 bes8 c | d4 d d8 e | f2 es4 | des2. | c | d | es | f | f,~^\markup { 7x } | f~ |
@@ -1091,8 +1190,32 @@ figuresNXXIX = \figuremode {
   s1*2 | s2. < 6 >4 | < 6 >2 < 6 4 >4 < 7 > | s1 |
 }
 
+bcNaddXXXIV = \relative bes, {
+  \time 4/4 \partial 4
+  \key bes \major
+  \clef \bcClef
+  r4
+  \repeat volta 2 {
+    bes1 | bes | bes | bes2 es4. d8 | c1 | c | f | bes,2 c |
+    \alternative {
+      { f,2 r | }
+      { f1 }
+    }
+  }
+  \time 3/4
+  \repeat volta 2 {
+    R2.*4 | bes'4 bes, bes |
+    bes' bes, bes | es2 c4 | f2.
+    \time 2/2 \partial 8
+    r8 | d4 d8 c bes c bes a | g2 d | g4 g8 a bes4 g | fis1 | g4 g8 a bes4 g |
+    g' g,8 a bes4 g | fis2 d'8 c bes a | g2. es'4 | d1 | bes4 g g g' | a f bes bes, |
+    d es f f, | bes1 |
+    g1~ | g2 fis | g c | d1 | g4 es f d | g a bes es, | d bes f' f, | bes1 \bar "|."
+  }
+}
 
-%% TODO The Witches Dance
+figuresNaddXXXIV = \figuremode {
+}
 
 bcNXXX = \relative g, {
   \time 4/4

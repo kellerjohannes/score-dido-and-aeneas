@@ -1,6 +1,7 @@
 \version "2.24.4"
+\pointAndClickOff
 
-#(set-global-staff-size 25)
+#(set-global-staff-size 24)
 
 \include "global-definitions.ly"
 \include "vn-1.ly"
@@ -12,7 +13,11 @@
 
   \titlePartbook
 
-  \markup { \vspace #1 }
+  \pageBreak
+
+  \titleASA
+
+  \pageBreak
 
   \score {
     \partbookTitleOuverture
@@ -24,6 +29,12 @@
     }
   }
 
+  \pageBreak
+
+  \titleASB
+
+  \pageBreak
+
   \score {
     \partbookTitleNI
     <<
@@ -33,6 +44,12 @@
       indent = #0
     }
   }
+
+  \pageBreak
+
+  \titleASC
+
+  \pageBreak
 
   \score {
     \partbookTitleNII
@@ -74,6 +91,12 @@
     }
   }
 
+  \pageBreak
+
+  \titleASD
+
+  \pageBreak
+
   \score {
     \partbookTitleNVI
     <<
@@ -83,6 +106,12 @@
       indent = #0
     }
   }
+
+  \pageBreak
+
+  \titleASE
+
+  \pageBreak
 
   \score {
     \partbookTitleNVII
@@ -97,19 +126,10 @@
   \score {
     \partbookTitleNVIII
     <<
-      \new Staff
-      \new Voice = "vn"
-      \compressMMRests { \vnINVIII }
-      \new Lyrics \lyricsto "vn" { \lyricsvnINVIII }
+      \new Staff \compressMMRests { \vnINVIII }
     >>
     \layout {
       indent = #0
-      %% Prototype for lyrics in instrumental parts.
-      \context {
-        \Score
-        \override LyricText.font-size = #'-1.0
-        \override LyricText.font-shape = #'italic
-      }
     }
   }
 
@@ -142,6 +162,26 @@
       indent = #0
     }
   }
+
+  \score {
+    \partbookTitleNaddXIII
+    <<
+      \new Staff { \compressMMRests { \vnINaddXIII } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
+
+  \pageBreak
+
+  \titleASF
+
+  \pageBreak
+
+  \titleASFa
+
+  \pageBreak
 
   \score {
     \partbookTitleNXII
@@ -256,6 +296,36 @@
   }
 
   \score {
+    \partbookTitleNaddXXII
+    <<
+      \new Staff { \compressMMRests { \vnINaddXXII } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
+
+  \pageBreak
+
+  \titleASG
+
+  \pageBreak
+
+  \titleNaddSolitude
+
+  \pageBreak
+
+  \score {
+    \partbookTitleNaddXXIII
+    <<
+      \new Staff { \compressMMRests { \vnINaddXXIII } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
+
+  \score {
     \partbookTitleNXX
     <<
       \new Staff { \compressMMRests { \vnINXX } }
@@ -264,6 +334,12 @@
       indent = #0
     }
   }
+
+  \pageBreak
+
+  \titleASH
+
+  \pageBreak
 
   \score {
     \partbookTitleNXXI
@@ -303,6 +379,24 @@
     }
   }
 
+  \pageBreak
+
+  \titleASI
+
+  \pageBreak
+
+  \score {
+    \partbookTitleNaddFarewell
+    <<
+      \new Staff = "trumpetI" \with { instrumentName = \instrumentNameTrumpetI }
+      \trumpetINaddFarewell
+      \new Staff = "oboeI" \with { instrumentName = \instrumentNameOboeI }
+      \oboeINaddFarewell
+      \new Staff = "vnI" \with { instrumentName = \instrumentNameVnI }
+      \vnINaddFarewell
+    >>
+  }
+
   \score {
     \partbookTitleNXXIV
     <<
@@ -332,6 +426,12 @@
       indent = #0
     }
   }
+
+  \pageBreak
+
+  \titleASJ
+
+  \pageBreak
 
   \score {
     \partbookTitleNXXVII
@@ -364,6 +464,26 @@
   }
 
   \score {
+    \partbookTitleNaddXXXIV
+    <<
+      \new Staff { \compressMMRests { \vnINaddXXXIV } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
+
+  \pageBreak
+
+  \titleASK
+
+  \pageBreak
+
+  \titleASL
+
+  \pageBreak
+
+  \score {
     \partbookTitleNXXX
     <<
       \new Staff { \compressMMRests { \vnINXXX } }
@@ -372,6 +492,12 @@
       indent = #0
     }
   }
+
+  \pageBreak
+
+  \titleASM
+
+  \pageBreak
 
   \score {
     \partbookTitleNXXXI
@@ -413,13 +539,13 @@
     }
   }
 
-  % \score {
-  %   \partbookTitleNXXXV
-  %   <<
-  %     \new Staff { \compressMMRests { \vnINXXXV } }
-  %   >>
-  %   \layout {
-  %     indent = #0
-  %   }
-  % }
+  \score {
+    \partbookTitleNXXXV
+    <<
+      \new Staff { \compressMMRests { \vnINXXXV } }
+    >>
+    \layout {
+      indent = #0
+    }
+  }
 }
