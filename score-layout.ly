@@ -1,4 +1,5 @@
 \version "2.24.4"
+\pointAndClickOff
 
 #(set-global-staff-size 19)
 

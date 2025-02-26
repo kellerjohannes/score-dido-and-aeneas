@@ -162,7 +162,7 @@ titleNXXIII = "27. «Haste to town» (Belinda, Chorus)"
 titleASI = "Sakaï: I. Ode"
 titleNaddFarewell = "Jeremiah Clarke: «Come along» (Mr. Purcell's farewell)"
 %%titleNXXIV = \markup { \concat { N \super o } \hspace #-2 . 24, Recitative. }
-titleNXXIV = "28. «Stay prince and hear great Jove» (Spirig, Æneas)"
+titleNXXIV = "28. «Stay prince and hear great Jove» (Spirit, Æneas)"
 %%titleNXXV = \markup { \concat { N \super o } \hspace #-2 . 25, Song & Chorus. }
 titleNXXV = "29. «Come away fellow sailors» (Sailor, Chorus)"
 %%titleNXXVI = \markup { \concat { N \super o } \hspace #-2 . 26, Dance. }
@@ -684,13 +684,6 @@ partbookTitleNXXXV = \header {
 
 scorePaperBlock = \paper {
   print-all-headers = ##t
-  #(set-default-paper-size "a4")
-  #(set-paper-size '(cons (* 277 mm) (* 364 mm)))
-}
-
-
-partbookVnIPaperBlock = \paper {
-  print-all-headers = ##t
   oddHeaderMarkup = ""
   evenHeaderMarkup = \oddHeaderMarkup
   oddFooterMarkup = \markup {
@@ -701,41 +694,23 @@ partbookVnIPaperBlock = \paper {
   }
   evenFooterMarkup = \oddFooterMarkup
   #(set-paper-size '(cons (* 277 mm) (* 364 mm)))
-  top-margin = 3\cm
+  top-margin = 2\cm
   bottom-margin = 3\cm
   line-width = 237\mm
-  ragged-bottom = ##t
+  %%ragged-bottom = ##t
   ragged-last-bottom = ##t
+  system-system-spacing = #'((basic-distance . 18)
+                             (minimum-distance . 12)
+                             (padding . 1)
+                             (stretchability . 60))
   score-markup-spacing = #'((basic-distance . 20)
                             (minimum-distance . 15)
                             (padding . 2)
                             (stretchability . 2))
 }
 
-partbookVnIIPaperBlock = \paper {
-  print-all-headers = ##t
-  oddHeaderMarkup = ""
-  evenHeaderMarkup = \oddHeaderMarkup
-  oddFooterMarkup = \markup {
-    \fill-line {
-      \if \should-print-page-number
-      \fromproperty #'page:page-number-string
-    }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-  #(set-paper-size '(cons (* 277 mm) (* 364 mm)))
-  top-margin = 3\cm
-  bottom-margin = 3\cm
-  line-width = 237\mm
-  ragged-bottom = ##t
-  ragged-last-bottom = ##t
-  score-markup-spacing = #'((basic-distance . 20)
-                            (minimum-distance . 15)
-                            (padding . 2)
-                            (stretchability . 2))
-}
 
-partbookVlaPaperBlock = \paper {
+partbookPaperBlock = \paper {
   print-all-headers = ##t
   oddHeaderMarkup = ""
   evenHeaderMarkup = \oddHeaderMarkup
@@ -750,31 +725,14 @@ partbookVlaPaperBlock = \paper {
   top-margin = 3\cm
   bottom-margin = 3\cm
   line-width = 237\mm
-  ragged-bottom = ##t
+  %ragged-bottom = ##t
   ragged-last-bottom = ##t
-  score-markup-spacing = #'((basic-distance . 20)
-                            (minimum-distance . 15)
-                            (padding . 2)
-                            (stretchability . 2))
-}
-
-partbookBcPaperBlock = \paper {
-  print-all-headers = ##t
-  oddHeaderMarkup = ""
-  evenHeaderMarkup = \oddHeaderMarkup
-  oddFooterMarkup = \markup {
-    \fill-line {
-      \if \should-print-page-number
-      \fromproperty #'page:page-number-string
-    }
-  }
-  evenFooterMarkup = \oddFooterMarkup
-  #(set-paper-size '(cons (* 277 mm) (* 364 mm)))
-  top-margin = 3\cm
-  bottom-margin = 3\cm
-  line-width = 237\mm
-  ragged-bottom = ##t
-  ragged-last-bottom = ##t
+  page-breaking = #ly:page-turn-breaking
+  markup-system-spacing.basic-distance = 14\mm
+  system-system-spacing = #'((basic-distance . 14)
+                             (minimum-distance . 12)
+                             (padding . 1)
+                             (stretchability . 60))
   score-markup-spacing = #'((basic-distance . 20)
                             (minimum-distance . 15)
                             (padding . 2)

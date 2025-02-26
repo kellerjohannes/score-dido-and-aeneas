@@ -227,7 +227,7 @@ vnIINX = \relative c'' {
   \time 4/4
   \key c \major
   \clef \vnIIClef
-  r8 R1*24 \bar "|."
+  R1*24 \bar "|."
 }
 
 vnIINXalt = \relative e' {

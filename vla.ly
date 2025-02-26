@@ -223,7 +223,7 @@ vlaNX = \relative c'' {
   \time 4/4
   \key c \major
   \clef \vlaClef
-  r8 R1*24 \bar "|."
+  R1*24 \bar "|."
 }
 
 vlaNXalt = \relative g' {
@@ -639,7 +639,7 @@ vlaNXXXIV = \relative g {
   \time 3/2 \partial 2
   \key g \minor
   \clef \vlaClef
-  r2 | r1.*4 | g1 g2 | a1 g2 | g1 g2 |
+  r2 | R1.*4 | g1 g2 | a1 g2 | g1 g2 |
   a1 g2 | g1 fis2 | g g' es | a,1 a2 | bes c1 | a bes2 | a a1 | bes2 a g | a1 a2 | g1 g2 | a1 g2 |
   g1 fis2 | g g' es | es d a | bes c1 | a bes2 | a a1 |
   bes1 bes2 | c1 a2 | bes1 g2 | a1 g2 | a2 bes a | g fis g |
