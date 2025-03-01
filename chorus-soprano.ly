@@ -8,7 +8,7 @@ chorusSNI = \relative c'' {
   r2 c4^\instrumentHintChorusS d |
   es4 es es g |
   c,2 f4 c |
-  d8( es) f4 es8([ d)] d([ c)] |
+  d8( es) f4 es8([ d)] c([ bes)] |
 
   bes2 d4 es |
   f f es8[( d]) es[( c)] |
@@ -17,8 +17,8 @@ chorusSNI = \relative c'' {
   d4. d8 es[( d)] c([ bes)] |
   bes4 a g2 |
   g'4 d es b |
-  c d8([ c)] b4 c8.([ d16)] |
-  c4 b c2 \bar "|."
+  c d8([ c)] b4 c4 |
+  d8([ es)] d([ c)] c2 \bar "|."
 }
 
 lyricsSNI = \lyricmode {

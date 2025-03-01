@@ -8,7 +8,7 @@ chorusANI = \relative g' {
   r2 g4^\instrumentHintChorusA g |
   g g g g |
   es2 f4 a |
-  bes4 bes g8[( f]) f[( es]) |
+  bes4 bes g8[( f]) f4 |
 
   d2 r |
   as'4 g g f |

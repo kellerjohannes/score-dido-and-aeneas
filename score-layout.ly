@@ -16,7 +16,7 @@
 
 
 \book {
-  \scorePaperBlock
+  \scorePaperBlockAlt
 
   \titleScore
 

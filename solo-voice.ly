@@ -51,24 +51,24 @@ soloVoiceNII = \relative c'' {
     r4 d8([ es]) f[( d]) |
     es4.( d8) c4 |
     d8.( es16 f4) es8.( d16) |
-    c8([ b c d)] es( c) |
-    d([ as g f)] es([ d)] |
+    c8([ b c d)] es( d) |
+    d8.([ g,16 f8. es16)] d4
     \autoBeamOff es8. f16 \autoBeamOn f4. g8 |
     g2. |
   }
   R2.*2 |
   c4( b) c |
   g2 es'4 |
-  d( c8[ d]) es( c) |
+  d( c8[ d]) es( d) |
   \grace { c4( } b2.) |
   c4( b) c |
   g2 es'4 |
   d4( c8[ d]) es( d) |
-  c4( b8[ c]) d( b) |
+  c4( b8[ c]) d( c) |
   c2 g4 |
   bes( a g |
   fis2) g4 |
-  \autoBeamOff a8. c16 \autoBeamOn bes4 a |
+  \autoBeamOff a8. bes16 \autoBeamOn c4 bes8.([ a16)] |
   bes2 d4 |
   d2.(~ |
   d4 c bes |
@@ -87,12 +87,12 @@ soloVoiceNII = \relative c'' {
   R2. |
   c4( b) c |
   g2 es'4 |
-  d( c8[ d)] es( c) |
+  d( c8[ d)] es( d) |
   \grace { c4( } b2.) |
   c4( b) c |
   g2 es'4 |
   d4( c8[ d)] es( d) |
-  c4( b8[ c)] d( b) |
+  c4( b8[ c)] d( c) |
   c2. |
   R2.*12 \bar "|."
 
@@ -163,7 +163,7 @@ soloVoiceNV = \relative c'' {
   c[ b c d] c8) g c8. bes16 bes8. a16 |
   a4 r8 as as4( g8) d' |
   d4( c8) c b8. b16 b8 b |
-  c16([ g a b] c[ d c d] e[ f]) g8 f16([ es)] d([ c)] |
+  c16([ g a b] c[ d c d] e[ f]) g8 f16([ e)] d([ c)] |
   c4 r
   \clef \annaClef
   r8^\annaName c c8. d16 |
@@ -180,7 +180,7 @@ soloVoiceNV = \relative c'' {
   es b c( f,4) f8 g as |
   g4 r r8 c e, e |
   f4. g8 as4 r8 as |
-  b8([ a)] r8 bes b8. b16 b8 b |
+  bes8([ a)] r8 bes b8. b16 b8 b |
   c4 r8 d d( es4) e8 |
   e( f4) g8 b,4 r8 d |
   es8 g, c2 d8([ es)] |

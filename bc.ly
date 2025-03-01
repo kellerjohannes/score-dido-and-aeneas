@@ -100,7 +100,7 @@ figuresNI = \figuremode {
   < 6 4 > < 5 _! > s2 |
   s2 < _! > |
   s2 < 6 >4 s4 |
-  < _! > s4 < 5! >2 |
+  < _! > s4 < 5 >2 |
   s2 < 4 >4 < 3 > |
   s1 |
   < 6 >4 s2. |
@@ -290,7 +290,7 @@ bcNV = \relative c {
   \clef \bcClef
   c1~ |
   c~ |
-  c2. a4 |
+  c2. as4 |
   g2 c~ |
   c e |
   f4 f, b2 |
@@ -310,7 +310,7 @@ bcNV = \relative c {
   as4 g f f' |
   es d g f |
   es d c c'8 bes |
-  as2 g |
+  as2 g~ |
   g8. f16 es8 c g2 |
   c2 r \bar "|."
 }

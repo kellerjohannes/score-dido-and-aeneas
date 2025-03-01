@@ -18,7 +18,7 @@ chorusTNI = \relative c' {
   d4. d8 d2 |
   r2 c4 d |
   c f d es |
-  es d es2 \bar "|."
+  b4. c8 c2 \bar "|."
 }
 
 lyricsTNI = \lyricmode {

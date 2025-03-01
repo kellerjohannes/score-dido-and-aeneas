@@ -682,6 +682,11 @@ partbookTitleNXXXV = \header {
 
 %% Paper setup.
 
+scorePaperBlockAlt = \paper {
+  print-all-headers = ##t
+  #(set-paper-size '(cons (* 277 mm) (* 364 mm)))
+}
+
 scorePaperBlock = \paper {
   print-all-headers = ##t
   oddHeaderMarkup = ""

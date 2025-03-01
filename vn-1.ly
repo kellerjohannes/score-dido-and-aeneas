@@ -7,7 +7,7 @@ vnIOuverture = \relative g'' {
   \repeat volta 2 {
     g4. g8 f8.[ g16 f8. d16] |
     es4. es8 e4. e8 |
-    f4. e16 f g4. g8 |
+    f4 f8 e16 f g4. g8 |
     g4 as~ as8 as8 g4~ |
     g8 f f4 ~ f8 g f16 es d es |
     d4. d8 a'4. a8 |
@@ -16,7 +16,7 @@ vnIOuverture = \relative g'' {
     fis4 d f2~ |
     f8.[ f16 g8. d16] es2~ |
     es4 es~ es8.[ es16 d8. c16] |
-    b4 c8. d16 es4 d
+    b4 c8. d16 d4.-+ c8
     \alternative {
       { c1 | }
       { c8 g[ c g] c[ es c es] | }
@@ -47,7 +47,7 @@ vnIOuverture = \relative g'' {
     d[ g d g] es[ as es as] |
     f[ bes f bes] g[ g c bes] |
     as[ g f es] d[ d g f] |
-    es[ d c d] es4 d |
+    es[ d c d] d4.-+ c8 |
     \alternative {
       { c8 g[ c g] c[ es c es] | }
       { c2*2 \bar "|." }
@@ -63,7 +63,7 @@ vnINI = \relative c'' {
   r2 c4^\instrumentHintVnI d |
   es4 es es g |
   c,2 f4 c |
-  d8 es f4 es8[ d] d[ c] |
+  d8 es f4 es8[ d] c[ bes] |
 
   bes2 d4 es |
   f f es8[( d]) es[( c)] |
@@ -72,8 +72,8 @@ vnINI = \relative c'' {
   d4. d8 es[( d)] c([ bes)] |
   bes4 a g2 |
   g'4 d es b |
-  c d8([ c)] b4 c8.([ d16)] |
-  c4 b c2 \bar "|."
+  c d8([ c)] b4 c4 |
+  d8 es d c c2 \bar "|."
 }
 
 vnINII = \relative g'' {
@@ -85,12 +85,12 @@ vnINII = \relative g'' {
   d4. es8[ f d] |
   es4 f8[ es d c] |
   d4. d8 es4 |
-  e f es8 c |
+  e f es8 d |
   \grace c b2 r8 g'8 |
-  as4 g as |
+  as4 as as |
   g g4. a8 |
   bes4 es, g |
-  as8. f16 es4 d |
+  as8. f16 d4.-+ c8 |
   c2. \bar "|."
 }
 

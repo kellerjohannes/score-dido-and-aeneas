@@ -16,7 +16,7 @@ vlaOuverture = \relative g' {
     a4 fis d2~ |
     d4 d~ d8. d16 c4 |
     c2~ c8 c d4~ |
-    d8. d16 g8. g16 g4. f8 \bar "||"
+    d8. d16 g,8. g'16 g4. f8 \bar "||"
     \alternative {
       { es1 | }
       { es4 r r2 | }
@@ -73,8 +73,8 @@ vlaNI = \relative c' {
   d4 bes c8([ bes)] bes8.([ c16)] |
   d4 d d2 |
   r2 c4 d |
-  c f d es~ |
-  es d es2 \bar "|."
+  c f d es |
+  b4. c8 c2 \bar "|."
 }
 
 vlaNII = \relative es' {
