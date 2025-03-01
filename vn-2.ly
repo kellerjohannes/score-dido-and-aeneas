@@ -93,7 +93,7 @@ vnIINII = \relative c'' {
   c e f |
   f4. f8 es4 |
   d4. d8 c4 |
-  c8. d16 b4. c8 |
+  c8. d16 b4.-+ c8 |
   c2. \bar "|."
 }
 

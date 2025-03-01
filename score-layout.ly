@@ -18,12 +18,6 @@
 \book {
   \scorePaperBlockAlt
 
-  \titleScore
-
-  \markup { \vspace #1 }
-
-  \pageBreak
-
   \titleASA
 
   \pageBreak
