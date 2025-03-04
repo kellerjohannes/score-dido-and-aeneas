@@ -166,7 +166,7 @@ titleNXXIV = "28. «Stay prince and hear great Jove» (Spirit, Æneas)"
 %%titleNXXV = \markup { \concat { N \super o } \hspace #-2 . 25, Song & Chorus. }
 titleNXXV = "29. «Come away fellow sailors» (Sailor, Chorus)"
 %%titleNXXVI = \markup { \concat { N \super o } \hspace #-2 . 26, Dance. }
-titleNXXVI = "30. The sailors' dance"
+titleNXXVI = "30. The sailors dance"
 titleASJ = "Sakaï: J. Troisième fenêtre / Kneel / Solo of Euridike / Schizo-Dido / Loop-Ode"
 %%titleNXXVII = \markup { \concat { N \super o } \hspace #-2 . 27, Recitative. }
 titleNXXVII = "31. «See the flags and steamers curling» (Sorceress, Witches)"
@@ -174,7 +174,7 @@ titleNXXVII = "31. «See the flags and steamers curling» (Sorceress, Witches)"
 titleNXXVIII = "32. «Our next motion must be to storm» (Sorceress)"
 %%titleNXXIX = \markup { \concat { N \super o } \hspace #-2 . 29, Chorus. }
 titleNXXIX = "33. «Destruction's our delight» (Chorus)"
-titleNaddXXXIV = "34. The witches' dance"
+titleNaddXXXIV = "34. The witches dance"
 titleASK = "Sakaï: K. Kneel / Doom-zoom / Riot of Dido"
 titleASL = "Sakaï: L. Cauchemar"
 %%titleNXXX = \markup { \concat { N \super o } \hspace #-2 . 30, Recitative. }
@@ -700,10 +700,11 @@ scorePaperBlock = \paper {
   evenFooterMarkup = \oddFooterMarkup
   #(set-paper-size '(cons (* 277 mm) (* 364 mm)))
   top-margin = 2\cm
-  bottom-margin = 3\cm
+  bottom-margin = 1.8\cm
   line-width = 237\mm
   %%ragged-bottom = ##t
   ragged-last-bottom = ##t
+  last-bottom-spacing.basic-distance = 12\mm
   system-system-spacing = #'((basic-distance . 18)
                              (minimum-distance . 12)
                              (padding . 1)
@@ -719,12 +720,13 @@ partbookPaperBlock = \paper {
   print-all-headers = ##t
   oddHeaderMarkup = ""
   evenHeaderMarkup = \oddHeaderMarkup
-  oddFooterMarkup = \markup {
-    \fill-line {
-      \if \should-print-page-number
-      \fromproperty #'page:page-number-string
-    }
-  }
+  oddFooterMarkup = ""
+  % \markup {
+  %   \fill-line {
+  %     \if \should-print-page-number
+  %     \fromproperty #'page:page-number-string
+  %   }
+  % }
   evenFooterMarkup = \oddFooterMarkup
   #(set-paper-size '(cons (* 277 mm) (* 364 mm)))
   top-margin = 3\cm

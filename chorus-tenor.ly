@@ -64,18 +64,18 @@ chorusTNVI = \relative e' {
     d b4 |
     c c2 |
     b c4 |
-    c2 b4 |
+    c4 b2 |
     c2. |
   }
   R2.*8
-  c,4 e2 |
+  c4 e2 |
   c a4 |
   b cis2 |
   d b4 |
 
   c c2 |
   b c4 |
-  c2 b4 |
+  c4 b2 |
   c2. |
   R2.*8
   c4 e2 |
@@ -84,7 +84,7 @@ chorusTNVI = \relative e' {
   d b4 |
   c c2 |
   b c4 |
-  c2 b4 |
+  c4 b2 |
   c2. \bar "|."
 }
 
@@ -137,7 +137,7 @@ chorusTNXI = \relative c' {
   c4 c c | c c g | c4. c8 c4 | c4. c8 b4 | c2 r4 | R2. |
   R2.*2 | r4 r g8. a16 | b8.([ a16 b8. c16 b8. c16] | b4) g b8. b16 | c4 c e |
 
-  e4 e e | e4. e8 e4 | f4. f8 e4 | e2 c8 d | e4 c e | d2 d8 d |
+  e8.([ f16 e8.)] f16 e8.([ f16)] | e4. e8 e4 | f4. f8 e4 | e2 c8 d | e4 c e | d2 d8 d |
   c4 c c | d b d8 d | c4 e c | a2 a8 d | d4 d4. d8 | b4 b g8. a16 |
 
   b8.([ a16 b8. c16 b8. c16] | b4) g b8. b16 | c4 c c | c g c | c4. bes8 a4 | g4. f8 e4 |
@@ -209,11 +209,11 @@ chorusTNXIX = \relative bes {
   \key f \major
   \clef \chorusTClef
   \autoBeamOff
-  bes8 a | g4 c c | c2 r4 | r r d | c f f, | c'2 r4 | r r e | c c b |
-  c g r | R2. | r4 r bes | c c r | r r es | f f r | r r c | d es d | c2 r4 |
+  bes8 a | g4 c c | c2 c4 | c2 d4 | c f f, | c'2 f,4 | c'2 e4 | c c b |
+  c g g | c c b | c g bes | c c bes | c c es | f f es | f f c | d d4. es8 | c2 c4 |
 
-  R2. | r4 r a8 g | f4 d' c | bes2 r4 | r r f | bes g c | c2 r4 | r r c8([ d)] |
-  e4 c c | c a r | R2. | r4 r d | d c4. bes8 | a2 r4 | R2. | r4 r s4 \bar "|."
+  d4 d4. es8 | c2 a8 g | f4 d' c | bes2 c4 | bes2 f4 | bes g c | c2 c4 | c2 c8([ d)] |
+  e4 c c | c a c8([ d)] | e4 c c | c a d | d c4. c8 | a2 d4 | d4 c4. c8 | a2*3/2 \bar "|."
 }
 
 chorusTNXX = \relative f' {
@@ -240,7 +240,7 @@ chorusTNXXIII = \relative d {
   r4 r8 d fis a d cis | d4 r8 cis d4 r8 d16([ cis)] |
 
   b8 a16([ b)] gis([ a)] b([ gis)] a4 r8 e | a cis e cis a b cis a |
-  d8 d4 d8 d cis b d | cis8. d16 cis8 b ais16([ b cis b] b[ cis b cis] |
+  d8 d4 d8 d cis b d | cis8. d16 cis8 b ais16([ b cis ais] b[ cis b cis] |
 
   d8) cis16([ b)] b8 ais b4 r8 d | b4 r8 d, g b d b( |
   g16[ a g a] b8) b a cis d4 | r8 cis d4 r8 cis d4 | r8 d d cis d2 \bar "|."
@@ -267,7 +267,7 @@ chorusTNXXV = \relative bes {
   a4 d d | d4. c8 d4 | es es b | c2 c4 | d d d | c d g, |
 
   c4 c d | es d d | c b c | d d d | d4. d8 d4 | d2 d4 | d d d |
-  bes bes bes | c4. c8 c4 | c2 f4 | f8 f4. f4 | f8 f4. d4 | c4. d8 d4 | f8([ c)] bes4 a | bes2. \bar "|."
+  bes bes bes | c4. c8 c4 | c2 f4 | f8 f4. f4 | f8 f4. d4 | c4. d8 d4 | d8([ c)] bes4 a | bes2. \bar "|."
 }
 
 lyricsTNXXV = \lyricmode {

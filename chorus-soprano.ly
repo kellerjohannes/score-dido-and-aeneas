@@ -173,14 +173,14 @@ chorusSNVIII = \relative b' {
   c4 b cis d |
   d cis d4. d8 |
   b4 g c c |
-  b a b4. d8 |
+  a4. d8 b4. d8 |
 
   b4 b e4. e8 |
   d4 d g4. g8 |
   g8([ fis)] e([ dis)] e4. fis8 |
   g([ fis)] fis([ e)] dis4. fis8 |
   g8([ fis)] e([ dis)] e4. fis8 |
-  g4 fis e2 \bar "|."
+  fis4. e8 e2 \bar "|."
 }
 
 lyricsSNVIII = \lyricmode {
@@ -253,7 +253,7 @@ chorusSNXVII = \relative c'' {
   \key f \major
   \clef \chorusSClef
   \autoBeamOff
-  R4.*2 | r8 c bes | c e d | c g' f | e c f | f f e | f4 r8 |
+  R4.*2 | r8 c b | c e d | c g' f | e c f | f f e | f4 r8 |
   f8 f f | f f e | f c c | c c b | c c c | d c bes | a a a | a4. \bar "|."
 }
 
@@ -266,24 +266,25 @@ chorusSNXIX = \relative d'' {
   \key f \major
   \clef \chorusSClef
   \autoBeamOff
-  d8 d | c4 c bes | a2 r4 | r r a8([ bes)] | c4 d8([ c)] bes([ a)] | g2 r4 | r r c | es es d |
-  c4 c r | R2. | r4 r e | f f r | r r e | d d r | r r c | c c b | c2 r4 |
+  d8 d | c4 c bes | a2 bes4 | a2 a8([ bes)] | c4 d8([ c)] bes([ a)] | g2 bes8([ a)] | g2 c4 | es es d |
+  c4 c c | es4 es d | c c e | f f e | f f es | d d es | d d c | c c4. b8 | c2 c4 |
 
-  R2. | r4 r c8 c | a4 bes c | f,2 r4 | r r c' | d e f | e2 r4 | r r f |
-  g c, e | f c r | R2. | r4 r d8([ c)] | bes4 a g | f2 r4 | R2. | r4 r s4 \bar "|."
+  c c4. b8 | c2 c8 c | a4 bes c | f,2 c'4 | f,2 c'4 | d e f | e2 f4 | e2 f4 |
+  g c, e | f c f | g c, e | f c d8([ c)] | bes([ a)] bes([ a)] g([ f)] | f2 d'8([ c)] | bes([ a)] bes([ a)] g([ f)] | f2*3/2 \bar "|."
 }
 
 lyricsNXIX = \lyricmode {
-  In our deep vault -- ed cell
-  The charm we'll pre -- pare,
-  Too dread -- ful a prac -- tice,
-  too dread -- ful a prac -- tice
-  for this op -- en air;
+  In our deep vault -- ed cell, ['ted cell,]
+  The charm we'll pre -- pare, [pre -- pare,]
+  Too dread -- ful a prac -- tice, [too dread -- ful a prac -- tice,]
+  too dread -- ful, [too dread -- ful,]
+  a prac -- tice, [a prac -- tice,]
+  for this op -- en air, [for this o -- pen air.]
 
-  In our deep vault -- ed cell
-  The charm we'll pre -- pare,
-  too dread -- ful a prac -- tice
-  for this op -- en air.
+  In our deep vault -- ed cell, ['ted cell,]
+  The charm we'll pre -- pare, [pre -- pare,]
+  too dread -- ful a prac -- tice, [too dread -- ful a prac -- tice,]
+  for this o -- pen air, [for this o -- pen air.]
 }
 
 chorusSNXX = \relative d'' {
@@ -305,8 +306,8 @@ lyricsNXX = \lyricmode {
   Thanks to these lone -- some, lone -- some vales these de -- sart,
   de -- sart hills and dales.
 
-  So fair the game, so rich the sort, Di -- a -- na's self might to these woods re -- sort,
-  so fair the game, so rich the sort, Di -- a -- na's self might to these woods re -- sort.
+  So fair the game, so rich the sport, Di -- a -- na's self might to these woods re -- sort,
+  so fair the game, so rich the sport, Di -- a -- na's self might to these woods re -- sort.
 }
 
 chorusSNXXIII = \relative d' {
@@ -321,14 +322,14 @@ chorusSNXXIII = \relative d' {
   fis fis4 fis8 b, cis d b | e8. fis16 g([ fis)] e([ d)] cis([ d e cis] d[ e d e] |
 
   fis8) e16([ d)] d8 cis b d b4 | r8 d, g b d4 r8 d8( |
-  b8[ cis16 d] e[ fis)] e([ d)] cis8 e fis4 | r8 e fis4 r8 e fis([ e16 fis)] | g8([ fis16 g] fis8) e d2 \bar "|."
+  b8[ cis16 d] e[ fis)] e([ d)] cis8 e fis4 | r8 e fis4 r8 e fis([ e16 fis] | g[ fis e d] cis[ d)] e([ d)] d2 \bar "|."
 }
 
 lyricsSNXXIII = \lyricmode {
   Haste, haste to town, haste, haste, haste, haste, haste to town,
   haste, haste to town, this op -- en field no shel -- ter, this op -- en field no shel -- ter from the storm,
   the storm can yield, hast, haste, haste, haste to town,
-  haste to town, haste, haste, haste, haste, haste, haste, haste to town.
+  haste to town, haste, haste, haste, haste, haste, haste to town.
 }
 
 chorusSNXXV = \relative bes' {
@@ -372,7 +373,7 @@ chorusSNXXIX = \relative d'' {
   d4 d d8([ es)] f4 | d2 r4 d | d d d e | f f2 f4 | g g g8([ d)] d4 |
 
   es2 r4 d8([ es)] | f4 es8([ d)] es4 d | c c2 r4 | r2 r4 f8([ es)] | d([ c bes a )] g4 g'8([ f)] |
-  es([ d c bes)] a4 c | f f d d | es2 r4 d8([ es)] | f4 es d c | bes bes2. \bar "|."
+  es([ d c bes)] a4 c | f f d d | es2 r4 d8([ es)] | f4 es8([ d)] es([ d)] d([ bes)] | bes4 bes2. \bar "|."
 }
 
 lyricsSTNXXIX = \lyricmode {
@@ -421,7 +422,7 @@ chorusSNXXXV = \relative d'' {
   a8([ bes)] c([ a)] bes4 r8 a | bes([ a)] bes([ c)] d8.([ es16)] d4 | d8([ c)] d([ es)] f([ es)] d([ c)] | bes([ g)] a([ bes)] c([ d)] c([ bes)] | a2 r |
   R1 | r2 d4( c) | es( d cis) d | d8([ a)] a4 d4( cis) | f( e) d( cis) | f( e) d( e) |
 
-  cis4 d8([ e)] d4 cis | d r8 d bes4 r | es4. d8 c4 r8 c | f4 r g4. g8 | f8([ es)] d([ c)] bes4 r8 bes |
+  cis4 d d8.([ e16)] d8.([ cis16)] | d4 r8 d bes4 r | es4. d8 c4 r8 c | f4 r g4. g8 | f8([ es)] d([ c)] bes4 r8 bes |
   bes8 bes r4 b8 b r4 | c4( a8) bes a4 r8 a | d d r4 d8 c r4 | c8([ a bes)] c8 bes4 a | g1 \bar "|."
 }
 

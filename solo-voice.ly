@@ -93,7 +93,7 @@ soloVoiceNII = \relative c'' {
   g2 es'4 |
   d4( c8[ d)] es( d) |
   c4( b8[ c)] d( c) |
-  c2. |
+  \break c2. |
   R2.*12 \bar "|."
 
 }
@@ -253,6 +253,7 @@ soloVoiceINVI = \relative es'' {
   d g4 |
   f( e) d |
   c2. |
+  \break
   R2.*48 |
 }
 
@@ -271,9 +272,9 @@ soloVoiceIINVI = \relative c' {
     c2. |
   }
   d4 e2 |
-  c e4 |
-  d b2 |
-  a f4 |
+  a, c4 |
+  b gis2 |
+  a a4 |
   a b2 |
   c e4 |
   a, d2 |
@@ -362,7 +363,7 @@ soloVoiceNIX = \relative {
   \clef \aeneasClef
   \autoBeamOff
   r8 e e fis g8. g16 c8 e, |
-  g4 r8 g gis gis gis b |
+  g4 r8 g gis gis gis a |
   a4. gis8 a4 c |
 
   r4 cis4 d8 a b g |
@@ -383,7 +384,7 @@ soloVoiceNX = \relative c'' {
   \key c \major
   \clef \annaClef
   \autoBeamOff
-  r2 r4 r8 c^\f |
+  s4 r4 r4 r8 c^\f |
   c g c8. c16 e4 r8 c^\p |
   c g c8. c16 e4 r8 c^\f |
   b g b16([ c b c] d4) r8 d |
@@ -402,7 +403,7 @@ soloVoiceNX = \relative c'' {
 
   a4 r8 c^\f c g c8. c16 | e4 r8 c^\p c g c8. c16 | e4 r8 c^\f b g b16([ c b c] |
   d4) r8 d^\p e d e d | r4 r8 d^\f e d16([ e)] f([ e)] d([ c)] |
-  c4 r8 d^\p e d16([ e)] f([ e)] d([ c)] | c2 r | R1 \bar "||"
+  c4 r8 d^\p e d16([ e)] f([ e)] d([ c)] | c2 r | r2*2 \bar "||"
 }
 
 lyricsNX = \lyricmode {
@@ -491,7 +492,7 @@ soloVoiceNXII = \relative f' {
   R1*16 | r2 r4 f8^\sorceressName e | f8 f4. r4 as8 f | c'2. c4 | e,4. e8 e e e e |
 
   f4 r r8 f f4 | f8( es4) es8 es4. d8 | d4 d2 d8 d | g4. as8 g4( f8) e16([ f)] | e4 e2 g4 |
-  c4 r8 c c4 c8 e | c2 r4 c | c8([ bes)] bes bes bes4 as8 g | as4 as2 f4 | des'2 f,4.( g8) | as2 g |
+  c4 r8 c c4 c8 e | c2 r4 c | c8([ bes)] bes bes bes4 as8 g | as4 as2 f4 | des'2 f4.( g,8) | as2 g |
   f4 r8 f c'4 r8 c | c4 r8 c, f4 r8 f | f2 r | \clef \firstWitchClef bes2^\firstWitchName r4 bes8 f | bes4 f'8 d16 c bes4 r \bar "|."
 }
 
@@ -511,7 +512,7 @@ soloVoiceNXIV = \relative f' {
   \key f \minor
   \clef \sorceressClef
   \autoBeamOff
-  r4 r8 f^\sorceressName f4. g8 | as4 as r as8 c | f,4 r r8 f as f | d'4 c16( bes8.) bes4 a | bes4 r r f |
+  r4 r8 f^\sorceressName f4. g8 | as4 as r as8 c | f,4 r r8 f as f | des'4 c16( bes8.) bes4 a | bes4 r r f |
   bes4 bes r8 bes g4 | as2( e4.) f8 | e4 r8 g g4. g8 | c2. c4 | c8([ d e f] e4) d8([ c)] \bar "||"
 }
 
@@ -527,7 +528,7 @@ soloVoiceINXVI = \relative a' {
   \key c \major
   \clef \firstWitchClef
   \autoBeamOff
-  r4 a8^\firstWitchName a a a bes c | d4 d16 bes8. r4 f'16 d8. | r4 d4~ d8 c bes a |
+  r4 a8^\firstWitchName a a a bes c | d4 d16 bes8. r4 f'16 d8. | r4 d4~ d8 c bes8. a16 |
   g4 r r2
 }
 
@@ -540,13 +541,13 @@ soloVoiceIINXVI = \relative a' {
   \key c \major
   \clef \firstWitchClef
   \autoBeamOff
-  R1 | r2 bes16^\secondWitchName f8. r4 | d'16 bes8. bes4~ bes8 a g f |
+  R1 | r2 bes16^\secondWitchName f8. r4 | d'16 bes8. bes4~ bes8 a g8. f16 |
   e4 r4 \clef \sorceressClef r8^\sorceressName g8 g g | g g g a bes4 r8 bes | c c c d bes4. bes8 |
 
   a4 r8 a d8. d16 d4~ | d8 d d cis d4 r | R1 | r4 \clef \firstWitchClef a4^\firstWitchName r2 |
   r2 r4 d | r8 d d16([ e] fis4) e8 d a | d,4 r r2 | R1 | r2 \clef \sorceressClef r8^\sorceressName f8 f f |
   bes4 r8 bes bes a bes4~ | bes8 bes bes bes a a a bes | c4 r8 c c c c8. d16 |
-  es4( d8.) es16 d4 r8 c | bes[( a g)] f g8. c,16 c'4~ | c8 a d g, a4 g \bar "||"
+  es4( d8.) es16 d4 r8 c | bes[( a g)] f g8. c,16 c'4~ | c8 a d g, g4. g8 \bar "||"
 }
 
 lyricsIINXVI = \lyricmode {
@@ -562,7 +563,7 @@ lyricsIINXVI = \lyricmode {
   Hark!, Hark!, the cry comes on a -- pace.
 
   %% Sorceress:
-  But, when they-ve done, my trus -- ty Elf,
+  But, when they've done, my trus -- ty Elf,
   In form of Mer -- cu -- ry him -- self
   As sent from Jove, shall chide his stay, And charge him sail to night with all his fleet a_-
 }
@@ -584,7 +585,7 @@ soloVoiceINXVIII = \relative a' {
   \repeat volta 2 {
     c4 a f8([ g)] a4 | f2 r4 c' | e c c8([ d)] e4 | c2. c4 | f2.( e8[ d] |
     e2. d8[ cis] | d2. e8[ d] | c2. d8[ c] | d[ c]) bes4 a g | f c' f2~( | f4 e8[ d] e2~ |
-    e4 f8[ e] d2~ | d4 e8[ d] cis[ d e cis] | d[ e d e] f4) e8([ d)] | cis([ d)] e4 d c |
+    e4 f8[ e] d2~ | d4 e8[ d] cis[ d e cis] | d[ e d e] f4) e8([ d)] | cis([ d)] e4 d cis |
     \alternative {
       { d2 r4 a }
       { d1 }
@@ -627,7 +628,7 @@ soloVoiceIINXVIII = \relative a' {
   \repeat volta 2 {
     f d f8([ g)] a4 | d2 r4 e | f e8([ d)] d4 a | d( c8[ bes] a[g f e] |
     d2) r4 a' | f d f4. g8 | a2 r4 b | c c c d | e( f8[ e] d[ c b a] |
-    gis[ fis e fis] g[ a b g] | a2) r4 cis4 | d8[( c b a] gis[ a b g] | a[ b]) c([ b)] a4 gis |
+    gis[ fis e fis] gis[ a b gis] | a2) r4 cis4 | d8[( c b a] gis[ a b gis] | a[ b]) c([ b)] a4 gis |
     \alternative {
       { a2 r4 a }
       { a2 r }
@@ -684,10 +685,10 @@ soloVoiceNXX = \relative d'' {
 
   \repeat volta 2 {
     cis4 d e | f2. | b,4 c d | e2 r8 e | e4( a,) c8([ b)] | gis4. b8 c4 | d8([ e)] d([ c)] c([ b)] | a2 r4 |
-    cis4 d e | f2. | d4 e f | g2 r8 f | e4( f) e8([ d)] | cis4. d8 e([ d)] | d([ e)] f4 e |
+    cis4 d e | f2. | d4 e f | g2 r8 f | e4( f) e8([ d)] | cis4. d8 e([ d)] | d([ e)] g8([ f)] e([ d)] |
     \alternative {
       { d2. | }
-      { d2. | }
+      { d2. | \break }
     }
   }
   R2.*24 \bar "|."
@@ -722,7 +723,7 @@ soloVoiceNXXI = \relative a' {
   e16([ f g8)] f([ e)] d([ cis)] b([ a)] | r4 d r a~ | a g g4. f8 | e4. e8 f4 r | % From here different in King's Music
   bes4 r a4. e'8 |
   f4 e8([ d)] d( a4) d8 |
-  b4. b8 es8.([ f16 es8. d16] | cis8.[ b16 a8. g16] f8.[ g16)] a([ f8.)] |
+  b4. b8 e8.([ f16 e8. d16] | cis8.[ b16 a8. g16] f8.[ g16)] a([ f8.)] |
   bes8([ a)] g([ f)] e4. a8 |
   f4 d a'4. d8 | bes4 a d4. e8 | cis4 a f'2~( | f8[ e)] d([ e)] c4 b8([ a)] |
   a4. a8 d([ e d8. c16] | b8.[ c16]) b8.([ cis16)] d4 f8([ e)] | cis4. a8 bes4. c8 | b4 a8([ g)] c4.( d8 |
@@ -752,8 +753,9 @@ soloVoiceNXXII = \relative d {
   \key c \major
   \clef \aeneasClef
   \autoBeamOff
-  r8 d a'4. a8 a8. a16 | f8. a16 d,8. a'16 d8 d d cis | d d4 d8 d c c8. d16 |
-  bes8 bes a a16 a a8 f g8. a16 | a4 \clef \didoClef r8^\didoName a' fis8. fis16 a8 d, | r4 a'4 r2 |
+  r8 d a'4. a8 a8. a16 | f8. a16 d,8. a'16 d8 d d8. cis16 |
+  d8 d4 d8 d c c8. d16 | bes8 a a8. a16 a8 g32([ f16 g32)] g8. a16 |
+  a4 \clef \didoClef r8^\didoName a' fis8. fis16 a8 d, | r4 a'4 r2 |
   r4 d r8 d d16([ e d e] | fis8[ g16 fis] e[ d cis b] a[ g fis e] d8) d | fis16([ e fis g] a[ b]) a8 b16([ cis)] d8 d cis | d8 d, r4 r2 \bar "|."
 }
 
@@ -761,7 +763,7 @@ lyricsNXXII = \lyricmode {
   %% Aeneas
   Be -- hold, up -- on my ben -- ding spear
   A mon -- ster's head stands blee -- ding, With tu -- shes far ex -- cee -- ding
-  Those that did Ve -- nus' hunts -- man tear.
+  Those did Ve -- nus' hunts -- men tear.
 
   %% Dido
   The skies are clou -- ded hark!, hark!,
@@ -927,9 +929,9 @@ soloVoiceIINXXVII = \relative f' {
   \autoBeamOff
   R1*5 |
   r4 \clef \secondWitchClef r8^\secondWitchName a d cis d4 |
-  r8 f, bes8. a16 bes4 r | r8 bes16([ a)] g4 r8 a16([ g)] f4 | r8 g16([ f)] e8 a16([ g)] f8 g16([ f)] es([ f)] g8 |
+  r8 f, bes8. a16 bes4 r | r8 bes16([ a)] g4 r8 a16([ g)] f4 | r8 g16([ f)] e8 a16([ g)] f8 g16([ f)] e([ f)] g8 |
 
-  f4 r r8 d' \grace { d16([ es] } f8.) f16 | d8 bes r es16([ d)] c4 r8 f16([ es)] | d4 r8 es16([ d)] c8 d16([ c)] b([ c)] d([ bes)] |
+  f4 r r8 d' \grace { d16([ es] } f8.) f16 | d8 bes r es16([ d)] c4 r8 f16([ es)] | d4 r8 es16([ d)] c8 d16([ c)] b([ c)] d([ b)] |
   c4 r r8 g c b | c8. bes16 a8. a16 d8 d16([ c)] bes4 | r8 c16([ bes)] a4 r8 bes16([ a)] g8 c16([ bes)] |
   a8 f \grace { a16([ bes] } c8.) c16 a8 f r4 | r8 bes16([ a)] g4 r8 a16([ g)] f8 f'16([ es)] | d8 es16([ d)] c([ d)] es([ c)] d([ es)] f8 es16([ d)] c8 | bes2 r \bar "|."
 }
@@ -967,7 +969,7 @@ soloVoiceNXXVIII = \relative f' {
     }
   }
   d4. c8 bes4 | es4. f8 g4 | g8( c,4) d8 b4 | c4 c r8 c | f4 f4. es8( |
-  d8.[ c16 bes8. c16)] d4 | g,2 r8 d' | es4 es4. d8( | c8.[ bes16 a8. bes16)] c4 | f,2 f'4 | es8 c bes4 a | bes bes r4 \bar "|."
+  d8.[ c16 bes8. c16)] d4 | g,2 r8 d' | es4 es4. d8( | c8.[ bes16 a8. bes16)] c4 | f,4. c'8 f4 | es8([ d)] bes4 a | bes bes r4 \bar "|."
 }
 
 lyricsNXXVIII = \lyricmode {
@@ -991,16 +993,16 @@ soloVoiceIINXXX = \relative g' {
   \clef \didoClef
   \autoBeamOff
   r2 r4 r8 g | bes bes d4. d8 fis,8. fis16 | g4 r4 r8 d' d8. d16 | g4. d8 bes4. a8 |
-  a4 r4 r8 d d8. d16 | g4 r4 f8([ es)] f d | es4 r r d8. d16 | g4. g16([ d)] bes4 a |
+  a4 r4 r8 d d8. d16 | g4. f8 f8([ es)] f([ d)] | es4 r es( d8.) d16 | g4. g16([ d)] bes4 a |
   g r r8 g g8. g16 | c4 r8 d c16 g8. a8 bes | a4 r8 a d4. c8 | bes16 e,8. f8 g f4. es8 |
   d2 \clef \annaClef bes'4^\annaName bes8 d | bes8. c16 d8 c16([ bes)] f'4. f8 | f16 b, b b b8. b16 c8. c16 d8 es |
-  d16 fis,8. g8 bes16([ a)] fis2 | \clef \aeneasClef d,4.^\aeneasName e8 f4. g8 | f4 es8([ d)] es4 r | e r c'8([ es,)] es es |
+  d16 fis,8. g8 bes16([ a)] fis2 | \clef \aeneasClef d,4.^\aeneasName e8 f4. g8 | f4 es8([ d)] es4 r | e r c'8([ e,)] e e |
   f8. fis16 fis8 fis g8. g16 g8 fis | a4 r8 a bes4 bes | r4 c8 fis, g4 r |
   \clef \didoClef d''4^\didoName r8 d16 d d8 d d e | f4 f8( cis4) cis16 cis cis8. cis16 | d16 d d8 r d bes16 bes bes bes c8. d16 |
 
-  es4 r8 f g8. f16 es([ d)] c([ bes)] | a8 d c a bes4 r | \clef \aeneasClef r8^\aeneasName f,8 bes8. bes16 d8. \clef \didoClef f16^\didoName bes8. bes16 |
+  es4 r8 f g8. f16 es([ d)] c([ bes)] | a8 d bes a bes4 r | \clef \aeneasClef r8^\aeneasName f,8 bes8. bes16 d8. \clef \didoClef f16^\didoName bes8. bes16 |
   d4 r8 fis, g4 bes8. bes16 | d4 r8 g, es4. d8 | d4 r8 a'16 a a8 d, a'8. bes16 | a([ bes] c4.) r8 c d es |
-  d16([ e,8)] f16 f8 es f4 \clef \aeneasClef r8^\aeneasName c8 | c f, c'8. c16 f4. c8 | f,8 r16 a a8. b16 c8. c16 c8 b |
+  d16([ e,8)] f16 f8 e f4 \clef \aeneasClef r8^\aeneasName c8 | c f, c'8. c16 f4. c8 | f,8 r16 a a8. b16 c8. c16 c8 b |
   c4 r \clef \didoClef es'4^\didoName es8 g, | c8. bes16 a8 bes fis8. a16 a8 a | d8. d16 d8 cis d4 r8 f16 d |
   c16([ bes)] bes8 bes a g8. d'16 es8 d | c c c d b4 r16 b b b | c8. d16 c4. bes8 a bes |
   a4 r16 a a a d4. a8 | a( bes4) bes16([ fis)] g8. g16 g4 | \clef \aeneasClef r8^\aeneasName g,8 g4. a8 bes g |
@@ -1097,7 +1099,7 @@ soloVoiceNXXXI = \relative a' {
   \key c \major
   \clef \didoClef
   \autoBeamOff
-  r2 r4 r8 a | a d16([ a)] a4. a8 b e, | f4 r f8( e4) a8 | d, bes'16([ g)] f8 e d2 \bar "|."
+  r2 r4 r8 a | a d16([ a)] a4. a8 b e, | f4 r f8( e4) a8 | d, bes'16([ a)] f8 e d2 \bar "|."
 }
 
 lyricsNXXXI = \lyricmode {
@@ -1111,7 +1113,7 @@ soloVoiceNXXXIII = \relative c'' {
   \clef \didoClef
   \autoBeamOff
   r8 c c b c c r4 | c4( bes as) g | a4. a8 r4 as8 as | as( g4) g8 r4 g8 f |
-  g4 r r g8 g | g8([ f)] r f f4( e8) f | e e r4 es4. es8 | d4. fis8 fis([ g)] g([ cis,)] | d2*2 \bar "|."
+  g4 r r g8 g | g8([ f)] r f f4( e8) f | e e r4 es4. es8 | d4. fis8 fis([ g)] g([ c,)] | d2*2 \bar "|."
 }
 
 lyricsNXXXIII = \lyricmode {

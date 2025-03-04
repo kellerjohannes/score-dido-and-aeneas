@@ -144,7 +144,7 @@ vlaNVI = \relative c' {
     d b4 |
     c c2 |
     b c4 |
-    c2 b4 |
+    c4 b2 |
     c2. |
   }
   g'4 e2 |
@@ -163,7 +163,7 @@ vlaNVI = \relative c' {
 
   c c2 |
   b c4 |
-  c2 b4 |
+  c4 b2 |
   c2. |
   c4 c2 |
   g' g,4 |
@@ -180,7 +180,7 @@ vlaNVI = \relative c' {
   d b4 |
   c c2 |
   b c4 |
-  c2 b4 |
+  c4 b2 |
   c2. \bar "|."
 }
 
@@ -209,7 +209,7 @@ vlaNVIII = \relative b {
   c4 b a4. d8 |
   c4. c8 b4. b8 |
   g4 a b c |
-  b4 b b2 \bar "|."
+  b4. b8 b2 \bar "|."
 }
 
 vlaNIX = \relative {
@@ -267,10 +267,10 @@ vlaNXI = \relative c' {
   c8 c | c4 g e' | d2 d4 | c c c | d b d | c e c |
   a2 a8 d | d4 d4. d8 | b4 b g8 a | b8. a16 b8. c16 b8. c16 | b4 g b |
 
-  c4 c c | c g c | c2 c4 | c2 b4 | c2 g'4 | e c c' |
-  c g c | c a4. a8 | g2 g,8. a16 | b8. a16 b8. c16 b8. c16 | b4 g b | c c e |
+  c4 c c | c c g | c2 c4 | c2 b4 | c2 g'4 | e c c' |
+  c g c | c a4. g8 | g2 g,8. a16 | b8. a16 b8. c16 b8. c16 | b4 g b | c c e |
 
-  e e e | e2 e4 | f2 e4 | e2 c8 d | e4 c e | d2 d4 |
+  e8. f16 e8. f16 e8. f16 | e2 e4 | f2 e4 | e2 c8 d | e4 c e | d2 d4 |
   c4 c c | d b d | c e c | a2 a8 d | d4 d4. d8 | b4 b g8. a16 |
 
   b8. a16 b8. c16 b8. c16 | b4 g b | c c c | c g c | c4. bes8 a4 | g4. f8 e4 |
@@ -298,7 +298,7 @@ vlaNXII = \relative c' {
   \time 4/4
   \key f \minor
   \clef \vlaClef
-  r2 c4. c8 | c2 f,4. f8 | g2 c'4. c8 | c2 c | c4 bes8 as g4. g8 | f2 a4. a8 | g2 g4. g8 |
+  r2 c4. c8 | c2 f,4. f8 | g2 c'4. c8 | c2 c | c4 bes8 as g4. f8 | f2 a4. a8 | g2 g4. g8 |
   g8 c,4. c c8 | d4 g g4. g8 | as2 g4 g | g2 f4. f8 | f4. f8 g4. g8 | g4 f c4. c8 | des2 es |
   f4 f, c'4. c8 | c2. bes4 | as1 | c~ | c~ | c~ |
 
@@ -338,10 +338,10 @@ vlaNXVI = \relative g {
   \clef \vlaClef
   R1*3 | r2 g2~ | g1 | fis2 g |
 
-  c1~ | c | \tuplet 3/2 4 { fis8 fis fis a a a d d d a a a } | fis4 r \tuplet 3/2 4 { fis8 fis fis a a a |
+  a1~ | a | \tuplet 3/2 4 { fis'8 fis fis a a a d d d a a a } | fis4 r \tuplet 3/2 4 { fis8 fis fis a a a |
                                                                                       d d d a a a } fis4 r | R1 | r2 \tuplet 3/2 4 { fis8 fis fis a a a | d d d a a a fis fis fis d d d } | fis4 r bes,2~ |
   bes1~ | bes | a2 c |
-  c d | g,8 a bes a g4 r8 c | a4 bes a g \bar "||"
+  c d | g,8 a bes a g4 r8 c | a4 bes a4. g8 \bar "||"
 }
 
 vlaNXVII = \relative a {
@@ -378,11 +378,11 @@ vlaNXIX = \relative bes {
   \time 3/4 \partial 4
   \key f \major
   \clef \vlaClef
-  bes8 a | g4 c c | c2 c4 | c2 d4 | c f f, | c'2 f,4 | c'2 es4 | c c b |
-  c g g | c c b | c g bes | c c bes | c c es | f f es | f f c | d es d | c2 c4 |
+  bes8 a | g4 c c | c2 c4\p | c2 d4\f | c f f, | c'2 f,4\p | c'2 es4\f | c c b |
+  c g g\p | c c b | c g bes\f | c c bes\p | c d es\f | f f es\p | f f c\f | d d4. es8 | c2 c4\p |
 
-  d4 es d | c2 a8 g | f4 d' c | bes2 c4 | bes2 f4 | bes g c | c2 c4 | c2 c8 d |
-  e4 c c | c a c8 d | e4 c c | c a d | d c c | c2 d4 | d c4. bes8 | a2*3/2 \bar "|."
+  d4 d4. es8 | c2 a8\f g | f4 d' c | bes2 c4\p | bes2 f4\f | bes g c | c2 c4\p | c2 c8\f d |
+  e4 c c | c a c8\p d | e4 c c | c a d\f | d c c | c2 d4\p | d c4. bes8 | a2*3/2 \bar "|."
 }
 
 vlaNaddXXII = \relative c' {
@@ -518,9 +518,9 @@ vlaNXXV = \relative bes {
   \clef \vlaClef
   r4 | r2.*3 | r4 r bes8 c | d4 d d8 es | f4 f g8 d | es4 f f, | bes2 bes8 a | g2. |
 
-  g4 f'8 e d4 | c c c | c c'8 bes a c | d4 c bes | a f c | f2. | r4 r f8 es | d4 d d8 c | bes2 bes4 | bes2 bes8 c |
+  f4 f'8 e d4 | c c c | c c'8 bes a c | d4 c bes | a f c | f2. | r4 r f8 es | d4 d d8 c | bes2 bes4 | bes2 bes8 c |
   d4 d d8 es | f2 f4 | f2 f4~ | f e f | g8 f e f g4 | f2 bes8 a | g4 g4. g8 | f2 d4 | es2 c4 | d2 bes4 |
-  c4 c d~ | d es2 | f2 g4 | a2 bes8 f | f4 f es | d2 r4 | R2.*29 |
+  c4 c d~ | d es2 | f2 g4 | a2 bes8 d, | es4 es4. d8 | d2 r4 | R2.*29 |
 
   r4 r bes8 bes | bes2 bes8 c | d4 d f8 f, | bes2 a8 g |
 
@@ -596,7 +596,7 @@ vlaNaddXXXIV = \relative d' {
     R2. | es4 bes bes | c a a | bes bes2 | bes'4 f bes |
     f d f | es2. | c |
     \time 2/2 \partial 8
-    r8 | a'2. d,4 | d1 | d | d | d | d2. r4 | d2 r | d bes4 c |
+    r8 | a'2. d,4 | d1 | d | d | d | d2 r | d2 r | d bes4 c |
     d2. d4 | f bes r2 | c,2 d | bes'4 f c2 | d1 |
     bes'4 g bes g | c,2 a | bes4 g g2 | d'2. a4 | bes bes' f a | d, f f es |
     f2. f4 | d1 \bar "|."
@@ -639,14 +639,14 @@ vlaNXXXIV = \relative g {
   \time 3/2 \partial 2
   \key g \minor
   \clef \vlaClef
-  r2 | R1.*4 | g1 g2 | a1 g2 | g1 g2 |
+  r2 | R1.*4 | g1 g2 | a1 a2 | g1 g2 |
   a1 g2 | g1 fis2 | g g' es | a,1 a2 | bes c1 | a bes2 | a a1 | bes2 a g | a1 a2 | g1 g2 | a1 g2 |
   g1 fis2 | g g' es | es d a | bes c1 | a bes2 | a a1 |
   bes1 bes2 | c1 a2 | bes1 g2 | a1 g2 | a2 bes a | g fis g |
   a1 a2 | g2 c es | a, d1 | g,2 d' c | bes1 bes2 | c1 a2 |
   bes2 c4 bes a g | a1 g2 | a bes a | g fis g | a1 a2 | g c es |
   a, d1 | g,2 d' c | bes1 bes'2~ | bes a a~ | a g2. a4 |
-  fis1 d2~ | d c a | bes1 c2 | d1 d2 | g,1 g'2 | fis1 d2 | es d c | bes1. \bar "|."
+  fis1 d2~ | d c a | bes1 c2 | d1 d2 | g,1 g'2 | fis1 d2 | es d1 | d1. \bar "|."
 }
 
 vlaNXXXV = \relative d' {

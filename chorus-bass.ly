@@ -201,11 +201,11 @@ chorusBNXIX = \relative d {
   \key f \major
   \clef \chorusBClef
   \autoBeamOff
-  d8 d | e4 e e | f2 r4 | r r d | a a bes | c2 r4 | r r c | c' c g |
-  c, c r | R2. | r4 r g' | as as r | r r g | f f r | r r es | d g g, | c2 r4 |
+  d8 d | e4 e e | f2 e4 | f2 d4 | a a bes | c2 c4 | c2 c4 | c' c g |
+  c, c c | c' c g | c, c g' | as as g | as as g | f f g | f f es | d g g, | c2 es4 |
 
-  R2. | r4 r c8 c | d4 d a | bes2 r4 | r r a | g g f | c'2 r4 | r r f |
-  c' c bes | a f r | R2. | r4 r bes | bes, c4. c8 | f2 r4 | R2. | r4 r s4 \bar "|."
+  d g g, | c2 c8 c | d4 d a | bes2 a4 | bes2 a4 | g g f | c'2 f,4 | c'2 c4 |
+  c' c bes | a f c | c' c bes | a f bes | bes, c4. c8 | f2 bes4 | bes, c4. c8 | f2*3/2 \bar "|."
 }
 
 chorusBNXX = \relative d {

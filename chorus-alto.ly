@@ -118,14 +118,14 @@ chorusANVIII = \relative e' {
   fis4 d( e) fis |
   g4. a16( g) fis4. fis8 |
   g8( a) b4 b a |
-  g fis g4. g8 |
+  fis4. g8 g4. g8 |
 
   g4 g g4. g8 |
   fis4 fis fis e |
   e8( fis g2) fis8.( e16) |
   a4. a8 fis4. dis8 |
   e4 e e e |
-  e dis e2 \bar "|."
+  dis4. e8 e2 \bar "|."
 }
 
 lyricsANVIII = \lyricmode {
@@ -220,11 +220,11 @@ chorusANXIX = \relative f' {
   \key f \major
   \clef \chorusAClef
   \autoBeamOff
-  f8 f | g4 g g | f2 r4 | r r f8([ g)] | a4 bes8([ a)] g([ f)] | e2 r4 | r r g | g g g |
-  es4 es r | R2. | r4 r g | f f r | r r g | as as r | r r g | f g4. f8 | e2 r4 |
+  f8 f | g4 g g | f2 g4 | f2 f8([ g)] | a4 bes8([ a)] g([ f)] | e2 g8([ f)] | e2 g4 | g g g |
+  es4 es es | g g g | es es g | f f g | f f g | as as g | as as g | f f4. g8 | e2 g4 |
 
-  R2. | r4 r e8 e | f4 f e | d2 r4 | r r a' | bes bes a | g2 r4 | r r a |
-  g a g | f f r | R2. | r4 r f | f f e | f2 r4 | R2. | r4 r s4 \bar "|."
+  f4 f4. g8 | e2 e8 e | f4 f e | d2 e4 | d2 a'4 | bes bes a | g2 a4 | g2 a4 |
+  g a g | f f a | g a g | f f f | f f4. e8 | f2 f4 | f f4. e8 | f2*3/2 \bar "|."
 }
 
 chorusANXX = \relative a' {
@@ -238,8 +238,16 @@ chorusANXX = \relative a' {
   }
   \repeat volta 2 {
     R2. | f4 g a | g2. | e4 f g | a4. g8 f f | e4. gis8 a4 | a a gis | a2. |
-    R2. | f4 g a | g2.~ | g~ | g8 g f4 g | e4. e8 f4 | f8([ g)] a4 a | g2. \bar "|."
+    R2. | f4 g a | g2.~ | g~ | g8 g f4 g | e4. e8 f4 | f8([ g)] a4 a | a2. \bar "|."
   }
+}
+
+lyricsANXX = \lyricmode {
+  Thanks to these lone -- some, lone -- some vales these de -- sart,
+  de -- sart hills and dales.
+
+  So fair the game, so rich the sport, Di -- a -- na's self might to these woods re -- sort,
+  so fair the game, Di -- a -- na's self might to these woods re -- sort.
 }
 
 chorusANXXIII = \relative d' {
@@ -254,7 +262,7 @@ chorusANXXIII = \relative d' {
   fis g a fis fis d4 d8 | g fis e e e cis ais fis |
 
   b d fis fis d d g b | d4 r8 d, b g g' fis |
-  g d g g e a fis d | a'4 r8 a a4 r8 a | g8([ a16 b] a8) a a2 \bar "|."
+  g d g g e a fis d | a'4 r8 a a4 r8 a | g16([ a g fis] e8.) e16 fis2 \bar "|."
 }
 
 lyricsANXXIII = \lyricmode {
@@ -308,7 +316,7 @@ chorusANXXIX = \relative bes' {
   c2 r4 f | a a g g | g2 r4 f | f g f e | f f2 a4 |
   bes bes bes a | bes2 r4 bes | bes bes bes bes | a4 a2 f4 | f d g g |
 
-  g2 r4 g | a a g4. f8 | es4 c2 es8([ d)] | c([ bes a g)] f f([ g a)] | bes2 r8 g([ a bes)] |
+  g2 r4 g | as as g4. f8 | es4 c2 es8([ d)] | c([ bes a g)] f f([ g a)] | bes2 r8 g([ a bes)] |
   c2 r4 f | a a g4. g8 | g2 r4 es | d g f es | d d2. \bar "|."
 }
 
@@ -337,7 +345,7 @@ chorusANXXXII = \relative bes' {
   bes2 a4. a8 | bes4 bes g4. f8 | f2 a | bes bes | g4. g8 a4 a |
 
   a a g g | fis r r2 | r4 g, d' bes | es d bes d |
-  g fis es g | g g fis g | g g g fis | g1 \bar "|."
+  g fis bes g | g g fis g | g g g fis | g1 \bar "|."
 }
 
 lyricsANXXXII = \lyricmode {
@@ -355,10 +363,10 @@ chorusANXXXV = \relative g' {
   R1*3 r4 g f( es | d) c bes g |
     d' es8( f) g4 r | r2 r4 d | c( bes a) g | fis d' c( bes |
 
-    a) d d r8 fis | g8([ fis)] g([ a)] bes4 bes | f8([ g)] f([ es)] d([ es)] f([ d)] | es4 g fis g | fis2 g4( f) |
-    bes( a) g( fis) | g a a8( d,) a'4 | bes4.( a8) g4 f | e e d r | d( cis) f( e) | d a' a8[( bes)] a([ g)] |
+    a) d d r8 fis | g8([ fis)] g([ a)] bes4 bes | f8([ g)] f([ es)] d([ es)] f([ d)] | es4 g fis g | fis2 g4( fis) |
+    bes( a) g( fis) | g a a8([ d,)] a'4 | bes4.( a8) g4 f | e e d r | d( cis) f( e) | d a' a8[( bes)] a([ g)] |
 
-    g8.([ bes16)] a8([ g)] f4 e | d r8 fis g4 r | g a8.([ bes16)] a4 r8 a | bes4 r bes bes | bes a bes r8 f |
+    g8.([ bes16)] a8([ g)] f4 e8([ d)] | d4 r8 fis g4 r | g a8.([ bes16)] a4 r8 a | bes4 r bes bes | bes a bes r8 f |
     g g r4 f8 f r4 | e4( fis8) g fis4 r8 f | bes bes r4 bes8 a r4 | a8([ fis g)] a g4 fis | g1
   \bar "|."
 }

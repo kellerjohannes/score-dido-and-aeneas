@@ -1,7 +1,7 @@
 \version "2.24.4"
-%\pointAndClickOff
+\pointAndClickOff
 
-#(set-global-staff-size 19)
+#(set-global-staff-size 18)
 
 \include "global-definitions.ly"
 \include "vn-1.ly"
@@ -16,7 +16,7 @@
 
 
 \book {
-  \scorePaperBlockAlt
+  \scorePaperBlock
 
   \titleASA
 
@@ -855,7 +855,7 @@
         \new Staff = "chorusAlto" \with { instrumentName = \instrumentNameChorusA }
         \new Voice = "chorusA"
         \chorusANXX
-        \new Lyrics \lyricsto "chorusA" { \lyricsNXX }
+        \new Lyrics \lyricsto "chorusA" { \lyricsANXX }
 
         \new Staff = "chorusT" \with { instrumentName = \instrumentNameChorusT }
         \new Voice = "chorusT"

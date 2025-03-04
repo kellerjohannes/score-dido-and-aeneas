@@ -205,14 +205,14 @@ vnINVIII = \relative b' {
   c4 b cis d |
   d cis d4. d8 |
   b4 g c c |
-  b a b4. d8 |
+  a4. d8 b4. d8 |
 
   b4 b e4. e8 |
   d4 d g4. g8 |
   g8 fis e dis e4. fis8 |
   g fis fis e dis4. fis8 |
   g8 fis e dis e4. fis8 |
-  g4 fis e2 \bar "|."
+  fis4. e8 e2 \bar "|."
 }
 
 %% Prototype for lyrics in instrumental parts.
@@ -284,7 +284,7 @@ vnINXI = \relative g' {
   g8 g | c4 c c | b2 c8 d | e4 e f | g g g8 d | e8 d c b a g |
   fis2 d'8 a | bes4 bes4. a8 | g4 g b8 c | d8. c16 d8. e16 d8. e16 | d4 b d4 |
 
-  e8. d16 e8. f16 e8. f16 | e4 c e | f4. f8 e4 | d4. e8 f4 | e2 c8. d16 | e8. d16 e8. f16 e8. f16 |
+  e8. d16 e8. f16 e8. f16 | e4 c e | f4. f8 e4 | d4. e8 f4 | e2 e8. f16 | g8. f16 g8. a16 g8. a16 |
   g4 e f8. g16 | a8. bes16 a8. g16 f8. e16 | d2 b8. c16 | d8. c16 d8. e16 d8. e16 | d4 b d | e8. d16 e8. f16 e8. d16 |
   c4 a b | c4. d8 e4 | c4. b8 c b | a2 a8 b | c4 g c | b2 c8 d |
   e4 e f | g g g8 d | e d c b a g | fis2 d'8 a | bes4 bes4. a8 | g4 g b8. c16 |
@@ -314,8 +314,8 @@ vnINXII = \relative c'' {
   \key f \minor
   \clef \vnIClef
   r2 c4. c8 | f2 g4.-+ as8 | e2 g4. g8 | g2 as | bes4. bes8 bes as bes g | as2 d,4. d8 | d4. d8 es4. f8 |
-  g2 f4. f8 | f2 es4. es8 | es4. d8 es4 des | c2 es4. es8 | d2 des4. des8 | c2 a4. a8 | bes4. c8 c4. bes16 c |
-  d2 f4. g,8 | as2 g | f1 | as~ | as | bes |
+  g2 f4. f8 | f2 es4. es8 | es4. d8 es4 d | c2 es4. es8 | d2 des4. des8 | c2 a4. a8 | bes4. c8 c4. bes16 c |
+  des2 f4. g,8 | as2 g | f1 | as~ | as | bes |
 
   as | a | bes~ | bes2 as | g1~ |
   g~ | g~ | g | f2 as | g f~ | f e |
@@ -334,7 +334,7 @@ vnINXIV = \relative as' {
   \time 4/4
   \key f \minor
   \clef \vnIClef
-  as1 | f~ | f~ | f2 es | des1~ |
+  as1 | f~ | f~ | f2 es | d1 |
   des~ | des | c2 e | g c~ | c b \bar "||"
 }
 
@@ -353,8 +353,8 @@ vnINXVI = \relative e' {
   \clef \vnIClef
   R1*3 | r2 e~ | e g | a g |
 
-  fis a | g fis | \tuplet 3/2 4 { d8 d d fis fis fis a a a fis fis fis } | d4 r \tuplet 3/2 4 { d8 d d fis fis fis } |
-  \tuplet 3/2 4 { a8 a a fis fis fis } d4 r | R1 | r2 \tuplet 3/2 4 { d8 d d fis fis fis | a a a fis fis fis d d d a a a } | d4 r f2~ |
+  fis a | g fis | \tuplet 3/2 4 { d'8 d d fis fis fis a a a fis fis fis } | d4 r \tuplet 3/2 4 { d8 d d fis fis fis } |
+  \tuplet 3/2 4 { a8 a a fis fis fis } d4 r | R1 | r2 \tuplet 3/2 4 { d8 d d fis fis fis | a a a fis fis fis d d d a a a } | d4 r f,2~ |
   f1~ | f | a |
   a2 bes | g4 f e a | f2. e4 \bar "||"
 }
@@ -363,7 +363,7 @@ vnINXVII = \relative f' {
   \time 3/8
   \key f \major
   \clef \vnIClef
-  f8 r r | R4. | r8 c' bes | c e d | c g' f | e c f | f f e | f4 r8 |
+  f8 r r | R4. | r8 c' b | c e d | c g' f | e c f | f f e | f4 r8 |
   f8 f f | f f e | f c c | c c b | c c c | d c bes | a a a | a4. \bar "|."
 }
 
@@ -393,11 +393,11 @@ vnINXIX = \relative d'' {
   \time 3/4 \partial 4
   \key f \major
   \clef \vnIClef
-  d8 d | c4 c bes | a2 bes4 | a2 a8 bes | c4 d8 c bes a | g2 bes8 a | g2 c4 | es es d |
-  c c c | es es d | c c e | f f e | f f es | d d es | d d c | c c b | c2 c4 |
+  d8 d | c4 c bes | a2 bes4\p | a2 a8\f bes | c4 d8 c bes a | g2 bes8\p a | g2 c4\f | es es d |
+  c c c\p | es es d | c c e\f | f f e\p | f f es\f | d d es\p | d d c\f | c c4. b8 | c2 c4\p |
 
-  c4 c b | c2 c4 | a bes c | f,2 c'4 | f,2 c'4 | d e f | e2 f4 | e2 f4 |
-  g c, e | f c f | g c, e | f c d8 c | bes4 a g | f2 d'8 c | bes4 a g | f2*3/2 \bar "|."
+  c4 c4. b8 | c2 c8\f c | a4 bes c | f,2 c'4\p | f,2 c'4\f | d e f | e2 f4\p | e2 f4\f |
+  g c, e | f c f\p | g c, e | f c d8\f c | bes4 a g | f2 d'8\p c | bes4 a g | f2*3/2 \bar "|."
 }
 
 vnINaddXXII = \relative c'' {
@@ -414,7 +414,7 @@ vnINaddXXII = \relative c'' {
   bes4~ bes16 a[ g f] e f e d c d e c |
 
   g'8.[ g16] g8. f16 e f e d c d e c |
-  g'8. g16 g8. \omit TupletNumber \omit TupletBracket \tuplet 3/2 { f32 e d } c16 d es d c bes a g |
+  g'8. g16 g8. \omit TupletNumber \omit TupletBracket \tuplet 3/2 { f32[ e d] } c16 d es d c bes a g |
   a8 f r8 r32 f' e d c16 d es d c bes a g |
 
   a8 f r16 f g a bes a bes c c8.-+ bes32 c |
@@ -510,7 +510,7 @@ vnINXXIII = \relative d' {
   fis fis4 fis8 b, cis d b | e8. fis16 g fis e d cis d e cis d e d e |
 
   fis8 e16 d d8 cis b d b4 | r8 d, g b d4 r8 d |
-  b cis16 d e fis e d cis8 e fis4 | r8 e fis4 r8 e fis e16 fis | g8 fis16 g fis8 e d2 \bar "|."
+  b cis16 d e fis e d cis8 e fis4 | r8 e fis4 r8 e fis e16 fis | g fis e d cis d e d d2 \bar "|."
 }
 
 trumpetINaddFarewell = \relative a' {
@@ -554,9 +554,9 @@ vnINXXV = \relative bes' {
   \key bes \major
   \clef \vnIClef
   bes8 c | d4  d d8 es | f4 f f8 d | es4 es es8 f | d4 d d | d c c | c c c | c8 es d4 c | bes2 bes8 c | d4 d d8 e |
-  f2 a4 | a a a | a g f | g8 bes a4 g | f2 a,8 bes | c4 c c8 d | es4 f8 es d c | d2 d4 | es4 es es8 f | g4 g g8 a |
-  bes2.~ | bes2 bes8 g | as2 as4 | as bes8 as g f | e4 c es~ | es d f~ | f g8 f es d | c4 a d~ | d bes c~ | c a bes |
-  a a bes~ | bes c2 | d e4~ | e d4. d8 | c es d4 c | bes2 r4 |
+  f2 a4 | a g g | g g g | g8 bes a4 g | f2 a,8 bes | c4 c c8 d | es4 f8 es d c | d2 d4 | es4 es es8 f | g4 g g8 a |
+  bes2.~ | bes2 bes8 g | as2 as4~ | as bes8 as g f | e4 c es~ | es d f~ | f g8 f es d | c4 a d~ | d bes c~ | c a bes |
+  a a bes~ | bes c2 | d es4~ | es d4. d8 | c es d4 c | bes2 r4 |
   R2.*30 |
   r4 r bes8 bes | bes2 bes8 c | d4 d f8 f, |
   bes2 bes4 c4. d8 es4 | d bes d8 es | f4. f8 a, bes | c4 g8 a bes4 | a f a8 bes |
@@ -610,7 +610,7 @@ vnINXXIX = \relative d'' {
   d d d8 es f4 | d2 r4 d | d d d e | f f2 f4 | g g g8 d d4 |
 
   es2 r4 d8 es | f4 es8 d es4 d | c c2 r4 | r2 r4 f8 es | d c bes a g4 g'8 f |
-  es8 d c bes a4 c | f f d d | es2 r4 d8 es | f4 es d c | bes bes2. \bar "|."
+  es8 d c bes a4 c | f f d d | es2 r4 d8 es | f4 es8 d es d c bes | bes4 bes2. \bar "|."
 }
 
 vnINaddXXXIV = \relative f' {
@@ -666,7 +666,7 @@ vnINXXXII = \relative d'' {
   \clef \vnIClef
   d2 c4. f8 | d4 d es4. d8 | c2 f | d g | e4. e8 f4. g8 |
 
-  fis4 d c bes | a d a bes | f g a bes | c a bes r |
+  fis4 d c bes | a d a bes | fis g a bes | c a bes r |
   r a d bes | es d c bes | bes16 c d8 c a bes4 a | g1 \bar "|."
 }
 
@@ -682,14 +682,14 @@ vnINXXXIV = \relative d' {
   \key g \minor
   \clef \vnIClef
   r2 | R1.*4 | d1 d2 | d1 d2 | g1 c,2 |
-  d1 d2 | es d1 | d g2 | a1 bes4 a | g2 fis g | fis1 g2 | g1 fis2 |
+  d1 d2 | es d1 | d g2 | a1 bes4 a | g2 fis g | fis1 g2 | g2 fis1 |
   g2 d1 | d d2 | g1 c,2 | d1 d2 |
   es2 d1 | d g2 | a1 bes4 a | g2 fis g | fis1 g2 | g fis1 |
   g1 bes2~ | bes a a~ | a g c~ | c bes bes | a g a4 fis | g2 a1~ |
   a d2~ | d c1~ | c2 bes1 | a2 g fis | g1 bes2 | bes a a |
   a g c | c bes bes | a g a4 fis | g2 a1 | a d2 | d c1 |
   c2 bes1 | a2 g fis | g1. | R1.*2 |
-  r2 r g'~ | g fis f~ | f e es~ | es d d~ | d cis c~ | c b bes | a4 c bes2 a | g1. \bar "|."
+  r2 r g'~ | g fis f~ | f e es~ | es d d~ | d cis c~ | c b bes | a2 a2. g4 | g1. \bar "|."
 }
 
 vnINXXXV = \relative d'' {
@@ -702,6 +702,6 @@ vnINXXXV = \relative d'' {
   a8 bes c a bes4 r8 a | bes a bes c d8. es16 d4 | d8 c d es f es d c | bes g a bes c d c bes | a2 r |
   R1 | r2 d4 c | es d cis d | d8 a a4 d cis | f e d cis | f e d e |
 
-  cis4 d8 e d4 c | d r8 d bes4 r | es4. d8 c4 r8 c | f4 r g4. g8 | f8 es d c bes4 r8 bes |
+  cis4 d8 e d4 cis | d r8 d bes4 r | es4. d8 c4 r8 c | f4 r g4. g8 | f8 es d c bes4 r8 bes |
   bes bes r4 b8 b r4 | c4 a8 bes a4 r8 a | d d r4 d8 c r4 | c8 a bes c bes4 a | g1 \bar "|."
 }

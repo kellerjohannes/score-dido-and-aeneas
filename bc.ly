@@ -584,7 +584,7 @@ bcNX = \relative g {
   e8 f g g, c2~ | c4 r8 c b b b c | d4 r8 g e e e f |
   g b, d d, g4 r8 g' | fis fis fis gis a4 a,8 b | c c c d e f d e |
   a, a' g f e d c c | c g c8. c16 e4 r8 c | c g c e g4 r8 g |
-  g d g b c4. g8 | a g a g16 f e8 f g g, | c g' c b a f g g, | c d e c f d g g, | d2*2 \bar "||"
+  g d g b c4. g8 | a g a g16 f e8 f g g, | c g' c b a f g g, | c d e c f d g g, | c2*2 \bar "||"
 }
 
 figuresNX = \figuremode {
@@ -722,13 +722,13 @@ bcNXII = \relative f, {
   \time 4/4
   \key f \minor
   \clef \bcClef
-  f2 f'4. es8 | d1 | c2. c'4 | bes2 as | e e | f fis | g f |
+  f2 f'4. es8 | des1 | c2. c'4 | bes2 as | e e | f fis | g f |
   es a, | b c | f, g | c a | bes e, | f4. f'8 es2 | des c |
-  bes as | c1 | f,~ | f~ | f | f~ |
+  bes a | c1 | f,~ | f~ | f | f~ |
 
   f~ | f | bes | bes | c~ |
   c~ | c~ | c | f, | bes2 a | c1 |
-  f,~ | f | f | bes~ | bes \bar "|."
+  f,~ | f~ | f4. c'8 f8. e16 d8. c16 | bes1~ | bes \bar "|."
 }
 
 figuresNXII = \figuremode {
@@ -791,7 +791,7 @@ bcNXVI = \relative f {
   c'1~ | c2 g | g1 |
 
   d'~ | d | d,~ | d~ |
-  d~ | d~ | d~ | d~ | d4 r bes'2~ |
+  d~ | d~ | d~ | d~ | d4 d'8 c bes2~ |
   bes1~ | bes | f~ |
   f2 bes~ | bes2. a4 | d bes c2 |
 }
@@ -851,11 +851,11 @@ bcNXIX = \relative d {
   \time 3/4 \partial 4
   \key f \major
   \clef \bcClef
-  d4 | e e e | f2 e4 | f2 d4 | a a bes | c2 bes4 | c2 c4 | c' c g |
-  c, c c | c' c g | c, c g' | as as g | as as g | f f g | f f es | d g g, | c2 es4 |
+  d4 | e e e | f2 e4^\p | f2 d4^\f | a a bes | c2 bes4^\p | c2 c4^\f | c' c g |
+  c, c c^\p | c' c g | c, c g'^\f | as as g^\p | as as g^\f | f f g^\p | f f es^\f | d g g, | c2 es4^\p |
 
-  d g g, | c2 c4 | d d a | bes2 a4 | bes2 a4 | g g f | c'2 f,4 | c'2 f4 |
-  c' c bes | a f f | c' c bes | a f bes | bes, c c, | f2 bes'4 | bes, c c, | f2*3/2 \bar "|."
+  d g g, | c2 c4^\f | d d a | bes2 a4^\p | bes2 a4^\f | g g f | c'2 f,4^\p | c'2 c4^\f |
+  c' c bes | a f f^\p | c' c bes | a f bes^\f | bes, c c, | f2 bes'4^\p | bes, c c, | f2*3/2 \bar "|."
 }
 
 figuresNXIX = \figuremode {
@@ -997,13 +997,13 @@ bcNXXII = \relative d, {
   \time 4/4
   \key c \major
   \clef \bcClef
-  d1~ | d~ | d2 fis |
-  g4 a bes2 | a d | d d,16 d d d d d d d |
-  d2 d'~ | d1~ | d2 g,4 a | d d,16 d d d d d d d d4 \bar "|."
+  d1~ | d2. a'4 | d2 e |
+  d4. c8 bes2 | a d | d d,16 d d d d d d d |
+  d4 r d'2~ | d1~ | d2 g,4 a | d d,16 d d d d d d d d4 \bar "|."
 }
 
 figuresNXXII = \figuremode {
-  s1*2 s2 < 6 5 > | < _- >4 < _+ > < 7 > < 6 > | < _+ >2 < _+ > | s1 |
+  s1*4 | < _+ >2 < _+ > | s1 |
   s2 < _+ > | s1 | s2 < 6 5 >4 < 6 4 >8 < 5 _+ > | < _+ >1 |
 }
 
@@ -1016,10 +1016,10 @@ bcNXXIII = \relative d {
   d b fis' fis, b4 r8 b | g2 r8 g b d | g4 r8 e a4 r8 d | a4 r8 d a4 r8 d |
   b g a a, d2 | d r8 d fis a | d d, a4 r8 d a4 |
 
-  r8 d e e, a2~ | a8 a cis e a4 r8 a, |
+  r8 d e e, a2 | r8 a cis e a4 r8 a, |
   d e fis d g g4 g8 | e d e cis fis g fis e |
 
-  d b fis' fis, b4 r8 b' | g2~ g8 g, b d |
+  d b fis' fis, b4 r8 b' | g2 r8 g, b d |
   g4 r8 e a4 r8 d | a4 r8 d a4 r8 d | b g a a, d2 \bar "|."
 }
 
@@ -1043,7 +1043,7 @@ bcNXXIV = \relative a, {
   a1~ | a~ | a |
   e~ | e2 a~ | a1 |
   d4 d8. d16 g2 | c,1~ | c2 f~ |
-  f d | d e | e, a |
+  f4 e d2~ | d e | e, a |
   a1~ | a4. g8 f2 | e e' | dis e~ |
   e2 f | e d | cis1 | d2. c4 |
   b2. a4 | g2~ g8 f' e4 | d g c,2~ |
@@ -1071,7 +1071,7 @@ bcNXXV = \relative f {
 
   es4 f f, | bes2 bes8 c | d4. es8 f4 | a, bes c | f,2 f'4 | fis2 d4 |
   g2 f4 | es2 d4 | c2 c4~ | c b b | c b bes | a as2 |
-  g4 g' f | es d c | c2 bes4 | d2 d,4 | g2 g'4 | d2 bes4 | es2 d4 |
+  g4 g' f | es d c | c2 b4 | d2 d,4 | g2 g'4 | d2 bes4 | es2 d4 |
   c d es | f2 f4 | bes8 f4. f4 | bes8 f4. bes4 | es,2 bes4 | f'2 f,4 |
   bes2 bes'8 bes | bes2 d8 c | bes4 bes bes8 f | bes2 bes8 a | g2 f8 es |
 
@@ -1124,7 +1124,7 @@ bcNXXVII = \relative bes, {
 
   f,4 a bes a | bes es f d | g es as8 f g g, |
   c1~ | c4 f d g | c, f bes, es |
-  f e f a | bes es,8 c f4 d | g8 es f f, bes bes bes bes | bes2 r \bar "|."
+  f e f a | bes es,8 c f4 d | g8 es f f, bes2~ | bes2 r \bar "|."
 }
 
 figuresNXXVII = \figuremode {
@@ -1142,15 +1142,15 @@ bcNXXVIII = \relative bes, {
   \key bes \major
   \clef \bcClef
   \repeat volta 2 {
-    bes8. a16 bes8. c16 d8. es16 | f2 es4 | d8. c16 d8. es16 d8. c16 | bes8. a16 bes8. c16 bes8. a16 | g2 f8 es | d2 es4 |
+    bes8.[ a16 bes8. c16 d8. es16] | f2 es4 | d8.[ c16 d8. es16 d8. c16] | bes8.[ a16 bes8. c16 bes8. a16] | g2 f8 es | d2 es4 |
     \alternative {
       { f8 c' f es d c }
       { f,8 c' f g a f }
     }
   }
-  bes2 bes8 as | g4. f8 es4 | as4. f8 g4 | c,2 c'8. bes16 | a8. g16 f8. g16 a4 |
-  bes4. a8 g8. f16 | es8. d16 es8. f16 g4 |
-  c,8. bes16 c8. d16 es8. c16 | f4 f4. es8 | d8. c16 bes8. c16 d4 | es f f, | bes2 r4 \bar "|."
+  bes2 bes8 a | g4. f8 es4 | as4. f8 g4 | c,2 c'8. bes16 | a8.[ g16 f8. g16] a4 |
+  bes4. a8 g8. f16 | es8.[ d16 es8. f16] g4 |
+  c,8.[ bes16 c8. d16 es8. c16] | f4 f4. es8 | d8.[ c16 bes8. c16] d4 | es f f, | bes2 r4 \bar "|."
 }
 
 figuresNXXVIII = \figuremode {
@@ -1223,17 +1223,17 @@ bcNXXX = \relative g, {
   \clef \bcClef
   g1~ | g~ | g~ | g |
   d'2. c4 | b1 | c2 d | es4 bes d d, |
-  g2 g' | e1 | f2 fis | g a4 a, |
+  g2 g'4 f | e1 | f2 fis | g a4 a, |
   d2 bes~ | bes1 | d2 c~ |
-  c d~ | d b~ | b c | c1 |
+  c d~ | d4 c b2~ | b c | c1 |
   d2 es | d cis | d4 d, g2~ |
-  g1 | d' | d2 g |
+  g1 | d'~ | d2 g |
 
   c,1 | f4 f, bes2~ | bes1~ |
   bes4 d es2 | b c | d1 | a |
   bes4 c f,2~ | f1~ | f4 f' es d |
   c1~ | c2 d | fis,4 a d2~ |
-  d es | as g | e1 |
+  d es | a4 as g4. f8 | e4. c8 d4 e |
   f2 bes,4 c | d d, g2~ | g1~ |
   g1~ | g | d' |
 

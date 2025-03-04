@@ -1,7 +1,7 @@
 \version "2.24.4"
-%\pointAndClickOff
+\pointAndClickOff
 
-#(set-global-staff-size 25)
+#(set-global-staff-size 23)
 
 \include "global-definitions.ly"
 \include "solo-voice.ly"
@@ -566,7 +566,9 @@
         }
       }
     }
+  }
 
+  \bookpart {
     \score {
       \scoreTitleNXXIV
       <<
