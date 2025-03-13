@@ -896,7 +896,7 @@ soloVoiceINXXVII = \relative a' {
 
 lyricsSoloVoiceINXXVII = \lyricmode {
   %% Sorceress:
-  See, see, the falgs and strea -- mers cur -- ling,
+  See, see, the flags and strea -- mers cur -- ling,
   An -- chors weigh -- ing, sails un -- furl -- ing.
 
   %% 1st Witch:
